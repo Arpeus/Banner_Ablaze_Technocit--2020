@@ -46,4 +46,40 @@ public class Player : MonoBehaviour
     {
         return _countMax;
     }
+
+    public bool CheckCavalier()
+    {
+        foreach(CharacterManager character in m_characters)
+        {
+            if(character._character.type == TypePawn.Cavalier)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public bool CheckKnight()
+    {
+        foreach (CharacterManager character in m_characters)
+        {
+            if (character._character.type == TypePawn.Knight)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public bool CheckLancer()
+    {
+        foreach (CharacterManager character in m_characters)
+        {
+            if (character._character.type == TypePawn.Lancer)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }

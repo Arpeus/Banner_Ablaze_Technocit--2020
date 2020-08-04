@@ -14,4 +14,5 @@ public class CharacterData : ScriptableObject
     public int _movement;
     public int _range;
     public int _unitCost;
+    public TypePawn type; 
 }
