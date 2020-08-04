@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         m_characters = new List<CharacterManager>();
         m_currentCount = _countMax;
@@ -37,4 +37,13 @@ public class Player : MonoBehaviour
             m_currentCount = _countMax;
     }
 
+    public int GetAvailablePoint()
+    {
+        return m_currentCount;
+    }
+
+    public int GetMaxPoint()
+    {
+        return _countMax;
+    }
 }
