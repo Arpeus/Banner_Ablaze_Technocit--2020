@@ -59,11 +59,11 @@ public class Player : MonoBehaviour
         return false;
     }
 
-    public bool CheckKnight()
+    public bool CheckSwordMan()
     {
         foreach (CharacterManager character in m_characters)
         {
-            if (character._character.type == TypePawn.Knight)
+            if (character._character.type == TypePawn.SwordMan)
             {
                 return true;
             }

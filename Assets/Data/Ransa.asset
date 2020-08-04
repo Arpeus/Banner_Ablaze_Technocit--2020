@@ -21,3 +21,4 @@ MonoBehaviour:
   _movement: 2
   _range: 0
   _unitCost: 2
+  type: 2

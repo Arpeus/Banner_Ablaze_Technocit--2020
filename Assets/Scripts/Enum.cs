@@ -1,6 +1,6 @@
 ﻿public enum TypePawn
 {
     Cavalier,
-    Knight,
+    SwordMan,
     Lancer
 }

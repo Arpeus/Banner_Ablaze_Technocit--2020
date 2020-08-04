@@ -11,8 +11,9 @@ public class HUDMenu : MonoBehaviour
     public TextMeshProUGUI _pointAvailable;
 
     public Button _btnReady;
+    public List<Button> _btnAddTroops;
     public Button _btnRemoveCavalier;
-    public Button _btnRemoveKnight;
+    public Button _btnRemoveSwordMan;
     public Button _btnRemoveLancer;
 
 
@@ -23,7 +24,7 @@ public class HUDMenu : MonoBehaviour
     {
         SetTextAvailablePoint();
         _btnRemoveCavalier.interactable = false;
-        _btnRemoveKnight.interactable = false;
+        _btnRemoveSwordMan.interactable = false;
         _btnRemoveLancer.interactable = false;
     }
 
@@ -33,10 +34,19 @@ public class HUDMenu : MonoBehaviour
         if(_player.GetAvailablePoint() == 0)
         {    
             _btnReady.interactable = true;
+            foreach(Button btnAdd in _btnAddTroops)
+            {
+                btnAdd.interactable = false;
+            }
         }
         else
         {
             _btnReady.interactable = false;
+            foreach (Button btnAdd in _btnAddTroops)
+            {
+                
+                btnAdd.interactable = true;
+            }
         }
     }
 
@@ -53,8 +63,7 @@ public class HUDMenu : MonoBehaviour
         int tmpNumberTroop;
         int.TryParse(txtNumberTroop.text, out tmpNumberTroop);
         tmpNumberTroop--;
-        txtNumberTroop.SetText(tmpNumberTroop.ToString());
-        
+        txtNumberTroop.SetText(tmpNumberTroop.ToString());    
     }
 
     public void CheckCavalier()
@@ -65,12 +74,12 @@ public class HUDMenu : MonoBehaviour
             _btnRemoveCavalier.interactable = false;
     }
 
-    public void CheckKnight()
+    public void CheckSwordMan()
     {
-        if (_player.CheckKnight())
-            _btnRemoveKnight.interactable = true;
+        if (_player.CheckSwordMan())
+            _btnRemoveSwordMan.interactable = true;
         else
-            _btnRemoveKnight.interactable = false;
+            _btnRemoveSwordMan.interactable = false;
     }
 
     public void CheckLancer()
