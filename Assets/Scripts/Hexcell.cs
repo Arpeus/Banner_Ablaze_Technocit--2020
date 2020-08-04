@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-public class Hexcell : MonoBehaviour
+public class HexCell : MonoBehaviour
 {
     
 }
