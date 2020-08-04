@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -16,13 +17,14 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        GameManager.Instance._players.Add(this);
         m_characters = new List<CharacterManager>();
         m_currentCount = _countMax;
     }
 
     public void AddCharacter(CharacterManager character)
     {
-        if(m_currentCount - character._character._unitCost >= 0)
+        if (CheckEnoughPoint(character))
         {
             m_characters.Add(character);
             m_currentCount -= character._character._unitCost;
@@ -52,7 +54,7 @@ public class Player : MonoBehaviour
         foreach(CharacterManager character in m_characters)
         {
             if(character._character.type == TypePawn.Cavalier)
-            {
+            { 
                 return true;
             }
         }
@@ -68,10 +70,11 @@ public class Player : MonoBehaviour
                 return true;
             }
         }
+        
         return false;
     }
 
-    public bool CheckLancer()
+    public bool CheckLancer(Button btnAdd)
     {
         foreach (CharacterManager character in m_characters)
         {
@@ -80,6 +83,12 @@ public class Player : MonoBehaviour
                 return true;
             }
         }
+        
         return false;
+    }
+
+    public bool CheckEnoughPoint(CharacterManager character)
+    {
+        return m_currentCount - character._character._unitCost >= 0;
     }
 }
