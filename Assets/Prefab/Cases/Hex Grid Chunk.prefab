@@ -58,28 +58,32 @@ MonoBehaviour:
     - {fileID: 8799487023037074280, guid: 111e0190de8b5ed4ebbdd2bcebf1ae37, type: 3}
     - {fileID: 8799487023037074280, guid: 111e0190de8b5ed4ebbdd2bcebf1ae37, type: 3}
   - prefabs:
-    - {fileID: 8799487023037074280, guid: 111e0190de8b5ed4ebbdd2bcebf1ae37, type: 3}
-    - {fileID: 8799487023037074280, guid: 111e0190de8b5ed4ebbdd2bcebf1ae37, type: 3}
+    - {fileID: 2454896335298211012, guid: 7411bc456bff74b4f80ffbbdf34e6636, type: 3}
+    - {fileID: 6689104913031944790, guid: 4a8fa0d819876fe44a7b5035d017a5f3, type: 3}
   - prefabs:
     - {fileID: 8799487023037074280, guid: 111e0190de8b5ed4ebbdd2bcebf1ae37, type: 3}
     - {fileID: 8799487023037074280, guid: 111e0190de8b5ed4ebbdd2bcebf1ae37, type: 3}
   plantCollections:
   - prefabs:
-    - {fileID: 4575223377169443440, guid: 039ebad481333644bb9cda6db75f6aa4, type: 3}
-    - {fileID: 4575223377169443440, guid: 039ebad481333644bb9cda6db75f6aa4, type: 3}
+    - {fileID: 9196328870086118782, guid: d13dcc667d761b041b8206303b3e0895, type: 3}
+    - {fileID: 4761036268835870347, guid: d6a692fde65b5c8498348f585b7fee74, type: 3}
+    - {fileID: 3538437501851966934, guid: c05d0afbbf8444f4f87223e8d9ec1cca, type: 3}
+    - {fileID: 682021858980918279, guid: 452b8040fd4b782418bc9a369e7595fb, type: 3}
+    - {fileID: 9059261087898286693, guid: 37de6282166f6c04cb666c86ef3b6e08, type: 3}
   - prefabs:
-    - {fileID: 4575223377169443440, guid: 039ebad481333644bb9cda6db75f6aa4, type: 3}
-    - {fileID: 4575223377169443440, guid: 039ebad481333644bb9cda6db75f6aa4, type: 3}
+    - {fileID: 2312726912511390959, guid: 56e6f277679d6814d8f2a8289e6b6082, type: 3}
+    - {fileID: 924092747945940427, guid: 4c223eedfc821b44186cfce91f174417, type: 3}
   - prefabs:
-    - {fileID: 4575223377169443440, guid: 039ebad481333644bb9cda6db75f6aa4, type: 3}
-    - {fileID: 4575223377169443440, guid: 039ebad481333644bb9cda6db75f6aa4, type: 3}
+    - {fileID: 2312726912511390959, guid: 56e6f277679d6814d8f2a8289e6b6082, type: 3}
+    - {fileID: 924092747945940427, guid: 4c223eedfc821b44186cfce91f174417, type: 3}
   walls: {fileID: 114000013599494320}
-  wallTower: {fileID: 4000011665626236, guid: 1589993158ba34786b54f448bdeb6085, type: 3}
-  bridge: {fileID: 4000012598710820, guid: 234387bb7219042168570e127fbd5b58, type: 3}
+  wallTower: {fileID: 6689104913031944790, guid: 4a8fa0d819876fe44a7b5035d017a5f3,
+    type: 3}
+  bridge: {fileID: 6799178744582074637, guid: 3ed0ebc4eb15190439da612316677d6f, type: 3}
   special:
   - {fileID: 2818485211043421298, guid: 98b30e726a937d74a871e12c8a70949d, type: 3}
-  - {fileID: 2818485211043421298, guid: 98b30e726a937d74a871e12c8a70949d, type: 3}
-  - {fileID: 2818485211043421298, guid: 98b30e726a937d74a871e12c8a70949d, type: 3}
+  - {fileID: 4575223377169443440, guid: 039ebad481333644bb9cda6db75f6aa4, type: 3}
+  - {fileID: 7229177903309608297, guid: 21f84a4da7bcdc24883b8a384dd521f9, type: 3}
 --- !u!1 &1000010636493760
 GameObject:
   m_ObjectHideFlags: 0
