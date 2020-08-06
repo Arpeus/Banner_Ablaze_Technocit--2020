@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
             Instance = this;
+            _players = new List<Player>();
         }
         else
         {

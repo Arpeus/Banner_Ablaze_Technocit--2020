@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         GameManager.Instance._players.Add(this);
         m_characters = new List<CharacterManager>();
