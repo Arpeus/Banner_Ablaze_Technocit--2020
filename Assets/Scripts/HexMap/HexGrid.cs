@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 public class HexGrid : MonoBehaviour {
 
 	public int chunkCountX = 4, chunkCountZ = 3;
-
-	public Color defaultColor = Color.white;
 
 	public HexCell cellPrefab;
 	public Text cellLabelPrefab;
 	public HexGridChunk chunkPrefab;
 
 	public Texture2D noiseSource;
+
+	public int seed;
+
+	public Color[] colors;
 
 	HexGridChunk[] chunks;
 	HexCell[] cells;
@@ -20,6 +23,8 @@ public class HexGrid : MonoBehaviour {
 
 	void Awake () {
 		HexMetrics.noiseSource = noiseSource;
+		HexMetrics.InitializeHashGrid(seed);
+		HexMetrics.colors = colors;
 
 		cellCountX = chunkCountX * HexMetrics.chunkSizeX;
 		cellCountZ = chunkCountZ * HexMetrics.chunkSizeZ;
@@ -50,7 +55,11 @@ public class HexGrid : MonoBehaviour {
 	}
 
 	void OnEnable () {
-		HexMetrics.noiseSource = noiseSource;
+		if (!HexMetrics.noiseSource) {
+			HexMetrics.noiseSource = noiseSource;
+			HexMetrics.InitializeHashGrid(seed);
+			HexMetrics.colors = colors;
+		}
 	}
 
 	public HexCell GetCell (Vector3 position) {
@@ -88,7 +97,6 @@ public class HexGrid : MonoBehaviour {
 		HexCell cell = cells[i] = Instantiate<HexCell>(cellPrefab);
 		cell.transform.localPosition = position;
 		cell.coordinates = HexCoordinates.FromOffsetCoordinates(x, z);
-		cell.Color = defaultColor;
 
 		if (x > 0) {
 			cell.SetNeighbor(HexDirection.W, cells[i - 1]);
@@ -127,5 +135,20 @@ public class HexGrid : MonoBehaviour {
 		int localX = x - chunkX * HexMetrics.chunkSizeX;
 		int localZ = z - chunkZ * HexMetrics.chunkSizeZ;
 		chunk.AddCell(localX + localZ * HexMetrics.chunkSizeX, cell);
+	}
+
+	public void Save (BinaryWriter writer) {
+		for (int i = 0; i < cells.Length; i++) {
+			cells[i].Save(writer);
+		}
+	}
+
+	public void Load (BinaryReader reader) {
+		for (int i = 0; i < cells.Length; i++) {
+			cells[i].Load(reader);
+		}
+		for (int i = 0; i < chunks.Length; i++) {
+			chunks[i].Refresh();
+		}
 	}
 }
