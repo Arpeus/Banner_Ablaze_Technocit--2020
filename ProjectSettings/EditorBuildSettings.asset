@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MedericCreateTeamFirstPlayer.unity
-    guid: 4a8c6dc6d0316044ba8a3a2674343773
-  - enabled: 1
-    path: Assets/Scenes/MedericCreateTeamSecondPlayer.unity
-    guid: 88b8cbaa970270243bc27382a852ab53
+    path: Assets/Scenes/MainMenu.unity
+    guid: ae2a279bc8fe7324bb5965935e0438c3
   m_configObjects: {}
