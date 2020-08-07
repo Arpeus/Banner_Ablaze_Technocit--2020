@@ -80,14 +80,20 @@ public class SaveLoadMenu : MonoBehaviour
         FillList();
     }
 
+    private const string filePath = "./map/";
+
     void FillList()
     {
         for (int i = 0; i < listContent.childCount; i++)
         {
             Destroy(listContent.GetChild(i).gameObject);
         }
+        if (!Directory.Exists(filePath))
+        {
+            Directory.CreateDirectory(filePath);
+        }
         string[] paths =
-            Directory.GetFiles(Application.persistentDataPath, "*.map");
+            Directory.GetFiles(filePath, "*.map");
         Array.Sort(paths);
         for (int i = 0; i < paths.Length; i++)
         {
@@ -105,7 +111,7 @@ public class SaveLoadMenu : MonoBehaviour
         {
             return null;
         }
-        return Path.Combine(Application.persistentDataPath, mapName + ".map");
+        return Path.Combine(filePath, mapName + ".map");
     }
 
     void Save(string path)
@@ -118,7 +124,6 @@ public class SaveLoadMenu : MonoBehaviour
             writer.Write(1);
             hexGrid.Save(writer);
         }
-        Debug.Log(Application.persistentDataPath);
     }
 
     void Load(string path)
