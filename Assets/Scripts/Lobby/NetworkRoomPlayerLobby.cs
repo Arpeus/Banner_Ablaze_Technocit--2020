@@ -125,5 +125,7 @@ public class NetworkRoomPlayerLobby : NetworkBehaviour
     public void CmdStartGame()
     {
         if (Room._roomPlayers[0].connectionToClient != connectionToClient) { return;  };
+
+        Room.StartGame();
     }
 }
