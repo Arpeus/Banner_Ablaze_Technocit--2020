@@ -118,6 +118,7 @@ public class SaveLoadMenu : MonoBehaviour
             writer.Write(1);
             hexGrid.Save(writer);
         }
+        Debug.Log(Application.persistentDataPath);
     }
 
     void Load(string path)

@@ -10660,7 +10660,7 @@ MonoBehaviour:
   chunkPrefab: {fileID: 114000010052569294, guid: 7622d007cafd044a1b1189c0b93d2912,
     type: 3}
   noiseSource: {fileID: 2800000, guid: 38701cdeb1fb9427cbb585f917aa59cb, type: 3}
-  seed: 1234
+  seed: 1000
 --- !u!4 &1571186512
 Transform:
   m_ObjectHideFlags: 0
