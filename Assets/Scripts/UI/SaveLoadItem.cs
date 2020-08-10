@@ -1,28 +1,23 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class SaveLoadItem : MonoBehaviour
-{
+public class SaveLoadItem : MonoBehaviour {
 
-    public SaveLoadMenu menu;
+	public SaveLoadMenu menu;
 
-    public string MapName
-    {
-        get
-        {
-            return mapName;
-        }
-        set
-        {
-            mapName = value;
-            transform.GetChild(0).GetComponent<Text>().text = value;
-        }
-    }
+	public string MapName {
+		get {
+			return mapName;
+		}
+		set {
+			mapName = value;
+			transform.GetChild(0).GetComponent<Text>().text = value;
+		}
+	}
 
-    string mapName;
+	string mapName;
 
-    public void Select()
-    {
-        menu.SelectItem(mapName);
-    }
+	public void Select () {
+		menu.SelectItem(mapName);
+	}
 }
