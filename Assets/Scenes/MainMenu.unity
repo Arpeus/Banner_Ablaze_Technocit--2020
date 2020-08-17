@@ -1297,8 +1297,9 @@ MonoBehaviour:
   m_menuScene: Assets/Scenes/MainMenu.unity
   m_roomPlayerPrefab: {fileID: 2610408122245659445, guid: 925c725b424f05b4190571070a7b1e0f,
     type: 3}
-  m_playerPrefab: {fileID: 117138276206386900, guid: 2eaff284e41cce34ba48dc2fdbba235e,
+  m_gamePlayerPrefab: {fileID: 117138276206386900, guid: 2eaff284e41cce34ba48dc2fdbba235e,
     type: 3}
+  _pathMapToLoad: 
 --- !u!114 &782005858
 MonoBehaviour:
   m_ObjectHideFlags: 0

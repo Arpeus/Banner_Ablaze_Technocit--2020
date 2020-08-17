@@ -131,7 +131,18 @@ public class HexUnit : MonoBehaviour {
 		);
 	}
 
-	void OnEnable () {
+    // TEST IMPORTANT
+    public static void Load(BinaryReader reader, HexGridMultiplayer grid)
+    {
+        HexCoordinates coordinates = HexCoordinates.Load(reader);
+        float orientation = reader.ReadSingle();
+        grid.AddUnit(
+            Instantiate(unitPrefab), grid.GetCell(coordinates), orientation
+        );
+    }
+
+
+    void OnEnable () {
 		if (location) {
 			transform.localPosition = location.Position;
 		}

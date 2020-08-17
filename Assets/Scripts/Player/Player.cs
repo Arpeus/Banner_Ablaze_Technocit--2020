@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Player : NetworkBehaviour
 {
     private HUDMenu m_hudMenu = null;
+    private HexGridMultiplayer m_hexgrid = null;
 
     [Header("Game info")]
     [SerializeField] private List<CharacterManager> m_characters = new List<CharacterManager>();
@@ -26,8 +27,10 @@ public class Player : NetworkBehaviour
 
     [SyncVar]
     private string m_displayName = "Loading";
+    
 
     public HUDMenu HudMenu { get => m_hudMenu; set => m_hudMenu = value; }
+    public HexGridMultiplayer Hexgrid { get => m_hexgrid; set => m_hexgrid = value; }
     public int NbCavalier { get => m_nbCavalier; set => m_nbCavalier = value; }
     public int NbSwordMan { get => m_nbSwordMan; set => m_nbSwordMan = value; }
     public int NbLancer { get => m_nbLancer; set => m_nbLancer = value; }
@@ -101,6 +104,23 @@ public class Player : NetworkBehaviour
         }
     }
 
+    [Command]
+    public void CmdLoadMap()
+    {
+        Debug.Log("Test Cmd");
+        RpcLoadMap();
+    }
+
+    [ClientRpc]
+    public void RpcLoadMap()
+    {
+        if(hasAuthority)
+        {
+            Debug.Log("Création Map");
+            m_hexgrid.LoadMapAwake();
+        }
+    }
+
     public int GetAvailablePoint()
     {
         return m_currentCount;
@@ -169,5 +189,5 @@ public class Player : NetworkBehaviour
         }
     }
 
-
+ 
 }
