@@ -15,14 +15,14 @@ public class NetworkManagerLobby : NetworkManager
     [SerializeField] private NetworkRoomPlayerLobby m_roomPlayerPrefab;
 
     [Header("Game")]
-    [SerializeField] private NetworkGamePlayerLobby m_gamePlayerPrefab;
+    [SerializeField] private Player m_playerPrefab;
 
     public static event Action OnClientConnected;
     public static event Action OnClientDisconnected;
 
     public List<NetworkRoomPlayerLobby> _roomPlayers { get; } = new List<NetworkRoomPlayerLobby>();
 
-    public List<NetworkGamePlayerLobby> _gamePlayers { get; } = new List<NetworkGamePlayerLobby>();
+    public List<Player> _gamePlayers { get; } = new List<Player>();
 
     public override void OnStartServer() => spawnPrefabs = Resources.LoadAll<GameObject>("SpawnablePrefabs").ToList();
 
@@ -117,7 +117,6 @@ public class NetworkManagerLobby : NetworkManager
                 return false;
             }
         }
-
         return true;
     }
 
@@ -138,7 +137,7 @@ public class NetworkManagerLobby : NetworkManager
             for (int i = _roomPlayers.Count - 1; i >= 0; i--)
             {
                 var conn = _roomPlayers[i].connectionToClient;
-                var gamePlayerInstance = Instantiate(m_gamePlayerPrefab);
+                var gamePlayerInstance = Instantiate(m_playerPrefab);
                 gamePlayerInstance.SetDisplayName(_roomPlayers[i]._displayName);
 
                 NetworkServer.Destroy(conn.identity.gameObject);

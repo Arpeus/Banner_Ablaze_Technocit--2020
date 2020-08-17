@@ -25,12 +25,12 @@ public class NetworkGamePlayerLobby : NetworkBehaviour
     {
         DontDestroyOnLoad(gameObject);
 
-        Room._gamePlayers.Add(this);
+        //Room._gamePlayers.Add(this);
     }
 
     public override void OnNetworkDestroy()
     {
-        Room._gamePlayers.Remove(this);
+        //Room._gamePlayers.Remove(this);
     }
   
     public void SetDisplayName(string displayName)
