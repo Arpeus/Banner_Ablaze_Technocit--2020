@@ -10,11 +10,15 @@ public class Player : NetworkBehaviour
     private HexGridMultiplayer m_hexgrid = null;
 
     [Header("Game info")]
-    [SerializeField] private List<CharacterManager> m_characters = new List<CharacterManager>();
+    //[SerializeField] private Dictionary<int, CharacterManager> m_characters = new Dictionary<int, CharacterManager>();
+    public Dictionary<int, CharacterManager> m_characters = new Dictionary<int, CharacterManager>();
     [SerializeField] private int _countMax = 20;
+
 
     [SyncVar]
     [SerializeField] private int m_currentCount = 0;
+
+    [SerializeField] private int m_key = 0;
 
     [SyncVar]
     [SerializeField] private int m_nbCavalier = 0;
@@ -77,9 +81,10 @@ public class Player : NetworkBehaviour
             CharacterManager character = GameManager.Instance.character[index];
             if (CheckEnoughPoint(character))
             {
-                m_characters.Add(character);
+                m_characters.Add(m_key, character);
                 m_currentCount -= character._character._unitCost;
                 SetHUDMenuUI(index, 1);
+                m_key++;
             }
         }
     }
@@ -96,7 +101,16 @@ public class Player : NetworkBehaviour
         if (hasAuthority)
         {
             CharacterManager character = GameManager.Instance.character[index];
-            m_characters.Remove(character);
+            int i = 0;
+            foreach (var characterManager in m_characters)
+            {
+                if (characterManager.Value == character)
+                {
+                    m_characters.Remove(i);
+                    break;
+                }
+                i++;
+            }
             m_currentCount += character._character._unitCost;
             if (m_currentCount > _countMax)
                 m_currentCount = _countMax;

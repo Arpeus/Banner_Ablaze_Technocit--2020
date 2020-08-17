@@ -28,6 +28,12 @@ public class HUDMenu : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_NbSwordManUI;
     [SerializeField] private TextMeshProUGUI m_NbLancerUI;
 
+    [Header("UI Spawn Team")]
+    [SerializeField] private GameObject m_panelSpawnTeam;
+    [SerializeField] private TextMeshProUGUI m_NbCurrentCavalierUI;
+    [SerializeField] private TextMeshProUGUI m_NbCurrentSwordManUI;
+    [SerializeField] private TextMeshProUGUI m_NbCurrentLancerUI;
+
     void Awake()
     {
 
@@ -176,4 +182,12 @@ public class HUDMenu : MonoBehaviour
         _player.CmdRemoveCharacter(index);
     }
 
+    public void ValidateTeam(bool active)
+    {
+        m_createTeamShowUI.SetActive(active);
+        m_NbCurrentCavalierUI.text = _player.NbCavalier.ToString();
+        m_NbCurrentSwordManUI.text = _player.NbSwordMan.ToString();
+        m_NbCurrentLancerUI.text = _player.NbLancer.ToString();
+        m_panelSpawnTeam.SetActive(!active);
+    }
 }
