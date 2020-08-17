@@ -14,12 +14,16 @@ public class NetworkManagerLobby : NetworkManager
     [Header("Room")]
     [SerializeField] private NetworkRoomPlayerLobby m_roomPlayerPrefab;
 
+
+
     [Header("Game")]
-    [SerializeField] private Player m_playerPrefab;
+    [SerializeField] private Player m_gamePlayerPrefab;
+
+
 
     public static event Action OnClientConnected;
     public static event Action OnClientDisconnected;
-
+    public static event Action OnServerReadied;
     public List<NetworkRoomPlayerLobby> _roomPlayers { get; } = new List<NetworkRoomPlayerLobby>();
 
     public List<Player> _gamePlayers { get; } = new List<Player>();
@@ -52,13 +56,13 @@ public class NetworkManagerLobby : NetworkManager
 
     public override void OnServerConnect(NetworkConnection conn)
     {
-        if(numPlayers >= maxConnections)
+        if (numPlayers >= maxConnections)
         {
             conn.Disconnect();
             return;
         }
 
-        if(SceneManager.GetActiveScene().path != m_menuScene)
+        if (SceneManager.GetActiveScene().path != m_menuScene)
         {
             conn.Disconnect();
             return;
@@ -67,7 +71,7 @@ public class NetworkManagerLobby : NetworkManager
 
     public override void OnServerAddPlayer(NetworkConnection conn)
     {
-        if(SceneManager.GetActiveScene().path == m_menuScene)
+        if (SceneManager.GetActiveScene().path == m_menuScene)
         {
             bool isLeader = _roomPlayers.Count == 0;
 
@@ -82,7 +86,7 @@ public class NetworkManagerLobby : NetworkManager
 
     public override void OnServerDisconnect(NetworkConnection conn)
     {
-        if(conn.identity != null)
+        if (conn.identity != null)
         {
             var player = conn.identity.GetComponent<NetworkRoomPlayerLobby>();
 
@@ -100,29 +104,32 @@ public class NetworkManagerLobby : NetworkManager
     }
 
     public void NotifyPlayersOfReadyState()
-    { foreach(var player in _roomPlayers)
+    {
+        foreach (var player in _roomPlayers)
         {
             player.HandleReadyToStart(IsReadyToStart());
+
         }
     }
 
     private bool IsReadyToStart()
     {
         if (numPlayers < m_minPlayers) { return false; }
-        
-        foreach(var player in _roomPlayers)
+
+        foreach (var player in _roomPlayers)
         {
-            if(!player._isReady)
+            if (!player._isReady)
             {
                 return false;
             }
         }
+
         return true;
     }
 
     public void StartGame()
     {
-        if(SceneManager.GetActiveScene().path == m_menuScene)
+        if (SceneManager.GetActiveScene().path == m_menuScene)
         {
             if (!IsReadyToStart()) { return; }
 
@@ -132,14 +139,14 @@ public class NetworkManagerLobby : NetworkManager
 
     public override void ServerChangeScene(string newSceneName)
     {
-        if(SceneManager.GetActiveScene().path == m_menuScene && newSceneName.StartsWith("GameScene"))
+        if (SceneManager.GetActiveScene().path == m_menuScene && newSceneName.StartsWith("GameScene"))
         {
             for (int i = _roomPlayers.Count - 1; i >= 0; i--)
             {
                 var conn = _roomPlayers[i].connectionToClient;
-                var gamePlayerInstance = Instantiate(m_playerPrefab);
+                var gamePlayerInstance = Instantiate(m_gamePlayerPrefab);
                 gamePlayerInstance.SetDisplayName(_roomPlayers[i]._displayName);
-
+                
                 NetworkServer.Destroy(conn.identity.gameObject);
 
                 NetworkServer.ReplacePlayerForConnection(conn, gamePlayerInstance.gameObject);
@@ -148,4 +155,6 @@ public class NetworkManagerLobby : NetworkManager
 
         base.ServerChangeScene(newSceneName);
     }
+
+
 }

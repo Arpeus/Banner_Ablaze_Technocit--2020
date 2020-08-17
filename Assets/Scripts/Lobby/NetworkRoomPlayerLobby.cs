@@ -1,4 +1,5 @@
 ﻿using Mirror;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,8 @@ public class NetworkRoomPlayerLobby : NetworkBehaviour
     [SerializeField] private TMP_Text[] m_playerNameTexts = new TMP_Text[2];
     [SerializeField] private TMP_Text[] m_playerReadyTexts = new TMP_Text[2];
     [SerializeField] private Button m_btnStartGame = null;
+    [SerializeField] private Button m_btnMapToLoad = null;
+    [SerializeField] private InputField nameInput = null;
 
     [SyncVar(hook = nameof(HandleDisplayNameChanged))]
     public string _displayName = "Loading";
@@ -24,6 +27,7 @@ public class NetworkRoomPlayerLobby : NetworkBehaviour
         {
             m_isLeader = value;
             m_btnStartGame.gameObject.SetActive(value);
+            m_btnMapToLoad.gameObject.SetActive(value);
         }
     }
 
@@ -52,7 +56,7 @@ public class NetworkRoomPlayerLobby : NetworkBehaviour
         UpdateDisplay();
     }
 
-    public override void OnNetworkDestroy()
+    public override void OnStopClient()
     {
         Room._roomPlayers.Remove(this);
 
@@ -71,11 +75,11 @@ public class NetworkRoomPlayerLobby : NetworkBehaviour
 
     public void UpdateDisplay()
     {
-        if(!hasAuthority)
+        if (!hasAuthority)
         {
-            foreach(var player in Room._roomPlayers)
+            foreach (var player in Room._roomPlayers)
             {
-                if(player.hasAuthority)
+                if (player.hasAuthority)
                 {
                     player.UpdateDisplay();
                     break;
@@ -91,7 +95,7 @@ public class NetworkRoomPlayerLobby : NetworkBehaviour
             m_playerReadyTexts[i].text = string.Empty;
         }
 
-        for(int i = 0; i < Room._roomPlayers.Count; i++)
+        for (int i = 0; i < Room._roomPlayers.Count; i++)
         {
             m_playerNameTexts[i].text = Room._roomPlayers[i]._displayName;
             m_playerReadyTexts[i].text = Room._roomPlayers[i]._isReady ?
@@ -117,15 +121,36 @@ public class NetworkRoomPlayerLobby : NetworkBehaviour
     public void CmdReadyUp()
     {
         _isReady = !_isReady;
-
         Room.NotifyPlayersOfReadyState();
     }
 
     [Command]
     public void CmdStartGame()
     {
-        if (Room._roomPlayers[0].connectionToClient != connectionToClient) { return;  };
+        if (Room._roomPlayers[0].connectionToClient != connectionToClient) { return; };
 
         Room.StartGame();
+    }
+
+    public void SetPathMap()
+    {
+        CmdSetPathMapToLoad(nameInput.text);
+    }
+
+    [Command]
+    public void CmdSetPathMapToLoad(string path)
+    {    
+        if (path.Length == 0)
+        {
+            return;
+        }
+       
+        RpcSetPathMap(path);
+    }
+
+    [ClientRpc]
+    public void RpcSetPathMap(string path)
+    {  
+        LoadMap._PathMap = Path.Combine("./Map/", path + ".map");
     }
 }

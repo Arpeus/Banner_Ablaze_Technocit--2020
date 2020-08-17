@@ -45,13 +45,11 @@ public class HUDMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         SetTextAvailablePoint();
         foreach (Button btnRemove in _btnRemoveTroops)
         {
             btnRemove.interactable = false;
         }
-
     }
 
     /// <summary>
