@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public List<Player> _players;
+    public List<CharacterManager> character;
 
     // Start is called before the first frame update
     void Awake()
@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
             Instance = this;
-            _players = new List<Player>();
         }
         else
         {
@@ -25,4 +24,6 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+
 }
