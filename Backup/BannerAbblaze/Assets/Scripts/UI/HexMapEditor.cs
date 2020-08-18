@@ -23,14 +23,14 @@ public class HexMapEditor : MonoBehaviour
 
     bool applyUrbanLevel, applyFarmLevel, applyPlantLevel, applySpecialIndex;
 
-    //bool spawnPlayer1, spawnPlayer2;
+    
 
     enum OptionalToggle
     {
         Ignore, Yes, No
     }
 
-    OptionalToggle riverMode, roadMode, walledMode;
+    OptionalToggle riverMode, roadMode, walledMode, SpawnPlayer1, SpawnPlayer2;
 
     bool isDrag;
     HexDirection dragDirection;
@@ -119,6 +119,16 @@ public class HexMapEditor : MonoBehaviour
     public void SetWalledMode(int mode)
     {
         walledMode = (OptionalToggle)mode;
+    }
+
+    public void SetSpawnPlayer1(int mode)
+    {
+        SpawnPlayer1 = (OptionalToggle)mode;
+    }
+
+    public void SetSpawnPlayer2(int mode)
+    {
+        SpawnPlayer2 = (OptionalToggle)mode;
     }
 
     public void SetEditMode(bool toggle)
