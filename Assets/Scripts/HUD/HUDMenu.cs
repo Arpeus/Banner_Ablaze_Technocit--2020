@@ -37,15 +37,8 @@ public class HUDMenu : MonoBehaviour
     void Awake()
     {
 
-        foreach (Player player in FindObjectsOfType<Player>())
-        {
-            if (player.hasAuthority)
-            {
-                _player = player;
-            }
-        }
 
-        _player.HudMenu = this;
+      
     }
 
     // Start is called before the first frame update

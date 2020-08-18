@@ -1,19 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private NetworkManagerLobby m_networkManager = null;
-
-    [Header("UI")]
-    [SerializeField] private GameObject m_landingPagePanel = null;
-
-    public void HostLobby()
+    public void StartGame()
     {
-        m_networkManager.StartHost();
-
-        m_landingPagePanel.SetActive(false);
+        SceneManager.LoadScene(1);
     }
 }
-

@@ -1,13 +1,11 @@
-﻿using Mirror;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Player : NetworkBehaviour
+public class Player : MonoBehaviour
 {
     private HUDMenu m_hudMenu = null;
-    private HexGridMultiplayer m_hexgrid = null;
 
     [Header("Game info")]
     //[SerializeField] private Dictionary<int, CharacterManager> m_characters = new Dictionary<int, CharacterManager>();
@@ -15,44 +13,29 @@ public class Player : NetworkBehaviour
     [SerializeField] private int _countMax = 20;
 
 
-    [SyncVar]
+  
     [SerializeField] private int m_currentCount = 0;
 
     [SerializeField] private int m_key = 0;
 
-    [SyncVar]
+   
     [SerializeField] private int m_nbCavalier = 0;
 
-    [SyncVar]
+   
     [SerializeField] private int m_nbSwordMan = 0;
 
-    [SyncVar]
+   
     [SerializeField] private int m_nbLancer = 0;
 
-    [SyncVar]
+   
     private string m_displayName = "Loading";
     
 
     public HUDMenu HudMenu { get => m_hudMenu; set => m_hudMenu = value; }
-    public HexGridMultiplayer Hexgrid { get => m_hexgrid; set => m_hexgrid = value; }
+   
     public int NbCavalier { get => m_nbCavalier; set => m_nbCavalier = value; }
     public int NbSwordMan { get => m_nbSwordMan; set => m_nbSwordMan = value; }
     public int NbLancer { get => m_nbLancer; set => m_nbLancer = value; }
-
-    public override void OnStartClient()
-    {
-        DontDestroyOnLoad(gameObject);
-
-        Room._gamePlayers.Add(this);
-
-        Debug.Log("Add Client");
-    }
-
-    public override void OnStopClient()
-    {
-        Room._gamePlayers.Remove(this);
-        Debug.Log("Remove Client");
-    }
 
     public void SetDisplayName(string displayName)
     {
@@ -66,18 +49,16 @@ public class Player : NetworkBehaviour
         //GameManager.Instance._players.Add(this);
         m_currentCount = _countMax;
     }
-
-    [Command]
+    
     public void CmdAddCharacter(int index)
     {
         RpcAddCharacter(index);
     }
 
-    [ClientRpc]
+
     public void RpcAddCharacter(int index)
     {
-        if (hasAuthority)
-        {
+      
             CharacterManager character = GameManager.Instance.character[index];
             if (CheckEnoughPoint(character))
             {
@@ -86,20 +67,19 @@ public class Player : NetworkBehaviour
                 SetHUDMenuUI(index, 1);
                 m_key++;
             }
-        }
+        
     }
 
-    [Command]
+   
     public void CmdRemoveCharacter(int index)
     {
         RpcRemoveCharacter(index);
     }
 
-    [ClientRpc]
+   
     public void RpcRemoveCharacter(int index)
     {
-        if (hasAuthority)
-        {
+       
             CharacterManager character = GameManager.Instance.character[index];
             int i = 0;
             foreach (var characterManager in m_characters)
@@ -115,24 +95,21 @@ public class Player : NetworkBehaviour
             if (m_currentCount > _countMax)
                 m_currentCount = _countMax;
             SetHUDMenuUI(index, -1);
-        }
+        
     }
 
-    [Command]
+   
     public void CmdLoadMap()
     {
         Debug.Log("Test Cmd");
         RpcLoadMap();
     }
-
-    [ClientRpc]
+    
     public void RpcLoadMap()
     {
-        if(hasAuthority)
-        {
+        
             Debug.Log("Création Map");
-            m_hexgrid.LoadMapAwake();
-        }
+          
     }
 
     public int GetAvailablePoint()
@@ -192,16 +169,7 @@ public class Player : NetworkBehaviour
         m_hudMenu.CheckLancer(GameManager.Instance.character[2]);
     }
 
-    private NetworkManagerLobby room;
 
-    private NetworkManagerLobby Room
-    {
-        get
-        {
-            if (room != null) { return room; }
-            return room = NetworkManager.singleton as NetworkManagerLobby;
-        }
-    }
 
  
 }
