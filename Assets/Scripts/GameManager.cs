@@ -5,7 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public List<CharacterManager> character;
+    public List<Player> _players;
+    public List<CharacterManager> _characters;
+
     // Start is called before the first frame update
     void Awake()
     {

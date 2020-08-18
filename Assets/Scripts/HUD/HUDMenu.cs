@@ -12,43 +12,24 @@ public class HUDMenu : MonoBehaviour
     public TextMeshProUGUI _pointAvailable;
 
     public Button _btnReady;
-
-    public List<Button> _btnAddTroops;
     // RESPECT ORDER
     // 0 --> Cavalier
     // 1 --> SwordMan
     // 2 --> Lancer
-    public List<Button> _btnRemoveTroops;
-    // SAME AS ABOVE
-
     [Header("UI")]
-    [SerializeField] private GameObject m_createTeamShowUI;
-    [SerializeField] private GameObject m_createTeamHideUI;
-    [SerializeField] private TextMeshProUGUI m_NbCavalierUI;
-    [SerializeField] private TextMeshProUGUI m_NbSwordManUI;
-    [SerializeField] private TextMeshProUGUI m_NbLancerUI;
-
-    [Header("UI Spawn Team")]
-    [SerializeField] private GameObject m_panelSpawnTeam;
-    [SerializeField] private TextMeshProUGUI m_NbCurrentCavalierUI;
-    [SerializeField] private TextMeshProUGUI m_NbCurrentSwordManUI;
-    [SerializeField] private TextMeshProUGUI m_NbCurrentLancerUI;
-
-    void Awake()
-    {
-
-
-      
-    }
+    public List<Button> _btnAddTroops;
+    [SerializeField] private GameObject[] m_placeBtnRemoveSpawn;
+    [SerializeField] private GameObject[] m_removeTroops;
+    [SerializeField] private GameObject[] m_panelInfoTroop;
 
     // Start is called before the first frame update
     void Start()
     {
         SetTextAvailablePoint();
-        foreach (Button btnRemove in _btnRemoveTroops)
+        /*foreach (Button btnRemove in _btnRemoveTroops)
         {
             btnRemove.interactable = false;
-        }
+        }*/
     }
 
     /// <summary>
@@ -79,70 +60,30 @@ public class HUDMenu : MonoBehaviour
     /// <param name="index"></param>
     public void DisplayNumberTroop(int index)
     {
-        switch (index)
+        foreach (BtnRemoveScript btnRemove in FindObjectsOfType<BtnRemoveScript>())
         {
-            case 0:
-                m_NbCavalierUI.SetText(_player.NbCavalier.ToString());
-                break;
-            case 1:
-                m_NbSwordManUI.SetText(_player.NbSwordMan.ToString());
-                break;
-            case 2:
-                m_NbLancerUI.SetText(_player.NbLancer.ToString());
-                break;
+            if (btnRemove.indexBtn == index)
+            {
+                switch (index)
+                {
+                    case 0:
+                        btnRemove.GetComponentInChildren<TextMeshProUGUI>().SetText(_player.NbCavalier.ToString());
+                        break;
+                    case 1:
+                        btnRemove.GetComponentInChildren<TextMeshProUGUI>().SetText(_player.NbSwordMan.ToString());
+                        break;
+                    case 2:
+                        btnRemove.GetComponentInChildren<TextMeshProUGUI>().SetText(_player.NbLancer.ToString());
+                        break;
+                }
+            }
         }
     }
 
-
-    /// <summary>
-    /// Call Method in Player
-    /// Check if there is a cavalier in the list (enable btn remove if yes)
-    /// Check if there is enough point to add (enable btn add if yes)
-    /// </summary>
-    /// <param name="btnAddCavalier"></param>
-    public void CheckCavalier(CharacterManager character)
-    {
-        if (_player.CheckCavalier())
-        {
-            _btnRemoveTroops[0].interactable = true;
-        }
-        else
-        {
-            _btnRemoveTroops[0].interactable = false;
-        }
-        CheckEnoughPoint(character, 0);
-    }
-
-    /// <summary>
-    /// Look above for SwordMan
-    /// </summary>
-    /// <param name="btnAddSwordMan"></param>
-    public void CheckSwordMan(CharacterManager character)
-    {
-        if (_player.CheckSwordMan())
-            _btnRemoveTroops[1].interactable = true;
-        else
-            _btnRemoveTroops[1].interactable = false;
-
-        CheckEnoughPoint(character, 1);
-    }
-
-    /// <summary>
-    /// Look above for Lancer
-    /// </summary>
-    /// <param name="btnAddLancer"></param>
-    public void CheckLancer(CharacterManager character)
-    {
-        if (_player.CheckLancer())
-            _btnRemoveTroops[2].interactable = true;
-        else
-            _btnRemoveTroops[2].interactable = false;
-
-        CheckEnoughPoint(character, 2);
-    }
-
+    
     private void CheckEnoughPoint(CharacterManager character, int index)
     {
+        /*
         if (_player.CheckEnoughPoint(character.GetComponent<CharacterManager>()))
         {
             _btnAddTroops[index].interactable = true;
@@ -151,36 +92,53 @@ public class HUDMenu : MonoBehaviour
         {
             _btnAddTroops[index].interactable = false;
         }
+        */
+    }
+
+    public void AddBtnRemove(int index)
+    {
+        int i = 0;
+        foreach(GameObject go in m_placeBtnRemoveSpawn)
+        {
+            if(go.GetComponentInChildren<Button>() == null)
+            {
+                Instantiate(m_removeTroops[index], m_placeBtnRemoveSpawn[i].transform);
+                break;
+            }
+            i++;
+        }
+    }
+
+    public void RemoveBtnRemove(int index)
+    {
+        foreach(BtnRemoveScript btnRemove in FindObjectsOfType<BtnRemoveScript>())
+        {
+            Debug.Log("test " + btnRemove.indexBtn + "/ index " + index);
+            if(btnRemove.indexBtn == index)
+            {
+                Debug.Log("Destroy");
+                btnRemove.Destroy();
+            }
+        }
+    }
+
+    public void DisplayInfoTroop(int index)
+    {
+        m_panelInfoTroop[index].SetActive(true);
     }
 
     public void GoToSceneSecondPlayerTeam()
     {
-        SceneManager.LoadScene("MedericCreateTeamSecondPlayer");
-    }
-
-    public void ShowCreateTeamUI(bool isActive)
-    {
-
-        m_createTeamShowUI.SetActive(isActive);
-        m_createTeamHideUI.SetActive(!isActive);
+        SceneManager.LoadScene(2);
     }
 
     public void AddCharacter(int index)
     {
-        _player.CmdAddCharacter(index);
+        _player.AddCharacter(index);
     }
 
     public void RemoveCharacter(int index)
     {
-        _player.CmdRemoveCharacter(index);
-    }
-
-    public void ValidateTeam(bool active)
-    {
-        m_createTeamShowUI.SetActive(active);
-        m_NbCurrentCavalierUI.text = _player.NbCavalier.ToString();
-        m_NbCurrentSwordManUI.text = _player.NbSwordMan.ToString();
-        m_NbCurrentLancerUI.text = _player.NbLancer.ToString();
-        m_panelSpawnTeam.SetActive(!active);
+        _player.RemoveCharacter(index);
     }
 }

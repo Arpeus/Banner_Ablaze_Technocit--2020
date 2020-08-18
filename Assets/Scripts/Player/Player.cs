@@ -5,29 +5,23 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    private HUDMenu m_hudMenu = null;
+    [SerializeField]private HUDMenu m_hudMenu = null;
 
     [Header("Game info")]
-    //[SerializeField] private Dictionary<int, CharacterManager> m_characters = new Dictionary<int, CharacterManager>();
-    public Dictionary<int, CharacterManager> m_characters = new Dictionary<int, CharacterManager>();
+    public List<CharacterManager> m_characters = new List<CharacterManager>();
     [SerializeField] private int _countMax = 20;
 
 
   
     [SerializeField] private int m_currentCount = 0;
-
-    [SerializeField] private int m_key = 0;
-
    
     [SerializeField] private int m_nbCavalier = 0;
-
-   
+    private bool m_fromZeroCavalier = false;
     [SerializeField] private int m_nbSwordMan = 0;
-
-   
+    private bool m_fromZeroSwordMan = false;
     [SerializeField] private int m_nbLancer = 0;
+    private bool m_fromZeroLancer = false;
 
-   
     private string m_displayName = "Loading";
     
 
@@ -43,61 +37,34 @@ public class Player : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         DontDestroyOnLoad(gameObject);
-        //GameManager.Instance._players.Add(this);
+        GameManager.Instance._players.Add(this);
         m_currentCount = _countMax;
     }
     
-    public void CmdAddCharacter(int index)
+    public void AddCharacter(int index)
     {
-        RpcAddCharacter(index);
-    }
+        CharacterManager character = GameManager.Instance._characters[index]; ;
+        if (CheckEnoughPoint(character))
+        {
+            m_characters.Add(character);
+            m_currentCount -= character._character._unitCost;
+            SetHUDMenuUI(index, 1);
+        }
 
 
-    public void RpcAddCharacter(int index)
+    }   
+    public void RemoveCharacter(int index)
     {
-      
-            CharacterManager character = GameManager.Instance.character[index];
-            if (CheckEnoughPoint(character))
-            {
-                m_characters.Add(m_key, character);
-                m_currentCount -= character._character._unitCost;
-                SetHUDMenuUI(index, 1);
-                m_key++;
-            }
-        
+        CharacterManager character = GameManager.Instance._characters[index]; ;
+        m_characters.Remove(character);
+        m_currentCount += character._character._unitCost;
+        if (m_currentCount > _countMax)
+            m_currentCount = _countMax;
+        SetHUDMenuUI(index, -1);
     }
-
-   
-    public void CmdRemoveCharacter(int index)
-    {
-        RpcRemoveCharacter(index);
-    }
-
-   
-    public void RpcRemoveCharacter(int index)
-    {
-       
-            CharacterManager character = GameManager.Instance.character[index];
-            int i = 0;
-            foreach (var characterManager in m_characters)
-            {
-                if (characterManager.Value == character)
-                {
-                    m_characters.Remove(i);
-                    break;
-                }
-                i++;
-            }
-            m_currentCount += character._character._unitCost;
-            if (m_currentCount > _countMax)
-                m_currentCount = _countMax;
-            SetHUDMenuUI(index, -1);
-        
-    }
-
    
     public void CmdLoadMap()
     {
@@ -154,22 +121,34 @@ public class Player : MonoBehaviour
         {
             case 0:
                 NbCavalier += valueToAdd;
+                AddBtnRemove(ref m_fromZeroCavalier, index, m_nbCavalier );
                 break;
             case 1:
                 NbSwordMan += valueToAdd;
+                AddBtnRemove(ref m_fromZeroSwordMan, index, m_nbSwordMan);
                 break;
             case 2:
                 NbLancer += valueToAdd;
+                AddBtnRemove(ref m_fromZeroLancer, index, m_nbLancer);
                 break;
         }
+        
         m_hudMenu.SetTextAvailablePoint();
         m_hudMenu.DisplayNumberTroop(index);
-        m_hudMenu.CheckCavalier(GameManager.Instance.character[0]);
-        m_hudMenu.CheckSwordMan(GameManager.Instance.character[1]);
-        m_hudMenu.CheckLancer(GameManager.Instance.character[2]);
     }
 
-
-
- 
+    public void AddBtnRemove(ref bool fromZeroUnit, int index, int nbTroop)
+    {
+        if (!fromZeroUnit && nbTroop == 1)
+        {
+            m_hudMenu.AddBtnRemove(index);
+            fromZeroUnit = !fromZeroUnit;
+        }
+        else if (fromZeroUnit && nbTroop == 0)
+        {
+            Debug.Log("remove");
+            m_hudMenu.RemoveBtnRemove(index);
+            fromZeroUnit = !fromZeroUnit;
+        }
+    } 
 }

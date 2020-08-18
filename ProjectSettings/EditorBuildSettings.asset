@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: ae2a279bc8fe7324bb5965935e0438c3
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
-    guid: a4e872dff6351b441b644b552c35a661
+    path: Assets/Scenes/CreateTeamFirstPlayer.unity
+    guid: 4a8c6dc6d0316044ba8a3a2674343773
+  - enabled: 1
+    path: Assets/Scenes/CreateTeamSecondPlayer.unity
+    guid: 86a8b0040b3dbd6408a64e52ee3dacf5
   m_configObjects: {}
