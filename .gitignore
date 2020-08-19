@@ -1075,3 +1075,6 @@ Backup/BannerAbblaze/Library/StateCache/Hierarchy/45bf27-mainStage.json
 *.log
 *.meta
 *.meta
+Backup/BannerAbblaze/Library/ArtifactDB
+Backup/BannerAbblaze/Library/shadercompiler-UnityShaderCompiler.exe0.log
+Backup/BannerAbblaze/Library/SourceAssetDB
