@@ -2628,7 +2628,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Swp
+  m_Text: Grs
 --- !u!222 &429045665
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11311,7 +11311,7 @@ GameObject:
   - component: {fileID: 1943686845}
   - component: {fileID: 1943686846}
   m_Layer: 5
-  m_Name: Terrain Grass
+  m_Name: Terrain Swamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11605,7 +11605,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Grs
+  m_Text: Swp
 --- !u!222 &2012973910
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12196,7 +12196,7 @@ GameObject:
   - component: {fileID: 2077879794}
   - component: {fileID: 2077879795}
   m_Layer: 5
-  m_Name: Terrain Swamp
+  m_Name: Terrain Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
