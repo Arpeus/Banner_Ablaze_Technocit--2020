@@ -80,6 +80,11 @@ public class HexUnit : MonoBehaviour
         
     }
 
+    public bool IsValidateSpawn(HexCell cell)
+    {
+        return cell.IsSpanwerP1 && cell.IsSpanwerP2;
+    }
+
     public void Travel(List<HexCell> path)
     {
         location.Unit = null;
