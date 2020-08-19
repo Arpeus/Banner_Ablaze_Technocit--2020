@@ -80,7 +80,7 @@ public class HexUnit : MonoBehaviour
         
     }
 
-    public bool IsValidateSpawn(HexCell cell)
+    public bool IsValidaSpawn(HexCell cell)
     {
         return cell.IsSpanwerP1 && cell.IsSpanwerP2;
     }

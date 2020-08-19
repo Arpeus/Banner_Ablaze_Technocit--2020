@@ -91,7 +91,7 @@ public class HexCell : MonoBehaviour
     {
         get
         {
-            return Spawner2;
+            return Spawner2 = true;
         }
     }
 
@@ -99,7 +99,7 @@ public class HexCell : MonoBehaviour
     {
         get
         {
-            return Spawner1;
+            return Spawner1 = true;
         }
     }
 
@@ -411,8 +411,8 @@ public class HexCell : MonoBehaviour
 
     bool walled;
 
-    bool Spawner1;
-    bool Spawner2;
+    bool Spawner1 = false;
+    bool Spawner2 = false;
 
     bool mountain;
 
