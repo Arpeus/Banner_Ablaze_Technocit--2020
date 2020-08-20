@@ -144,7 +144,7 @@ public class HexMapEditor : MonoBehaviour {
 
 	void CreateUnit () {
 		HexCell cell = GetCellUnderCursor();
-		if (cell && !cell.Unit) {
+		if (cell && !cell.CharacterManager) {
 			hexGrid.AddUnit(
 				Instantiate(CharacterManager.unitPrefab), cell, Random.Range(0f, 360f)
 			);
@@ -153,8 +153,8 @@ public class HexMapEditor : MonoBehaviour {
 
 	void DestroyUnit () {
 		HexCell cell = GetCellUnderCursor();
-		if (cell && cell.Unit) {
-			hexGrid.RemoveUnit(cell.Unit);
+		if (cell && cell.CharacterManager) {
+			hexGrid.RemoveUnit(cell.CharacterManager);
 		}
 	}
 
