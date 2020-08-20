@@ -96,10 +96,8 @@ public class HUDMenu : MonoBehaviour
     {
         foreach(BtnRemoveScript btnRemove in FindObjectsOfType<BtnRemoveScript>())
         {
-            Debug.Log("test " + btnRemove.indexBtn + "/ index " + index);
             if(btnRemove.indexBtn == index)
             {
-                Debug.Log("Destroy");
                 btnRemove.Destroy();
             }
         }

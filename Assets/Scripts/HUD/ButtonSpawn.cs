@@ -33,6 +33,6 @@ public class ButtonSpawn : MonoBehaviour
 
     public void Destroy()
     {
-        Destroy(gameObject);
+        DestroyImmediate(gameObject);
     }
 }

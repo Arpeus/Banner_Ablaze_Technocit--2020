@@ -16,6 +16,8 @@ public class HexGrid : MonoBehaviour {
 
 	public Texture2D noiseSource;
 
+    public HUDInGame _hudInGame;
+
 	public int seed;
 
 	public bool HasPath {
@@ -57,19 +59,21 @@ public class HexGrid : MonoBehaviour {
 
     void Update()
     {
-        if(GameManager.Instance.EType_Phase == PhaseType.EType_SpawnPhasePlayerOne)
+        switch(GameManager.Instance.EType_Phase)
         {
-            if(unitPrefab != null)
-            {
-                if (!EventSystem.current.IsPointerOverGameObject())
+            case PhaseType.EType_SpawnPhasePlayerOne:
+            case PhaseType.EType_SpawnPhasePlayerTwo:
+                if (unitPrefab != null)
                 {
-                    if (Input.GetMouseButtonDown(0))
+                    if (!EventSystem.current.IsPointerOverGameObject())
                     {
-                        CreateUnit();
-                        
+                        if (Input.GetMouseButtonDown(0))
+                        {
+                            CreateUnit();
+                        }
                     }
                 }
-            }
+                break;
         }
     }
 
