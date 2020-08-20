@@ -161,8 +161,7 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    public int GetMoveCost(
-        HexCell fromCell, HexCell toCell, HexDirection direction)
+    public int GetMoveCost(HexCell fromCell, HexCell toCell, HexDirection direction)
     {
         if (!IsValidDestination(toCell))
         {

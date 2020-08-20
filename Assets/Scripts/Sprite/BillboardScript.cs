@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BillboardScript : MonoBehaviour
 {
-    [SerializeField] private Camera m_myCamera;
+    private Camera m_myCamera;
 
     void Awake()
     {
