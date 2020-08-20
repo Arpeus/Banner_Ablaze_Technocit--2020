@@ -34,8 +34,10 @@ public class HexGameUI : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     DoSelection();
+                    if (selectedUnit != null && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerTwo)
+                        selectedUnit = null;
                 }
-                else if (selectedUnit)
+                else if (selectedUnit  != null)
                 {
                     if (Input.GetMouseButtonDown(1))
                     {
@@ -56,7 +58,6 @@ public class HexGameUI : MonoBehaviour
         UpdateCurrentCell();
         if (currentCell)
         {
-           
             selectedUnit = currentCell.CharacterManager;
         }
     }
@@ -65,10 +66,8 @@ public class HexGameUI : MonoBehaviour
     {
         if (UpdateCurrentCell())
         {
-            Debug.Log("");
             if (currentCell && selectedUnit.IsValidDestination(currentCell))
             {
-                Debug.Log("Test");
                 grid.FindPath(selectedUnit.Location, currentCell, selectedUnit);
             }
             else

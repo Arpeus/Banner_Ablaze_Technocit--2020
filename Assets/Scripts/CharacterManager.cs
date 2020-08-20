@@ -6,6 +6,8 @@ using UnityEngine;
 public class CharacterManager : MonoBehaviour
 {
     public CharacterData _character;
+    public PlayerNumber _playerNumberType;
+
 
     const float rotationSpeed = 0f;
     const float travelSpeed = 4f;
@@ -54,7 +56,7 @@ public class CharacterManager : MonoBehaviour
     {
         get
         {
-            return 24;
+            return 1;
         }
     }
 
@@ -99,8 +101,9 @@ public class CharacterManager : MonoBehaviour
 
     IEnumerator TravelPath()
     {
+        
         Vector3 a, b, c = pathToTravel[0].Position;
-        yield return LookAt(pathToTravel[1].Position);
+        //yield return LookAt(pathToTravel[1].Position);
 
         if (!currentTravelLocation)
         {
@@ -165,6 +168,7 @@ public class CharacterManager : MonoBehaviour
         transform.localPosition = location.Position;
         orientation = transform.localRotation.eulerAngles.y;
         ListPool<HexCell>.Add(pathToTravel);
+        CheckEnemy();
         pathToTravel = null;
     }
 
@@ -231,7 +235,7 @@ public class CharacterManager : MonoBehaviour
         }
         else
         {
-            moveCost = edgeType == HexEdgeType.Flat ? 20 : 20;
+            moveCost = edgeType == HexEdgeType.Flat ? 0 : 0;
             moveCost +=
                 toCell.UrbanLevel + toCell.FarmLevel + toCell.PlantLevel;
         }
@@ -275,5 +279,16 @@ public class CharacterManager : MonoBehaviour
                 currentTravelLocation = null;
             }
         }
+    }
+
+    public void CheckEnemy()
+    {
+        for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
+        {
+            HexCell neighbor = location.GetNeighbor(d);
+            
+            Debug.Log("Character " + neighbor.CharacterManager);
+        }
+        
     }
 }

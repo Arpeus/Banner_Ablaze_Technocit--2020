@@ -172,10 +172,11 @@ public class HexGrid : MonoBehaviour {
         switch (GameManager.Instance.EType_Phase)
         {
             case PhaseType.EType_SpawnPhasePlayerOne:
+                character._playerNumberType = PlayerNumber.EType_PlayerOne;
                 GameManager.Instance._players[0].m_characters.Add(character);
-
                 break;
             case PhaseType.EType_SpawnPhasePlayerTwo:
+                character._playerNumberType = PlayerNumber.EType_PlayerTwo;
                 GameManager.Instance._players[1].m_characters.Add(character);
                 break;
         }
@@ -483,6 +484,7 @@ public class HexGrid : MonoBehaviour {
             return null;
         }
         List<HexCell> path = ListPool<HexCell>.Get();
+
         for (HexCell c = currentPathTo; c != currentPathFrom; c = c.PathFrom)
         {
             path.Add(c);
@@ -521,8 +523,7 @@ public class HexGrid : MonoBehaviour {
             HexCell current = currentPathTo;
             while (current != currentPathFrom)
             {
-                int turn = (current.Distance - 1) / speed;
-                current.SetLabel(turn.ToString());
+                current.SetLabel(current.Distance.ToString());
                 current.EnableHighlight(Color.white);
                 current = current.PathFrom;
             }
@@ -534,11 +535,10 @@ public class HexGrid : MonoBehaviour {
     public void FindPath(HexCell fromCell, HexCell toCell, CharacterManager unit)
     {
         ClearPath();
-        currentPathFrom = fromCell;
+        currentPathFrom = fromCell;        
         currentPathTo = toCell;
         currentPathExists = Search(fromCell, toCell, unit);
         ShowPath(unit.Speed);
-        Debug.Log("Display PathFinding");
     }
 
     bool Search(HexCell fromCell, HexCell toCell, CharacterManager unit)
@@ -561,13 +561,12 @@ public class HexGrid : MonoBehaviour {
         {
             HexCell current = searchFrontier.Dequeue();
             current.SearchPhase += 1;
-
-            if (current == toCell)
+            if (current == toCell && current.Distance <= fromCell.CharacterManager._character._movement)
             {
                 return true;
             }
 
-            int currentTurn = (current.Distance - 1) / speed;           
+            int currentTurn = (current.Distance - 1) / speed;
             for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
             {
                 HexCell neighbor = current.GetNeighbor(d);
