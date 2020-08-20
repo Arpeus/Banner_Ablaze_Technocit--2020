@@ -224,7 +224,7 @@ public class HexCell : MonoBehaviour {
 		}
 	}
 
-	public HexUnit Unit { get; set; }
+	public CharacterManager Unit { get; set; }
 
 	public HexCell PathFrom { get; set; }
 

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,20 +15,19 @@ public class HUDMenu : MonoBehaviour
     // 0 --> Cavalier
     // 1 --> SwordMan
     // 2 --> Lancer
-    [Header("UI")]
+    [Header("UI Create Team")]
     public List<Button> _btnAddTroops;
     [SerializeField] private GameObject[] m_placeBtnRemoveSpawn;
     [SerializeField] private GameObject[] m_removeTroops;
     [SerializeField] private GameObject[] m_panelInfoTroop;
-
+    [Header("UI Show Map")]
+    [SerializeField] private GameObject m_goShowCreateTeamUI;
+    [SerializeField] private GameObject m_goHideCreateTeamUI;
+ 
     // Start is called before the first frame update
     void Start()
     {
         SetTextAvailablePoint();
-        /*foreach (Button btnRemove in _btnRemoveTroops)
-        {
-            btnRemove.interactable = false;
-        }*/
     }
 
     /// <summary>
@@ -80,21 +78,6 @@ public class HUDMenu : MonoBehaviour
         }
     }
 
-    
-    private void CheckEnoughPoint(CharacterManager character, int index)
-    {
-        /*
-        if (_player.CheckEnoughPoint(character.GetComponent<CharacterManager>()))
-        {
-            _btnAddTroops[index].interactable = true;
-        }
-        else
-        {
-            _btnAddTroops[index].interactable = false;
-        }
-        */
-    }
-
     public void AddBtnRemove(int index)
     {
         int i = 0;
@@ -129,7 +112,13 @@ public class HUDMenu : MonoBehaviour
 
     public void GoToSceneSecondPlayerTeam()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
+    }
+
+    public void GoToGameScene()
+    {
+        GameManager.Instance.EType_Phase = PhaseType.EType_SpawnPhasePlayerOne;
+        SceneManager.LoadScene(4);
     }
 
     public void AddCharacter(int index)
@@ -140,5 +129,11 @@ public class HUDMenu : MonoBehaviour
     public void RemoveCharacter(int index)
     {
         _player.RemoveCharacter(index);
+    }
+
+    public void DisplayUI(bool display)
+    {
+        m_goShowCreateTeamUI.SetActive(display);
+        m_goHideCreateTeamUI.SetActive(!display);
     }
 }

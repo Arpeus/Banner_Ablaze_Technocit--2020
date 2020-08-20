@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,6 +6,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public List<Player> _players;
     public List<CharacterManager> _characters;
+    public string filepathMap = "";
+    public PhaseType EType_Phase;
+   
 
     // Start is called before the first frame update
     void Awake()
@@ -24,6 +26,8 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+
 
 
 }

@@ -31,13 +31,14 @@ public class HexMapCamera : MonoBehaviour {
 	}
 
 	void Awake () {
-		swivel = transform.GetChild(0);
+        instance = this;
+        swivel = transform.GetChild(0);
 		stick = swivel.GetChild(0);
 	}
-
+    /*
 	void OnEnable () {
 		instance = this;
-	}
+	}*/
 
 	void Update () {
 		float zoomDelta = Input.GetAxis("Mouse ScrollWheel");

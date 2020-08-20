@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 public class HexGrid : MonoBehaviour {
 
@@ -11,7 +12,7 @@ public class HexGrid : MonoBehaviour {
 	public HexCell cellPrefab;
 	public Text cellLabelPrefab;
 	public HexGridChunk chunkPrefab;
-	public HexUnit unitPrefab;
+	public CharacterManager unitPrefab = null;
 
 	public Texture2D noiseSource;
 
@@ -33,26 +34,149 @@ public class HexGrid : MonoBehaviour {
 	int searchFrontierPhase;
 
 	HexCell currentPathFrom, currentPathTo;
-	bool currentPathExists;
+    bool isDrag;
+    HexDirection dragDirection;
 
-	List<HexUnit> units = new List<HexUnit>();
 
-	void Awake () {
+    bool currentPathExists;
+
+
+
+	List<CharacterManager> m_characters = new List<CharacterManager>();
+
+	void Start () {
 		HexMetrics.noiseSource = noiseSource;
 		HexMetrics.InitializeHashGrid(seed);
-		HexUnit.unitPrefab = unitPrefab;
+		CharacterManager.unitPrefab = unitPrefab;
 		CreateMap(cellCountX, cellCountZ);
+        if(FindObjectOfType<GameManager>() != null && GameManager.Instance.filepathMap != null)
+        {
+            Load(GameManager.Instance.filepathMap);
+        }
 	}
 
-	public void AddUnit (HexUnit unit, HexCell location, float orientation) {
-		units.Add(unit);
-		unit.transform.SetParent(transform, false);
-		unit.Location = location;
-		unit.Orientation = orientation;
+    void Update()
+    {
+        if(GameManager.Instance.EType_Phase == PhaseType.EType_SpawnPhasePlayerOne)
+        {
+            if(unitPrefab != null)
+            {
+                if (!EventSystem.current.IsPointerOverGameObject())
+                {
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        CreateUnit();
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    // Mederic
+    public bool DecrementBtn()
+    {
+        int index = 0;
+        switch (unitPrefab._character.type)
+        {
+            case TypePawn.Cavalier:
+                index = 0;
+                break;
+            case TypePawn.SwordMan:
+                index = 1;
+                break;
+            case TypePawn.Lancer:
+                index = 2;
+                break;
+        }
+
+        foreach (ButtonSpawn btnSpawn in FindObjectsOfType<ButtonSpawn>())
+        {
+            if(btnSpawn.index == index)
+                return btnSpawn.Decrement(index);
+        }
+        return false;
+    }
+
+
+    public void SetPrefabUnit(CharacterManager character)
+    {
+        this.unitPrefab = character;
+    }
+
+    HexCell GetCellUnderCursor()
+    {
+        return GetCell(Camera.main.ScreenPointToRay(Input.mousePosition));
+    }
+
+    void CreateUnit()
+    {
+        HexCell cell = GetCellUnderCursor();
+
+        if (cell && !cell.Unit)
+        {           
+            AddUnit(
+                Instantiate(unitPrefab), cell, Random.Range(0f, 360f)
+            );
+            if (DecrementBtn())
+            {
+                unitPrefab = null;
+            }
+        }
+    }
+
+    void DestroyUnit()
+    {
+        HexCell cell = GetCellUnderCursor();
+        if (cell && cell.Unit)
+        {
+            RemoveUnit(cell.Unit);
+        }
+    }
+
+    void Load(string path)
+    {
+        if (!File.Exists(path))
+        {
+            Debug.LogError("File does not exist " + path);
+            return;
+        }
+        using (BinaryReader reader = new BinaryReader(File.OpenRead(path)))
+        {
+            int header = reader.ReadInt32();
+            if (header <= 2)
+            {
+                Load(reader, header);
+                HexMapCamera.ValidatePosition();
+            }
+            else
+            {
+                Debug.LogWarning("Unknown map format " + header);
+            }
+        }
+    }
+
+    // Selim
+
+    public void AddUnit (CharacterManager character, HexCell location, float orientation) {
+		m_characters.Add(character);
+        switch (GameManager.Instance.EType_Phase)
+        {
+            case PhaseType.EType_SpawnPhasePlayerOne:
+                GameManager.Instance._players[0].m_characters.Add(character);
+
+                break;
+            case PhaseType.EType_SpawnPhasePlayerTwo:
+                GameManager.Instance._players[1].m_characters.Add(character);
+                break;
+        }
+        character.transform.SetParent(transform, false);
+        character.Location = location;
+        character.Orientation = orientation;
 	}
 
-	public void RemoveUnit (HexUnit unit) {
-		units.Remove(unit);
+	public void RemoveUnit (CharacterManager unit) {
+		m_characters.Remove(unit);
 		unit.Die();
 	}
 
@@ -104,10 +228,10 @@ public class HexGrid : MonoBehaviour {
 	}
 
 	void ClearUnits () {
-		for (int i = 0; i < units.Count; i++) {
-			units[i].Die();
+		for (int i = 0; i < m_characters.Count; i++) {
+			m_characters[i].Die();
 		}
-		units.Clear();
+		m_characters.Clear();
 	}
 
 	void OnEnable () {
@@ -208,9 +332,9 @@ public class HexGrid : MonoBehaviour {
 			cells[i].Save(writer);
 		}
 
-		writer.Write(units.Count);
-		for (int i = 0; i < units.Count; i++) {
-			units[i].Save(writer);
+		writer.Write(m_characters.Count);
+		for (int i = 0; i < m_characters.Count; i++) {
+			m_characters[i].Save(writer);
 		}
 	}
 

@@ -8,7 +8,7 @@ public class HexUnit : MonoBehaviour {
 	const float rotationSpeed = 180f;
 	const float travelSpeed = 4f;
 
-	public static HexUnit unitPrefab;
+	public static CharacterManager unitPrefab;
 
 	public HexCell Location {
 		get {
@@ -19,7 +19,7 @@ public class HexUnit : MonoBehaviour {
 				location.Unit = null;
 			}
 			location = value;
-			value.Unit = this;
+			//value.Unit = this;
 			transform.localPosition = value.Position;
 		}
 	}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9109933192924969082}
   - component: {fileID: 2524524485208482592}
   m_Layer: 0
-  m_Name: Knight
+  m_Name: Cavalier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7763169316064022567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 150.82901, y: 118.88085, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 public class Player : MonoBehaviour
@@ -46,39 +45,24 @@ public class Player : MonoBehaviour
     
     public void AddCharacter(int index)
     {
-        CharacterManager character = GameManager.Instance._characters[index]; ;
+        CharacterManager character = GameManager.Instance._characters[index];
         if (CheckEnoughPoint(character))
         {
-            m_characters.Add(character);
             m_currentCount -= character._character._unitCost;
             SetHUDMenuUI(index, 1);
         }
 
 
-    }   
+    }
     public void RemoveCharacter(int index)
     {
-        CharacterManager character = GameManager.Instance._characters[index]; ;
-        m_characters.Remove(character);
+        CharacterManager character = GameManager.Instance._characters[index];
         m_currentCount += character._character._unitCost;
         if (m_currentCount > _countMax)
             m_currentCount = _countMax;
         SetHUDMenuUI(index, -1);
     }
-   
-    public void CmdLoadMap()
-    {
-        Debug.Log("Test Cmd");
-        RpcLoadMap();
-    }
     
-    public void RpcLoadMap()
-    {
-        
-            Debug.Log("Création Map");
-          
-    }
-
     public int GetAvailablePoint()
     {
         return m_currentCount;
@@ -87,27 +71,6 @@ public class Player : MonoBehaviour
     public int GetMaxPoint()
     {
         return _countMax;
-    }
-
-    public bool CheckCavalier()
-    {
-        if (NbCavalier == 0)
-            return false;
-        return true;
-    }
-
-    public bool CheckSwordMan()
-    {
-        if (NbSwordMan == 0)
-            return false;
-        return true;
-    }
-
-    public bool CheckLancer()
-    {
-        if (NbLancer == 0)
-            return false;
-        return true;
     }
 
     public bool CheckEnoughPoint(CharacterManager character)

@@ -322,10 +322,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e78180ac132afa45a1bd948eee5fc70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character:
-  - {fileID: 2524524485208482592, guid: 9a4ee2a112cd2b8448b11481c948ecea, type: 3}
-  - {fileID: 5678341576638937532, guid: e6bfe170bafc0ff45992d3a01d53bbf5, type: 3}
-  - {fileID: 5770996084285167259, guid: 076f8d8036d45654da30394b0450682e, type: 3}
+  _players: []
+  _characters: []
+  filepathMap: 
+  EType_Phase: 0
 --- !u!4 &323932962
 Transform:
   m_ObjectHideFlags: 0
@@ -5594,16 +5594,8 @@ MonoBehaviour:
   - {fileID: 1954641887970662031}
   - {fileID: 1954641887544743052}
   - {fileID: 1954641887859972836}
-  _btnRemoveTroops:
-  - {fileID: 1954641886505270218}
-  - {fileID: 1954641887593907625}
-  - {fileID: 1954641887495956975}
-  m_createTeamShowUI: {fileID: 1954641887296923454}
-  m_createTeamHideUI: {fileID: 1954641887102036337}
-  m_NbCavalierUI: {fileID: 1954641886839276783}
-  m_NbSwordManUI: {fileID: 1954641886431018506}
-  m_NbLancerUI: {fileID: 1954641887046537532}
-  m_panelSpawnTeam: {fileID: 796031029}
-  m_NbCurrentCavalierUI: {fileID: 675293565}
-  m_NbCurrentSwordManUI: {fileID: 2026886646}
-  m_NbCurrentLancerUI: {fileID: 1833765520}
+  m_placeBtnRemoveSpawn: []
+  m_removeTroops: []
+  m_panelInfoTroop: []
+  m_goShowCreateTeamUI: {fileID: 0}
+  m_goHideCreateTeamUI: {fileID: 0}

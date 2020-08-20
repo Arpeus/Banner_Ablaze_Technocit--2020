@@ -17,7 +17,23 @@ public class SaveLoadMenu : MonoBehaviour {
 
 	bool saveMode;
 
-	public void Open (bool saveMode) {
+    private const string filePath = "./Map/";
+
+    public void Open()
+    {
+        menuLabel.text = "Load Map";
+        actionButtonLabel.text = "Load";
+        FillList();
+    }
+
+    public void SelectMap()
+    {
+        GameManager.Instance.filepathMap = Path.Combine(filePath, nameInput.text + ".map");
+    }
+
+
+    // ------------ Editor ---------------- 
+    public void Open (bool saveMode) {
 		this.saveMode = saveMode;
 		if (saveMode) {
 			menuLabel.text = "Save Map";
@@ -32,12 +48,13 @@ public class SaveLoadMenu : MonoBehaviour {
 		HexMapCamera.Locked = true;
 	}
 
+
 	public void Close () {
 		gameObject.SetActive(false);
 		HexMapCamera.Locked = false;
 	}
 
-	public void Action () {
+    public void Action () {
 		string path = GetSelectedPath();
 		if (path == null) {
 			return;
@@ -71,8 +88,12 @@ public class SaveLoadMenu : MonoBehaviour {
 		for (int i = 0; i < listContent.childCount; i++) {
 			Destroy(listContent.GetChild(i).gameObject);
 		}
-		string[] paths =
-			Directory.GetFiles(Application.persistentDataPath, "*.map");
+        if (!Directory.Exists(filePath))
+        {
+            Directory.CreateDirectory(filePath);
+        }
+        string[] paths =
+			Directory.GetFiles(filePath, "*.map");
 		Array.Sort(paths);
 		for (int i = 0; i < paths.Length; i++) {
 			SaveLoadItem item = Instantiate(itemPrefab);
@@ -87,7 +108,7 @@ public class SaveLoadMenu : MonoBehaviour {
 		if (mapName.Length == 0) {
 			return null;
 		}
-		return Path.Combine(Application.persistentDataPath, mapName + ".map");
+		return Path.Combine(filePath, mapName + ".map");
 	}
 
 	void Save (string path) {
