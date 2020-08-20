@@ -87,6 +87,22 @@ public class HexCell : MonoBehaviour
         }
     }
 
+    public bool IsSpanwerP1
+    {
+        get
+        {
+            return Spawner2 = true;
+        }
+    }
+
+    public bool IsSpanwerP2
+    {
+        get
+        {
+            return Spawner1 = true;
+        }
+    }
+
     public bool IsMountainLevel
     {
         get
@@ -394,6 +410,9 @@ public class HexCell : MonoBehaviour
     bool explored;
 
     bool walled;
+
+    bool Spawner1 = false;
+    bool Spawner2 = false;
 
     bool mountain;
 

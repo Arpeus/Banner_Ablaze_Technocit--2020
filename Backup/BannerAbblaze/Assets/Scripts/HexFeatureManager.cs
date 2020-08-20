@@ -12,6 +12,9 @@ public class HexFeatureManager : MonoBehaviour
 
     public Transform[] special;
 
+    public Transform SpawnP1;
+    public Transform SpawnP2;
+
     Transform container;
 
     public void Clear()
