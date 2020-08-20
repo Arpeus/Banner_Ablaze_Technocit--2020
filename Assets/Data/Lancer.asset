@@ -19,6 +19,6 @@ MonoBehaviour:
   _resistanceMagic: 0
   dodge: 8
   _movement: 2
-  _range: 0
+  _range: 2
   _unitCost: 2
   type: 2

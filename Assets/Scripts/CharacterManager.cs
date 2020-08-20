@@ -283,12 +283,29 @@ public class CharacterManager : MonoBehaviour
 
     public void CheckEnemy()
     {
+      
         for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
         {
-            HexCell neighbor = location.GetNeighbor(d);
-            
-            Debug.Log("Character " + neighbor.CharacterManager);
+            HexCell neighbor = null;
+            if (location.GetNeighbor(d) != null)
+            {
+                neighbor = location.GetNeighbor(d);
+                Debug.Log("Character neighbor " + neighbor.CharacterManager);
+                if (_character._range > 1)
+                {
+                    for (HexDirection e = HexDirection.NE; e <= HexDirection.NW; e++)
+                    {
+                        HexCell neighborTest = null;
+                        if (location.GetNeighbor(e) != null)
+                        {
+                            neighborTest = neighbor.GetNeighbor(e);
+                            Debug.Log("Character neighbor Test " + neighborTest.CharacterManager);
+                        }
+                    }
+                }            
+            }
         }
+        
         
     }
 }
