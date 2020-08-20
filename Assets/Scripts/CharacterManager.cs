@@ -160,4 +160,35 @@ public class CharacterManager : MonoBehaviour
             transform.localPosition = location.Position;
         }
     }
+
+    public int GetMoveCost(
+        HexCell fromCell, HexCell toCell, HexDirection direction)
+    {
+        if (!IsValidDestination(toCell))
+        {
+            return -1;
+
+        }
+        HexEdgeType edgeType = fromCell.GetEdgeType(toCell);
+        if (edgeType == HexEdgeType.Cliff)
+        {
+            return -1;
+        }
+        int moveCost;
+        if (fromCell.HasRoadThroughEdge(direction))
+        {
+            moveCost = 1;
+        }
+        else if (fromCell.Walled != toCell.Walled)
+        {
+            return -1;
+        }
+        else
+        {
+            moveCost = edgeType == HexEdgeType.Flat ? 20 : 20;
+            moveCost +=
+                toCell.UrbanLevel + toCell.FarmLevel + toCell.PlantLevel;
+        }
+        return moveCost;
+    }
 }
