@@ -142,7 +142,7 @@ public class HexGameUI : MonoBehaviour
 
     void CheckAllyUnit()
     {
-        if (selectedUnit)
+        if (selectedUnit && selectedUnit._playerNumberType != PlayerNumber.EType_PlayerTwo)
         {
             Debug.Log(selectedUnit);
         }
