@@ -19,6 +19,8 @@ public class CharacterManager : MonoBehaviour
 
     private HUDInGame m_hudInGame;
 
+    
+
     private void Awake()
     {
         m_hudInGame = FindObjectOfType<HUDInGame>();
