@@ -114,14 +114,14 @@ public class HexCell : MonoBehaviour
     {
         get
         {
-            return urban;
+            return urbanLevel != 0;
         }
     }
     public bool IsPlantLevel
     {
         get
         {
-            return plant;
+            return plantLevel != 0;
         }
     }
 
