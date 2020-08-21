@@ -8,12 +8,15 @@ public class HUDInGame : MonoBehaviour
 {
     [Header("UI GameObject")]
     [SerializeField] private GameObject m_PanelSpawnUI;
+    [SerializeField] private GameObject m_panelActionUI;
 
     [Header("UI Spawn")]
     [SerializeField] private GameObject[] m_placeBtnSpawn;
     [SerializeField] private GameObject[] m_btnSpawn;
     [SerializeField] private Button m_btnSpawnPlayerTwo;
     [SerializeField] private Button m_btnGoToTurnPhase;
+
+    private CharacterManager m_currentCharacterManager;
 
     // Start is called before the first frame update
     void Start()
@@ -74,5 +77,16 @@ public class HUDInGame : MonoBehaviour
         {
             AddButtonSpawn(2, GameManager.Instance._players[indexPlayer].NbLancer);
         }
+    }
+
+    public void ShowActionUi(CharacterManager character)
+    {
+        m_panelActionUI.SetActive(true);
+        m_currentCharacterManager = character;
+    }
+
+    public void Attack()
+    {
+        m_currentCharacterManager.Attack();
     }
 }
