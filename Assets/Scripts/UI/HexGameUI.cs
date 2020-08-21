@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using UnityEngine.EventSystems;
 
 public class HexGameUI : MonoBehaviour
@@ -11,6 +12,15 @@ public class HexGameUI : MonoBehaviour
 
     CharacterManager selectedUnit;
     CharacterManager enemyUnit;
+
+    HexMapCamera m_mainCamera;
+
+    
+
+    private void Awake()
+    {
+        m_mainCamera = FindObjectOfType<HexMapCamera>();
+    }
 
     public void SetEditMode(bool toggle)
     {
@@ -122,6 +132,8 @@ public class HexGameUI : MonoBehaviour
         }
     }
 
+    
+
     bool UpdateCurrentCell()
     {
         HexCell cell = grid.GetCell(Camera.main.ScreenPointToRay(Input.mousePosition));
@@ -148,6 +160,9 @@ public class HexGameUI : MonoBehaviour
     {
         if (selectedUnit && selectedUnit._playerNumberType != PlayerNumber.EType_PlayerTwo)
         {
+
+            m_mainCamera.transform.position = new Vector3(currentCell.Position.x, transform.position.y, currentCell.Position.z);
+
             Debug.Log(selectedUnit);
         }
     }
