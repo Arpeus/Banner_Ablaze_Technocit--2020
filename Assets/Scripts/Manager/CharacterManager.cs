@@ -353,7 +353,7 @@ public class CharacterManager : MonoBehaviour
         int bonusDamage = 0;
         if (character._character.typeBonusDamage == this._character.type)
             bonusDamage = character._character._damageTriangle;
-        m_lifeManager.TakeDamage(character, bonusDamage);
+        m_lifeManager.TakeDamage(this, character, bonusDamage);
         Debug.Log(this.m_lifeManager.Health);
         GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
     }
