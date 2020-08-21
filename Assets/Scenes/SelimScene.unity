@@ -2996,7 +2996,9 @@ MonoBehaviour:
   _players:
   - {fileID: 0}
   - {fileID: 0}
-  _characters: []
+  _characters:
+  - {fileID: 0}
+  - {fileID: 0}
   filepathMap: 
   EType_Phase: 0
 --- !u!4 &398580750
