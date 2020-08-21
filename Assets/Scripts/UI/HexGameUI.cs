@@ -166,6 +166,9 @@ public class HexGameUI : MonoBehaviour
         if (grid.HasPath)
         {
             selectedUnit.Travel(grid.GetPath());
+
+            m_mainCamera._targetPosition = new Vector3(currentCell.Position.x, transform.position.y, currentCell.Position.z);
+
             grid.ClearPath();
         }
     }
