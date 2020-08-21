@@ -8,7 +8,7 @@ public class CharacterManager : MonoBehaviour
     public CharacterData _character;
     public PlayerNumber _playerNumberType;
     public bool hasAlreadyPlayed = false;
-
+    public bool hasAttacked = false;
     public List<CharacterManager> m_enemyNeighbor;
 
     const float rotationSpeed = 0f;
