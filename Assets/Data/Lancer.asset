@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Lancer
   m_EditorClassIdentifier: 
   _name: Ransa
-  _health: 10
-  _armor: 3
-  _attackDamage: 5
+  _health: 16
+  _attackDamage: 6
+  _armor: 8
   _resistanceMagic: 0
-  dodge: 8
-  _movement: 2
-  _range: 2
+  _dodge: 5
+  _movement: 3
+  _range: 1
   _unitCost: 2
+  _damageTriangle: 5
   type: 2
+  typeBonusDamage: 0
+  typeDamage: 0

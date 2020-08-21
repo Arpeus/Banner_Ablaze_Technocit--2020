@@ -36,7 +36,10 @@ public class HexGameUI : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     DoSelection();
-                    if (selectedUnit != null && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerTwo)
+                    if (
+                        selectedUnit != null && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerTwo ||
+                        selectedUnit != null && selectedUnit.hasAlreadyPlayed == true && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerOne
+                        )
                         selectedUnit = null;
                 }
                 else if (selectedUnit  != null)

@@ -7,6 +7,7 @@ public class CharacterManager : MonoBehaviour
 {
     public CharacterData _character;
     public PlayerNumber _playerNumberType;
+    public bool hasAlreadyPlayed = false;
 
     public List<CharacterManager> m_enemyNeighbor;
 
@@ -361,5 +362,10 @@ public class CharacterManager : MonoBehaviour
     public void ClearEnemy()
     {
         m_enemyNeighbor.Clear();
+    }
+
+    public void Wait()
+    {
+        hasAlreadyPlayed = true;
     }
 }

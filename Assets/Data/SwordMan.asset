@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: SwordMan
   m_EditorClassIdentifier: 
   _name: Kenshi
-  _health: 6
-  _armor: 2
-  _attackDamage: 4
-  _resistanceMagic: 0
-  dodge: 10
+  _health: 10
+  _attackDamage: 10
+  _armor: 3
+  _resistanceMagic: 2
+  _dodge: 17
   _movement: 2
-  _range: 0
-  _unitCost: 1
-  type: 1
+  _range: 1
+  _unitCost: 2
+  _damageTriangle: 5
+  type: 2
+  typeBonusDamage: 0
+  typeDamage: 0

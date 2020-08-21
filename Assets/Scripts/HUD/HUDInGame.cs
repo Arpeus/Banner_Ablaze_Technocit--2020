@@ -88,7 +88,15 @@ public class HUDInGame : MonoBehaviour
     public void Attack()
     {
         m_currentCharacterManager.Attack();
-        m_panelActionUI.SetActive(false);
+        m_currentCharacterManager.Wait();
         m_currentCharacterManager = null;
+        m_panelActionUI.SetActive(false);
+    }
+
+    public void Wait()
+    {
+        m_currentCharacterManager.Wait();
+        m_currentCharacterManager = null;
+        m_panelActionUI.SetActive(false);
     }
 }
