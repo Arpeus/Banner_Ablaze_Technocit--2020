@@ -41,6 +41,10 @@ public class HexGameUI : MonoBehaviour
     {
         if(GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerOne)
         {
+            if(CheckUnitPlayed(GameManager.Instance._players[0]))
+            {
+                EndTurn(GameManager.Instance._players[0]);
+            }
             if (!EventSystem.current.IsPointerOverGameObject())
             {
                 if (Input.GetMouseButtonDown(0))
@@ -53,6 +57,36 @@ public class HexGameUI : MonoBehaviour
                         selectedUnit = null;
                 }
                 else if (selectedUnit  != null)
+                {
+                    if (Input.GetMouseButtonDown(1))
+                    {
+                        DoMove();
+                    }
+                    else
+                    {
+                        DoPathfinding();
+                    }
+                }
+            }
+        }
+        if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerTwo)
+        {
+            if (CheckUnitPlayed(GameManager.Instance._players[1]))
+            {
+                EndTurn(GameManager.Instance._players[1]);
+            }
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    DoSelection();
+                    if (
+                        selectedUnit != null && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerOne ||
+                        selectedUnit != null && selectedUnit.hasAlreadyPlayed == true && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerTwo
+                        )
+                        selectedUnit = null;
+                }
+                else if (selectedUnit != null)
                 {
                     if (Input.GetMouseButtonDown(1))
                     {
@@ -164,6 +198,33 @@ public class HexGameUI : MonoBehaviour
             m_mainCamera.transform.position = new Vector3(currentCell.Position.x, transform.position.y, currentCell.Position.z);
 
             Debug.Log(selectedUnit);
+        }
+    }
+
+    public bool CheckUnitPlayed(Player player)
+    {
+        foreach(CharacterManager character in player.m_characters)
+        {
+            if (!character.hasAlreadyPlayed)
+                return false;
+        }
+        return true;
+    }
+
+    private void EndTurn(Player player)
+    {
+        foreach(CharacterManager character in player.m_characters)
+        {
+            character.hasAlreadyPlayed = false;
+        }
+        switch (GameManager.Instance.EType_Phase)
+        {
+            case PhaseType.EType_TurnPhasePlayerOne:
+                GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerTwo;
+                break;
+            case PhaseType.EType_TurnPhasePlayerTwo:
+                GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
+                break;
         }
     }
 }

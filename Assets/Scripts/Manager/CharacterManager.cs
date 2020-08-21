@@ -334,6 +334,7 @@ public class CharacterManager : MonoBehaviour
 
     public void Attack()
     {
+        hasAttacked = true;
         for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
         {
             HexCell neighbor = null;
