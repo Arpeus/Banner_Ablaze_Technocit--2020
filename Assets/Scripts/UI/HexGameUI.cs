@@ -59,7 +59,6 @@ public class HexGameUI : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     DoSelectionEnemy();
-                    Debug.Log(enemyUnit);
                     foreach (CharacterManager character in selectedUnit.m_enemyNeighbor)
                     {
                         
@@ -82,6 +81,7 @@ public class HexGameUI : MonoBehaviour
         if (currentCell)
         {
             selectedUnit = currentCell.CharacterManager;
+            CheckAllyUnit();
         }
     }
 
@@ -139,5 +139,13 @@ public class HexGameUI : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    void CheckAllyUnit()
+    {
+        if (selectedUnit && selectedUnit._playerNumberType != PlayerNumber.EType_PlayerTwo)
+        {
+            Debug.Log(selectedUnit);
+        }
     }
 }
