@@ -56,11 +56,14 @@ public class HexGameUI : MonoBehaviour
                         )
                         selectedUnit = null;
                 }
-                else if (selectedUnit  != null)
+                else if (selectedUnit  != null && selectedUnit.hasAlreadyPlayed != true)
                 {
                     if (Input.GetMouseButtonDown(1))
                     {
                         DoMove();
+                        selectedUnit.Move();
+                        //grid.ClearPath();
+                        //UpdateCurrentCell();
                     }
                     else
                     {
@@ -71,10 +74,6 @@ public class HexGameUI : MonoBehaviour
         }
         if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerTwo)
         {
-            if (CheckUnitPlayed(GameManager.Instance._players[1]))
-            {
-                EndTurn(GameManager.Instance._players[1]);
-            }
             if (!EventSystem.current.IsPointerOverGameObject())
             {
                 if (Input.GetMouseButtonDown(0))
@@ -91,12 +90,17 @@ public class HexGameUI : MonoBehaviour
                     if (Input.GetMouseButtonDown(1))
                     {
                         DoMove();
+                        selectedUnit.Wait();
                     }
                     else
                     {
                         DoPathfinding();
                     }
                 }
+            }
+            if (CheckUnitPlayed(GameManager.Instance._players[1]))
+            {
+                EndTurn(GameManager.Instance._players[1]);
             }
         }
         if (GameManager.Instance.EType_Phase == PhaseType.EType_AttackPhase)
@@ -213,10 +217,6 @@ public class HexGameUI : MonoBehaviour
 
     private void EndTurn(Player player)
     {
-        foreach(CharacterManager character in player.m_characters)
-        {
-            character.hasAlreadyPlayed = false;
-        }
         switch (GameManager.Instance.EType_Phase)
         {
             case PhaseType.EType_TurnPhasePlayerOne:
@@ -226,5 +226,11 @@ public class HexGameUI : MonoBehaviour
                 GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
                 break;
         }
+
+        foreach (CharacterManager character in player.m_characters)
+        {
+            character.hasAlreadyPlayed = true;
+        }
+        
     }
 }

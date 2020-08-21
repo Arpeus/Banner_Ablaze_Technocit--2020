@@ -8,7 +8,8 @@ public class HUDInGame : MonoBehaviour
 {
     [Header("UI GameObject")]
     [SerializeField] private GameObject m_PanelSpawnUI;
-    [SerializeField] private GameObject m_panelActionUI;
+    [SerializeField] private GameObject m_panelActionAttackUI;
+    [SerializeField] private GameObject m_panelActionNoAttackUI;
 
     [Header("UI Spawn")]
     [SerializeField] private GameObject[] m_placeBtnSpawn;
@@ -79,9 +80,16 @@ public class HUDInGame : MonoBehaviour
         }
     }
 
-    public void ShowActionUi(CharacterManager character)
+    public void ShowActionAttackUi(CharacterManager character)
     {
-        m_panelActionUI.SetActive(true);
+        m_panelActionAttackUI.SetActive(true);
+        m_currentCharacterManager = character;
+    }
+
+
+    public void ShowActionNoAttackUi(CharacterManager character)
+    {
+        m_panelActionNoAttackUI.SetActive(true);
         m_currentCharacterManager = character;
     }
 
@@ -90,13 +98,14 @@ public class HUDInGame : MonoBehaviour
         m_currentCharacterManager.Attack();
         m_currentCharacterManager.Wait();
         m_currentCharacterManager = null;
-        m_panelActionUI.SetActive(false);
+        m_panelActionAttackUI.SetActive(false);
     }
 
     public void Wait()
     {
         m_currentCharacterManager.Wait();
         m_currentCharacterManager = null;
-        m_panelActionUI.SetActive(false);
+        if(m_panelActionAttackUI.activeSelf) m_panelActionAttackUI.SetActive(false);
+        else m_panelActionNoAttackUI.SetActive(false);
     }
 }

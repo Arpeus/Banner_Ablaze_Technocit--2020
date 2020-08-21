@@ -8,6 +8,7 @@ public class CharacterManager : MonoBehaviour
     public CharacterData _character;
     public PlayerNumber _playerNumberType;
     public bool hasAlreadyPlayed = false;
+    public bool hasMoved = false;
     public bool hasAttacked = false;
     public List<CharacterManager> m_enemyNeighbor;
 
@@ -188,8 +189,12 @@ public class CharacterManager : MonoBehaviour
         ListPool<HexCell>.Add(pathToTravel);
         if(CheckEnemy())
         {
-            m_hudInGame.ShowActionUi(this);
+            m_hudInGame.ShowActionAttackUi(this);
             GameManager.Instance.EType_Phase = PhaseType.EType_AttackPhase;
+        }
+        else
+        {
+            m_hudInGame.ShowActionNoAttackUi(this);
         }
         pathToTravel = null;
     }
@@ -368,5 +373,10 @@ public class CharacterManager : MonoBehaviour
     public void Wait()
     {
         hasAlreadyPlayed = true;
+    }
+
+    public void Move()
+    {
+        hasMoved = true;
     }
 }
