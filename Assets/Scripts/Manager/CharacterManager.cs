@@ -18,13 +18,17 @@ public class CharacterManager : MonoBehaviour
     public HexGrid Grid { get; set; }
 
     private HUDInGame m_hudInGame;
-
+    [HideInInspector]public LifeManager m_lifeManager;
     
 
     private void Awake()
     {
         m_hudInGame = FindObjectOfType<HUDInGame>();
-        GetComponent<LifeManager>().SetHealth(_character._health);
+        m_lifeManager = GetComponent<LifeManager>();
+        m_lifeManager.SetHealth(_character._health);
+        m_lifeManager.SetArmor(_character._armor);
+        m_lifeManager.SetArmorMargic(_character._resistanceMagic);
+        m_lifeManager.SetDodge(_character.dodge);
     }
 
 
@@ -345,8 +349,14 @@ public class CharacterManager : MonoBehaviour
 
     public void DoDamage(CharacterManager character)
     {
-        Debug.Log(this._character._health);
-        this._character._health -= character._character._attackDamage;
-        Debug.Log(this._character._health);
+        Debug.Log(this.m_lifeManager.Health);
+        m_lifeManager.TakeDamage(character);
+        Debug.Log(this.m_lifeManager.Health);
+        GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
+    }
+
+    public void ClearEnemy()
+    {
+        m_enemyNeighbor.Clear();
     }
 }

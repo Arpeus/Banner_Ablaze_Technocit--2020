@@ -1,8 +1,14 @@
-﻿public enum TypePawn
+﻿public enum TypeCharacter
 {
     Cavalier,
     SwordMan,
     Lancer
+}
+
+public enum TypeDamage
+{
+    Physic,
+    Magic
 }
 
 public enum PhaseType
