@@ -28,7 +28,7 @@ public class CharacterManager : MonoBehaviour
         m_lifeManager.SetHealth(_character._health);
         m_lifeManager.SetArmor(_character._armor);
         m_lifeManager.SetArmorMargic(_character._resistanceMagic);
-        m_lifeManager.SetDodge(_character.dodge);
+        m_lifeManager.SetDodge(_character._dodge);
     }
 
 
@@ -347,10 +347,13 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    public void DoDamage(CharacterManager character)
+    public void TakeDamage(CharacterManager character)
     {
         Debug.Log(this.m_lifeManager.Health);
-        m_lifeManager.TakeDamage(character);
+        int bonusDamage = 0;
+        if (character._character.typeBonusDamage == this._character.type)
+            bonusDamage = character._character._damageTriangle;
+        m_lifeManager.TakeDamage(character, bonusDamage);
         Debug.Log(this.m_lifeManager.Health);
         GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
     }

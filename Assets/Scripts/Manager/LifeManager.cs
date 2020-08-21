@@ -31,17 +31,24 @@ public class LifeManager : MonoBehaviour
         this.m_dodge = dodge;
     }
 
-    public void TakeDamage(CharacterManager characterAttack)
+    public void TakeDamage(CharacterManager characterDefense, CharacterManager characterAttack, int bonusDamage)
     {
-        
-        if (Random.Range(1, 100) > m_dodge)
+        bool dodge = false;
+
+        if (characterDefense._character.type == TypeCharacter.SwordMan && characterAttack._character.type == TypeCharacter.Lancer)
+            dodge = Random.Range(1, 100) > (m_dodge * 2);
+        else
+            dodge = Random.Range(1, 100) > m_dodge;
+
+        if (dodge)
         {
             switch (characterAttack._character.typeDamage)
             {
                 case TypeDamage.Physic:
-                    Health -= (characterAttack._character._attackDamage - m_armor);
+                    Health -= (characterAttack._character._attackDamage + bonusDamage - m_armor) ;
                     break;
                 case TypeDamage.Magic:
+                    Health -= (characterAttack._character._attackDamage + bonusDamage - m_armorMagic);
                     break;
             }
         }
