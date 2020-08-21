@@ -122,10 +122,11 @@ public class HexGrid : MonoBehaviour {
         HexCell cell = GetCellUnderCursor();
 
         if (cell && !cell.CharacterManager)
-        {           
+        {
             AddUnit(
                 Instantiate(unitPrefab), cell, Random.Range(0f, 360f)
-            );
+                
+            ); ;
             if (DecrementBtn())
             {
                 unitPrefab = null;
