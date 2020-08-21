@@ -1752,10 +1752,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _players: []
   _characters:
-  - {fileID: 2524524485208482592, guid: 9a4ee2a112cd2b8448b11481c948ecea, type: 3}
-  - {fileID: 5678341576638937532, guid: e6bfe170bafc0ff45992d3a01d53bbf5, type: 3}
-  - {fileID: 5770996084285167259, guid: 076f8d8036d45654da30394b0450682e, type: 3}
+  - {fileID: 5618663529477205639, guid: 9a4ee2a112cd2b8448b11481c948ecea, type: 3}
+  - {fileID: -9074051524320684051, guid: e6bfe170bafc0ff45992d3a01d53bbf5, type: 3}
+  - {fileID: 636909353093672262, guid: 076f8d8036d45654da30394b0450682e, type: 3}
   filepathMap: 
+  EType_Phase: 0
 --- !u!4 &1641674052
 Transform:
   m_ObjectHideFlags: 0
