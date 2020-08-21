@@ -8,6 +8,7 @@ public class CharacterManager : MonoBehaviour
     public CharacterData _character;
     public PlayerNumber _playerNumberType;
 
+    public List<CharacterManager> m_enemyNeighbor;
 
     const float rotationSpeed = 0f;
     const float travelSpeed = 4f;
@@ -15,6 +16,16 @@ public class CharacterManager : MonoBehaviour
     public static CharacterManager unitPrefab;
 
     public HexGrid Grid { get; set; }
+
+    private HUDInGame m_hudInGame;
+
+    private void Awake()
+    {
+        m_hudInGame = FindObjectOfType<HUDInGame>();
+        GetComponent<LifeManager>().SetHealth(_character._health);
+    }
+
+
 
     public HexCell Location
     {
@@ -168,7 +179,11 @@ public class CharacterManager : MonoBehaviour
         transform.localPosition = location.Position;
         orientation = transform.localRotation.eulerAngles.y;
         ListPool<HexCell>.Add(pathToTravel);
-        CheckEnemy();
+        if(CheckEnemy())
+        {
+            m_hudInGame.ShowActionUi(this);
+            GameManager.Instance.EType_Phase = PhaseType.EType_AttackPhase;
+        }
         pathToTravel = null;
     }
 
@@ -281,16 +296,16 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    public void CheckEnemy()
+    public bool CheckEnemy()
     {
-      
-        for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
-        {
+       for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
+       {
             HexCell neighbor = null;
             if (location.GetNeighbor(d) != null)
             {
                 neighbor = location.GetNeighbor(d);
-                Debug.Log("Character neighbor " + neighbor.CharacterManager);
+                if (neighbor.CharacterManager != null && neighbor.CharacterManager._playerNumberType != this._playerNumberType)
+                    return true;
                 if (_character._range > 1)
                 {
                     for (HexDirection e = HexDirection.NE; e <= HexDirection.NW; e++)
@@ -299,13 +314,37 @@ public class CharacterManager : MonoBehaviour
                         if (location.GetNeighbor(e) != null)
                         {
                             neighborTest = neighbor.GetNeighbor(e);
-                            Debug.Log("Character neighbor Test " + neighborTest.CharacterManager);
+                            if (neighborTest.CharacterManager != null && neighbor.CharacterManager._playerNumberType != this._playerNumberType)
+                                return true;
                         }
                     }
                 }            
             }
         }
-        
-        
+
+        return false;
+    }
+
+    public void Attack()
+    {
+        for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
+        {
+            HexCell neighbor = null;
+            if (location.GetNeighbor(d) != null)
+            {
+                neighbor = location.GetNeighbor(d);
+                if (neighbor.CharacterManager != null && neighbor.CharacterManager._playerNumberType != this._playerNumberType)
+                {
+                    m_enemyNeighbor.Add(neighbor.CharacterManager);
+                }
+            }
+        }
+    }
+
+    public void DoDamage(CharacterManager character)
+    {
+        Debug.Log(this._character._health);
+        this._character._health -= character._character._attackDamage;
+        Debug.Log(this._character._health);
     }
 }

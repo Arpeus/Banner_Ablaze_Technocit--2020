@@ -11,6 +11,7 @@ public enum PhaseType
     EType_SpawnPhasePlayerOne,
     EType_SpawnPhasePlayerTwo,
     EType_TurnPhasePlayerOne,
+    EType_AttackPhase,
     EType_TurnPhasePlayerTwo
 }
 

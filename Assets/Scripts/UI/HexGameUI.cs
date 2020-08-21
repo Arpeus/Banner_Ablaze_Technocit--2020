@@ -7,8 +7,10 @@ public class HexGameUI : MonoBehaviour
     public HexGrid grid;
 
     HexCell currentCell;
+    HexCell enemyCell;
 
     CharacterManager selectedUnit;
+    CharacterManager enemyUnit;
 
     public void SetEditMode(bool toggle)
     {
@@ -29,8 +31,8 @@ public class HexGameUI : MonoBehaviour
     {
         if(GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerOne)
         {
-            //if (!EventSystem.current.IsPointerOverGameObject())
-            //{
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
                 if (Input.GetMouseButtonDown(0))
                 {
                     DoSelection();
@@ -49,7 +51,27 @@ public class HexGameUI : MonoBehaviour
                     }
                 }
             }
-        //}
+        }
+        if (GameManager.Instance.EType_Phase == PhaseType.EType_AttackPhase)
+        {
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    DoSelectionEnemy();
+                    Debug.Log(enemyUnit);
+                    foreach (CharacterManager character in selectedUnit.m_enemyNeighbor)
+                    {
+                        
+                        if (enemyUnit != null && enemyUnit == character)
+                        {
+                            enemyUnit.DoDamage(character);
+                        }
+                    }
+                    enemyUnit = null;
+                }
+            }
+        }
     }
 
     void DoSelection()
@@ -59,6 +81,16 @@ public class HexGameUI : MonoBehaviour
         if (currentCell)
         {
             selectedUnit = currentCell.CharacterManager;
+        }
+    }
+
+    void DoSelectionEnemy()
+    {
+        grid.ClearPath();
+        UpdateEnemyCell();
+        if (enemyCell)
+        {
+            enemyUnit = enemyCell.CharacterManager;
         }
     }
 
@@ -92,6 +124,17 @@ public class HexGameUI : MonoBehaviour
         if (cell != currentCell)
         {
             currentCell = cell;
+            return true;
+        }
+        return false;
+    }
+
+    bool UpdateEnemyCell()
+    {
+        HexCell cell = grid.GetCell(Camera.main.ScreenPointToRay(Input.mousePosition));
+        if (cell != enemyCell)
+        {
+            enemyCell = cell;
             return true;
         }
         return false;
