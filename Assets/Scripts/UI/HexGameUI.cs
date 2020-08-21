@@ -74,9 +74,10 @@ public class HexGameUI : MonoBehaviour
                         
                         if (enemyUnit != null && enemyUnit == character)
                         {
-                            enemyUnit.DoDamage(character);
+                            enemyUnit.TakeDamage(character);
                         }
                     }
+                    selectedUnit.ClearEnemy();
                     enemyUnit = null;
                 }
             }

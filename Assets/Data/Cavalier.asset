@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Kihei
   _health: 12
-  _armor: 2
+  _armor: 4
   _attackDamage: 5
-  _resistanceMagic: 0
-  dodge: 5
-  _movement: 3
-  _range: 0
-  _unitCost: 4
+  _resistanceMagic: 5
+  dodge: 10
+  _movement: 6
+  _range: 1
+  _unitCost: 5
   type: 0

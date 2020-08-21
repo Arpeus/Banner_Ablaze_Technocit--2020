@@ -87,13 +87,13 @@ public class HexGrid : MonoBehaviour {
         int index = 0;
         switch (unitPrefab._character.type)
         {
-            case TypePawn.Cavalier:
+            case TypeCharacter.Cavalier:
                 index = 0;
                 break;
-            case TypePawn.SwordMan:
+            case TypeCharacter.SwordMan:
                 index = 1;
                 break;
-            case TypePawn.Lancer:
+            case TypeCharacter.Lancer:
                 index = 2;
                 break;
         }
