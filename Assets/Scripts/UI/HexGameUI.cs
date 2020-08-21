@@ -44,6 +44,7 @@ public class HexGameUI : MonoBehaviour
             if(CheckUnitPlayed(GameManager.Instance._players[0]))
             {
                 EndTurn(GameManager.Instance._players[0]);
+                StartTurn(GameManager.Instance._players[1]);
             }
             if (!EventSystem.current.IsPointerOverGameObject())
             {
@@ -56,13 +57,13 @@ public class HexGameUI : MonoBehaviour
                         )
                         selectedUnit = null;
                 }
-                else if (selectedUnit  != null && selectedUnit.hasAlreadyPlayed != true)
+                else if (selectedUnit  != null && selectedUnit.hasMoved != true)
                 {
                     if (Input.GetMouseButtonDown(1))
                     {
                         DoMove();
                         selectedUnit.Move();
-                        //grid.ClearPath();
+                        grid.ClearPath();
                         //UpdateCurrentCell();
                     }
                     else
@@ -74,6 +75,11 @@ public class HexGameUI : MonoBehaviour
         }
         if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerTwo)
         {
+            if (CheckUnitPlayed(GameManager.Instance._players[1]))
+            {
+                EndTurn(GameManager.Instance._players[1]);
+                StartTurn(GameManager.Instance._players[0]);
+            }
             if (!EventSystem.current.IsPointerOverGameObject())
             {
                 if (Input.GetMouseButtonDown(0))
@@ -85,22 +91,19 @@ public class HexGameUI : MonoBehaviour
                         )
                         selectedUnit = null;
                 }
-                else if (selectedUnit != null)
+                else if (selectedUnit != null && selectedUnit.hasMoved != true)
                 {
                     if (Input.GetMouseButtonDown(1))
                     {
                         DoMove();
-                        selectedUnit.Wait();
+                        selectedUnit.Move();
+                        grid.ClearPath();
                     }
                     else
                     {
                         DoPathfinding();
                     }
                 }
-            }
-            if (CheckUnitPlayed(GameManager.Instance._players[1]))
-            {
-                EndTurn(GameManager.Instance._players[1]);
             }
         }
         if (GameManager.Instance.EType_Phase == PhaseType.EType_AttackPhase)
@@ -112,13 +115,15 @@ public class HexGameUI : MonoBehaviour
                     DoSelectionEnemy();
                     foreach (CharacterManager character in selectedUnit.m_enemyNeighbor)
                     {
-                        
                         if (enemyUnit != null && enemyUnit == character)
                         {
-                            enemyUnit.TakeDamage(character);
+                            selectedUnit.Move();
+                            enemyUnit.TakeDamage(selectedUnit);
+                            selectedUnit.ClearEnemy();
+                            break;
                         }
                     }
-                    selectedUnit.ClearEnemy();
+                    
                     enemyUnit = null;
                 }
             }
@@ -212,7 +217,7 @@ public class HexGameUI : MonoBehaviour
     {
         foreach(CharacterManager character in player.m_characters)
         {
-            if (!character.hasAlreadyPlayed)
+            if (!character.hasMoved)
                 return false;
         }
         return true;
@@ -234,6 +239,14 @@ public class HexGameUI : MonoBehaviour
         {
             character.hasAlreadyPlayed = true;
         }
-        
+    }
+
+    public void StartTurn(Player player)
+    {
+        foreach (CharacterManager character in player.m_characters)
+        {
+            character.hasAlreadyPlayed = false;
+            character.hasMoved = false;
+        }
     }
 }

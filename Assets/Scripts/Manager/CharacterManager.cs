@@ -362,7 +362,16 @@ public class CharacterManager : MonoBehaviour
             bonusDamage = character._character._damageTriangle;
         m_lifeManager.TakeDamage(this, character, bonusDamage);
         Debug.Log(this.m_lifeManager.Health);
-        GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
+        Debug.Log(character._playerNumberType);
+        if (character._playerNumberType == PlayerNumber.EType_PlayerOne)
+            GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
+        else
+            GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerTwo;
+    }
+
+    public void ReloadUI()
+    {
+
     }
 
     public void ClearEnemy()

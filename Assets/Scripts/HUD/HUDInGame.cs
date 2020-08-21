@@ -96,7 +96,6 @@ public class HUDInGame : MonoBehaviour
     public void Attack()
     {
         m_currentCharacterManager.Attack();
-        m_currentCharacterManager.Wait();
         m_currentCharacterManager = null;
         m_panelActionAttackUI.SetActive(false);
     }
@@ -104,6 +103,7 @@ public class HUDInGame : MonoBehaviour
     public void Wait()
     {
         m_currentCharacterManager.Wait();
+        m_currentCharacterManager.Move();
         m_currentCharacterManager = null;
         if(m_panelActionAttackUI.activeSelf) m_panelActionAttackUI.SetActive(false);
         else m_panelActionNoAttackUI.SetActive(false);
