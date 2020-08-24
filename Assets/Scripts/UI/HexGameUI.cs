@@ -216,17 +216,11 @@ public class HexGameUI : MonoBehaviour
             Debug.Log(selectedUnit);
         }
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> parent of 6e115d9... SpawnerZone
         if (!selectedUnit)
         {
             m_uniteMenu.SetActive(true); 
         }
-<<<<<<< HEAD
->>>>>>> parent of 6e115d9... SpawnerZone
-=======
 >>>>>>> parent of 6e115d9... SpawnerZone
     }
 
