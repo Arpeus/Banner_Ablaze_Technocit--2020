@@ -67,29 +67,12 @@ public class HUDInGame : MonoBehaviour
 
     public void AddButton(int indexPlayer)
     {
-        if (GameManager.Instance._players[indexPlayer].NbCavalier != 0)
+        for(int i = 0; i < GameManager.Instance._players[indexPlayer].Nbtroops.Length; i++)
         {
-            AddButtonSpawn(0, GameManager.Instance._players[indexPlayer].NbCavalier);
-        }
-        if (GameManager.Instance._players[indexPlayer].NbSwordMan != 0)
-        {
-            AddButtonSpawn(1, GameManager.Instance._players[indexPlayer].NbSwordMan);
-        }
-        if (GameManager.Instance._players[indexPlayer].NbLancer != 0)
-        {
-            AddButtonSpawn(2, GameManager.Instance._players[indexPlayer].NbLancer);
-        }
-        if (GameManager.Instance._players[indexPlayer].NbRedMage != 0)
-        {
-            AddButtonSpawn(3, GameManager.Instance._players[indexPlayer].NbRedMage);
-        }
-        if (GameManager.Instance._players[indexPlayer].NbWhiteMage != 0)
-        {
-            AddButtonSpawn(4, GameManager.Instance._players[indexPlayer].NbWhiteMage);
-        }
-        if (GameManager.Instance._players[indexPlayer].NbBlackMage != 0)
-        {
-            AddButtonSpawn(5, GameManager.Instance._players[indexPlayer].NbBlackMage);
+            if (GameManager.Instance._players[indexPlayer].Nbtroops[i] != 0)
+            {
+                AddButtonSpawn(i, GameManager.Instance._players[indexPlayer].Nbtroops[i]);
+            }
         }
     }
 
