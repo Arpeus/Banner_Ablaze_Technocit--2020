@@ -215,7 +215,6 @@ public class HexGameUI : MonoBehaviour
 
             Debug.Log(selectedUnit);
         }
-
     }
 
     
