@@ -96,6 +96,15 @@ public class HexGrid : MonoBehaviour {
             case TypeCharacter.Lancer:
                 index = 2;
                 break;
+            case TypeCharacter.RedMage:
+                index = 3;
+                break;
+            case TypeCharacter.WhiteMage:
+                index = 4;
+                break;
+            case TypeCharacter.BlackMage:
+                index = 5;
+                break;
         }
 
         foreach (ButtonSpawn btnSpawn in FindObjectsOfType<ButtonSpawn>())
@@ -125,7 +134,6 @@ public class HexGrid : MonoBehaviour {
         {
             AddUnit(
                 Instantiate(unitPrefab), cell, Random.Range(0f, 360f)
-                
             ); ;
             if (DecrementBtn())
             {
