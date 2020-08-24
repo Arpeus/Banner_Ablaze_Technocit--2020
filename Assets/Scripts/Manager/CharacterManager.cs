@@ -338,8 +338,7 @@ public class CharacterManager : MonoBehaviour
     }
 
     public void Attack()
-    {
-        hasAttacked = true;
+    { 
         for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
         {
             HexCell neighbor = null;
@@ -380,14 +379,18 @@ public class CharacterManager : MonoBehaviour
         m_enemyNeighbor.Clear();
     }
 
-    public void Wait()
+    public void SetHasAlreadyPlayed(bool hasAlreadyPlayed)
     {
-        hasAlreadyPlayed = true;
+        this.hasAlreadyPlayed = hasAlreadyPlayed;
     }
 
-    public void Move()
+    public void SetHasMoved(bool hasMoved)
     {
-        hasMoved = true;
+        this.hasMoved = hasMoved;
     }
 
+    public void SetHasAttacked(bool hasAttacked)
+    {
+        this.hasAttacked = hasAttacked;
+    }
 }
