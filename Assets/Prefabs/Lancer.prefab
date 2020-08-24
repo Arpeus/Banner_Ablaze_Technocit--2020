@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6750458934199519058}
   - component: {fileID: 8448411277075932236}
-  - component: {fileID: 6048088323462248994}
-  - component: {fileID: 4613022310483722678}
-  - component: {fileID: 1698441164608462151}
+  - component: {fileID: 3021071081292494273}
+  - component: {fileID: 7004188502827723146}
+  - component: {fileID: 2541765027607272071}
   m_Layer: 0
   m_Name: Lancer
   m_TagString: Untagged
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6048088323462248994
+--- !u!114 &3021071081292494273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,17 +93,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 8877358189991636389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828deae01eae88748a95da082ce77c38, type: 3}
+  m_Script: {fileID: 11500000, guid: 99632fd2e0bfba7409e9fcee85eb01fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _character: {fileID: 11400000, guid: 96f1fe4d2c0abee4fa0beb06097b4043, type: 2}
+--- !u!114 &7004188502827723146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877358189991636389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0af41217626e747935a3a1bc7b1941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _character: {fileID: 0}
   _playerNumberType: 0
   hasAlreadyPlayed: 0
   hasMoved: 0
   hasAttacked: 0
   m_enemyNeighbor: []
   m_lifeManager: {fileID: 0}
---- !u!114 &4613022310483722678
+--- !u!114 &2541765027607272071
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,22 +124,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8877358189991636389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8477823b72f47d4fa538c662a2cb82b, type: 3}
+  m_Script: {fileID: 11500000, guid: 4749fb1e99598d744884b5191dce0eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_health: 0
   m_armor: 0
   m_armorMagic: 0
   m_dodge: 0
---- !u!114 &1698441164608462151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8877358189991636389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca700d5fc9c3ca849936f2ef0b9c1188, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
