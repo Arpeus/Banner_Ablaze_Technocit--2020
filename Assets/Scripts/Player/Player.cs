@@ -51,8 +51,6 @@ public class Player : MonoBehaviour
             m_currentCount -= character._character._unitCost;
             SetHUDMenuUI(index, 1);
         }
-
-
     }
     public void RemoveCharacter(int index)
     {
@@ -95,7 +93,11 @@ public class Player : MonoBehaviour
                 AddBtnRemove(ref m_fromZeroLancer, index, m_nbLancer);
                 break;
         }
-        
+        for(int i = 0; i < GameManager.Instance._characters.Count; i++)
+        {
+            m_hudMenu.CheckEnoughPoint(GameManager.Instance._characters[i], i);
+        }
+
         m_hudMenu.SetTextAvailablePoint();
         m_hudMenu.DisplayNumberTroop(index);
     }
