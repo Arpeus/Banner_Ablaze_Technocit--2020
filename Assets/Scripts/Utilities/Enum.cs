@@ -2,7 +2,10 @@
 {
     Cavalier,
     SwordMan,
-    Lancer
+    Lancer,
+    RedMage,
+    WhiteMage,
+    BlackMage
 }
 
 public enum TypeDamage

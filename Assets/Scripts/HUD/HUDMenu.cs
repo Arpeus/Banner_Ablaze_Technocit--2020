@@ -78,6 +78,18 @@ public class HUDMenu : MonoBehaviour
         }
     }
 
+    public void CheckEnoughPoint(CharacterManager character, int index)
+    {
+        if (_player.CheckEnoughPoint(character))
+        {
+            _btnAddTroops[index].interactable = true;
+        }
+        else
+        {
+            _btnAddTroops[index].interactable = false;
+        }
+    }
+
     public void AddBtnRemove(int index)
     {
         int i = 0;
