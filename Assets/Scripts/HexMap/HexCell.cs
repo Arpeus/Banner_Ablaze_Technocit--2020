@@ -91,7 +91,16 @@ public class HexCell : MonoBehaviour
     {
         get
         {
-            return Spawner2 = true;
+            return Spawner1 = true;
+        }
+        set
+        {
+            if (Spawner1 != value)
+            {
+                Spawner1 = value;
+                Refresh();
+                Debug.Log("Spawnner1");
+            }
         }
     }
 
@@ -99,7 +108,16 @@ public class HexCell : MonoBehaviour
     {
         get
         {
-            return Spawner1 = true;
+            return Spawner2 = true;
+        }
+        set
+        {
+            if ( Spawner2 != value)
+            {
+                Spawner2 = value;
+                Refresh();
+                Debug.Log("Spawnner2");
+            }
         }
     }
 
@@ -674,6 +692,8 @@ public class HexCell : MonoBehaviour
         writer.Write((byte)plantLevel);
         writer.Write((byte)specialIndex);
         writer.Write(walled);
+        writer.Write(IsSpanwerP1);
+        writer.Write(IsSpanwerP2);
 
         if (hasIncomingRiver)
         {
@@ -721,6 +741,8 @@ public class HexCell : MonoBehaviour
         plantLevel = reader.ReadByte();
         specialIndex = reader.ReadByte();
         walled = reader.ReadBoolean();
+        IsSpanwerP1 = reader.ReadBoolean();
+        IsSpanwerP2 = reader.ReadBoolean();
 
         byte riverData = reader.ReadByte();
         if (riverData >= 128)
