@@ -212,7 +212,7 @@ public class HexGameUI : MonoBehaviour
         }
         if (!selectedUnit)
         {
-            Debug.Log("selection is null");
+            
         }
     }
 
