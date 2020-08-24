@@ -10,6 +10,7 @@ public class HUDInGame : MonoBehaviour
     [SerializeField] private GameObject m_PanelSpawnUI;
     [SerializeField] private GameObject m_panelActionAttackUI;
     [SerializeField] private GameObject m_panelActionNoAttackUI;
+    [SerializeField] private GameObject m_uniteMenu;
 
     [Header("UI Spawn")]
     [SerializeField] private GameObject[] m_placeBtnSpawn;
@@ -108,5 +109,11 @@ public class HUDInGame : MonoBehaviour
         m_currentCharacterManager = null;
         if(m_panelActionAttackUI.activeSelf) m_panelActionAttackUI.SetActive(false);
         else m_panelActionNoAttackUI.SetActive(false);
+    }
+
+    public void ShowUnitMenu(CharacterManager character)
+    {
+        m_uniteMenu.SetActive(true);
+        m_currentCharacterManager = character;
     }
 }
