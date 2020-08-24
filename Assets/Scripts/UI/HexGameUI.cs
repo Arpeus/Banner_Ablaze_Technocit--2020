@@ -10,16 +10,21 @@ public class HexGameUI : MonoBehaviour
     HexCell currentCell;
     HexCell enemyCell;
 
+    [SerializeField] private GameObject m_uniteMenu;
+
     CharacterManager selectedUnit;
     CharacterManager enemyUnit;
 
     HexMapCamera m_mainCamera;
 
-    
+    private HUDInGame m_hudInGame;
+
+
 
     private void Awake()
     {
         m_mainCamera = FindObjectOfType<HexMapCamera>();
+        m_hudInGame = FindObjectOfType<HUDInGame>();
     }
 
     public void SetEditMode(bool toggle)
@@ -212,7 +217,7 @@ public class HexGameUI : MonoBehaviour
         }
         if (!selectedUnit)
         {
-            
+            m_uniteMenu.SetActive(true); 
         }
     }
 
