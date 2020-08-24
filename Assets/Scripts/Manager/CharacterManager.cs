@@ -163,7 +163,7 @@ public class CharacterManager : MonoBehaviour
                 transform.localPosition = Bezier.GetPoint(a, b, c, t);
                 Vector3 d = Bezier.GetDerivative(a, b, c, t);
                 d.y = 0f;
-                transform.localRotation = Quaternion.LookRotation(d);
+                //transform.localRotation = Quaternion.LookRotation(d);
                 yield return null;
             }
             //Grid.DecreaseVisibility(pathToTravel[i], VisionRange);
@@ -180,12 +180,12 @@ public class CharacterManager : MonoBehaviour
             transform.localPosition = Bezier.GetPoint(a, b, c, t);
             Vector3 d = Bezier.GetDerivative(a, b, c, t);
             d.y = 0f;
-            transform.localRotation = Quaternion.LookRotation(d);
+            //transform.localRotation = Quaternion.LookRotation(d);
             yield return null;
         }
 
         transform.localPosition = location.Position;
-        orientation = transform.localRotation.eulerAngles.y;
+        //orientation = transform.localRotation.eulerAngles.y;
         ListPool<HexCell>.Add(pathToTravel);
         if(CheckEnemy())
         {

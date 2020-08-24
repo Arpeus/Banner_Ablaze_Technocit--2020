@@ -210,7 +210,13 @@ public class HexGameUI : MonoBehaviour
 
             Debug.Log(selectedUnit);
         }
+        if (!selectedUnit)
+        {
+            Debug.Log("selection is null");
+        }
     }
+
+    
 
     public bool CheckUnitPlayed(Player player)
     {
