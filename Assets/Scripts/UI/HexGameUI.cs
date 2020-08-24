@@ -215,19 +215,6 @@ public class HexGameUI : MonoBehaviour
 
             Debug.Log(selectedUnit);
         }
-<<<<<<< HEAD
-        /*if (!selectedUnit)
-        {
-            m_uniteMenu.SetActive(true); 
-        }
-        */
-=======
-        //if (!selectedUnit /*&& selectedUnit._playerNumberType == null*/)
-
-        //{
-        //    m_uniteMenu.SetActive(true); 
-        //}
->>>>>>> 6a4f3b7a5882ed41203d17dae1c0219ac0f7be64
     }
 
     
