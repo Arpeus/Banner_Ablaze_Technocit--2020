@@ -79,6 +79,18 @@ public class HUDInGame : MonoBehaviour
         {
             AddButtonSpawn(2, GameManager.Instance._players[indexPlayer].NbLancer);
         }
+        if (GameManager.Instance._players[indexPlayer].NbRedMage != 0)
+        {
+            AddButtonSpawn(3, GameManager.Instance._players[indexPlayer].NbRedMage);
+        }
+        if (GameManager.Instance._players[indexPlayer].NbWhiteMage != 0)
+        {
+            AddButtonSpawn(4, GameManager.Instance._players[indexPlayer].NbWhiteMage);
+        }
+        if (GameManager.Instance._players[indexPlayer].NbBlackMage != 0)
+        {
+            AddButtonSpawn(5, GameManager.Instance._players[indexPlayer].NbBlackMage);
+        }
     }
 
     public void ShowActionAttackUi(CharacterManager character)

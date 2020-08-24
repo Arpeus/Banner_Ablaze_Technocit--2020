@@ -215,10 +215,11 @@ public class HexGameUI : MonoBehaviour
 
             Debug.Log(selectedUnit);
         }
-        if (!selectedUnit)
+        /*if (!selectedUnit)
         {
             m_uniteMenu.SetActive(true); 
         }
+        */
     }
 
     

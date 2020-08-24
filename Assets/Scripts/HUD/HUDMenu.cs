@@ -62,7 +62,8 @@ public class HUDMenu : MonoBehaviour
         {
             if (btnRemove.indexBtn == index)
             {
-                switch (index)
+                btnRemove.GetComponentInChildren<TextMeshProUGUI>().SetText(_player.Nbtroops[index].ToString());
+                /*switch (index)
                 {
                     case 0:
                         btnRemove.GetComponentInChildren<TextMeshProUGUI>().SetText(_player.NbCavalier.ToString());
@@ -73,7 +74,16 @@ public class HUDMenu : MonoBehaviour
                     case 2:
                         btnRemove.GetComponentInChildren<TextMeshProUGUI>().SetText(_player.NbLancer.ToString());
                         break;
-                }
+                    case 3:
+                        btnRemove.GetComponentInChildren<TextMeshProUGUI>().SetText(_player.NbRedMage.ToString());
+                        break;
+                    case 4:
+                        btnRemove.GetComponentInChildren<TextMeshProUGUI>().SetText(_player.NbWhiteMage.ToString());
+                        break;
+                    case 5:
+                        btnRemove.GetComponentInChildren<TextMeshProUGUI>().SetText(_player.NbBlackMage.ToString());
+                        break;
+                }*/
             }
         }
     }

@@ -4289,6 +4289,9 @@ MonoBehaviour:
   - {fileID: 1698223950}
   - {fileID: 1103169846}
   - {fileID: 596364418}
+  - {fileID: 772510403}
+  - {fileID: 1638152963}
+  - {fileID: 1477709288}
   m_placeBtnRemoveSpawn:
   - {fileID: 1503746515}
   - {fileID: 2047364616}

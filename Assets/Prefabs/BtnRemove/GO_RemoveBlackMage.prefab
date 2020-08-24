@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3956327009853939764}
   - component: {fileID: 3956327009853939765}
   m_Layer: 5
-  m_Name: BTN_RemoveSwordMan
+  m_Name: BTN_RemoveBlackMage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 5994676895607373623}
   - component: {fileID: 5994676895607373620}
   m_Layer: 5
-  m_Name: TXT_RemoveSwordMan
+  m_Name: TXT_RemoveBlackMage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
