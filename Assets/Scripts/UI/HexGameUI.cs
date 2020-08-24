@@ -62,9 +62,8 @@ public class HexGameUI : MonoBehaviour
                     if (Input.GetMouseButtonDown(1))
                     {
                         DoMove();
-                        selectedUnit.Move();
+                        selectedUnit.SetHasMoved(true);
                         grid.ClearPath();
-                        //UpdateCurrentCell();
                     }
                     else
                     {
@@ -96,7 +95,7 @@ public class HexGameUI : MonoBehaviour
                     if (Input.GetMouseButtonDown(1))
                     {
                         DoMove();
-                        selectedUnit.Move();
+                        selectedUnit.SetHasMoved(true);
                         grid.ClearPath();
                     }
                     else
@@ -117,7 +116,7 @@ public class HexGameUI : MonoBehaviour
                     {
                         if (enemyUnit != null && enemyUnit == character)
                         {
-                            selectedUnit.Move();
+                            selectedUnit.SetHasMoved(true);
                             enemyUnit.TakeDamage(selectedUnit);
                             selectedUnit.ClearEnemy();
                             break;
@@ -243,16 +242,18 @@ public class HexGameUI : MonoBehaviour
 
         foreach (CharacterManager character in player.m_characters)
         {
-            character.hasAlreadyPlayed = true;
+            character.SetHasAlreadyPlayed(true);
         }
+
     }
 
     public void StartTurn(Player player)
     {
         foreach (CharacterManager character in player.m_characters)
         {
-            character.hasAlreadyPlayed = false;
-            character.hasMoved = false;
+            character.SetHasAlreadyPlayed(false);
+            character.SetHasAttacked(false);
+            character.SetHasMoved(false);
         }
     }
 }

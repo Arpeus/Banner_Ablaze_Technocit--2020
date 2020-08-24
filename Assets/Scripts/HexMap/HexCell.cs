@@ -117,6 +117,7 @@ public class HexCell : MonoBehaviour
             return urbanLevel != 0;
         }
     }
+
     public bool IsPlantLevel
     {
         get
