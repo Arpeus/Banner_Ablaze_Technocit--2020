@@ -93,33 +93,7 @@ public class Player : MonoBehaviour
     {
         Nbtroops[index] += valueToAdd;
         AddBtnRemove(ref m_fromZeroTroop[index], index, Nbtroops[index]);
-        /*switch (index)
-        {
-            case 0:
-                NbCavalier += valueToAdd;
-                AddBtnRemove(ref m_fromZeroCavalier, index, m_nbCavalier );
-                break;
-            case 1:
-                NbSwordMan += valueToAdd;
-                AddBtnRemove(ref m_fromZeroSwordMan, index, m_nbSwordMan);
-                break;
-            case 2:
-                NbLancer += valueToAdd;
-                AddBtnRemove(ref m_fromZeroLancer, index, m_nbLancer);
-                break;
-            case 3:
-                NbRedMage += valueToAdd;
-                AddBtnRemove(ref m_fromZeroRedMage, index, m_nbRedMage);
-                break;
-            case 4:
-                NbWhiteMage += valueToAdd;
-                AddBtnRemove(ref m_fromZeroWhiteMage, index, m_nbWhiteMage);
-                break;
-            case 5:
-                NbBlackMage += valueToAdd;
-                AddBtnRemove(ref m_fromZeroBlackMage, index, m_nbBlackMage);
-                break;
-        }*/
+
         for(int i = 0; i < GameManager.Instance._characters.Count; i++)
         {
             m_hudMenu.CheckEnoughPoint(GameManager.Instance._characters[i], i);
