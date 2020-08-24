@@ -1752,9 +1752,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _players: []
   _characters:
-  - {fileID: 7422591372310770845, guid: 9a4ee2a112cd2b8448b11481c948ecea, type: 3}
-  - {fileID: 6258724385972516454, guid: e6bfe170bafc0ff45992d3a01d53bbf5, type: 3}
-  - {fileID: 3021071081292494273, guid: 076f8d8036d45654da30394b0450682e, type: 3}
+  - {fileID: 3699388948202346323, guid: 9a4ee2a112cd2b8448b11481c948ecea, type: 3}
+  - {fileID: 8414815329459391003, guid: e6bfe170bafc0ff45992d3a01d53bbf5, type: 3}
+  - {fileID: 7004188502827723146, guid: 076f8d8036d45654da30394b0450682e, type: 3}
   filepathMap: 
   EType_Phase: 0
 --- !u!4 &1641674052
