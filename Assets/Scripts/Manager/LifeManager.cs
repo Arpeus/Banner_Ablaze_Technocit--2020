@@ -34,18 +34,40 @@ public class LifeManager : MonoBehaviour
     public void TakeDamage(CharacterManager characterDefense, CharacterManager characterAttack, int bonusDamage)
     {
         bool dodge = false;
+        int tmpDodge = 0;
+        int tmpArmor = 0;
+
+        if(characterDefense.Location.IsPlantLevel)
+        {
+            tmpArmor += GameManager.Instance.bonusForestDefense;
+            tmpDodge += GameManager.Instance.bonusForestDodge;
+        }
+        if(characterDefense.Location.HasRiver)
+        {
+            tmpDodge += GameManager.Instance.malusRiverDodge;
+        }
+        if(characterDefense.Location.IsSpecial)
+        {
+            tmpDodge += GameManager.Instance.bonusCastleDodge;
+            tmpArmor += GameManager.Instance.bonusCastleDefense;
+        }
 
         if (characterDefense._character.type == TypeCharacter.SwordMan && characterAttack._character.type == TypeCharacter.Lancer)
-            dodge = Random.Range(1, 100) > (m_dodge * 2);
+        {
+            dodge = Random.Range(1, 100) > ((tmpDodge + m_dodge) * 2);
+        }
         else
-            dodge = Random.Range(1, 100) > m_dodge;
+        {
+             dodge = Random.Range(1, 100) > (tmpDodge + m_dodge);
+        }
+
 
         if (dodge)
         {
             switch (characterAttack._character.typeDamage)
             {
                 case TypeDamage.Physic:
-                    Health -= (characterAttack._character._attackDamage + bonusDamage - m_armor) ;
+                    Health -= (characterAttack._character._attackDamage + bonusDamage - (m_armor + tmpArmor)) ;
                     break;
                 case TypeDamage.Magic:
                     Health -= (characterAttack._character._attackDamage + bonusDamage - m_armorMagic);
@@ -56,7 +78,16 @@ public class LifeManager : MonoBehaviour
         {
             Debug.Log("Dodge");
         }
-        
-        
+
+        if(characterDefense.hasAttacked)
+        {
+            return;
+        }
+        else
+        {
+            Debug.Log("Counter Attack");
+            characterDefense.hasAttacked = true;
+            characterAttack.TakeDamage(characterDefense);
+        }
     }
 }

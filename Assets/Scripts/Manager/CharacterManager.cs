@@ -356,6 +356,7 @@ public class CharacterManager : MonoBehaviour
 
     public void TakeDamage(CharacterManager character)
     {
+        Debug.Log(this.location.IsPlantLevel);
         Debug.Log(this.m_lifeManager.Health);
         int bonusDamage = 0;
         if (character._character.typeBonusDamage == this._character.type)
@@ -388,4 +389,5 @@ public class CharacterManager : MonoBehaviour
     {
         hasMoved = true;
     }
+
 }
