@@ -14,6 +14,8 @@ public class CharacterManager : MonoBehaviour
 
     public Animator _animator;
 
+    public ParticleSystem _particuleLauncher;
+
     protected const float rotationSpeed = 0f;
     protected const float travelSpeed = 4f;
 
@@ -38,6 +40,20 @@ public class CharacterManager : MonoBehaviour
     public void Start()
     {
         _animator = GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        if (hasAlreadyPlayed)
+        {
+            _particuleLauncher.Emit(1);
+            Debug.Log("unit Ready");
+        }
+        if (!hasAlreadyPlayed)
+        {
+            _particuleLauncher.Emit(0);
+            Debug.Log("unit alReady plays");
+        }
     }
 
     public HexCell Location
