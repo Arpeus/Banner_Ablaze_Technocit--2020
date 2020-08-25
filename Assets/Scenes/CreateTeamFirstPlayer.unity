@@ -2589,11 +2589,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_hudMenu: {fileID: 1801553590}
   m_characters: []
-  _countMax: 20
+  _countMax: 8
   m_currentCount: 0
+  m_nbtroops: 000000000000000000000000000000000000000000000000
+  m_fromZeroTroop: 000000000000
   m_nbCavalier: 0
   m_nbSwordMan: 0
   m_nbLancer: 0
+  m_nbRedMage: 0
+  m_nbWhiteMage: 0
+  m_nbBlackMage: 0
 --- !u!4 &1122564604
 Transform:
   m_ObjectHideFlags: 0

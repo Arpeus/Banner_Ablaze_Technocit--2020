@@ -92,4 +92,12 @@ public class LifeManager : MonoBehaviour
             characterAttack.TakeDamage(characterDefense);
         }
     }
+
+    public void ReceiveHeal(CharacterManager characterHealer)
+    {
+        Health += (characterHealer._character._attackDamage/2);
+        if (Health > m_maxHealth)
+            Health = m_maxHealth;
+        Debug.Log("test heal");
+    }
 }

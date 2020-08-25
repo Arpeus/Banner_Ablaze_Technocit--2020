@@ -228,8 +228,30 @@ public class CharacterManager : MonoBehaviour
                 {
                     m_enemyNeighbor.Add(neighbor.CharacterManager);
                 }
+                if (_character._range > 1)
+                {
+                    for (HexDirection e = HexDirection.NE; e <= HexDirection.NW; e++)
+                    {
+                        HexCell neighborTest = null;
+                        if (location.GetNeighbor(e) != null)
+                        {
+                            neighborTest = neighbor.GetNeighbor(e);
+                            if (neighborTest.CharacterManager != null && neighborTest.CharacterManager._playerNumberType != this._playerNumberType)
+                                m_enemyNeighbor.Add(neighborTest.CharacterManager);
+                        }
+                    }
+                }
             }
         }
+    }
+
+    public void ReceiveHeal(CharacterManager characterHealer)
+    {
+        m_lifeManager.ReceiveHeal(characterHealer);
+        if (characterHealer._playerNumberType == PlayerNumber.EType_PlayerOne)
+            GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
+        else
+            GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerTwo;
     }
 
     public void TakeDamage(CharacterManager character)

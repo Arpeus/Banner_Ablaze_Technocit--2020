@@ -9,11 +9,13 @@ public class HexGameUI : MonoBehaviour
 
     HexCell currentCell;
     HexCell enemyCell;
+    HexCell allyCell;
 
     [SerializeField] private GameObject m_uniteMenu;
 
-    CharacterManager selectedUnit;
-    CharacterManager enemyUnit;
+    [SerializeField] CharacterManager selectedUnit;
+    [SerializeField] CharacterManager enemyUnit;
+    [SerializeField] CharacterManager allyUnit;
 
     HexMapCamera m_mainCamera;
 
@@ -133,6 +135,30 @@ public class HexGameUI : MonoBehaviour
                 }
             }
         }
+        if (GameManager.Instance.EType_Phase == PhaseType.EType_HealPhase)
+        {
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    DoSelectionAlly();
+                    CharacterHealer tmpCharacter = selectedUnit as CharacterHealer;
+                    foreach (CharacterManager character in tmpCharacter._allyNeighbor)
+                    {
+                        if (allyUnit != null && allyUnit == character && allyUnit != selectedUnit)
+                        {
+                            Debug.Log("test");
+                            selectedUnit.SetHasMoved(true-*);
+                            allyUnit.ReceiveHeal(selectedUnit);
+                            tmpCharacter.ClearAlly();
+                            break;
+                        }
+                    }
+
+                    allyUnit = null;
+                }
+            }
+        }
     }
 
     void DoSelection()
@@ -143,6 +169,16 @@ public class HexGameUI : MonoBehaviour
         {
             selectedUnit = currentCell.CharacterManager;
             CheckAllyUnit();
+        }
+    }
+
+    void DoSelectionAlly()
+    {
+        grid.ClearPath();
+        UpdateAllyCell();
+        if (allyCell)
+        {
+            allyUnit = allyCell.CharacterManager;
         }
     }
 
@@ -202,6 +238,17 @@ public class HexGameUI : MonoBehaviour
         if (cell != enemyCell)
         {
             enemyCell = cell;
+            return true;
+        }
+        return false;
+    }
+
+    bool UpdateAllyCell()
+    {
+        HexCell cell = grid.GetCell(Camera.main.ScreenPointToRay(Input.mousePosition));
+        if (cell != allyCell)
+        {
+            allyCell = cell;
             return true;
         }
         return false;
