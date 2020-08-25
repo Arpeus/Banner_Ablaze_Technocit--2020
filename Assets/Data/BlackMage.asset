@@ -25,3 +25,4 @@ MonoBehaviour:
   type: 5
   typeBonusDamage: 3
   typeDamage: 1
+  typeRange: 0

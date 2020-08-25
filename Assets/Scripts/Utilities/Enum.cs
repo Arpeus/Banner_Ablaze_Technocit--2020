@@ -14,6 +14,12 @@ public enum TypeDamage
     Magic
 }
 
+public enum TypeRange
+{
+    Cac,
+    Range
+}
+
 public enum PhaseType
 {
     EType_PickPhase,

@@ -1347,6 +1347,7 @@ MonoBehaviour:
   - {fileID: 1983898725417912044, guid: 552fbced805dbf142a81b1ba9d0beecc, type: 3}
   m_btnSpawnPlayerTwo: {fileID: 159344020}
   m_btnGoToTurnPhase: {fileID: 113945336}
+  m_currentCharacterManager: {fileID: 0}
 --- !u!4 &582324739
 Transform:
   m_ObjectHideFlags: 0
@@ -1586,6 +1587,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 602523341}
   m_uniteMenu: {fileID: 2928176386768762877}
+  selectedUnit: {fileID: 0}
+  enemyUnit: {fileID: 0}
+  allyUnit: {fileID: 0}
 --- !u!1 &651225092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,7 +2322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stickMinZoom: -100
   stickMaxZoom: -25
-  swivelMinZoom: 90
+  swivelMinZoom: 60
   swivelMaxZoom: 45
   moveSpeedMinZoom: 400
   moveSpeedMaxZoom: 100

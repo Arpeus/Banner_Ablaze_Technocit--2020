@@ -66,18 +66,23 @@ public class LifeManager : MonoBehaviour
 
         if (dodge)
         {
+            int damage = 0;
             switch (characterAttack._character.typeDamage)
             {
                 case TypeDamage.Physic:
-                    Health -= (characterAttack._character._attackDamage + bonusDamage - (m_armor + tmpArmor)) ;
+                    damage = characterAttack._character._attackDamage + bonusDamage - (m_armor + tmpArmor);
+                   
                     break;
                 case TypeDamage.Magic:
-                    Health -= (characterAttack._character._attackDamage + bonusDamage - m_armorMagic);
+                    damage = characterAttack._character._attackDamage + bonusDamage - m_armorMagic;
                     break;
             }
-            if(Health <= 0)
+            if (damage > 0)
+                Health -= damage;
+
+            if (Health <= 0)
             {
-                Die();
+                Die(gameObject.GetComponent<CharacterManager>());
             }
         }
         else
@@ -85,9 +90,7 @@ public class LifeManager : MonoBehaviour
             Debug.Log("Dodge");
         }
 
-        
-
-        if(characterDefense.hasAttacked)
+        if(characterDefense.hasAttacked || Health <= 0)
         {
             return;
         }
@@ -107,8 +110,17 @@ public class LifeManager : MonoBehaviour
         Debug.Log("test heal");
     }
 
-    public void Die()
+    public void Die(CharacterManager character)
     {
+        switch (character._playerNumberType)
+        {
+            case PlayerNumber.EType_PlayerOne:
+                GameManager.Instance._players[0].m_characters.Remove(character);
+                break;
+            case PlayerNumber.EType_PlayerTwo:
+                GameManager.Instance._players[1].m_characters.Remove(character);
+                break;
+        }
         DestroyImmediate(gameObject);
     }
 }

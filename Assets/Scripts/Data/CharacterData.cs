@@ -18,4 +18,5 @@ public class CharacterData : ScriptableObject
     public TypeCharacter type;
     public TypeCharacter typeBonusDamage;
     public TypeDamage typeDamage;
+    public TypeRange typeRange;
 }
