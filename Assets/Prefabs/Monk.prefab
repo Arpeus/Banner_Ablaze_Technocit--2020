@@ -134,7 +134,10 @@ MonoBehaviour:
   hasAttacked: 0
   m_enemyNeighbor: []
   _animator: {fileID: 0}
+  _particuleLauncher: {fileID: 2632042310760877775, guid: 586748e8b53e0d543ab38ce60639ba6a,
+    type: 3}
   m_lifeManager: {fileID: 0}
+  _allyNeighbor: []
 --- !u!95 &8916451946139556972
 Animator:
   serializedVersion: 3
