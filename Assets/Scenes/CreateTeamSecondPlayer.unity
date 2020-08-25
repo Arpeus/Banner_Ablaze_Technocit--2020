@@ -2571,7 +2571,7 @@ GameObject:
   - component: {fileID: 1122564603}
   - component: {fileID: 1122564605}
   m_Layer: 0
-  m_Name: PlayerOne
+  m_Name: PlayerTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4196,7 +4196,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1801553590}
-        m_MethodName: GoToSceneSecondPlayerTeam
+        m_MethodName: GoToGameScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
