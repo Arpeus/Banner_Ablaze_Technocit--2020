@@ -33,7 +33,7 @@ public class LifeManager : MonoBehaviour
         this.m_dodge = dodge;
     }
 
-    public void TakeDamage(CharacterManager characterDefense, CharacterManager characterAttack, int bonusDamage)
+    public void TakeDamage(CharacterManager characterDefense, CharacterManager characterAttack, int bonusDamage, bool counterAttack, bool canCounter = true)
     {
         bool dodge = false;
         int tmpDodge = 0;
@@ -63,15 +63,21 @@ public class LifeManager : MonoBehaviour
              dodge = Random.Range(1, 100) > (tmpDodge + m_dodge);
         }
 
-
         if (dodge)
         {
             int damage = 0;
             switch (characterAttack._character.typeDamage)
             {
                 case TypeDamage.Physic:
-                    damage = characterAttack._character._attackDamage + bonusDamage - (m_armor + tmpArmor);
-                   
+                    int tmpCharacterAttack = characterAttack._character._attackDamage;
+                    if (counterAttack == true)
+                    {
+                        if(characterAttack._character.type == TypeCharacter.Lancer)
+                        {
+                            tmpCharacterAttack = characterAttack._character._attackDamage / 2;
+                        }
+                    }
+                    damage = tmpCharacterAttack + bonusDamage - (m_armor + tmpArmor);
                     break;
                 case TypeDamage.Magic:
                     damage = characterAttack._character._attackDamage + bonusDamage - m_armorMagic;
@@ -90,15 +96,22 @@ public class LifeManager : MonoBehaviour
             Debug.Log("Dodge");
         }
 
-        if(characterDefense.hasAttacked || Health <= 0)
+        if (
+                characterDefense.hasAttacked ||
+                Health <= 0 ||
+                canCounter == false ||
+                counterAttack == true
+            )
         {
+            Debug.Log("Can't counter Attack");
             return;
         }
         else
         {
             Debug.Log("Counter Attack");
             characterDefense.hasAttacked = true;
-            characterAttack.TakeDamage(characterDefense);
+            // Disable a second counter Attack
+            characterAttack.TakeDamage(characterDefense, true);
         }
     }
 

@@ -7,10 +7,13 @@ public class CharacterManager : MonoBehaviour
 {
     public CharacterData _character;
     public PlayerNumber _playerNumberType;
+
     public bool hasAlreadyPlayed = false;
     public bool hasMoved = false;
     public bool hasAttacked = false;
+
     public List<CharacterManager> m_enemyNeighbor;
+    public List<CharacterManager> m_enemyNeighborRange;
 
     public Animator _animator;
 
@@ -237,7 +240,12 @@ public class CharacterManager : MonoBehaviour
                         {
                             neighborTest = neighbor.GetNeighbor(e);
                             if (neighborTest.CharacterManager != null && neighborTest.CharacterManager._playerNumberType != this._playerNumberType)
-                                m_enemyNeighbor.Add(neighborTest.CharacterManager);
+                            {
+                                if (!m_enemyNeighbor.Contains(neighborTest.CharacterManager) && !m_enemyNeighborRange.Contains(neighborTest.CharacterManager))
+                                {
+                                    m_enemyNeighborRange.Add(neighborTest.CharacterManager);
+                                }
+                            }   
                         }
                     }
                 }
@@ -254,17 +262,32 @@ public class CharacterManager : MonoBehaviour
             GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerTwo;
     }
 
-    public void TakeDamage(CharacterManager character)
+    public void TakeDamage(CharacterManager character, bool counterAttack = false)
     {
-        Debug.Log(this.location.IsPlantLevel);
-        Debug.Log(this.m_lifeManager.Health);
+        
+        m_lifeManager.TakeDamage(this, character, BonusDamage(character), counterAttack);
+    }
+
+    public void TakeDamageRange(CharacterManager character,  bool counterAttack = false)
+    {
+        bool canCounter = true;
+        if (this._character._range < character._character._range)
+            canCounter = false;
+
+        m_lifeManager.TakeDamage(this, character, BonusDamage(character), counterAttack, canCounter);
+    }
+
+    public int BonusDamage(CharacterManager character)
+    {
         int bonusDamage = 0;
         if (character._character.typeBonusDamage == this._character.type)
             bonusDamage = character._character._damageTriangle;
-        m_lifeManager.TakeDamage(this, character, bonusDamage);
-        Debug.Log(this.m_lifeManager.Health);
-        Debug.Log(character._playerNumberType);
-        if (character._playerNumberType == PlayerNumber.EType_PlayerOne)
+        return bonusDamage;
+    }
+
+    public void SetStateTurn()
+    {
+        if (_playerNumberType == PlayerNumber.EType_PlayerOne)
             GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
         else
             GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerTwo;
@@ -278,6 +301,7 @@ public class CharacterManager : MonoBehaviour
     public void ClearEnemy()
     {
         m_enemyNeighbor.Clear();
+        m_enemyNeighborRange.Clear();
     }
 
     public void SetHasAlreadyPlayed(bool hasAlreadyPlayed)

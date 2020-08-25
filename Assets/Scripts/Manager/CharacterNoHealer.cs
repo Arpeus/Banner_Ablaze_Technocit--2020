@@ -19,7 +19,6 @@ public class CharacterNoHealer : CharacterManager
     IEnumerator TravelPath()
     {
         Vector3 a, b, c = pathToTravel[0].Position;
-        //yield return LookAt(pathToTravel[1].Position);
 
         if (!currentTravelLocation)
         {

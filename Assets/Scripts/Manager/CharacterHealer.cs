@@ -130,11 +130,13 @@ public class CharacterHealer : CharacterManager
                         {
                             neighborTest = neighbor.GetNeighbor(e);
                             if (
-                                neighborTest.CharacterManager != null 
-                                && neighborTest.CharacterManager._playerNumberType == this._playerNumberType 
-                                && neighborTest.CharacterManager != this
+                                    neighborTest.CharacterManager != null 
+                                    && neighborTest.CharacterManager._playerNumberType == this._playerNumberType 
+                                    && neighborTest.CharacterManager != this
                                 )
+                            {
                                 _allyNeighbor.Add(neighborTest.CharacterManager);
+                            }
                         }
                     }
                 }

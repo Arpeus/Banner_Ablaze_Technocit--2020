@@ -123,14 +123,25 @@ public class HexGameUI : MonoBehaviour
                     {
                         if (enemyUnit != null && enemyUnit == character)
                         {
-                            Debug.Log("test");
                             selectedUnit.SetHasMoved(true);
                             enemyUnit.TakeDamage(selectedUnit);
                             selectedUnit.ClearEnemy();
+                            selectedUnit.SetStateTurn();
                             break;
                         }
                     }
-                    
+                    foreach (CharacterManager character in selectedUnit.m_enemyNeighborRange)
+                    {
+                        if (enemyUnit != null && enemyUnit == character)
+                        {
+                            selectedUnit.SetHasMoved(true);
+                            enemyUnit.TakeDamageRange(selectedUnit);
+                            selectedUnit.ClearEnemy();
+                            selectedUnit.SetStateTurn();
+                            break;
+                        }
+                    }
+
                     enemyUnit = null;
                 }
             }
@@ -147,7 +158,6 @@ public class HexGameUI : MonoBehaviour
                     {
                         if (allyUnit != null && allyUnit == character && allyUnit != selectedUnit)
                         {
-                            Debug.Log("test");
                             selectedUnit.SetHasMoved(true);
                             allyUnit.ReceiveHeal(selectedUnit);
                             tmpCharacter.ClearAlly();
@@ -258,7 +268,6 @@ public class HexGameUI : MonoBehaviour
     {
         if (selectedUnit && selectedUnit._playerNumberType != PlayerNumber.EType_PlayerTwo)
         {
-
             m_mainCamera.transform.position = new Vector3(currentCell.Position.x, transform.position.y, currentCell.Position.z);
 
             Debug.Log(selectedUnit);

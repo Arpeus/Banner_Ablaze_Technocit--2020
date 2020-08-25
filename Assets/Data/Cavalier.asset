@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Cavalier
   m_EditorClassIdentifier: 
   _name: Kihei
-  _health: 1
-  _attackDamage: 1
-  _armor: 0
-  _resistanceMagic: 0
-  _dodge: 0
-  _movement: 1
-  _range: 0
+  _health: 12
+  _attackDamage: 7
+  _armor: 4
+  _resistanceMagic: 3
+  _dodge: 10
+  _movement: 6
+  _range: 1
   _unitCost: 5
   _damageTriangle: 5
   type: 0
