@@ -233,7 +233,7 @@ public class CharacterManager : MonoBehaviour
                     for (HexDirection e = HexDirection.NE; e <= HexDirection.NW; e++)
                     {
                         HexCell neighborTest = null;
-                        if (location.GetNeighbor(e) != null)
+                        if (neighbor.GetNeighbor(e) != null)
                         {
                             neighborTest = neighbor.GetNeighbor(e);
                             if (neighborTest.CharacterManager != null && neighborTest.CharacterManager._playerNumberType != this._playerNumberType)
