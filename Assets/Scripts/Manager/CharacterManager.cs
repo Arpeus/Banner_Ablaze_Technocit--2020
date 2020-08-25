@@ -12,6 +12,8 @@ public class CharacterManager : MonoBehaviour
     public bool hasAttacked = false;
     public List<CharacterManager> m_enemyNeighbor;
 
+    public Animator _animator;
+
     protected const float rotationSpeed = 0f;
     protected const float travelSpeed = 4f;
 
@@ -31,6 +33,11 @@ public class CharacterManager : MonoBehaviour
         m_lifeManager.SetArmor(_character._armor);
         m_lifeManager.SetArmorMargic(_character._resistanceMagic);
         m_lifeManager.SetDodge(_character._dodge);
+    }
+
+    public void Start()
+    {
+        _animator = GetComponent<Animator>();
     }
 
     public HexCell Location
@@ -108,58 +115,9 @@ public class CharacterManager : MonoBehaviour
 
     public virtual void Travel(List<HexCell> path)
     {
-        /*location.CharacterManager = null;
-        location = path[path.Count - 1];
-        location.CharacterManager = this;
-        pathToTravel = path;
-        StopAllCoroutines();
-        StartCoroutine(TravelPath());*/
+        _animator.SetBool("_IsMoving", true);
     }
-
     
-
-    /*
-    IEnumerator LookAt(Vector3 point)
-    {
-        if (HexMetrics.Wrapping)
-        {
-            float xDistance = point.x - transform.localPosition.x;
-            if (xDistance < -HexMetrics.innerRadius * HexMetrics.wrapSize)
-            {
-                point.x += HexMetrics.innerDiameter * HexMetrics.wrapSize;
-            }
-            else if (xDistance > HexMetrics.innerRadius * HexMetrics.wrapSize)
-            {
-                point.x -= HexMetrics.innerDiameter * HexMetrics.wrapSize;
-            }
-        }
-
-        point.y = transform.localPosition.y;
-        Quaternion fromRotation = transform.localRotation;
-        Quaternion toRotation =
-            Quaternion.LookRotation(point - transform.localPosition);
-        float angle = Quaternion.Angle(fromRotation, toRotation);
-
-        if (angle > 0f)
-        {
-            float speed = rotationSpeed / angle;
-            for (
-                float t = Time.deltaTime * speed;
-                t < 1f;
-                t += Time.deltaTime * speed
-            )
-            {
-                transform.localRotation =
-                    Quaternion.Slerp(fromRotation, toRotation, t);
-                yield return null;
-            }
-        }
-
-        transform.LookAt(point);
-        orientation = transform.localRotation.eulerAngles.y;
-    }
-    */
-
     public int GetMoveCost(HexCell fromCell, HexCell toCell, HexDirection direction)
     {
         if (!IsValidDestination(toCell))

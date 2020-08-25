@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4709392930636243083}
   - component: {fileID: 1121783021350257292}
   - component: {fileID: 7794383077260197825}
+  - component: {fileID: 731915601329833640}
   m_Layer: 0
   m_Name: Swordman
   m_TagString: Untagged
@@ -73,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 84c8dcd727fb6174895d956fdd36e9f2, type: 3}
+  m_Sprite: {fileID: -9171086512773952005, guid: c30d8e87113851f42bd43d8d58f1eb3c,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8477823b72f47d4fa538c662a2cb82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_maxHealth: 0
   m_health: 0
   m_armor: 0
   m_armorMagic: 0
@@ -130,4 +133,24 @@ MonoBehaviour:
   hasMoved: 0
   hasAttacked: 0
   m_enemyNeighbor: []
+  _animator: {fileID: 0}
   m_lifeManager: {fileID: 0}
+--- !u!95 &731915601329833640
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5282716067483988459}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f344eaebd0638cb448533e5267a50e99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

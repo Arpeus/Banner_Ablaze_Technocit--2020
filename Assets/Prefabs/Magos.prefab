@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4980415557849836638}
   - component: {fileID: 3043160164223141745}
-  - component: {fileID: 7924272246660382562}
   - component: {fileID: 6680918517039382358}
-  - component: {fileID: 3313198195570127942}
   - component: {fileID: -1774319832539941190}
+  - component: {fileID: 3582721274995432659}
+  - component: {fileID: 1299165470230905267}
   m_Layer: 0
   m_Name: Magos
   m_TagString: Untagged
@@ -74,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fa1d3a9ab7821054da32c2ddc4a986c8, type: 3}
+  m_Sprite: {fileID: 6942619671904739110, guid: 1482c99eb2c4005448050fafc5a9ff59,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,25 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7924272246660382562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4025172066702380400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828deae01eae88748a95da082ce77c38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _character: {fileID: 11400000, guid: abfbdb994f16641449977ba25aa953a3, type: 2}
-  _playerNumberType: 0
-  hasAlreadyPlayed: 0
-  hasMoved: 0
-  hasAttacked: 0
-  m_enemyNeighbor: []
-  m_lifeManager: {fileID: 0}
 --- !u!114 &6680918517039382358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,22 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8477823b72f47d4fa538c662a2cb82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_maxHealth: 0
   m_health: 0
   m_armor: 0
   m_armorMagic: 0
   m_dodge: 0
---- !u!114 &3313198195570127942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4025172066702380400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99632fd2e0bfba7409e9fcee85eb01fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-1774319832539941190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,4 +121,36 @@ MonoBehaviour:
   hasMoved: 0
   hasAttacked: 0
   m_enemyNeighbor: []
+  _animator: {fileID: 0}
   m_lifeManager: {fileID: 0}
+--- !u!114 &3582721274995432659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025172066702380400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca700d5fc9c3ca849936f2ef0b9c1188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &1299165470230905267
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025172066702380400}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 513a52c0d2294914e8e2aafe60f4f9ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9080987635691796190}
   - component: {fileID: 1705058945531605791}
   - component: {fileID: 8767297005972995448}
+  - component: {fileID: 8916451946139556972}
   m_Layer: 0
   m_Name: Monk
   m_TagString: Untagged
@@ -73,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 62054a1ffe1db394fb1bc20e171c2674, type: 3}
+  m_Sprite: {fileID: 5822644522608091303, guid: 1913157cce22e644bb1f8eee3e81c369,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8477823b72f47d4fa538c662a2cb82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_maxHealth: 0
   m_health: 0
   m_armor: 0
   m_armorMagic: 0
@@ -130,4 +133,24 @@ MonoBehaviour:
   hasMoved: 0
   hasAttacked: 0
   m_enemyNeighbor: []
+  _animator: {fileID: 0}
   m_lifeManager: {fileID: 0}
+--- !u!95 &8916451946139556972
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7107687175053593095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dfd1f4ba3388e14b93646d77440957b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

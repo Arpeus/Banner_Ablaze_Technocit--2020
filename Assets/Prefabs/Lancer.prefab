@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4613022310483722678}
   - component: {fileID: 1698441164608462151}
   - component: {fileID: 4104958220406416740}
+  - component: {fileID: 5540235244991439401}
   m_Layer: 0
   m_Name: Lancer
   m_TagString: Untagged
@@ -73,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2efd8e8854be7cb4ba715dd4aa04c934, type: 3}
+  m_Sprite: {fileID: -7942657213881326702, guid: f08618376ebeb584497da833b292355e,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8477823b72f47d4fa538c662a2cb82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_maxHealth: 0
   m_health: 0
   m_armor: 0
   m_armorMagic: 0
@@ -130,4 +133,24 @@ MonoBehaviour:
   hasMoved: 0
   hasAttacked: 0
   m_enemyNeighbor: []
+  _animator: {fileID: 0}
   m_lifeManager: {fileID: 0}
+--- !u!95 &5540235244991439401
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877358189991636389}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f1249f3fc562014408a6f3b6d2be0dfb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

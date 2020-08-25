@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6969407078654501477}
   - component: {fileID: 888469678621175905}
-  - component: {fileID: 110254640209507869}
   - component: {fileID: 3829102043255589602}
   - component: {fileID: -7928651520407211349}
+  - component: {fileID: 5538569536134388016}
+  - component: {fileID: 5674509695832969960}
   m_Layer: 0
   m_Name: RedMage
   m_TagString: Untagged
@@ -73,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f2e10c74993e5c345a0d5fc5b6f48ca7, type: 3}
+  m_Sprite: {fileID: 8826701398171103238, guid: f1172e6704263df4ebe7dbd2e7c2f1b8,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,18 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &110254640209507869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5970534310028927943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99632fd2e0bfba7409e9fcee85eb01fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3829102043255589602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8477823b72f47d4fa538c662a2cb82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_maxHealth: 0
   m_health: 0
   m_armor: 0
   m_armorMagic: 0
@@ -130,4 +121,36 @@ MonoBehaviour:
   hasMoved: 0
   hasAttacked: 0
   m_enemyNeighbor: []
+  _animator: {fileID: 0}
   m_lifeManager: {fileID: 0}
+--- !u!114 &5538569536134388016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970534310028927943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca700d5fc9c3ca849936f2ef0b9c1188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &5674509695832969960
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970534310028927943}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 78c86a4ea2f252b4e8e73336a63acd1c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

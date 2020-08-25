@@ -7,6 +7,7 @@ public class CharacterNoHealer : CharacterManager
     
     public override void Travel(List<HexCell> path)
     {
+        base.Travel(path);
         location.CharacterManager = null;
         location = path[path.Count - 1];
         location.CharacterManager = this;
@@ -92,6 +93,7 @@ public class CharacterNoHealer : CharacterManager
             m_hudInGame.ShowActionNoAttackUi(this);
         }
         pathToTravel = null;
+        _animator.SetBool("_IsMoving", false);
     }
 
     
