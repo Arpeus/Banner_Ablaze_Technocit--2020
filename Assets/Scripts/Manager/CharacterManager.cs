@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
@@ -17,10 +18,14 @@ public class CharacterManager : MonoBehaviour
 
     public static CharacterManager unitPrefab;
 
+    public Animator _animator;
+
     public HexGrid Grid { get; set; }
 
     private HUDInGame m_hudInGame;
     [HideInInspector]public LifeManager m_lifeManager;
+
+    
     
 
     private void Awake()
@@ -33,6 +38,10 @@ public class CharacterManager : MonoBehaviour
         m_lifeManager.SetDodge(_character._dodge);
     }
 
+    private void Start()
+    {
+        _animator= GetComponent<Animator>();
+    }
 
 
     public HexCell Location
@@ -116,6 +125,7 @@ public class CharacterManager : MonoBehaviour
         pathToTravel = path;
         StopAllCoroutines();
         StartCoroutine(TravelPath());
+        _animator.SetBool("_IsMoving", true);
     }
 
     IEnumerator TravelPath()
@@ -197,6 +207,7 @@ public class CharacterManager : MonoBehaviour
             m_hudInGame.ShowActionNoAttackUi(this);
         }
         pathToTravel = null;
+        _animator.SetBool("_IsMoving", false);
     }
 
     IEnumerator LookAt(Vector3 point)
