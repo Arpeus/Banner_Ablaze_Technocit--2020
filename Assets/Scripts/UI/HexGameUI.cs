@@ -121,6 +121,7 @@ public class HexGameUI : MonoBehaviour
                     {
                         if (enemyUnit != null && enemyUnit == character)
                         {
+                            Debug.Log("test");
                             selectedUnit.SetHasMoved(true);
                             enemyUnit.TakeDamage(selectedUnit);
                             selectedUnit.ClearEnemy();

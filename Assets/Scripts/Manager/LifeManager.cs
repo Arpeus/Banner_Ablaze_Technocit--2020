@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LifeManager : MonoBehaviour
 {
+    [SerializeField] private int m_maxHealth;
     [SerializeField] private int m_health;
     [SerializeField] private int m_armor;
     [SerializeField] private int m_armorMagic;
@@ -14,6 +15,7 @@ public class LifeManager : MonoBehaviour
     public void SetHealth(int health)
     {
         this.Health = health;
+        m_maxHealth = health;
     }
 
     public void SetArmor(int armor)

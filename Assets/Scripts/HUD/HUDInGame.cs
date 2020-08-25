@@ -10,6 +10,8 @@ public class HUDInGame : MonoBehaviour
     [SerializeField] private GameObject m_PanelSpawnUI;
     [SerializeField] private GameObject m_panelActionAttackUI;
     [SerializeField] private GameObject m_panelActionNoAttackUI;
+    [SerializeField] private GameObject m_panelActionHealNoAttackUI;
+    [SerializeField] private GameObject m_panelActionHealAttackUI;
     [SerializeField] private GameObject m_uniteMenu;
 
     [Header("UI Spawn")]
@@ -78,23 +80,46 @@ public class HUDInGame : MonoBehaviour
 
     public void ShowActionAttackUi(CharacterManager character)
     {
-        m_panelActionAttackUI.SetActive(true);
-        m_currentCharacterManager = character;
+        SetPanelActive(m_panelActionAttackUI, true, character);
     }
-
 
     public void ShowActionNoAttackUi(CharacterManager character)
     {
-        m_panelActionNoAttackUI.SetActive(true);
+        SetPanelActive(m_panelActionNoAttackUI, true, character);
+    }
+
+    public void ShowActionHealNoAttackUI(CharacterManager character)
+    {
+        SetPanelActive(m_panelActionHealNoAttackUI, true, character);
+    }
+
+    public void ShowActionHealAttackUI(CharacterManager character)
+    {
+        SetPanelActive(m_panelActionHealAttackUI, true, character);
+    }
+
+    public void ShowUnitMenu(CharacterManager character)
+    {
+        SetPanelActive(m_uniteMenu, true, character);
+    }
+
+    public void SetPanelActive(GameObject panel, bool active, CharacterManager character)
+    {
+        panel.SetActive(active);
         m_currentCharacterManager = character;
     }
 
     public void Attack()
     {
+        GameManager.Instance.EType_Phase = PhaseType.EType_AttackPhase;
         m_currentCharacterManager.SetHasAttacked(true);
         m_currentCharacterManager.Attack();
-        m_currentCharacterManager = null;
-        m_panelActionAttackUI.SetActive(false);
+        SetPanelActive(m_panelActionAttackUI, true, null);
+    }
+
+    public void Heal()
+    {
+
     }
 
     public void Wait()
@@ -102,13 +127,22 @@ public class HUDInGame : MonoBehaviour
         m_currentCharacterManager.SetHasAlreadyPlayed(true);
         m_currentCharacterManager.SetHasMoved(true);
         m_currentCharacterManager = null;
-        if(m_panelActionAttackUI.activeSelf) m_panelActionAttackUI.SetActive(false);
-        else m_panelActionNoAttackUI.SetActive(false);
+        if (m_panelActionAttackUI.activeSelf)
+        {
+            m_panelActionAttackUI.SetActive(false);
+        }
+        else
+        {
+            m_panelActionNoAttackUI.SetActive(false);
+        }
     }
 
-    public void ShowUnitMenu(CharacterManager character)
+    public void SetAllGameObjectInactive()
     {
-        m_uniteMenu.SetActive(true);
-        m_currentCharacterManager = character;
+        m_panelActionAttackUI.SetActive(false);
+        m_panelActionNoAttackUI.SetActive(false);
+        m_panelActionHealNoAttackUI.SetActive(false);
+        m_panelActionHealAttackUI.SetActive(false);
+        //m_uniteMenu.SetActive(false);
     }
 }

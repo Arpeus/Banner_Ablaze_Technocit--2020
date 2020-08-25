@@ -12,14 +12,14 @@ public class CharacterManager : MonoBehaviour
     public bool hasAttacked = false;
     public List<CharacterManager> m_enemyNeighbor;
 
-    const float rotationSpeed = 0f;
-    const float travelSpeed = 4f;
+    protected const float rotationSpeed = 0f;
+    protected const float travelSpeed = 4f;
 
     public static CharacterManager unitPrefab;
 
     public HexGrid Grid { get; set; }
 
-    private HUDInGame m_hudInGame;
+    protected HUDInGame m_hudInGame;
     [HideInInspector]public LifeManager m_lifeManager;
     
 
@@ -32,8 +32,6 @@ public class CharacterManager : MonoBehaviour
         m_lifeManager.SetArmorMargic(_character._resistanceMagic);
         m_lifeManager.SetDodge(_character._dodge);
     }
-
-
 
     public HexCell Location
     {
@@ -56,7 +54,7 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    HexCell location, currentTravelLocation;
+    protected HexCell location, currentTravelLocation;
 
     public float Orientation
     {
@@ -87,9 +85,9 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    float orientation;
+    protected float orientation;
 
-    List<HexCell> pathToTravel;
+    protected List<HexCell> pathToTravel;
 
     public void ValidateLocation()
     {
@@ -108,97 +106,19 @@ public class CharacterManager : MonoBehaviour
         return cell.IsSpanwerP1 && cell.IsSpanwerP2;
     }
 
-    public void Travel(List<HexCell> path)
+    public virtual void Travel(List<HexCell> path)
     {
-        location.CharacterManager = null;
+        /*location.CharacterManager = null;
         location = path[path.Count - 1];
         location.CharacterManager = this;
         pathToTravel = path;
         StopAllCoroutines();
-        StartCoroutine(TravelPath());
+        StartCoroutine(TravelPath());*/
     }
 
-    IEnumerator TravelPath()
-    {
-        
-        Vector3 a, b, c = pathToTravel[0].Position;
-        //yield return LookAt(pathToTravel[1].Position);
+    
 
-        if (!currentTravelLocation)
-        {
-            currentTravelLocation = pathToTravel[0];
-        }
-        //Grid.DecreaseVisibility(currentTravelLocation, VisionRange);
-        int currentColumn = currentTravelLocation.ColumnIndex;
-
-        float t = Time.deltaTime * travelSpeed;
-        for (int i = 1; i < pathToTravel.Count; i++)
-        {
-            currentTravelLocation = pathToTravel[i];
-            a = c;
-            b = pathToTravel[i - 1].Position;
-
-            int nextColumn = currentTravelLocation.ColumnIndex;
-            if (currentColumn != nextColumn)
-            {
-                if (nextColumn < currentColumn - 1)
-                {
-                    a.x -= HexMetrics.innerDiameter * HexMetrics.wrapSize;
-                    b.x -= HexMetrics.innerDiameter * HexMetrics.wrapSize;
-                }
-                else if (nextColumn > currentColumn + 1)
-                {
-                    a.x += HexMetrics.innerDiameter * HexMetrics.wrapSize;
-                    b.x += HexMetrics.innerDiameter * HexMetrics.wrapSize;
-                }
-                //Grid.MakeChildOfColumn(transform, nextColumn);
-                currentColumn = nextColumn;
-            }
-
-            c = (b + currentTravelLocation.Position) * 0.5f;
-            //Grid.IncreaseVisibility(pathToTravel[i], VisionRange);
-
-            for (; t < 1f; t += Time.deltaTime * travelSpeed)
-            {
-                transform.localPosition = Bezier.GetPoint(a, b, c, t);
-                Vector3 d = Bezier.GetDerivative(a, b, c, t);
-                d.y = 0f;
-                //transform.localRotation = Quaternion.LookRotation(d);
-                yield return null;
-            }
-            //Grid.DecreaseVisibility(pathToTravel[i], VisionRange);
-            t -= 1f;
-        }
-        currentTravelLocation = null;
-
-        a = c;
-        b = location.Position;
-        c = b;
-        //Grid.IncreaseVisibility(location, VisionRange);
-        for (; t < 1f; t += Time.deltaTime * travelSpeed)
-        {
-            transform.localPosition = Bezier.GetPoint(a, b, c, t);
-            Vector3 d = Bezier.GetDerivative(a, b, c, t);
-            d.y = 0f;
-            //transform.localRotation = Quaternion.LookRotation(d);
-            yield return null;
-        }
-
-        transform.localPosition = location.Position;
-        //orientation = transform.localRotation.eulerAngles.y;
-        ListPool<HexCell>.Add(pathToTravel);
-        if(CheckEnemy())
-        {
-            m_hudInGame.ShowActionAttackUi(this);
-            GameManager.Instance.EType_Phase = PhaseType.EType_AttackPhase;
-        }
-        else
-        {
-            m_hudInGame.ShowActionNoAttackUi(this);
-        }
-        pathToTravel = null;
-    }
-
+    /*
     IEnumerator LookAt(Vector3 point)
     {
         if (HexMetrics.Wrapping)
@@ -238,6 +158,7 @@ public class CharacterManager : MonoBehaviour
         transform.LookAt(point);
         orientation = transform.localRotation.eulerAngles.y;
     }
+    */
 
     public int GetMoveCost(HexCell fromCell, HexCell toCell, HexDirection direction)
     {
@@ -326,7 +247,7 @@ public class CharacterManager : MonoBehaviour
                         if (location.GetNeighbor(e) != null)
                         {
                             neighborTest = neighbor.GetNeighbor(e);
-                            if (neighborTest.CharacterManager != null && neighbor.CharacterManager._playerNumberType != this._playerNumberType)
+                            if (neighborTest.CharacterManager != null && neighborTest.CharacterManager._playerNumberType != this._playerNumberType)
                                 return true;
                         }
                     }

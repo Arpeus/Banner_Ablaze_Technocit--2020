@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6969407078654501477}
   - component: {fileID: 888469678621175905}
   - component: {fileID: 110254640209507869}
-  - component: {fileID: 8624086213595772564}
   - component: {fileID: 3829102043255589602}
+  - component: {fileID: -7928651520407211349}
   m_Layer: 0
   m_Name: RedMage
   m_TagString: Untagged
@@ -96,25 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca700d5fc9c3ca849936f2ef0b9c1188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8624086213595772564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5970534310028927943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828deae01eae88748a95da082ce77c38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _character: {fileID: 11400000, guid: fd26bf71f5adb9a48b182513a4e7b156, type: 2}
-  _playerNumberType: 0
-  hasAlreadyPlayed: 0
-  hasMoved: 0
-  hasAttacked: 0
-  m_enemyNeighbor: []
-  m_lifeManager: {fileID: 0}
 --- !u!114 &3829102043255589602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,3 +112,22 @@ MonoBehaviour:
   m_armor: 0
   m_armorMagic: 0
   m_dodge: 0
+--- !u!114 &-7928651520407211349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970534310028927943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e19575aa47cf84281063d12a3cef88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _character: {fileID: 11400000, guid: fd26bf71f5adb9a48b182513a4e7b156, type: 2}
+  _playerNumberType: 0
+  hasAlreadyPlayed: 0
+  hasMoved: 0
+  hasAttacked: 0
+  m_enemyNeighbor: []
+  m_lifeManager: {fileID: 0}

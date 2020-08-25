@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2854985735710405359}
   - component: {fileID: 9109933192924969082}
-  - component: {fileID: 5117683410261280269}
   - component: {fileID: 5835696781644883248}
   - component: {fileID: 4392430349949619548}
+  - component: {fileID: -4648124997943591913}
   m_Layer: 0
   m_Name: Cavalier
   m_TagString: Untagged
@@ -84,25 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5117683410261280269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7763169316064022567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828deae01eae88748a95da082ce77c38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _character: {fileID: 11400000, guid: e7748315bda9317489193d0c77796172, type: 2}
-  _playerNumberType: 0
-  hasAlreadyPlayed: 0
-  hasMoved: 0
-  hasAttacked: 0
-  m_enemyNeighbor: []
-  m_lifeManager: {fileID: 0}
 --- !u!114 &5835696781644883248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,3 +112,22 @@ MonoBehaviour:
   m_armor: 0
   m_armorMagic: 0
   m_dodge: 0
+--- !u!114 &-4648124997943591913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7763169316064022567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e19575aa47cf84281063d12a3cef88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _character: {fileID: 11400000, guid: e7748315bda9317489193d0c77796172, type: 2}
+  _playerNumberType: 0
+  hasAlreadyPlayed: 0
+  hasMoved: 0
+  hasAttacked: 0
+  m_enemyNeighbor: []
+  m_lifeManager: {fileID: 0}
