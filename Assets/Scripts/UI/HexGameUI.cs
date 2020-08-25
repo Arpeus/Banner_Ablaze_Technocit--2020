@@ -148,7 +148,7 @@ public class HexGameUI : MonoBehaviour
                         if (allyUnit != null && allyUnit == character && allyUnit != selectedUnit)
                         {
                             Debug.Log("test");
-                            selectedUnit.SetHasMoved(true-*);
+                            selectedUnit.SetHasMoved(true);
                             allyUnit.ReceiveHeal(selectedUnit);
                             tmpCharacter.ClearAlly();
                             break;
