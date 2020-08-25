@@ -20,8 +20,9 @@ public enum PhaseType
     EType_SpawnPhasePlayerOne,
     EType_SpawnPhasePlayerTwo,
     EType_TurnPhasePlayerOne,
+    EType_TurnPhasePlayerTwo,
     EType_AttackPhase,
-    EType_TurnPhasePlayerTwo
+    EType_HealPhase
 }
 
 public enum PlayerNumber

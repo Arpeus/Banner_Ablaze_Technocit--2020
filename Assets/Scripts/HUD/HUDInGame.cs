@@ -20,7 +20,7 @@ public class HUDInGame : MonoBehaviour
     [SerializeField] private Button m_btnSpawnPlayerTwo;
     [SerializeField] private Button m_btnGoToTurnPhase;
 
-    private CharacterManager m_currentCharacterManager;
+    [SerializeField]private CharacterManager m_currentCharacterManager;
 
     // Start is called before the first frame update
     void Start()
@@ -114,27 +114,23 @@ public class HUDInGame : MonoBehaviour
         GameManager.Instance.EType_Phase = PhaseType.EType_AttackPhase;
         m_currentCharacterManager.SetHasAttacked(true);
         m_currentCharacterManager.Attack();
-        SetPanelActive(m_panelActionAttackUI, true, null);
+        SetAllGameObjectInactive();
     }
 
     public void Heal()
     {
-
+        GameManager.Instance.EType_Phase = PhaseType.EType_HealPhase;
+        CharacterHealer character = m_currentCharacterManager as CharacterHealer;
+        character.Heal();
+        SetAllGameObjectInactive();
     }
 
     public void Wait()
     {
+        Debug.Log("m_currentCharacterManager" + m_currentCharacterManager);
         m_currentCharacterManager.SetHasAlreadyPlayed(true);
         m_currentCharacterManager.SetHasMoved(true);
-        m_currentCharacterManager = null;
-        if (m_panelActionAttackUI.activeSelf)
-        {
-            m_panelActionAttackUI.SetActive(false);
-        }
-        else
-        {
-            m_panelActionNoAttackUI.SetActive(false);
-        }
+        SetAllGameObjectInactive();
     }
 
     public void SetAllGameObjectInactive()
@@ -143,6 +139,7 @@ public class HUDInGame : MonoBehaviour
         m_panelActionNoAttackUI.SetActive(false);
         m_panelActionHealNoAttackUI.SetActive(false);
         m_panelActionHealAttackUI.SetActive(false);
+        m_currentCharacterManager = null;
         //m_uniteMenu.SetActive(false);
     }
 }
