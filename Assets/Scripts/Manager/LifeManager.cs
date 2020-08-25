@@ -75,11 +75,17 @@ public class LifeManager : MonoBehaviour
                     Health -= (characterAttack._character._attackDamage + bonusDamage - m_armorMagic);
                     break;
             }
+            if(Health <= 0)
+            {
+                Die();
+            }
         }
         else
         {
             Debug.Log("Dodge");
         }
+
+        
 
         if(characterDefense.hasAttacked)
         {
@@ -99,5 +105,10 @@ public class LifeManager : MonoBehaviour
         if (Health > m_maxHealth)
             Health = m_maxHealth;
         Debug.Log("test heal");
+    }
+
+    public void Die()
+    {
+        DestroyImmediate(gameObject);
     }
 }
