@@ -1590,6 +1590,7 @@ MonoBehaviour:
   selectedUnit: {fileID: 0}
   enemyUnit: {fileID: 0}
   allyUnit: {fileID: 0}
+  _unitsMenu: {fileID: 2928176386768762877}
 --- !u!1 &651225092
 GameObject:
   m_ObjectHideFlags: 0
