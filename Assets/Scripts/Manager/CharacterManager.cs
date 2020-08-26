@@ -45,8 +45,9 @@ public class CharacterManager : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    private void Update()
+    /*private void Update()
     {
+        
         if (hasAlreadyPlayed)
         {
             _particuleLauncher.Emit(1);
@@ -57,7 +58,8 @@ public class CharacterManager : MonoBehaviour
             _particuleLauncher.Emit(0);
             Debug.Log("unit alReady plays");
         }
-    }
+        
+    }*/
 
     public HexCell Location
     {
@@ -280,12 +282,13 @@ public class CharacterManager : MonoBehaviour
 
     public void TakeDamage(CharacterManager character, bool counterAttack = false)
     {
-        
+       
         m_lifeManager.TakeDamage(this, character, BonusDamage(character), counterAttack);
     }
 
     public void TakeDamageRange(CharacterManager character,  bool counterAttack = false)
     {
+        
         bool canCounter = true;
         if (this._character._range < character._character._range)
             canCounter = false;

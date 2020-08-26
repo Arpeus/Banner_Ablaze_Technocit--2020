@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public int nbTour = 1;
     public List<Player> _players;
     public List<CharacterManager> _characters;
     public string filepathMap = "";

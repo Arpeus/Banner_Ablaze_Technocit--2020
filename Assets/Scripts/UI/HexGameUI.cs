@@ -29,6 +29,7 @@ public class HexGameUI : MonoBehaviour
     {
         m_mainCamera = FindObjectOfType<HexMapCamera>();
         m_hudInGame = FindObjectOfType<HUDInGame>();
+        
     }
 
     public void SetEditMode(bool toggle)
@@ -62,7 +63,7 @@ public class HexGameUI : MonoBehaviour
                     DoSelection();
                     if (
                         selectedUnit != null && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerTwo ||
-                        selectedUnit != null && selectedUnit.hasAlreadyPlayed == true && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerOne
+                        selectedUnit != null && selectedUnit.hasMoved == true && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerOne
                         )
                         selectedUnit = null;
                 }
@@ -127,6 +128,7 @@ public class HexGameUI : MonoBehaviour
                         {
                             selectedUnit.SetHasMoved(true);
                             enemyUnit.TakeDamage(selectedUnit);
+                            selectedUnit.SetHasAlreadyPlayed(true);
                             selectedUnit.ClearEnemy();
                             selectedUnit.SetStateTurn();
                             break;
@@ -138,6 +140,7 @@ public class HexGameUI : MonoBehaviour
                         {
                             selectedUnit.SetHasMoved(true);
                             enemyUnit.TakeDamageRange(selectedUnit);
+                            selectedUnit.SetHasAlreadyPlayed(true);
                             selectedUnit.ClearEnemy();
                             selectedUnit.SetStateTurn();
                             break;
@@ -162,6 +165,7 @@ public class HexGameUI : MonoBehaviour
                         {
                             selectedUnit.SetHasMoved(true);
                             allyUnit.ReceiveHeal(selectedUnit);
+                            selectedUnit.SetHasAlreadyPlayed(true);
                             tmpCharacter.ClearAlly();
                             break;
                         }
@@ -280,13 +284,11 @@ public class HexGameUI : MonoBehaviour
         }
     }
 
-    
-
     public bool CheckUnitPlayed(Player player)
     {
         foreach(CharacterManager character in player.m_characters)
         {
-            if (!character.hasMoved)
+            if (!character.hasAlreadyPlayed)
                 return false;
         }
         return true;
@@ -301,14 +303,11 @@ public class HexGameUI : MonoBehaviour
                 break;
             case PhaseType.EType_TurnPhasePlayerTwo:
                 GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
+                GameManager.Instance.nbTour++;
                 break;
         }
 
-        foreach (CharacterManager character in player.m_characters)
-        {
-            character.SetHasAlreadyPlayed(true);
-        }
-
+        SetHasAlreadyPlayedEquip(player);
     }
 
     public void StartTurn(Player player)
@@ -318,6 +317,14 @@ public class HexGameUI : MonoBehaviour
             character.SetHasAlreadyPlayed(false);
             character.SetHasAttacked(false);
             character.SetHasMoved(false);
+        }
+    }
+
+    public void SetHasAlreadyPlayedEquip(Player player)
+    {
+        foreach (CharacterManager character in player.m_characters)
+        {
+            character.SetHasAlreadyPlayed(true);
         }
     }
 }

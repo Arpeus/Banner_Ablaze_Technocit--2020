@@ -1750,6 +1750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e78180ac132afa45a1bd948eee5fc70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nbTour: 1
   _players: []
   _characters:
   - {fileID: -4648124997943591913, guid: 9a4ee2a112cd2b8448b11481c948ecea, type: 3}
