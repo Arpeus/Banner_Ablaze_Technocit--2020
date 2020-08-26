@@ -23,6 +23,8 @@ public class HexGameUI : MonoBehaviour
 
     private HUDInGame m_hudInGame;
 
+    public GameObject _unitsMenu;
+
 
 
     private void Awake()
@@ -286,6 +288,10 @@ public class HexGameUI : MonoBehaviour
             m_mainCamera.transform.position = new Vector3(currentCell.Position.x, transform.position.y, currentCell.Position.z);
 
             Debug.Log(selectedUnit);
+        }
+        if(!selectedUnit)
+        {
+            _unitsMenu.SetActive(true);
         }
     }
 
