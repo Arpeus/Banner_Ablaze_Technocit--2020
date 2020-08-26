@@ -16,6 +16,7 @@ public class HexGrid : MonoBehaviour {
 	public HexGridChunk chunkPrefab;
 	public CharacterManager unitPrefab = null;
 
+    bool enter = false;
 	public Texture2D noiseSource;
 
     public HUDInGame _hudInGame;
@@ -78,6 +79,13 @@ public class HexGrid : MonoBehaviour {
                     }
                 }
                 break;
+        }
+        if(GameManager.Instance.nbTour % 2 == 0 && enter == false)
+        {
+            enter = true;
+            chunkCountX = cellCountX / HexMetrics.chunkSizeX;
+            chunkCountZ = cellCountZ / HexMetrics.chunkSizeZ;
+            cellShaderData.Initialize(cellCountX, cellCountZ);
         }
     }
 
