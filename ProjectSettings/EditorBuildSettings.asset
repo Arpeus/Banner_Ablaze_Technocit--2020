@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: 4a8c6dc6d0316044ba8a3a2674343773
   - enabled: 1
     path: Assets/Scenes/CreateTeamSecondPlayer.unity
-    guid: a19cc9066cd31d9478fce9f114a0f0d2
+    guid: 208bdc819d3d46742bfc60a7c0769b33
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: b860edf1bdb67d5418a578def80e1c8d

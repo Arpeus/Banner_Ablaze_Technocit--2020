@@ -7,6 +7,8 @@ public class HexGameUI : MonoBehaviour
 
     public HexGrid grid;
 
+    bool enter = false;
+
     HexCell currentCell;
     HexCell enemyCell;
     HexCell allyCell;
@@ -47,7 +49,16 @@ public class HexGameUI : MonoBehaviour
 
     void Update()
     {
-        if(GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerOne)
+        if (GameManager.Instance.nbTour % 2 == 0 && !enter)
+        {
+            enter = true;
+            foreach(HexCell hexcell in grid.cells)
+            {
+                hexcell.Visible = false;
+            }
+            SetVisibleAroundPlayer();
+        }
+        if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerOne)
         {
             if(CheckUnitPlayed(GameManager.Instance._players[0]))
             {
@@ -321,4 +332,27 @@ public class HexGameUI : MonoBehaviour
             character.SetHasAlreadyPlayed(true);
         }
     }
+
+    private void SetVisibleAroundPlayer()
+    {
+        switch (GameManager.Instance.EType_Phase)
+        {
+            case PhaseType.EType_TurnPhasePlayerOne:
+                SetVisibleAroundPlayer(GameManager.Instance._players[0]);
+                break;
+            case PhaseType.EType_TurnPhasePlayerTwo:
+                SetVisibleAroundPlayer(GameManager.Instance._players[1]);
+                break;
+        }
+    }
+
+    private void SetVisibleAroundPlayer(Player player)
+    {
+        foreach(CharacterManager character in player.m_characters)
+        {
+            character.SetVisibleAround();
+        }
+        
+    }
 }
+

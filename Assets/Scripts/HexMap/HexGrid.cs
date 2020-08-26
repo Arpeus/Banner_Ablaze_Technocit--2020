@@ -15,8 +15,7 @@ public class HexGrid : MonoBehaviour {
 	public Text cellLabelPrefab;
 	public HexGridChunk chunkPrefab;
 	public CharacterManager unitPrefab = null;
-
-    bool enter = false;
+   
 	public Texture2D noiseSource;
 
     public HUDInGame _hudInGame;
@@ -31,7 +30,7 @@ public class HexGrid : MonoBehaviour {
 
     Transform[] columns;
     HexGridChunk[] chunks;
-    HexCell[] cells;
+    public HexCell[] cells;
 
     int chunkCountX, chunkCountZ;
 
@@ -64,7 +63,7 @@ public class HexGrid : MonoBehaviour {
 
     void Update()
     {
-        switch(GameManager.Instance.EType_Phase)
+        switch (GameManager.Instance.EType_Phase)
         {
             case PhaseType.EType_SpawnPhasePlayerOne:
             case PhaseType.EType_SpawnPhasePlayerTwo:
@@ -80,13 +79,7 @@ public class HexGrid : MonoBehaviour {
                 }
                 break;
         }
-        if(GameManager.Instance.nbTour % 2 == 0 && enter == false)
-        {
-            enter = true;
-            chunkCountX = cellCountX / HexMetrics.chunkSizeX;
-            chunkCountZ = cellCountZ / HexMetrics.chunkSizeZ;
-            cellShaderData.Initialize(cellCountX, cellCountZ);
-        }
+        
     }
 
     // Mederic

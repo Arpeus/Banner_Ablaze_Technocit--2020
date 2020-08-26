@@ -22,6 +22,7 @@ MonoBehaviour:
   _range: 1
   _unitCost: 2
   _damageTriangle: 5
-  type: 2
+  type: 1
   typeBonusDamage: 0
   typeDamage: 0
+  typeRange: 0

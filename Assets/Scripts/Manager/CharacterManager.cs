@@ -271,6 +271,21 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
+    public void SetVisibleAround()
+    {
+        location.Visible = true;
+        for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
+        {
+            HexCell neighbor = null;
+            if (location.GetNeighbor(d) != null)
+            {
+                neighbor = location.GetNeighbor(d);
+                neighbor.Visible = true;
+            }
+        }
+    }
+
+
     public void ReceiveHeal(CharacterManager characterHealer)
     {
         m_lifeManager.ReceiveHeal(characterHealer);

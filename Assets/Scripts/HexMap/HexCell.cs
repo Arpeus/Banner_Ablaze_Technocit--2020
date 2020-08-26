@@ -4,6 +4,32 @@ using System.IO;
 
 public class HexCell : MonoBehaviour
 {
+    [SerializeField]private bool visible = true;
+
+    public bool Visible
+    {
+        get
+        {
+            return visible;
+        }
+
+        set
+        {
+            if (visible == value) return;
+            visible = value;
+            if(value == true)
+            {
+                if(CharacterManager!=null)
+                    CharacterManager.gameObject.SetActive(true);
+            }
+            else
+            {
+                if (CharacterManager != null)
+                    CharacterManager.gameObject.SetActive(false);
+                    //CharacterManager.transform.position = new Vector3(CharacterManager.transform.position.x, CharacterManager.transform.position.y + 5, CharacterManager.transform.position.z);
+            }
+        }
+    }
 
     public HexCoordinates coordinates;
 
@@ -394,6 +420,7 @@ public class HexCell : MonoBehaviour
     public HexCell NextWithSamePriority { get; set; }
 
     public HexCellShaderData ShaderData { get; set; }
+    
 
     int terrainTypeIndex;
 
