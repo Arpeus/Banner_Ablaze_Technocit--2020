@@ -33,6 +33,11 @@ public class CharacterManager : MonoBehaviour
     public HexGameUI hexGameUI;
     
 
+    void OnMouseOver()
+    {
+        Debug.Log("test");
+    }
+
     private void Awake()
     {
         Grid = FindObjectOfType<HexGrid>();

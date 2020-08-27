@@ -54,15 +54,12 @@ public class HexGameUI : MonoBehaviour
 
     void Update()
     {
-        /*if (GameManager.Instance.nbTour % 2 == 0 && !enter)
+        if (GameManager.Instance.nbTour % 2 == 0 && !enter)
         {
             enter = true;
-            foreach(HexCell hexcell in grid.cells)
-            {
-                hexcell.Visible = false;
-            }
-            SetVisibleAroundPlayer();
-        }*/
+            grid.Initialise();
+           
+        }
         if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerOne)
         {
             if(CheckUnitPlayed(GameManager.Instance._players[0]))
