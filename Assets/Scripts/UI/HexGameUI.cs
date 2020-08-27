@@ -15,7 +15,7 @@ public class HexGameUI : MonoBehaviour
 
     [SerializeField] private GameObject m_uniteMenu;
 
-    [SerializeField] CharacterManager selectedUnit;
+    public CharacterManager selectedUnit;
     [SerializeField] CharacterManager enemyUnit;
     [SerializeField] CharacterManager allyUnit;
 
@@ -25,13 +25,16 @@ public class HexGameUI : MonoBehaviour
 
     public GameObject _unitsMenu;
 
+    public CharacterManager _characterAnimator;
+
 
 
     private void Awake()
     {
         m_mainCamera = FindObjectOfType<HexMapCamera>();
         m_hudInGame = FindObjectOfType<HUDInGame>();
-        
+
+
     }
 
     public void SetEditMode(bool toggle)
@@ -183,6 +186,8 @@ public class HexGameUI : MonoBehaviour
                 }
             }
         }
+
+        
     }
 
     void DoSelection()
@@ -355,6 +360,17 @@ public class HexGameUI : MonoBehaviour
         {
             character.SetVisibleAround();
         } 
+    }
+
+    void OnHoverEnter()
+    {
+
+        Debug.Log("On Unit");
+    }
+
+    void OnHoverExit()
+    {
+        Debug.Log("out Unit");
     }
 }
 

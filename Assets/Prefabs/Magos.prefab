@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -1774319832539941190}
   - component: {fileID: 3582721274995432659}
   - component: {fileID: 1299165470230905267}
+  - component: {fileID: -6830411405741896051}
   m_Layer: 0
   m_Name: Magos
   m_TagString: Untagged
@@ -126,6 +127,7 @@ MonoBehaviour:
   _particuleLauncher: {fileID: 2632042310760877775, guid: ebed2bdbacecd414ea16efd3b7577382,
     type: 3}
   m_lifeManager: {fileID: 0}
+  hexGameUI: {fileID: 0}
 --- !u!114 &3582721274995432659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,3 +159,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &-6830411405741896051
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025172066702380400}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 2.56}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.56, y: 5.12}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 5.12}
+  m_EdgeRadius: 0
