@@ -4,6 +4,7 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using System;
 
 public class HexGrid : MonoBehaviour {
 
@@ -50,9 +51,22 @@ public class HexGrid : MonoBehaviour {
         {
             Load(GameManager.Instance.filepathMap);
             cellShaderData.Initialize(cellCountX, cellCountZ);
+            /*foreach(HexCell hexCell in cells)
+            {
+                hexCell.IncreaseVisibility();
+            }*/
         }
     }
 
+   
+
+    public void Initialise()
+    {
+        foreach (HexCell hexCell in cells)
+        {
+            hexCell.DecreaseVisibility();
+        }
+    }
 
     void Update()
 {
@@ -127,7 +141,7 @@ public class HexGrid : MonoBehaviour {
         if (cell && !cell.CharacterManager)
         {
             AddUnit(
-                Instantiate(unitPrefab), cell, Random.Range(0f, 360f)
+                Instantiate(unitPrefab), cell, UnityEngine.Random.Range(0f, 360f)
             ); ;
             if (DecrementBtn())
             {
@@ -454,7 +468,7 @@ public class HexGrid : MonoBehaviour {
 			HexCell current = searchFrontier.Dequeue();
 			current.SearchPhase += 1;
 
-			if (current == toCell) {
+			if (current == toCell && current.Distance <= fromCell.CharacterManager._character._movement) {
 				return true;
 			}
 

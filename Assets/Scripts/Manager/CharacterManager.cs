@@ -30,6 +30,11 @@ public class CharacterManager : MonoBehaviour
     [HideInInspector]public LifeManager m_lifeManager;
     
 
+    void OnMouseOver()
+    {
+        Debug.Log("test");
+    }
+
     private void Awake()
     {
         Grid = FindObjectOfType<HexGrid>();
