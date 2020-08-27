@@ -6,10 +6,17 @@ public class ButtonSpawn : MonoBehaviour
 {
     public int index;
     [SerializeField] private HexGrid m_hexGrid = null;
-    public TextMeshProUGUI _currentNumberTroop = null;  
-    void Awake()
+    public TextMeshProUGUI _currentNumberTroop = null;
+    private Player player;
+    int tmpNbTroop;
+
+    public Player Player { get => player; set => player = value; }
+
+    void Start()
     {
         m_hexGrid = FindObjectOfType<HexGrid>();
+        _currentNumberTroop.SetText(player.Nbtroops[index].ToString());
+        tmpNbTroop = player.Nbtroops[index];
     }
 
     public void SetPrefab(int index)
@@ -19,7 +26,6 @@ public class ButtonSpawn : MonoBehaviour
 
     public bool Decrement(int index)
     {
-        int tmpNbTroop = int.Parse(_currentNumberTroop.text);
         tmpNbTroop--;
         _currentNumberTroop.SetText(tmpNbTroop.ToString());
         if (tmpNbTroop == 0)

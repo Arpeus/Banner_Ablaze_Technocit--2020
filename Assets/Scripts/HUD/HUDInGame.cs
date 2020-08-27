@@ -29,7 +29,7 @@ public class HUDInGame : MonoBehaviour
         //m_btnSpawnPlayerTwo.interactable = false;
     }
 
-    void AddButtonSpawn(int index, int nbTroop)
+    void AddButtonSpawn(int index, int indexPlayer)
     {
         int i = 0;
         foreach (GameObject go in m_placeBtnSpawn)
@@ -37,7 +37,7 @@ public class HUDInGame : MonoBehaviour
             if (go.GetComponentInChildren<ButtonSpawn>() == null)
             {
                 GameObject btnSpawn = Instantiate(m_btnSpawn[index], m_placeBtnSpawn[i].transform);
-                btnSpawn.GetComponentInChildren<TextMeshProUGUI>().SetText(nbTroop.ToString());
+                btnSpawn.GetComponent<ButtonSpawn>().Player = GameManager.Instance._players[indexPlayer];
                 break;
             }
             i++;
@@ -73,7 +73,7 @@ public class HUDInGame : MonoBehaviour
         {
             if (GameManager.Instance._players[indexPlayer].Nbtroops[i] != 0)
             {
-                AddButtonSpawn(i, GameManager.Instance._players[indexPlayer].Nbtroops[i]);
+                AddButtonSpawn(i, indexPlayer);
             }
         }
     }
