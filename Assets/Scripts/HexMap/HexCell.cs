@@ -26,7 +26,6 @@ public class HexCell : MonoBehaviour
             {
                 if (CharacterManager != null)
                     CharacterManager.gameObject.SetActive(false);
-                    //CharacterManager.transform.position = new Vector3(CharacterManager.transform.position.x, CharacterManager.transform.position.y + 5, CharacterManager.transform.position.z);
             }
         }
     }
@@ -472,6 +471,7 @@ public class HexCell : MonoBehaviour
         visibility -= 1;
         if (visibility == 0)
         {
+            Debug.Log("Test");
             ShaderData.RefreshVisibility(this);
         }
     }

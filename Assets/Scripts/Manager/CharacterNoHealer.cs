@@ -24,7 +24,7 @@ public class CharacterNoHealer : CharacterManager
         {
             currentTravelLocation = pathToTravel[0];
         }
-        //Grid.DecreaseVisibility(currentTravelLocation, VisionRange);
+        Grid.DecreaseVisibility(currentTravelLocation, VisionRange);
         int currentColumn = currentTravelLocation.ColumnIndex;
 
         float t = Time.deltaTime * travelSpeed;
@@ -52,7 +52,7 @@ public class CharacterNoHealer : CharacterManager
             }
 
             c = (b + currentTravelLocation.Position) * 0.5f;
-            //Grid.IncreaseVisibility(pathToTravel[i], VisionRange);
+            Grid.IncreaseVisibility(pathToTravel[i], VisionRange);
 
             for (; t < 1f; t += Time.deltaTime * travelSpeed)
             {
@@ -62,7 +62,7 @@ public class CharacterNoHealer : CharacterManager
                 //transform.localRotation = Quaternion.LookRotation(d);
                 yield return null;
             }
-            //Grid.DecreaseVisibility(pathToTravel[i], VisionRange);
+            Grid.DecreaseVisibility(pathToTravel[i], VisionRange);
             t -= 1f;
         }
         currentTravelLocation = null;
@@ -70,7 +70,7 @@ public class CharacterNoHealer : CharacterManager
         a = c;
         b = location.Position;
         c = b;
-        //Grid.IncreaseVisibility(location, VisionRange);
+        Grid.IncreaseVisibility(location, VisionRange);
         for (; t < 1f; t += Time.deltaTime * travelSpeed)
         {
             transform.localPosition = Bezier.GetPoint(a, b, c, t);

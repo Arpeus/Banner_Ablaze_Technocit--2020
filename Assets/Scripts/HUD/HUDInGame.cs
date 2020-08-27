@@ -127,7 +127,7 @@ public class HUDInGame : MonoBehaviour
 
     public void Wait()
     {
-        Debug.Log("m_currentCharacterManager" + m_currentCharacterManager);
+        
         m_currentCharacterManager.SetHasAlreadyPlayed(true);
         m_currentCharacterManager.SetHasMoved(true);
         SetAllGameObjectInactive();

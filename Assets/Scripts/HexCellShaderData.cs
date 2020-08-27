@@ -91,6 +91,7 @@ public class HexCellShaderData : MonoBehaviour
 
     void LateUpdate()
     {
+        Debug.Log(transitioningCells.Count);
         if (needsVisibilityReset)
         {
             needsVisibilityReset = false;

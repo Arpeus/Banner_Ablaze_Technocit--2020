@@ -121,8 +121,9 @@ MonoBehaviour:
   hasMoved: 0
   hasAttacked: 0
   m_enemyNeighbor: []
+  m_enemyNeighborRange: []
   _animator: {fileID: 0}
-  _particuleLauncher: {fileID: 2632042310760877775, guid: 586748e8b53e0d543ab38ce60639ba6a,
+  _particuleLauncher: {fileID: 2632042310760877775, guid: ebed2bdbacecd414ea16efd3b7577382,
     type: 3}
   m_lifeManager: {fileID: 0}
 --- !u!114 &5538569536134388016

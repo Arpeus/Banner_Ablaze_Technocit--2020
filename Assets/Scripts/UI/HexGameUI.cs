@@ -357,8 +357,7 @@ public class HexGameUI : MonoBehaviour
         foreach(CharacterManager character in player.m_characters)
         {
             character.SetVisibleAround();
-        }
-        
+        } 
     }
 }
 

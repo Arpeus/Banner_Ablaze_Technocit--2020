@@ -32,6 +32,7 @@ public class CharacterManager : MonoBehaviour
 
     private void Awake()
     {
+        Grid = FindObjectOfType<HexGrid>();
         m_hudInGame = FindObjectOfType<HUDInGame>();
         m_lifeManager = GetComponent<LifeManager>();
         m_lifeManager.SetHealth(_character._health);
@@ -76,9 +77,10 @@ public class CharacterManager : MonoBehaviour
             }
             location = value;
             value.CharacterManager = this;
-            //Grid.IncreaseVisibility(value, VisionRange);
+            
+            Grid.IncreaseVisibility(value, VisionRange);
             transform.localPosition = value.Position;
-            //grid.MakeChildOfColumn(transform, value.ColumnIndex);
+            Grid.MakeChildOfColumn(transform, value.ColumnIndex);
         }
     }
 
