@@ -80,7 +80,7 @@ public class CharacterManager : MonoBehaviour
             
             Grid.IncreaseVisibility(value, VisionRange);
             transform.localPosition = value.Position;
-            Grid.MakeChildOfColumn(transform, value.ColumnIndex);
+            
         }
     }
 
@@ -275,6 +275,7 @@ public class CharacterManager : MonoBehaviour
 
     public void SetVisibleAround()
     {
+        /*
         location.Visible = true;
         for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
         {
@@ -285,6 +286,7 @@ public class CharacterManager : MonoBehaviour
                 neighbor.Visible = true;
             }
         }
+        */
     }
 
 
