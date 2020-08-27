@@ -16,6 +16,7 @@ public class CharacterManager : MonoBehaviour
     public List<CharacterManager> m_enemyNeighborRange;
 
     public Animator _animator;
+    public Animation _anim;
 
     public ParticleSystem _particuleLauncher;
 
@@ -28,6 +29,8 @@ public class CharacterManager : MonoBehaviour
 
     protected HUDInGame m_hudInGame;
     [HideInInspector]public LifeManager m_lifeManager;
+
+    public HexGameUI hexGameUI;
     
 
     private void Awake()
@@ -44,23 +47,13 @@ public class CharacterManager : MonoBehaviour
     public void Start()
     {
         _animator = GetComponent<Animator>();
+        _anim = GetComponent<Animation>();
     }
 
-    /*private void Update()
+    private void Update()
     {
-        
-        if (hasAlreadyPlayed)
-        {
-            _particuleLauncher.Emit(1);
-            Debug.Log("unit Ready");
-        }
-        if (!hasAlreadyPlayed)
-        {
-            _particuleLauncher.Emit(0);
-            Debug.Log("unit alReady plays");
-        }
-        
-    }*/
+
+    }
 
     public HexCell Location
     {
@@ -289,6 +282,11 @@ public class CharacterManager : MonoBehaviour
         */
     }
 
+    private void OnMouseOver()
+    {
+        Debug.Log("mouse is over");
+        _anim["Idle"].speed = 1;
+    }
 
     public void ReceiveHeal(CharacterManager characterHealer)
     {
@@ -356,4 +354,6 @@ public class CharacterManager : MonoBehaviour
     {
         this.hasAttacked = hasAttacked;
     }
+
+     
 }

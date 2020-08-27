@@ -16,4 +16,6 @@ public class BillboardScript : MonoBehaviour
         transform.LookAt(transform.position + m_myCamera.transform.rotation * Vector3.forward,
             m_myCamera.transform.rotation * Vector3.up);
     }
+
+
 }
