@@ -33,10 +33,7 @@ public class CharacterManager : MonoBehaviour
     public HexGameUI hexGameUI;
     
 
-    void OnMouseOver()
-    {
-        Debug.Log("test");
-    }
+    
 
     private void Awake()
     {
@@ -290,7 +287,12 @@ public class CharacterManager : MonoBehaviour
     private void OnMouseOver()
     {
         Debug.Log("mouse is over");
-        _anim["Idle"].speed = 1;
+        _animator.SetBool("_isIdle", true);
+    }
+    private void OnMouseExit()
+    {
+        Debug.Log("mouse is over");
+        _animator.SetBool("_isIdle", false);
     }
 
     public void ReceiveHeal(CharacterManager characterHealer)
