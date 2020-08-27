@@ -33,7 +33,7 @@ public class CharacterNoHealer : CharacterManager
                 transform.localPosition = Bezier.GetPoint(a, b, c, t);
                 Vector3 d = Bezier.GetDerivative(a, b, c, t);
                 d.y = 0f;
-                transform.localRotation = Quaternion.LookRotation(d);
+               
                 yield return null;
             }
             Grid.DecreaseVisibility(pathToTravel[i], VisionRange);
@@ -50,12 +50,10 @@ public class CharacterNoHealer : CharacterManager
             transform.localPosition = Bezier.GetPoint(a, b, c, t);
             Vector3 d = Bezier.GetDerivative(a, b, c, t);
             d.y = 0f;
-            transform.localRotation = Quaternion.LookRotation(d);
             yield return null;
         }
 
         transform.localPosition = location.Position;
-        orientation = transform.localRotation.eulerAngles.y;
         
         ListPool<HexCell>.Add(pathToTravel);
         if (CheckEnemy())
@@ -69,7 +67,4 @@ public class CharacterNoHealer : CharacterManager
         pathToTravel = null;
         _animator.SetBool("_IsMoving", false);
     }
-
-    
-
 }

@@ -116,7 +116,7 @@ public class CharacterManager : MonoBehaviour
     {
         get
         {
-            return 3;
+            return 1;
         }
     }
 

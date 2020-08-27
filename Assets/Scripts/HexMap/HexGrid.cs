@@ -51,10 +51,10 @@ public class HexGrid : MonoBehaviour {
         {
             Load(GameManager.Instance.filepathMap);
             cellShaderData.Initialize(cellCountX, cellCountZ);
-            /*foreach(HexCell hexCell in cells)
+            foreach(HexCell hexCell in cells)
             {
                 hexCell.IncreaseVisibility();
-            }*/
+            }
         }
     }
 

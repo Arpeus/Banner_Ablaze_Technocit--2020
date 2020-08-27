@@ -17,30 +17,10 @@ public class Player : MonoBehaviour
     [SerializeField] private int[] m_nbtroops = new int[6];
     [SerializeField] private bool[] m_fromZeroTroop = new bool[6];
    
-    [SerializeField] private int m_nbCavalier = 0;
-    private bool m_fromZeroCavalier = false;
-    [SerializeField] private int m_nbSwordMan = 0;
-    private bool m_fromZeroSwordMan = false;
-    [SerializeField] private int m_nbLancer = 0;
-    private bool m_fromZeroLancer = false;
-    [SerializeField] private int m_nbRedMage = 0;
-    private bool m_fromZeroRedMage = false;
-    [SerializeField] private int m_nbWhiteMage = 0;
-    private bool m_fromZeroWhiteMage = false;
-    [SerializeField] private int m_nbBlackMage = 0;
-    private bool m_fromZeroBlackMage = false;
-
     private string m_displayName = "Loading";
     
 
     public HUDMenu HudMenu { get => m_hudMenu; set => m_hudMenu = value; }
-   
-    public int NbCavalier { get => m_nbCavalier; set => m_nbCavalier = value; }
-    public int NbSwordMan { get => m_nbSwordMan; set => m_nbSwordMan = value; }
-    public int NbLancer { get => m_nbLancer; set => m_nbLancer = value; }
-    public int NbRedMage { get => m_nbRedMage; set => m_nbRedMage = value; }
-    public int NbWhiteMage { get => m_nbWhiteMage; set => m_nbWhiteMage = value; }
-    public int NbBlackMage { get => m_nbBlackMage; set => m_nbBlackMage = value; }
     public int[] Nbtroops { get => m_nbtroops; set => m_nbtroops = value; }
 
     public void SetDisplayName(string displayName)
