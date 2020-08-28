@@ -37,3 +37,9 @@ public enum PlayerNumber
     EType_PlayerTwo
 }
 
+public enum AnimState
+{
+    EType_IsNotPlaying,
+    EType_IsPlaying
+}
+

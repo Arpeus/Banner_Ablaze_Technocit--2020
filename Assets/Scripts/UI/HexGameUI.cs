@@ -60,129 +60,132 @@ public class HexGameUI : MonoBehaviour
             grid.Initialise();
            
         }
-        if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerOne)
+        if(GameManager.Instance.EType_StateAnim == AnimState.EType_IsNotPlaying)
         {
-            if(CheckUnitPlayed(GameManager.Instance._players[0]))
+            if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerOne)
             {
-                EndTurn(GameManager.Instance._players[0]);
-                StartTurn(GameManager.Instance._players[1]);
-            }
-            if (!EventSystem.current.IsPointerOverGameObject())
-            {
-                if (Input.GetMouseButtonDown(0))
+                if(CheckUnitPlayed(GameManager.Instance._players[0]))
                 {
-                    DoSelection();
-                    if (
-                        selectedUnit != null && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerTwo ||
-                        selectedUnit != null && selectedUnit.hasMoved == true && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerOne
-                        )
-                        selectedUnit = null;
+                    EndTurn(GameManager.Instance._players[0]);
+                    StartTurn(GameManager.Instance._players[1]);
                 }
-                else if (selectedUnit  != null && selectedUnit.hasMoved != true)
+                if (!EventSystem.current.IsPointerOverGameObject())
                 {
-                    if (Input.GetMouseButtonDown(1))
+                    if (Input.GetMouseButtonDown(0))
                     {
-                        DoMove();
-                        selectedUnit.SetHasMoved(true);
-                        grid.ClearPath();
+                        DoSelection();
+                        if (
+                            selectedUnit != null && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerTwo ||
+                            selectedUnit != null && selectedUnit.hasMoved == true && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerOne
+                            )
+                            selectedUnit = null;
                     }
-                    else
+                    else if (selectedUnit  != null && selectedUnit.hasMoved != true)
                     {
-                        DoPathfinding();
-                    }
-                }
-            }
-        }
-        if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerTwo)
-        {
-            if (CheckUnitPlayed(GameManager.Instance._players[1]))
-            {
-                EndTurn(GameManager.Instance._players[1]);
-                StartTurn(GameManager.Instance._players[0]);
-            }
-            if (!EventSystem.current.IsPointerOverGameObject())
-            {
-                if (Input.GetMouseButtonDown(0))
-                {
-                    DoSelection();
-                    if (
-                        selectedUnit != null && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerOne ||
-                        selectedUnit != null && selectedUnit.hasAlreadyPlayed == true && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerTwo
-                        )
-                        selectedUnit = null;
-                }
-                else if (selectedUnit != null && selectedUnit.hasMoved != true)
-                {
-                    if (Input.GetMouseButtonDown(1))
-                    {
-                        DoMove();
-                        selectedUnit.SetHasMoved(true);
-                        grid.ClearPath();
-                    }
-                    else
-                    {
-                        DoPathfinding();
-                    }
-                }
-            }
-        }
-        if (GameManager.Instance.EType_Phase == PhaseType.EType_AttackPhase)
-        {
-            if (!EventSystem.current.IsPointerOverGameObject())
-            {
-                if (Input.GetMouseButtonDown(0))
-                {
-                    DoSelectionEnemy();
-                    foreach (CharacterManager character in selectedUnit.m_enemyNeighbor)
-                    {
-                        if (enemyUnit != null && enemyUnit == character)
+                        if (Input.GetMouseButtonDown(1))
                         {
+                            DoMove();
                             selectedUnit.SetHasMoved(true);
-                            enemyUnit.TakeDamage(selectedUnit);
-                            selectedUnit.SetHasAlreadyPlayed(true);
-                            selectedUnit.ClearEnemy();
-                            selectedUnit.SetStateTurn();
-                            break;
+                            grid.ClearPath();
+                        }
+                        else
+                        {
+                            DoPathfinding();
                         }
                     }
-                    foreach (CharacterManager character in selectedUnit.m_enemyNeighborRange)
+                }
+            }
+            if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerTwo)
+            {
+                if (CheckUnitPlayed(GameManager.Instance._players[1]))
+                {
+                    EndTurn(GameManager.Instance._players[1]);
+                    StartTurn(GameManager.Instance._players[0]);
+                }
+                if (!EventSystem.current.IsPointerOverGameObject())
+                {
+                    if (Input.GetMouseButtonDown(0))
                     {
-                        if (enemyUnit != null && enemyUnit == character)
+                        DoSelection();
+                        if (
+                            selectedUnit != null && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerOne ||
+                            selectedUnit != null && selectedUnit.hasAlreadyPlayed == true && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerTwo
+                            )
+                            selectedUnit = null;
+                    }
+                    else if (selectedUnit != null && selectedUnit.hasMoved != true)
+                    {
+                        if (Input.GetMouseButtonDown(1))
                         {
+                            DoMove();
                             selectedUnit.SetHasMoved(true);
-                            enemyUnit.TakeDamageRange(selectedUnit);
-                            selectedUnit.SetHasAlreadyPlayed(true);
-                            selectedUnit.ClearEnemy();
-                            selectedUnit.SetStateTurn();
-                            break;
+                            grid.ClearPath();
+                        }
+                        else
+                        {
+                            DoPathfinding();
                         }
                     }
+                }
+            }
+            if (GameManager.Instance.EType_Phase == PhaseType.EType_AttackPhase)
+            {
+                if (!EventSystem.current.IsPointerOverGameObject())
+                {
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        DoSelectionEnemy();
+                        foreach (CharacterManager character in selectedUnit.m_enemyNeighbor)
+                        {
+                            if (enemyUnit != null && enemyUnit == character)
+                            {
+                                selectedUnit.SetHasMoved(true);
+                                enemyUnit.TakeDamage(selectedUnit);
+                                selectedUnit.SetHasAlreadyPlayed(true);
+                                selectedUnit.ClearEnemy();
+                                selectedUnit.SetStateTurn();
+                                break;
+                            }
+                        }
+                        foreach (CharacterManager character in selectedUnit.m_enemyNeighborRange)
+                        {
+                            if (enemyUnit != null && enemyUnit == character)
+                            {
+                                selectedUnit.SetHasMoved(true);
+                                enemyUnit.TakeDamageRange(selectedUnit);
+                                selectedUnit.SetHasAlreadyPlayed(true);
+                                selectedUnit.ClearEnemy();
+                                selectedUnit.SetStateTurn();
+                                break;
+                            }
+                        }
 
-                    enemyUnit = null;
+                        enemyUnit = null;
+                    }
                 }
             }
-        }
-        if (GameManager.Instance.EType_Phase == PhaseType.EType_HealPhase)
-        {
-            if (!EventSystem.current.IsPointerOverGameObject())
+            if (GameManager.Instance.EType_Phase == PhaseType.EType_HealPhase)
             {
-                if (Input.GetMouseButtonDown(0))
+                if (!EventSystem.current.IsPointerOverGameObject())
                 {
-                    DoSelectionAlly();
-                    CharacterHealer tmpCharacter = selectedUnit as CharacterHealer;
-                    foreach (CharacterManager character in tmpCharacter._allyNeighbor)
+                    if (Input.GetMouseButtonDown(0))
                     {
-                        if (allyUnit != null && allyUnit == character && allyUnit != selectedUnit)
+                        DoSelectionAlly();
+                        CharacterHealer tmpCharacter = selectedUnit as CharacterHealer;
+                        foreach (CharacterManager character in tmpCharacter._allyNeighbor)
                         {
-                            selectedUnit.SetHasMoved(true);
-                            allyUnit.ReceiveHeal(selectedUnit);
-                            selectedUnit.SetHasAlreadyPlayed(true);
-                            tmpCharacter.ClearAlly();
-                            break;
+                            if (allyUnit != null && allyUnit == character && allyUnit != selectedUnit)
+                            {
+                                selectedUnit.SetHasMoved(true);
+                                allyUnit.ReceiveHeal(selectedUnit);
+                                selectedUnit.SetHasAlreadyPlayed(true);
+                                tmpCharacter.ClearAlly();
+                                break;
+                            }
                         }
-                    }
 
-                    allyUnit = null;
+                        allyUnit = null;
+                    }
                 }
             }
         }

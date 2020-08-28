@@ -305,8 +305,14 @@ public class CharacterManager : MonoBehaviour
 
     public void TakeDamage(CharacterManager character, bool counterAttack = false)
     {
+        if (!counterAttack)
+        {
+            character.animattack.SetActiveAttackGameObject(true);
+            animattack.SetActiveDefenseGameObject(true);
+            character.animattack.CharacterManager = this;
+            character.animattack.Animation();
+        }
         m_lifeManager.TakeDamage(this, character, BonusDamage(character), counterAttack);
-        animattack.TriggerAnim();
     }
 
     public void TakeDamageRange(CharacterManager character,  bool counterAttack = false)

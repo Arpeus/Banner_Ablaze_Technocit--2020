@@ -7,8 +7,11 @@ public class GameManager : MonoBehaviour
     public int nbTour = 1;
     public List<Player> _players;
     public List<CharacterManager> _characters;
+
+    public List<string> _nameAnimationattack;
     public string filepathMap = "";
     public PhaseType EType_Phase;
+    public AnimState EType_StateAnim;
     [Header("Value Forest")]
     public int bonusForestDefense = 2;
     public int bonusForestDodge = -1;

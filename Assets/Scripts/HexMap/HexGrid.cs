@@ -50,12 +50,14 @@ public class HexGrid : MonoBehaviour {
 	    if (FindObjectOfType<GameManager>() != null && !String.IsNullOrEmpty(GameManager.Instance.filepathMap.ToString()))
         {
             Load(GameManager.Instance.filepathMap);
-            cellShaderData.Initialize(cellCountX, cellCountZ);
-            foreach(HexCell hexCell in cells)
-            {
-                hexCell.IncreaseVisibility();
-            }
+            
         }
+        cellShaderData.Initialize(cellCountX, cellCountZ);
+        foreach (HexCell hexCell in cells)
+        {
+            hexCell.IncreaseVisibility();
+        }
+
     }
 
    
