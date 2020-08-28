@@ -1506,6 +1506,8 @@ MonoBehaviour:
   m_panelActionHealNoAttackUI: {fileID: 1103613900}
   m_panelActionHealAttackUI: {fileID: 651225092}
   m_uniteMenu: {fileID: 2928176386768762877}
+  _placeAttackUnits:
+  - {fileID: 1960496983}
   m_placeBtnSpawn:
   - {fileID: 1581375749}
   - {fileID: 769985749}
@@ -4591,7 +4593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1960496984
 RectTransform:
   m_ObjectHideFlags: 0

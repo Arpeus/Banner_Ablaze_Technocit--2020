@@ -47,7 +47,7 @@ public class HexGrid : MonoBehaviour {
         CharacterManager.unitPrefab = unitPrefab;
 		cellShaderData = gameObject.AddComponent<HexCellShaderData>();
 		CreateMap(cellCountX, cellCountZ);
-	    if (FindObjectOfType<GameManager>() != null && GameManager.Instance.filepathMap.ToString() != null)
+	    if (FindObjectOfType<GameManager>() != null && !String.IsNullOrEmpty(GameManager.Instance.filepathMap.ToString()))
         {
 
 			Load(GameManager.Instance.filepathMap);
@@ -70,9 +70,9 @@ public class HexGrid : MonoBehaviour {
     }
 
     void Update()
-{
-    switch (GameManager.Instance.EType_Phase)
     {
+        switch (GameManager.Instance.EType_Phase)
+        {
         case PhaseType.EType_SpawnPhasePlayerOne:
         case PhaseType.EType_SpawnPhasePlayerTwo:
             if (unitPrefab != null)
