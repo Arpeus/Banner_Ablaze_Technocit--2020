@@ -2428,6 +2428,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 1571186511}
   m_uniteMenu: {fileID: 0}
+  selectedUnit: {fileID: 0}
+  enemyUnit: {fileID: 0}
+  allyUnit: {fileID: 0}
+  _unitsMenu: {fileID: 0}
+  _characterAnimator: {fileID: 0}
 --- !u!1 &355647814
 GameObject:
   m_ObjectHideFlags: 0
@@ -6343,6 +6348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e78180ac132afa45a1bd948eee5fc70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nbTour: 1
   _players: []
   _characters: []
   filepathMap: 
@@ -6369,7 +6375,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1023575719
 GameObject:
@@ -9426,7 +9432,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellCountX: 20
   cellCountZ: 15
-  wrapping: 1
   cellPrefab: {fileID: 11422220, guid: 94c2312396697489abc866a188f80152, type: 3}
   cellLabelPrefab: {fileID: 11470134, guid: f68794ca03b6f4510b9a5bd6ee9ba2f4, type: 3}
   chunkPrefab: {fileID: 114000010052569294, guid: 7622d007cafd044a1b1189c0b93d2912,
@@ -9434,8 +9439,8 @@ MonoBehaviour:
   unitPrefab: {fileID: 114701888605048992, guid: 5661a1efcb9464721b4db3f694ded559,
     type: 3}
   noiseSource: {fileID: 2800000, guid: 38701cdeb1fb9427cbb585f917aa59cb, type: 3}
-  _hudInGame: {fileID: 0}
   seed: 1234
+  cells: []
 --- !u!4 &1571186512
 Transform:
   m_ObjectHideFlags: 0
@@ -11304,7 +11309,7 @@ Transform:
   - {fileID: 1642458563}
   - {fileID: 576920446}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1867603862
 GameObject:
@@ -12092,7 +12097,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1985027777
 GameObject:
@@ -12682,79 +12687,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 0
---- !u!1 &2056945511
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2056945513}
-  - component: {fileID: 2056945512}
-  m_Layer: 0
-  m_Name: Hex Map Generator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2056945512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2056945511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d183beacc542c5f4e903a79bb2fc4a10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid: {fileID: 0}
-  useFixedSeed: 0
-  seed: 0
-  jitterProbability: 0.25
-  chunkSizeMin: 30
-  chunkSizeMax: 100
-  highRiseProbability: 0.25
-  sinkProbability: 0.2
-  landPercentage: 50
-  waterLevel: 3
-  elevationMinimum: -2
-  elevationMaximum: 8
-  mapBorderX: 5
-  mapBorderZ: 5
-  regionBorder: 5
-  regionCount: 1
-  erosionPercentage: 50
-  startingMoisture: 0.1
-  evaporationFactor: 0.5
-  precipitationFactor: 0.25
-  runoffFactor: 0.25
-  seepageFactor: 0.125
-  windDirection: 5
-  windStrength: 4
-  riverPercentage: 10
-  extraLakeProbability: 0.25
-  lowTemperature: 0
-  highTemperature: 1
-  hemisphere: 0
-  temperatureJitter: 0.1
---- !u!4 &2056945513
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2056945511}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2073486282
 GameObject:
   m_ObjectHideFlags: 0
