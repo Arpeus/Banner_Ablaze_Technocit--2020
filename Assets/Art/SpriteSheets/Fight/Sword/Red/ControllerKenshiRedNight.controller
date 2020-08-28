@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2adaafc6e5207424cad64b09dea62c1d, type: 2}
+  m_Motion: {fileID: 7400000, guid: c252b77d3f027dc42ab617f33470c2a3, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -48,7 +48,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0e474f5cf0110f84c85590126bb16240, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3b9d7b642b1699c4a8b37bcc54237cc7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -82,7 +82,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ControllerKiheiGreenDay 4
+  m_Name: ControllerKenshiRedNight
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: _IsAttack
