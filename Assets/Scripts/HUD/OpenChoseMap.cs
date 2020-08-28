@@ -27,4 +27,6 @@ public class OpenChoseMap : MonoBehaviour
         GameManager.Instance.EType_Phase = PhaseType.EType_PickPhase;
         SceneManager.LoadScene(2);
     }
+
+    
 }
