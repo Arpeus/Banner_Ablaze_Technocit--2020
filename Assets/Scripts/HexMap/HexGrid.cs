@@ -47,7 +47,7 @@ public class HexGrid : MonoBehaviour {
         CharacterManager.unitPrefab = unitPrefab;
 		cellShaderData = gameObject.AddComponent<HexCellShaderData>();
 		CreateMap(cellCountX, cellCountZ);
-	    if (FindObjectOfType<GameManager>() != null && GameManager.Instance.filepathMap != null)
+	    if (FindObjectOfType<GameManager>() != null && GameManager.Instance.filepathMap.ToString() != null)
         {
             Load(GameManager.Instance.filepathMap);
             cellShaderData.Initialize(cellCountX, cellCountZ);

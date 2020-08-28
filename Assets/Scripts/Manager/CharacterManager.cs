@@ -28,17 +28,15 @@ public class CharacterManager : MonoBehaviour
     public HexGrid Grid { get; set; }
 
     protected HUDInGame m_hudInGame;
-    [HideInInspector]public LifeManager m_lifeManager;
-
+    [HideInInspector] public LifeManager m_lifeManager;
+    [HideInInspector] public AnimationAttack animattack;
     public HexGameUI hexGameUI;
     
-
-    
-
     private void Awake()
     {
         Grid = FindObjectOfType<HexGrid>();
         m_hudInGame = FindObjectOfType<HUDInGame>();
+        animattack = GetComponent<AnimationAttack>();
         m_lifeManager = GetComponent<LifeManager>();
         m_lifeManager.SetHealth(_character._health);
         m_lifeManager.SetArmor(_character._armor);
@@ -306,8 +304,8 @@ public class CharacterManager : MonoBehaviour
 
     public void TakeDamage(CharacterManager character, bool counterAttack = false)
     {
-       
         m_lifeManager.TakeDamage(this, character, BonusDamage(character), counterAttack);
+        animattack.TriggerAnim();
     }
 
     public void TakeDamageRange(CharacterManager character,  bool counterAttack = false)

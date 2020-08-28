@@ -2695,7 +2695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_hudMenu: {fileID: 1801553590}
   m_characters: []
-  _countMax: 20
+  _countMax: 8
   m_currentCount: 0
   m_nbtroops: 000000000000000000000000000000000000000000000000
   m_fromZeroTroop: 000000000000
