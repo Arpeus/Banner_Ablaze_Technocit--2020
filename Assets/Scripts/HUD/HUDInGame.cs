@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class HUDInGame : MonoBehaviour
 {
+
+    public static HUDInGame Instance;
+
     [Header("UI GameObject")]
     [SerializeField] private GameObject m_PanelSpawnUI;
     [SerializeField] private GameObject m_panelActionAttackUI;
@@ -13,6 +16,7 @@ public class HUDInGame : MonoBehaviour
     [SerializeField] private GameObject m_panelActionHealNoAttackUI;
     [SerializeField] private GameObject m_panelActionHealAttackUI;
     [SerializeField] private GameObject m_uniteMenu;
+    public GameObject[] _placeAttackUnits;
 
     [Header("UI Spawn")]
     [SerializeField] private GameObject[] m_placeBtnSpawn;
@@ -21,6 +25,23 @@ public class HUDInGame : MonoBehaviour
     [SerializeField] private Button m_btnGoToTurnPhase;
 
     [SerializeField]private CharacterManager m_currentCharacterManager;
+
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else
+        {
+            if (Instance != this)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
 
     // Start is called before the first frame update
     void Start()

@@ -7,12 +7,11 @@ public class AnimationAttack : MonoBehaviour
     public GameObject placeAttackUnit;
     public Animation animation;
     public Animator animator;
-
+    public int index;
 
     void Start()
     {
-        placeAttackUnit = GameObject.FindGameObjectWithTag("CavalierAttack");
-       
+        placeAttackUnit = HUDInGame.Instance._placeAttackUnits[index];
         animator = placeAttackUnit.GetComponent<Animator>();
         animation = placeAttackUnit.GetComponent<Animation>();
     }

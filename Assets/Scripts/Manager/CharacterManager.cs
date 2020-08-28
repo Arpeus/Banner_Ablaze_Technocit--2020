@@ -37,6 +37,7 @@ public class CharacterManager : MonoBehaviour
         Grid = FindObjectOfType<HexGrid>();
         m_hudInGame = FindObjectOfType<HUDInGame>();
         animattack = GetComponent<AnimationAttack>();
+        
         m_lifeManager = GetComponent<LifeManager>();
         m_lifeManager.SetHealth(_character._health);
         m_lifeManager.SetArmor(_character._armor);

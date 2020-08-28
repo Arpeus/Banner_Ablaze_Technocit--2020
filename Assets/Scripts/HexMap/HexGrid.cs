@@ -69,9 +69,9 @@ public class HexGrid : MonoBehaviour {
     }
 
     void Update()
-{
-    switch (GameManager.Instance.EType_Phase)
     {
+        switch (GameManager.Instance.EType_Phase)
+        {
         case PhaseType.EType_SpawnPhasePlayerOne:
         case PhaseType.EType_SpawnPhasePlayerTwo:
             if (unitPrefab != null)
