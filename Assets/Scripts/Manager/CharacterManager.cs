@@ -30,6 +30,7 @@ public class CharacterManager : MonoBehaviour
     protected HUDInGame m_hudInGame;
     [HideInInspector] public LifeManager m_lifeManager;
     [HideInInspector] public AnimationAttack animattack;
+    [HideInInspector] public AnimationDefense animDefense;
     public HexGameUI hexGameUI;
     
     private void Awake()
@@ -37,7 +38,7 @@ public class CharacterManager : MonoBehaviour
         Grid = FindObjectOfType<HexGrid>();
         m_hudInGame = FindObjectOfType<HUDInGame>();
         animattack = GetComponent<AnimationAttack>();
-        
+        animDefense = GetComponent<AnimationDefense>();
         m_lifeManager = GetComponent<LifeManager>();
         m_lifeManager.SetHealth(_character._health);
         m_lifeManager.SetArmor(_character._armor);
@@ -288,6 +289,7 @@ public class CharacterManager : MonoBehaviour
         Debug.Log("mouse is over");
         _animator.SetBool("_isIdle", true);
     }
+
     private void OnMouseExit()
     {
         Debug.Log("mouse is over");
@@ -305,13 +307,7 @@ public class CharacterManager : MonoBehaviour
 
     public void TakeDamage(CharacterManager character, bool counterAttack = false)
     {
-        if (!counterAttack)
-        {
-            character.animattack.SetActiveAttackGameObject(true);
-            animattack.SetActiveDefenseGameObject(true);
-            character.animattack.CharacterManager = this;
-            character.animattack.Animation();
-        }
+        
         m_lifeManager.TakeDamage(this, character, BonusDamage(character), counterAttack);
     }
 

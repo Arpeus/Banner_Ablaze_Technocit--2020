@@ -35,6 +35,19 @@ public class LifeManager : MonoBehaviour
 
     public void TakeDamage(CharacterManager characterDefense, CharacterManager characterAttack, int bonusDamage, bool counterAttack, bool canCounter = true)
     {
+        if(!counterAttack)
+        {
+            characterAttack.animattack.SetActiveAttackGameObject(true);
+            characterDefense.animDefense.SetActiveAttackGameObject(true);
+            characterAttack.animattack.Animation();
+        }
+        else
+        {
+            characterAttack.animDefense.Animation();
+            characterAttack.animDefense.HideHUD();
+            characterDefense.animattack.HideHUD();
+        }
+
         bool dodge = false;
         int tmpDodge = 0;
         int tmpArmor = 0;
@@ -103,14 +116,17 @@ public class LifeManager : MonoBehaviour
                 counterAttack == true
             )
         {
+            if(!counterAttack)
+            {
+                characterAttack.animattack.HideHUD();
+                characterDefense.animDefense.HideHUD();
+            }
             Debug.Log("Can't counter Attack");
             return;
         }
         else
         {
-            Debug.Log("Counter Attack");
             characterDefense.hasAttacked = true;
-            // Disable a second counter Attack
             characterAttack.TakeDamage(characterDefense, true);
         }
     }

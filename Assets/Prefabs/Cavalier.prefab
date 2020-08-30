@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5835696781644883248}
   - component: {fileID: 4392430349949619548}
   - component: {fileID: -4648124997943591913}
-  - component: {fileID: -2211000927547843461}
   - component: {fileID: 6499839047974952662}
   - component: {fileID: 41642371892659248}
+  - component: {fileID: -5210110616942526608}
+  - component: {fileID: 8922836703465469649}
   m_Layer: 0
   m_Name: Cavalier
   m_TagString: Untagged
@@ -142,23 +143,8 @@ MonoBehaviour:
     type: 3}
   m_lifeManager: {fileID: 0}
   animattack: {fileID: 0}
+  animDefense: {fileID: 0}
   hexGameUI: {fileID: 0}
---- !u!114 &-2211000927547843461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7763169316064022567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f76540d0116c164cbeb21fea443526a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  placeAttackUnit: {fileID: 0}
-  animation: {fileID: 0}
-  animator: {fileID: 0}
-  index: 0
 --- !u!95 &6499839047974952662
 Animator:
   serializedVersion: 3
@@ -204,3 +190,39 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 5.12}
   m_EdgeRadius: 0
+--- !u!114 &-5210110616942526608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7763169316064022567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f76540d0116c164cbeb21fea443526a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeAttack: {fileID: 0}
+  animationAttack: {fileID: 0}
+  animatorAttack: {fileID: 0}
+  placeMissFx: {fileID: 0}
+  missFx: {fileID: 0}
+  index: 0
+--- !u!114 &8922836703465469649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7763169316064022567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0887dacf1960f054aaae401e3beac7da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeAttack: {fileID: 0}
+  animationAttack: {fileID: 0}
+  animatorAttack: {fileID: 0}
+  placeMissFx: {fileID: 0}
+  missFx: {fileID: 0}
+  index: 0
