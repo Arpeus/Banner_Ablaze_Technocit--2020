@@ -18,8 +18,6 @@ public class HUDInGame : MonoBehaviour
     [SerializeField] private GameObject m_uniteMenu;
     public GameObject[] _placeAttackUnits;
     public GameObject[] _placeDefenseUnits;
-    public GameObject[] _placeAttackUnitsRange;
-    public GameObject[] _placeDefenseUnitsRange;
     public GameObject _missFX;
 
     [Header("UI Spawn")]
