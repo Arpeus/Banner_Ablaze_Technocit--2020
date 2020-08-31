@@ -39,8 +39,8 @@ public class LifeManager : MonoBehaviour
         {
             Debug.Log(characterAttack);
             Debug.Log(characterDefense);
-            characterAttack.animattack.SetActiveAttackGameObject(true);
-            characterDefense.animDefense.SetActiveAttackGameObject(true);
+            characterAttack.animattack.SetActiveAttackGameObject(true, characterAttack.GetSpriteTerrain());
+            characterDefense.animDefense.SetActiveAttackGameObject(true, characterDefense.GetSpriteTerrain());
             characterAttack.animattack.Animation();
         }
         else
@@ -56,6 +56,7 @@ public class LifeManager : MonoBehaviour
 
         if(characterDefense.Location.IsPlantLevel)
         {
+            Debug.Log("test");
             tmpArmor += GameManager.Instance.bonusForestDefense;
             tmpDodge += GameManager.Instance.bonusForestDodge;
         }
@@ -71,14 +72,14 @@ public class LifeManager : MonoBehaviour
 
         if (characterDefense._character.type == TypeCharacter.SwordMan && characterAttack._character.type == TypeCharacter.Lancer)
         {
-            dodge = Random.Range(1, 100) > ((tmpDodge + m_dodge) * 2);
+            dodge = Random.Range(1, 100) <= ((tmpDodge + m_dodge) * 2);
         }
         else
         {
-             dodge = Random.Range(1, 100) > (tmpDodge + m_dodge);
+             dodge = Random.Range(1, 100) <= (tmpDodge + m_dodge);
         }
 
-        if (dodge)
+        if (!dodge)
         {
             int damage = 0;
             switch (characterAttack._character.typeDamage)
@@ -108,7 +109,11 @@ public class LifeManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Dodge");
+            Debug.Log("dodge");
+            if (!counterAttack)
+                characterDefense.animDefense.AnimationDodgeFX();
+            else
+                characterDefense.animattack.AnimationDodgeFX();
         }
 
         if (

@@ -4,27 +4,28 @@ using UnityEngine;
 
 public abstract class AnimationManager : MonoBehaviour
 {
-    public GameObject placeAttack;
-    public Animation animationAttack;
-    public Animator animatorAttack;
-    public GameObject placeMissFx;
-    public Animator missFx;
-    private SpriteRenderer sprite;
+    protected GameObject placeAttack;
+    protected GameObject terrain;
+    protected GameObject placeMissFx;
+    protected Animator animatorAttack;
+    protected SpriteRenderer sprite;
 
+    public GameObject prefabMissFX;
     public int index;
-   
+
+
 
     protected virtual void Start()
     {
         sprite = placeAttack.GetComponent<SpriteRenderer>();
         animatorAttack = placeAttack.GetComponent<Animator>();
-        animationAttack = placeAttack.GetComponent<Animation>();
-        //missFx = placeMissFx.GetComponent<Animator>();
     }
 
-    public void SetActiveAttackGameObject(bool active)
+    public void SetActiveAttackGameObject(bool active, Sprite sprite)
     {
+        terrain.GetComponent<SpriteRenderer>().sprite = sprite;
         placeAttack.SetActive(active);
+        terrain.SetActive(active);
     }
 
     public void TriggerAnimAttack()
@@ -62,7 +63,17 @@ public abstract class AnimationManager : MonoBehaviour
         sprite.sortingOrder = order;
     }
    
-    
+    public void AnimationDodgeFX()
+    {
+        TriggerDodgeFX();
+    }
+
+    public void TriggerDodgeFX()
+    {
+        Instantiate(prefabMissFX, placeMissFx.transform);
+    }
+
+
     protected IEnumerator TimerHideUI(int maxSecond)
     {
         int second = 0;
@@ -71,7 +82,7 @@ public abstract class AnimationManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             second++;
         }
-        SetActiveAttackGameObject(false);
+        SetActiveAttackGameObject(false, null);
         GameManager.Instance.EType_StateAnim = AnimState.EType_IsNotPlaying;
     }
     

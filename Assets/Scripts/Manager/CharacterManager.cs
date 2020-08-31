@@ -18,6 +18,8 @@ public class CharacterManager : MonoBehaviour
     public Animator _animator;
     public Animation _anim;
 
+    public Sprite spriteTerrain;
+
     public ParticleSystem _particuleLauncher;
 
     protected const float rotationSpeed = 0f;
@@ -362,5 +364,17 @@ public class CharacterManager : MonoBehaviour
         this.hasAttacked = hasAttacked;
     }
 
-     
+    public Sprite GetSpriteTerrain()
+    {
+        if (Location.IsPlantLevel)
+        {
+            return HUDInGame.Instance._terrains[1];
+        }
+        if (Location.HasRiver)
+        {
+            return HUDInGame.Instance._terrains[2];
+        }
+        return HUDInGame.Instance._terrains[0];
+    }
+
 }

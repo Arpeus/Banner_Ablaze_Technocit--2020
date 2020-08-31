@@ -22,6 +22,10 @@ public class HUDInGame : MonoBehaviour
     public GameObject _placeDefenseRangeUnits;
     public GameObject _missFXAttack;
     public GameObject _missFXDefense;
+    public GameObject _terrainAttack;
+    public GameObject _terrainDefense;
+    public Sprite[] _terrains;
+
 
     [Header("UI Spawn")]
     [SerializeField] private GameObject[] m_placeBtnSpawn;

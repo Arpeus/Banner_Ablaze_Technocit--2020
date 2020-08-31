@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimationRangeAttack : AnimationAttack
 {
-    [SerializeField] private GameObject m_placeDamageAttack;
+    protected GameObject m_placeDamageAttack;
     public GameObject prefabFx;
 
     protected override void Start()

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimationDefense : AnimationManager
-{    
+{
     // Start is called before the first frame update
     protected override void Start()
     {
+        terrain = HUDInGame.Instance._terrainDefense;
+        placeMissFx = HUDInGame.Instance._missFXDefense;
         placeAttack = HUDInGame.Instance._placeDefenseUnits[index];
         base.Start();
     }
@@ -27,7 +29,6 @@ public class AnimationDefense : AnimationManager
             StartCoroutine(TimerHideUI());*/
     }
 
-    
    IEnumerator AnimDefense()
    {
        int second = 0;
