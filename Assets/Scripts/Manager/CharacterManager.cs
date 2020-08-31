@@ -282,13 +282,11 @@ public class CharacterManager : MonoBehaviour
 
     private void OnMouseOver()
     {
-        Debug.Log("mouse is over");
         _animator.SetBool("_isIdle", true);
     }
 
     private void OnMouseExit()
     {
-        Debug.Log("mouse is over");
         _animator.SetBool("_isIdle", false);
     }
 
@@ -331,11 +329,6 @@ public class CharacterManager : MonoBehaviour
             GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
         else
             GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerTwo;
-    }
-
-    public void ReloadUI()
-    {
-
     }
 
     public void ClearEnemy()

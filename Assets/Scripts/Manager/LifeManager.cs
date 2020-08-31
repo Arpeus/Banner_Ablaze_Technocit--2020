@@ -37,8 +37,6 @@ public class LifeManager : MonoBehaviour
     {
         if(!counterAttack)
         {
-            Debug.Log(characterAttack);
-            Debug.Log(characterDefense);
             characterAttack.animattack.SetActiveAttackGameObject(true, characterAttack.GetSpriteTerrain());
             characterDefense.animDefense.SetActiveAttackGameObject(true, characterDefense.GetSpriteTerrain());
             characterAttack.animattack.Animation();
@@ -102,14 +100,9 @@ public class LifeManager : MonoBehaviour
             if (damage > 0)
                 Health -= damage;
 
-            if (Health <= 0)
-            {
-                Die(gameObject.GetComponent<CharacterManager>());
-            }
         }
         else
         {
-            Debug.Log("dodge");
             if (!counterAttack)
                 characterDefense.animDefense.AnimationDodgeFX();
             else
@@ -128,7 +121,10 @@ public class LifeManager : MonoBehaviour
                 characterAttack.animattack.HideHUD();
                 characterDefense.animDefense.HideHUD();
             }
-            Debug.Log("Can't counter Attack");
+            if (Health <= 0)
+            {
+                StartCoroutine(Die(gameObject.GetComponent<CharacterManager>()));
+            }
             return;
         }
         else
@@ -143,11 +139,12 @@ public class LifeManager : MonoBehaviour
         Health += (characterHealer._character._attackDamage/2);
         if (Health > m_maxHealth)
             Health = m_maxHealth;
-        Debug.Log("test heal");
     }
 
-    public void Die(CharacterManager character)
+    IEnumerator Die(CharacterManager character)
     {
+        yield return new WaitUntil(CheckAnimationPlaying);
+  
         switch (character._playerNumberType)
         {
             case PlayerNumber.EType_PlayerOne:
@@ -158,5 +155,11 @@ public class LifeManager : MonoBehaviour
                 break;
         }
         DestroyImmediate(gameObject);
+        
+    }
+
+    private bool CheckAnimationPlaying()
+    {
+        return GameManager.Instance.EType_StateAnim == AnimState.EType_IsNotPlaying;
     }
 }
