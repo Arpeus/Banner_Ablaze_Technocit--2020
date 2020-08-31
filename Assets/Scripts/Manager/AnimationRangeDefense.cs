@@ -17,7 +17,7 @@ public class AnimationRangeDefense : AnimationDefense
 
     public void TriggerAnimDamage()
     {
-
+        animatorAttack.SetTrigger("_IsAttack");
     }
 
     public override void Animation()

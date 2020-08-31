@@ -307,7 +307,6 @@ public class CharacterManager : MonoBehaviour
 
     public void TakeDamage(CharacterManager character, bool counterAttack = false)
     {
-        
         m_lifeManager.TakeDamage(this, character, BonusDamage(character), counterAttack);
     }
 
