@@ -29,8 +29,14 @@ public class AnimationDefense : AnimationManager
             StartCoroutine(TimerHideUI());*/
     }
 
-   IEnumerator AnimDefense()
-   {
+
+    public override void AnimationDodgeFX()
+    {
+        StartCoroutine(AnimDodge());
+    }
+
+    IEnumerator AnimDefense()
+    {
        int second = 0;
        while (second < 3)
        {
@@ -39,5 +45,16 @@ public class AnimationDefense : AnimationManager
        }
        TriggerAnimAttack();
        second = 0;    
-   }
+    }
+
+    IEnumerator AnimDodge()
+    {
+        int second = 0;
+        while (second < 1)
+        {
+            yield return new WaitForSeconds(1);
+            second++;
+        }
+        TriggerDodgeFX(); 
+    }
 }

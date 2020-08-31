@@ -17,4 +17,22 @@ public class AnimationAttack : AnimationManager
         base.Animation();
         TriggerAnimAttack();
     }
+
+
+    public override void AnimationDodgeFX()
+    {
+        StartCoroutine(AnimDodge());
+    }
+
+    IEnumerator AnimDodge()
+    {
+        int second = 0;
+        while (second < 4)
+        {
+            yield return new WaitForSeconds(1);
+            second++;
+        }
+        TriggerDodgeFX();
+
+    }
 }

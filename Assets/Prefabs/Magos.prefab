@@ -127,6 +127,7 @@ MonoBehaviour:
   m_enemyNeighborRange: []
   _animator: {fileID: 0}
   _anim: {fileID: 0}
+  spriteTerrain: {fileID: 0}
   _particuleLauncher: {fileID: 2632042310760877775, guid: ebed2bdbacecd414ea16efd3b7577382,
     type: 3}
   m_lifeManager: {fileID: 0}
@@ -202,13 +203,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e6c5b8c2e455a4fb9d576875b3addc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placeAttack: {fileID: 0}
-  animationAttack: {fileID: 0}
-  animatorAttack: {fileID: 0}
-  placeMissFx: {fileID: 0}
-  missFx: {fileID: 0}
+  prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
+    type: 3}
   index: 5
-  m_placeDamageAttack: {fileID: 0}
   prefabFx: {fileID: 1547793412897849323, guid: fa6a8e698e0b06949a53423777ae2d88,
     type: 3}
 --- !u!114 &4421067578294687462
@@ -223,12 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9381b9c0e435e794c8bf5627f0a62090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placeAttack: {fileID: 0}
-  animationAttack: {fileID: 0}
-  animatorAttack: {fileID: 0}
-  placeMissFx: {fileID: 0}
-  missFx: {fileID: 0}
+  prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
+    type: 3}
   index: 5
-  m_placeDamageAttack: {fileID: 0}
   prefabFx: {fileID: 1547793412897849323, guid: fa6a8e698e0b06949a53423777ae2d88,
     type: 3}

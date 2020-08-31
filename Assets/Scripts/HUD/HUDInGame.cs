@@ -16,6 +16,8 @@ public class HUDInGame : MonoBehaviour
     [SerializeField] private GameObject m_panelActionHealNoAttackUI;
     [SerializeField] private GameObject m_panelActionHealAttackUI;
     [SerializeField] private GameObject m_uniteMenu;
+
+    [Header("Animation Scene")]
     public GameObject[] _placeAttackUnits;
     public GameObject _placeAttackRangeUnits;
     public GameObject[] _placeDefenseUnits;

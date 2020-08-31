@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class LifeManager : MonoBehaviour
 {
-    [SerializeField] private int m_maxHealth;
-    [SerializeField] private int m_health;
-    [SerializeField] private int m_armor;
-    [SerializeField] private int m_armorMagic;
-    [SerializeField] private int m_dodge;
+    private int m_maxHealth;
+    private int m_health;
+    private int m_armor;
+    private int m_armorMagic;
+    private int m_dodge;
 
     public int Health { get => m_health; set => m_health = value; }
 
@@ -78,7 +78,7 @@ public class LifeManager : MonoBehaviour
         {
              dodge = Random.Range(1, 100) <= (tmpDodge + m_dodge);
         }
-
+        
         if (!dodge)
         {
             int damage = 0;

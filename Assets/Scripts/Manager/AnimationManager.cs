@@ -63,9 +63,8 @@ public abstract class AnimationManager : MonoBehaviour
         sprite.sortingOrder = order;
     }
    
-    public void AnimationDodgeFX()
+    public virtual void AnimationDodgeFX()
     {
-        TriggerDodgeFX();
     }
 
     public void TriggerDodgeFX()

@@ -53,11 +53,6 @@ public class CharacterManager : MonoBehaviour
         _anim = GetComponent<Animation>();
     }
 
-    private void Update()
-    {
-
-    }
-
     public HexCell Location
     {
         get

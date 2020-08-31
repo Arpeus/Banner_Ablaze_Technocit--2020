@@ -139,6 +139,7 @@ MonoBehaviour:
   m_enemyNeighborRange: []
   _animator: {fileID: 0}
   _anim: {fileID: 0}
+  spriteTerrain: {fileID: 0}
   _particuleLauncher: {fileID: 2632042310760877775, guid: ebed2bdbacecd414ea16efd3b7577382,
     type: 3}
   m_lifeManager: {fileID: 0}
@@ -202,11 +203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f76540d0116c164cbeb21fea443526a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placeAttack: {fileID: 0}
-  animationAttack: {fileID: 0}
-  animatorAttack: {fileID: 0}
-  placeMissFx: {fileID: 0}
-  missFx: {fileID: 0}
+  prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
+    type: 3}
   index: 2
 --- !u!114 &7457222309632098082
 MonoBehaviour:
@@ -220,9 +218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0887dacf1960f054aaae401e3beac7da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placeAttack: {fileID: 0}
-  animationAttack: {fileID: 0}
-  animatorAttack: {fileID: 0}
-  placeMissFx: {fileID: 0}
-  missFx: {fileID: 0}
+  prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
+    type: 3}
   index: 2
