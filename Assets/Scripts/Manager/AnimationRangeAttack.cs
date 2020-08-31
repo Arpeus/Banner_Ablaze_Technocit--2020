@@ -6,10 +6,7 @@ public class AnimationRangeAttack : AnimationAttack
 {
     [SerializeField] private GameObject m_placeDamageAttack;
     public GameObject prefabFx;
-    private GameObject prefab;
-    //[SerializeField] private Animator m_animatorDamage;
 
-    // Start is called before the first frame update
     protected override void Start()
     {
         m_placeDamageAttack = HUDInGame.Instance._placeAttackRangeUnits;
@@ -18,7 +15,7 @@ public class AnimationRangeAttack : AnimationAttack
 
     public void TriggerAnimDamage()
     {
-        prefab = Instantiate(prefabFx, m_placeDamageAttack.transform);        
+        Instantiate(prefabFx, m_placeDamageAttack.transform);        
     }
 
     public override void Animation()

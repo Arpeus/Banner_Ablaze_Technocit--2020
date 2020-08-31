@@ -15,14 +15,28 @@ public class AnimationRangeDefense : AnimationDefense
         base.Start();
     }
 
+
     public void TriggerAnimDamage()
     {
-        //Instantiate(prefabFx, m_placeDamageAttack.transform);
+        Instantiate(prefabFx, m_placeDamageAttack.transform);
     }
 
     public override void Animation()
     {
         base.Animation();
+        StartCoroutine(AnimFx());
+    }
+
+    IEnumerator AnimFx()
+    {
+        int second = 0;
+        while (second < 4)
+        {
+            yield return new WaitForSeconds(1);
+            second++;
+        }
         TriggerAnimDamage();
     }
+
+
 }

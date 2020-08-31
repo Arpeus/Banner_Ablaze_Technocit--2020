@@ -14,12 +14,5 @@ public class AnimationAttack : AnimationManager
     {
         base.Animation();
         TriggerAnimAttack();
-        /*SetLayingOrder(spriteAttack, 1);
-        Debug.Log(animatorAttack.name);
-
-        if (animDefense)
-            StartCoroutine(AnimDefense());
-        else
-            StartCoroutine(TimerHideUI());*/
     }
 }
