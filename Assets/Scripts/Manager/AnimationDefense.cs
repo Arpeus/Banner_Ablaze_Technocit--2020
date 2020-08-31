@@ -15,6 +15,16 @@ public class AnimationDefense : AnimationManager
     {
         base.Animation();
         StartCoroutine(AnimDefense());
+        
+        //SetLayingOrder(spriteAttack, 1);
+        //Debug.Log(animatorAttack.name);
+
+        //StartCoroutine(TimerHideUI(3));
+
+        /*if (animDefense)
+            StartCoroutine(AnimDefense());
+        else
+            StartCoroutine(TimerHideUI());*/
     }
 
     
