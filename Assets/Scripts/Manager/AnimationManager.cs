@@ -32,21 +32,6 @@ public abstract class AnimationManager : MonoBehaviour
         animatorAttack.SetTrigger("_IsAttack");
     }
 
-    /*
-    public void Animation(bool animDefense)
-    {
-        GameManager.Instance.EType_StateAnim = AnimState.EType_IsPlaying;
-        TriggerAnimAttack();
-        /*SetLayingOrder(spriteAttack, 1);
-        Debug.Log(animatorAttack.name);
-
-        if (animDefense)
-            StartCoroutine(AnimDefense());
-        else
-            StartCoroutine(TimerHideUI());
-            
-    }*/
-
     public virtual void Animation()
     {
         GameManager.Instance.EType_StateAnim = AnimState.EType_IsPlaying;
