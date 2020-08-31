@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 8767297005972995448}
   - component: {fileID: 8916451946139556972}
   - component: {fileID: 8580690128703222293}
+  - component: {fileID: -8539346458372360551}
+  - component: {fileID: -2501769751526767263}
   m_Layer: 0
   m_Name: Monk
   m_TagString: Untagged
@@ -136,9 +138,12 @@ MonoBehaviour:
   m_enemyNeighbor: []
   m_enemyNeighborRange: []
   _animator: {fileID: 0}
+  _anim: {fileID: 0}
   _particuleLauncher: {fileID: 2632042310760877775, guid: ebed2bdbacecd414ea16efd3b7577382,
     type: 3}
   m_lifeManager: {fileID: 0}
+  animattack: {fileID: 0}
+  animDefense: {fileID: 0}
   hexGameUI: {fileID: 0}
   _allyNeighbor: []
 --- !u!95 &8916451946139556972
@@ -186,3 +191,43 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 5.12}
   m_EdgeRadius: 0
+--- !u!114 &-8539346458372360551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7107687175053593095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e6c5b8c2e455a4fb9d576875b3addc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeAttack: {fileID: 0}
+  animationAttack: {fileID: 0}
+  animatorAttack: {fileID: 0}
+  placeMissFx: {fileID: 0}
+  missFx: {fileID: 0}
+  index: 4
+  m_placeDamageAttack: {fileID: 0}
+  prefabFx: {fileID: 0}
+--- !u!114 &-2501769751526767263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7107687175053593095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9381b9c0e435e794c8bf5627f0a62090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeAttack: {fileID: 0}
+  animationAttack: {fileID: 0}
+  animatorAttack: {fileID: 0}
+  placeMissFx: {fileID: 0}
+  missFx: {fileID: 0}
+  index: 4
+  m_placeDamageAttack: {fileID: 0}
+  prefabFx: {fileID: 0}
