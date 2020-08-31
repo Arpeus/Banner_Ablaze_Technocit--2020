@@ -1936,10 +1936,18 @@ MonoBehaviour:
   - {fileID: 1960496983}
   - {fileID: 644413329}
   - {fileID: 1506772272}
+  - {fileID: 478989220}
+  - {fileID: 781849312}
+  - {fileID: 629505180}
+  _placeAttackRangeUnits: {fileID: 1156372365}
   _placeDefenseUnits:
   - {fileID: 303752812}
   - {fileID: 1077695044}
   - {fileID: 703858525}
+  - {fileID: 1308756149}
+  - {fileID: 608644196}
+  - {fileID: 997614423}
+  _placeDefenseRangeUnits: {fileID: 2134328237}
   _missFX: {fileID: 0}
   m_placeBtnSpawn:
   - {fileID: 1581375749}
@@ -2997,7 +3005,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864066769}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3005,7 +3013,7 @@ Transform:
   - {fileID: 1657234766}
   m_Father: {fileID: 1451395363}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -45, y: 0, z: 0}
 --- !u!81 &864066771
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3567,6 +3575,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103613900}
   m_CullTransparentMesh: 0
+--- !u!1 &1156372365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1156372366}
+  m_Layer: 5
+  m_Name: PlaceDamage
+  m_TagString: CavalierAttack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1156372366
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156372365}
+  m_LocalRotation: {x: 0.00000029802322, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1.07125, y: 1.07125, z: 1.07125}
+  m_Children: []
+  m_Father: {fileID: 1473766706}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1248752105
 GameObject:
   m_ObjectHideFlags: 0
@@ -4719,6 +4762,7 @@ Transform:
   - {fileID: 478989221}
   - {fileID: 781849313}
   - {fileID: 629505181}
+  - {fileID: 1156372366}
   m_Father: {fileID: 864066770}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5582,6 +5626,7 @@ Transform:
   - {fileID: 1308756150}
   - {fileID: 608644197}
   - {fileID: 997614424}
+  - {fileID: 2134328240}
   m_Father: {fileID: 864066770}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6580,6 +6625,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068305534}
   m_CullTransparentMesh: 0
+--- !u!1 &2134328237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2134328240}
+  m_Layer: 5
+  m_Name: PlaceDamage
+  m_TagString: CavalierAttack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2134328240
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134328237}
+  m_LocalRotation: {x: 0.00000029802322, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1.07125, y: 1.07125, z: 1.07125}
+  m_Children: []
+  m_Father: {fileID: 1657234766}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &852726109241722357
 MonoBehaviour:
   m_ObjectHideFlags: 0

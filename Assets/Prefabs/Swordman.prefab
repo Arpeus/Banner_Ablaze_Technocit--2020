@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 731915601329833640}
   - component: {fileID: 7283590161136620079}
   - component: {fileID: -6280198720172344714}
-  - component: {fileID: -1782996356478090392}
+  - component: {fileID: 2559571400301337988}
   m_Layer: 0
   m_Name: Swordman
   m_TagString: Untagged
@@ -142,8 +142,8 @@ MonoBehaviour:
   _particuleLauncher: {fileID: 2632042310760877775, guid: ebed2bdbacecd414ea16efd3b7577382,
     type: 3}
   m_lifeManager: {fileID: 0}
-  animattack: {fileID: 0}
-  animDefense: {fileID: 0}
+  animattack: {fileID: -6280198720172344714}
+  animDefense: {fileID: 2559571400301337988}
   hexGameUI: {fileID: 0}
 --- !u!95 &731915601329833640
 Animator:
@@ -208,7 +208,7 @@ MonoBehaviour:
   placeMissFx: {fileID: 0}
   missFx: {fileID: 0}
   index: 1
---- !u!114 &-1782996356478090392
+--- !u!114 &2559571400301337988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

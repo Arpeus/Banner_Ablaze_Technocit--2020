@@ -11,14 +11,13 @@ public class AnimationRangeDefense : AnimationDefense
     // Start is called before the first frame update
     protected override void Start()
     {
-        m_placeDamageAttack = HUDInGame.Instance._placeDefenseRangeUnits[index % 3];
-      
+        m_placeDamageAttack = HUDInGame.Instance._placeDefenseRangeUnits;
         base.Start();
     }
 
     public void TriggerAnimDamage()
     {
-        Instantiate(prefabFx, m_placeDamageAttack.transform);
+        //Instantiate(prefabFx, m_placeDamageAttack.transform);
     }
 
     public override void Animation()

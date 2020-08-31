@@ -37,6 +37,8 @@ public class LifeManager : MonoBehaviour
     {
         if(!counterAttack)
         {
+            Debug.Log(characterAttack);
+            Debug.Log(characterDefense);
             characterAttack.animattack.SetActiveAttackGameObject(true);
             characterDefense.animDefense.SetActiveAttackGameObject(true);
             characterAttack.animattack.Animation();

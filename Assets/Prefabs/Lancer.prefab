@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5540235244991439401}
   - component: {fileID: -3761398447619048219}
   - component: {fileID: -5026205463715272940}
-  - component: {fileID: -5362149306398146251}
+  - component: {fileID: 7457222309632098082}
   m_Layer: 0
   m_Name: Lancer
   m_TagString: Untagged
@@ -142,8 +142,8 @@ MonoBehaviour:
   _particuleLauncher: {fileID: 2632042310760877775, guid: ebed2bdbacecd414ea16efd3b7577382,
     type: 3}
   m_lifeManager: {fileID: 0}
-  animattack: {fileID: 0}
-  animDefense: {fileID: 0}
+  animattack: {fileID: -5026205463715272940}
+  animDefense: {fileID: 7457222309632098082}
   hexGameUI: {fileID: 0}
 --- !u!95 &5540235244991439401
 Animator:
@@ -208,7 +208,7 @@ MonoBehaviour:
   placeMissFx: {fileID: 0}
   missFx: {fileID: 0}
   index: 2
---- !u!114 &-5362149306398146251
+--- !u!114 &7457222309632098082
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

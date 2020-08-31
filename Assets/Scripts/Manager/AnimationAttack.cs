@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class AnimationAttack : AnimationManager
 {
-   
-
     protected override void Start()
     {
         placeAttack = HUDInGame.Instance._placeAttackUnits[index];

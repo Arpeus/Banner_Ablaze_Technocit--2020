@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6499839047974952662}
   - component: {fileID: 41642371892659248}
   - component: {fileID: -5210110616942526608}
-  - component: {fileID: 8922836703465469649}
+  - component: {fileID: 907755772067626308}
   m_Layer: 0
   m_Name: Cavalier
   m_TagString: Untagged
@@ -142,8 +142,8 @@ MonoBehaviour:
   _particuleLauncher: {fileID: 2632042310760877775, guid: ebed2bdbacecd414ea16efd3b7577382,
     type: 3}
   m_lifeManager: {fileID: 0}
-  animattack: {fileID: 0}
-  animDefense: {fileID: 0}
+  animattack: {fileID: -5210110616942526608}
+  animDefense: {fileID: 907755772067626308}
   hexGameUI: {fileID: 0}
 --- !u!95 &6499839047974952662
 Animator:
@@ -208,7 +208,7 @@ MonoBehaviour:
   placeMissFx: {fileID: 0}
   missFx: {fileID: 0}
   index: 0
---- !u!114 &8922836703465469649
+--- !u!114 &907755772067626308
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

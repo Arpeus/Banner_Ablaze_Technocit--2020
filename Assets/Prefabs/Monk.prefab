@@ -142,8 +142,8 @@ MonoBehaviour:
   _particuleLauncher: {fileID: 2632042310760877775, guid: ebed2bdbacecd414ea16efd3b7577382,
     type: 3}
   m_lifeManager: {fileID: 0}
-  animattack: {fileID: 0}
-  animDefense: {fileID: 0}
+  animattack: {fileID: -8539346458372360551}
+  animDefense: {fileID: -2501769751526767263}
   hexGameUI: {fileID: 0}
   _allyNeighbor: []
 --- !u!95 &8916451946139556972
@@ -210,7 +210,8 @@ MonoBehaviour:
   missFx: {fileID: 0}
   index: 4
   m_placeDamageAttack: {fileID: 0}
-  prefabFx: {fileID: 0}
+  prefabFx: {fileID: 4956509707797668534, guid: 9dd4e29649eb2d54882e86f313c259bd,
+    type: 3}
 --- !u!114 &-2501769751526767263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,4 +231,5 @@ MonoBehaviour:
   missFx: {fileID: 0}
   index: 4
   m_placeDamageAttack: {fileID: 0}
-  prefabFx: {fileID: 0}
+  prefabFx: {fileID: 4956509707797668534, guid: 9dd4e29649eb2d54882e86f313c259bd,
+    type: 3}

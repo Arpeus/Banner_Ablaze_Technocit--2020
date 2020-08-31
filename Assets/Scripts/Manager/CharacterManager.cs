@@ -29,16 +29,15 @@ public class CharacterManager : MonoBehaviour
 
     protected HUDInGame m_hudInGame;
     [HideInInspector] public LifeManager m_lifeManager;
-    [HideInInspector] public AnimationAttack animattack;
-    [HideInInspector] public AnimationDefense animDefense;
+    public AnimationManager animattack;
+    public AnimationManager animDefense;
+
     public HexGameUI hexGameUI;
     
     private void Awake()
     {
         Grid = FindObjectOfType<HexGrid>();
         m_hudInGame = FindObjectOfType<HUDInGame>();
-        animattack = GetComponent<AnimationAttack>();
-        animDefense = GetComponent<AnimationDefense>();
         m_lifeManager = GetComponent<LifeManager>();
         m_lifeManager.SetHealth(_character._health);
         m_lifeManager.SetArmor(_character._armor);
