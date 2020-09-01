@@ -2,13 +2,14 @@
 using UnityEngine.UI;
 using System;
 using System.IO;
+using TMPro;
 
 public class SaveLoadMenu : MonoBehaviour
 {
 
     const int mapFileVersion = 5;
 
-    public Text menuLabel, actionButtonLabel;
+    public TextMeshProUGUI menuLabel, actionButtonLabel;
 
     public InputField nameInput;
 
