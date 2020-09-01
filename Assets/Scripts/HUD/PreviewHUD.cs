@@ -10,7 +10,7 @@ public class PreviewHUD : MonoBehaviour
     public Image spriteLeft;
     public TextMeshProUGUI nameUnitLeft;
     public TextMeshProUGUI hitRateLeft;
-    
+    public Slider leftSlider;
 
     [Header("Right preview")]
     public Image spriteRight;
