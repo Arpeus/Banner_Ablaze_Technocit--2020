@@ -336,6 +336,48 @@ public class CharacterManager : MonoBehaviour
         this.hasAttacked = hasAttacked;
     }
 
+    public int GetDodge(CharacterManager characterAttack)
+    {
+        int tmpDodge = 0;
+
+        if (Location.IsPlantLevel)
+        {
+            tmpDodge += GameManager.Instance.bonusForestDodge;
+        }
+        if (Location.HasRiver)
+        {
+            tmpDodge += GameManager.Instance.malusRiverDodge;
+        }
+        if (Location.IsSpecial)
+        {
+            tmpDodge += GameManager.Instance.bonusCastleDodge;
+        }
+
+        if (_character.type == TypeCharacter.SwordMan && characterAttack._character.type == TypeCharacter.Lancer)
+            tmpDodge = tmpDodge * 2;     
+
+        return tmpDodge;
+    }
+
+    public int GetArmor()
+    {
+        int tmpArmor = 0;
+
+        if (Location.IsPlantLevel)
+        {
+            tmpArmor += GameManager.Instance.bonusForestDefense;
+        }
+        if (Location.HasRiver)
+        {
+        }
+        if (Location.IsSpecial)
+        {
+            tmpArmor += GameManager.Instance.bonusCastleDefense;
+        }
+
+        return tmpArmor;
+    }
+
     public Sprite GetSpriteTerrain()
     {
         if (Location.IsPlantLevel)
