@@ -18,7 +18,6 @@ public class AnimationAttack : AnimationManager
         TriggerAnimAttack();
     }
 
-
     public override void AnimationDodgeFX()
     {
         StartCoroutine(AnimDodge());

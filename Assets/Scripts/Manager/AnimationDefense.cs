@@ -19,7 +19,6 @@ public class AnimationDefense : AnimationManager
         StartCoroutine(AnimDefense());
     }
 
-
     public override void AnimationDodgeFX()
     {
         StartCoroutine(AnimDodge());

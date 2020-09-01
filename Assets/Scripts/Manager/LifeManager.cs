@@ -71,6 +71,15 @@ public class LifeManager : MonoBehaviour
                 characterDefense.animattack.AnimationDodgeFX();
         }
 
+        if (Health <= 0)
+        {
+            if (counterAttack)
+                characterDefense.animattack.Blink(4);
+            else
+                characterDefense.animDefense.Blink(1.5f);
+            StartCoroutine(Die(gameObject.GetComponent<CharacterManager>()));
+        }
+
         if (
                 characterDefense.hasAttacked ||
                 Health <= 0 ||
@@ -82,10 +91,6 @@ public class LifeManager : MonoBehaviour
             {
                 characterAttack.animattack.HideHUD();
                 characterDefense.animDefense.HideHUD();
-            }
-            if (Health <= 0)
-            {
-                StartCoroutine(Die(gameObject.GetComponent<CharacterManager>()));
             }
             return;
         }

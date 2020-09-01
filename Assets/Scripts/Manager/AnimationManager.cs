@@ -50,7 +50,7 @@ public abstract class AnimationManager : MonoBehaviour
     {
         sprite.sortingOrder = order;
     }
-   
+
     public virtual void AnimationDodgeFX()
     {
     }
@@ -60,6 +60,25 @@ public abstract class AnimationManager : MonoBehaviour
         Instantiate(prefabMissFX, placeMissFx.transform);
     }
 
+    public void Blink(float second)
+    {
+        StartCoroutine(Die(second));
+    }
+
+    IEnumerator Die(float second)
+    {
+        
+        yield return new WaitForSeconds(second);
+        float endtime = Time.time + 1;
+        while(Time.time < endtime)
+        {
+            spriteEquip.enabled = false;
+            yield return new WaitForSeconds(0.2f);
+            spriteEquip.enabled = true;
+            yield return new WaitForSeconds(0.2f);
+        }
+        spriteEquip.enabled = false;
+    }
 
     protected IEnumerator TimerHideUI(int maxSecond)
     {
