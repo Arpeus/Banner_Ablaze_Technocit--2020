@@ -57,8 +57,8 @@ public class PreviewHUD : MonoBehaviour
         hitRateLeft.text = GetDodge(characterDefense, characterAttack);
         leftSliderHealthAfter.maxValue = leftSliderCurrentHealth.maxValue = characterAttack.m_lifeManager.MaxHealth;
         leftSliderCurrentHealth.value = characterAttack.m_lifeManager.Health;
-        leftSliderHealthAfter.value = characterDefense.hasAttacked ? 0 : characterAttack.m_lifeManager.Health - GetDamage(characterAttack, characterDefense);
-        //leftSliderCurrentHealth.
+        leftSliderHealthAfter.value = characterDefense.hasAttacked ? characterAttack.m_lifeManager.Health - 0 : characterAttack.m_lifeManager.Health - GetDamage(characterAttack, characterDefense);
+        
 
         spriteRight.sprite = characterDefense._spritePreview;
         nameUnitRight.text = characterDefense._character._name;
