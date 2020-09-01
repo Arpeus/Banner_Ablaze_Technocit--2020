@@ -264,22 +264,6 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    public void SetVisibleAround()
-    {
-        /*
-        location.Visible = true;
-        for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
-        {
-            HexCell neighbor = null;
-            if (location.GetNeighbor(d) != null)
-            {
-                neighbor = location.GetNeighbor(d);
-                neighbor.Visible = true;
-            }
-        }
-        */
-    }
-
     private void OnMouseOver()
     {
         _animator.SetBool("_isIdle", true);

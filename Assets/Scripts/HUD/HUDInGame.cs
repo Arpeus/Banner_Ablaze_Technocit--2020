@@ -17,6 +17,10 @@ public class HUDInGame : MonoBehaviour
     [SerializeField] private GameObject m_panelActionHealAttackUI;
     [SerializeField] private GameObject m_uniteMenu;
 
+    [Header("Preview Combat")]
+    public GameObject _panelPreview;
+
+
     [Header("Animation Scene")]
     public GameObject[] _placeAttackUnits;
     public GameObject _placeAttackRangeUnits;
@@ -174,4 +178,7 @@ public class HUDInGame : MonoBehaviour
         m_currentCharacterManager = null;
         //m_uniteMenu.SetActive(false);
     }
+
+    
+
 }

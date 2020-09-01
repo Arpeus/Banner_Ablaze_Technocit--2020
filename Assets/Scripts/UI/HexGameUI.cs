@@ -140,10 +140,10 @@ public class HexGameUI : MonoBehaviour
                             if (enemyUnit != null && enemyUnit == character)
                             {
                                 selectedUnit.SetHasMoved(true);
-                                enemyUnit.TakeDamage(selectedUnit);
-                                selectedUnit.SetHasAlreadyPlayed(true);
-                                selectedUnit.ClearEnemy();
-                                selectedUnit.SetStateTurn();
+                                //enemyUnit.TakeDamage(selectedUnit);
+                                //selectedUnit.SetHasAlreadyPlayed(true);
+                                //selectedUnit.ClearEnemy();
+                                //selectedUnit.SetStateTurn();
                                 break;
                             }
                         }
@@ -152,10 +152,10 @@ public class HexGameUI : MonoBehaviour
                             if (enemyUnit != null && enemyUnit == character)
                             {
                                 selectedUnit.SetHasMoved(true);
-                                enemyUnit.TakeDamageRange(selectedUnit);
-                                selectedUnit.SetHasAlreadyPlayed(true);
-                                selectedUnit.ClearEnemy();
-                                selectedUnit.SetStateTurn();
+                                //enemyUnit.TakeDamageRange(selectedUnit);
+                                //selectedUnit.SetHasAlreadyPlayed(true);
+                                //selectedUnit.ClearEnemy();
+                                //selectedUnit.SetStateTurn();
                                 break;
                             }
                         }
@@ -249,9 +249,7 @@ public class HexGameUI : MonoBehaviour
 
             grid.ClearPath();
         }
-    }
-
-    
+    } 
 
     bool UpdateCurrentCell()
     {
@@ -342,27 +340,6 @@ public class HexGameUI : MonoBehaviour
         {
             character.SetHasAlreadyPlayed(true);
         }
-    }
-
-    private void SetVisibleAroundPlayer()
-    {
-        switch (GameManager.Instance.EType_Phase)
-        {
-            case PhaseType.EType_TurnPhasePlayerOne:
-                SetVisibleAroundPlayer(GameManager.Instance._players[0]);
-                break;
-            case PhaseType.EType_TurnPhasePlayerTwo:
-                SetVisibleAroundPlayer(GameManager.Instance._players[1]);
-                break;
-        }
-    }
-
-    private void SetVisibleAroundPlayer(Player player)
-    {
-        foreach(CharacterManager character in player.m_characters)
-        {
-            character.SetVisibleAround();
-        } 
     }
 
     void OnHoverEnter()
