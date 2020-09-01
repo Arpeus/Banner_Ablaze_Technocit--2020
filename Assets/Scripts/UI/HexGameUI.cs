@@ -140,11 +140,7 @@ public class HexGameUI : MonoBehaviour
                             if (enemyUnit != null && enemyUnit == character)
                             {
                                 selectedUnit.SetHasMoved(true);
-                                HUDInGame.Instance._panelPreview.SetHUDPreview(selectedUnit, enemyUnit);
-                                //enemyUnit.TakeDamage(selectedUnit);
-                                //selectedUnit.SetHasAlreadyPlayed(true);
-                                //selectedUnit.ClearEnemy();
-                                //selectedUnit.SetStateTurn();
+                                HUDInGame.Instance._panelPreview.SetHUDPreview(selectedUnit, enemyUnit, false);
                                 break;
                             }
                         }
@@ -153,10 +149,7 @@ public class HexGameUI : MonoBehaviour
                             if (enemyUnit != null && enemyUnit == character)
                             {
                                 selectedUnit.SetHasMoved(true);
-                                //enemyUnit.TakeDamageRange(selectedUnit);
-                                //selectedUnit.SetHasAlreadyPlayed(true);
-                                //selectedUnit.ClearEnemy();
-                                //selectedUnit.SetStateTurn();
+                                HUDInGame.Instance._panelPreview.SetHUDPreview(selectedUnit, enemyUnit, true);
                                 break;
                             }
                         }

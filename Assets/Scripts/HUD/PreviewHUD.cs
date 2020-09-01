@@ -6,12 +6,14 @@ using UnityEngine.UI;
 
 public class PreviewHUD : MonoBehaviour
 {
+    bool rangeAttack = false;
     [Header("Left preview")]
     public Image spriteLeft;
     public TextMeshProUGUI nameUnitLeft;
     public TextMeshProUGUI hitRateLeft;
     public Slider leftSliderCurrentHealth;
     public Slider leftSliderHealthAfter;
+    CharacterManager characterAttack;
 
     [Header("Right preview")]
     public Image spriteRight;
@@ -19,12 +21,24 @@ public class PreviewHUD : MonoBehaviour
     public TextMeshProUGUI hitRateRight;
     public Slider rightSliderCurrentHealth;
     public Slider rightSliderHealthAfter;
+    CharacterManager characterDefense;
 
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
-
+            if(rangeAttack)
+            {
+                characterDefense.TakeDamageRange(characterAttack);
+            }
+            else
+            {
+                characterDefense.TakeDamage(characterAttack);
+            }
+            characterAttack.SetHasAlreadyPlayed(true);
+            characterAttack.ClearEnemy();
+            characterAttack.SetStateTurn();
+            CancelAttack();
         }
         if(Input.GetMouseButtonDown(1))
         {
@@ -32,8 +46,11 @@ public class PreviewHUD : MonoBehaviour
         }
     }
 
-    public void SetHUDPreview(CharacterManager characterAttack, CharacterManager characterDefense)
+    public void SetHUDPreview(CharacterManager characterAttack, CharacterManager characterDefense, bool range)
     {
+        this.characterAttack = characterAttack;
+        this.characterDefense = characterDefense;
+        this.rangeAttack = range;
         spriteLeft.sprite = characterAttack._character.spritePreview;
         nameUnitLeft.text = characterAttack._character._name;
         hitRateLeft.text = GetDodge(characterDefense, characterAttack);
