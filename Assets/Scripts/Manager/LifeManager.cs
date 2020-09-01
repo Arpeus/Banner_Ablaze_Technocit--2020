@@ -5,17 +5,19 @@ using UnityEngine;
 public class LifeManager : MonoBehaviour
 {
     private int m_maxHealth;
-    private int m_health;
+    [SerializeField]private int m_health;
     private int m_armor;
     private int m_armorMagic;
     private int m_dodge;
 
     public int Health { get => m_health; set => m_health = value; }
+    public int MaxHealth { get => m_maxHealth; set => m_maxHealth = value; }
+    
 
     public void SetHealth(int health)
     {
         this.Health = health;
-        m_maxHealth = health;
+        MaxHealth = health;
     }
 
     public void SetArmor(int armor)
@@ -56,27 +58,10 @@ public class LifeManager : MonoBehaviour
 
         if (!dodge)
         {
-            int damage = 0;
-            switch (characterAttack._character.typeDamage)
-            {
-                case TypeDamage.Physic:
-                    int tmpCharacterAttack = characterAttack._character._attackDamage;
-                    if (counterAttack == true)
-                    {
-                        if(characterAttack._character.type == TypeCharacter.Lancer)
-                        {
-                            tmpCharacterAttack = characterAttack._character._attackDamage / 2;
-                        }
-                    }
-                    damage = tmpCharacterAttack + bonusDamage - (m_armor + tmpArmor);
-                    break;
-                case TypeDamage.Magic:
-                    damage = characterAttack._character._attackDamage + bonusDamage - m_armorMagic;
-                    break;
-            }
+            int damage = GetDamage(characterAttack, bonusDamage, tmpArmor);
+            
             if (damage > 0)
                 Health -= damage;
-
         }
         else
         {
@@ -114,8 +99,8 @@ public class LifeManager : MonoBehaviour
     public void ReceiveHeal(CharacterManager characterHealer)
     {
         Health += (characterHealer._character._attackDamage/2);
-        if (Health > m_maxHealth)
-            Health = m_maxHealth;
+        if (Health > MaxHealth)
+            Health = MaxHealth;
     }
 
     IEnumerator Die(CharacterManager character)
@@ -138,5 +123,25 @@ public class LifeManager : MonoBehaviour
     private bool CheckAnimationPlaying()
     {
         return GameManager.Instance.EType_StateAnim == AnimState.EType_IsNotPlaying;
+    }
+
+    public int GetDamage(CharacterManager characterAttack, int bonusDamage, int tmpArmor)
+    {
+        switch (characterAttack._character.typeDamage)
+        {
+            case TypeDamage.Physic:
+                int tmpCharacterAttack = characterAttack._character._attackDamage;
+                /*if (counterAttack == true)
+                {
+                    if (characterAttack._character.type == TypeCharacter.Lancer)
+                    {
+                        tmpCharacterAttack = characterAttack._character._attackDamage / 2;
+                    }
+                }*/
+                return tmpCharacterAttack + bonusDamage - (m_armor + tmpArmor);
+            case TypeDamage.Magic:
+                return characterAttack._character._attackDamage + bonusDamage - m_armorMagic;
+        }
+        return 0;
     }
 }
