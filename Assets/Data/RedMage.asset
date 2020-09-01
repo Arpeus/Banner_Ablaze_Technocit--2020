@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RedMage
   m_EditorClassIdentifier: 
   spritePreview: {fileID: 21300000, guid: 46f976aaa993f2e42a8623ce602b8fa2, type: 3}
-  _name: Majutsu
+  _name: Majutsu-shi
   _health: 12
   _attackDamage: 10
   _armor: 2
