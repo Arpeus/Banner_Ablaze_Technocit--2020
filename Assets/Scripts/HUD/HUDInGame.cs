@@ -18,7 +18,7 @@ public class HUDInGame : MonoBehaviour
     [SerializeField] private GameObject m_uniteMenu;
 
     [Header("Preview Combat")]
-    public GameObject _panelPreview;
+    public PreviewHUD _panelPreview;
 
 
     [Header("Animation Scene")]

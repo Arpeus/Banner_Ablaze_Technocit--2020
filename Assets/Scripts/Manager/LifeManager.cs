@@ -49,34 +49,11 @@ public class LifeManager : MonoBehaviour
         }
 
         bool dodge = false;
-        int tmpDodge = 0;
-        int tmpArmor = 0;
-
-        if(characterDefense.Location.IsPlantLevel)
-        {
-            Debug.Log("test");
-            tmpArmor += GameManager.Instance.bonusForestDefense;
-            tmpDodge += GameManager.Instance.bonusForestDodge;
-        }
-        if(characterDefense.Location.HasRiver)
-        {
-            tmpDodge += GameManager.Instance.malusRiverDodge;
-        }
-        if(characterDefense.Location.IsSpecial)
-        {
-            tmpDodge += GameManager.Instance.bonusCastleDodge;
-            tmpArmor += GameManager.Instance.bonusCastleDefense;
-        }
-
-        if (characterDefense._character.type == TypeCharacter.SwordMan && characterAttack._character.type == TypeCharacter.Lancer)
-        {
-            dodge = Random.Range(1, 100) <= ((tmpDodge + m_dodge) * 2);
-        }
-        else
-        {
-             dodge = Random.Range(1, 100) <= (tmpDodge + m_dodge);
-        }
         
+        int tmpDodge = characterDefense.GetDodge(characterAttack);
+        int tmpArmor = characterDefense.GetArmor();
+        dodge = Random.Range(1, 100) <= (tmpDodge + m_dodge);
+
         if (!dodge)
         {
             int damage = 0;
