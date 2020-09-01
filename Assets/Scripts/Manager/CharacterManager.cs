@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
+    
     public CharacterData _character;
     public PlayerNumber _playerNumberType;
-
+    public Sprite _spritePreview;
     public bool hasAlreadyPlayed = false;
     public bool hasMoved = false;
     public bool hasAttacked = false;
@@ -49,6 +50,7 @@ public class CharacterManager : MonoBehaviour
 
     public void Start()
     {
+         _spritePreview = _playerNumberType == PlayerNumber.EType_PlayerOne ? _character.spritePreviewTeamOne : _character.spritePreviewTeamTwo;
         _animator = GetComponent<Animator>();
         _anim = GetComponent<Animation>();
     }

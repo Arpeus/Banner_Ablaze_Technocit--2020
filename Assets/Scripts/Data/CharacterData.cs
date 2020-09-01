@@ -5,7 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Character", menuName = "Custom/Character", order = 0)]
 public class CharacterData : ScriptableObject
 {
-    public Sprite spritePreview;
+    public Sprite spritePreviewTeamOne;
+    public Sprite spritePreviewTeamTwo;
     public string _name;
     public int _health;
     public int _attackDamage;

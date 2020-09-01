@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f44607e8eb2c740bcb43fcbd33524f, type: 3}
   m_Name: WhiteMage
   m_EditorClassIdentifier: 
-  spritePreview: {fileID: 21300000, guid: 12fb38e76d7e92b4b962a025a0b5a9ed, type: 3}
+  spritePreviewTeamOne: {fileID: 21300000, guid: 66c87456755977f47a66e3ef9443e74b,
+    type: 3}
+  spritePreviewTeamTwo: {fileID: 21300000, guid: 7e8463ebef248a84c99cac0d24ed0244,
+    type: 3}
   _name: Bozu
   _health: 8
   _attackDamage: 6

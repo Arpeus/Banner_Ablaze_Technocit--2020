@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f44607e8eb2c740bcb43fcbd33524f, type: 3}
   m_Name: SwordMan
   m_EditorClassIdentifier: 
-  spritePreview: {fileID: 21300000, guid: dee8ff39be7a91e4abbc7ba92914af0e, type: 3}
+  spritePreviewTeamOne: {fileID: 21300000, guid: 92dce8dac07334a46b667c5acd9b82d3,
+    type: 3}
+  spritePreviewTeamTwo: {fileID: 21300000, guid: 60c018a011df3224aa94e6db887612ef,
+    type: 3}
   _name: Kenshi
   _health: 10
   _attackDamage: 10

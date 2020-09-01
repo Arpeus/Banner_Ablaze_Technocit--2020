@@ -51,7 +51,8 @@ public class PreviewHUD : MonoBehaviour
         this.characterAttack = characterAttack;
         this.characterDefense = characterDefense;
         this.rangeAttack = range;
-        spriteLeft.sprite = characterAttack._character.spritePreview;
+        
+        spriteLeft.sprite = characterAttack._spritePreview;
         nameUnitLeft.text = characterAttack._character._name;
         hitRateLeft.text = GetDodge(characterDefense, characterAttack);
         leftSliderHealthAfter.maxValue = leftSliderCurrentHealth.maxValue = characterAttack.m_lifeManager.MaxHealth;
@@ -59,7 +60,7 @@ public class PreviewHUD : MonoBehaviour
         leftSliderHealthAfter.value = characterAttack.m_lifeManager.Health - GetDamage(characterAttack, characterDefense);
   
 
-        spriteRight.sprite = characterDefense._character.spritePreview;
+        spriteRight.sprite = characterDefense._spritePreview;
         nameUnitRight.text = characterDefense._character._name;
         hitRateRight.text = GetDodge(characterAttack, characterDefense);
         rightSliderHealthAfter.maxValue = rightSliderCurrentHealth.maxValue = characterDefense.m_lifeManager.MaxHealth;

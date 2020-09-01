@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f44607e8eb2c740bcb43fcbd33524f, type: 3}
   m_Name: Cavalier
   m_EditorClassIdentifier: 
-  spritePreview: {fileID: 21300000, guid: 6f20b6fb36f27b0499a4c24ca0020db5, type: 3}
+  spritePreviewTeamOne: {fileID: 21300000, guid: fe135cb44f337974db70d7ac96079175,
+    type: 3}
+  spritePreviewTeamTwo: {fileID: 21300000, guid: 6da0fca9eb2396f4f98923f89f6be9a1,
+    type: 3}
   _name: Kihei
   _health: 12
   _attackDamage: 7
