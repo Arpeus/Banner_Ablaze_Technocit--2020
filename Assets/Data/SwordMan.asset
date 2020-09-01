@@ -16,6 +16,12 @@ MonoBehaviour:
     type: 3}
   spritePreviewTeamTwo: {fileID: 21300000, guid: 60c018a011df3224aa94e6db887612ef,
     type: 3}
+  spriteAnimTeamOne: {fileID: 3484386872962783403, guid: 287ab9541c37b48408e722eb916a80c0,
+    type: 3}
+  spriteAnimTeamTwo: {fileID: -595456255949740307, guid: 4031ed08edb9ed7478177fe2b076b495,
+    type: 3}
+  animatorTeamOne: {fileID: 9100000, guid: 8234b8765a42f1f4797e828a5bed287b, type: 2}
+  animatorTeamTwo: {fileID: 9100000, guid: 57013addbbadf32419d61dde2c48090d, type: 2}
   _name: Kenshi
   _health: 10
   _attackDamage: 10

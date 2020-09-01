@@ -16,6 +16,12 @@ MonoBehaviour:
     type: 3}
   spritePreviewTeamTwo: {fileID: 21300000, guid: ac8223e9a910f6145b4cf3c8c791fd16,
     type: 3}
+  spriteAnimTeamOne: {fileID: 2628755595060180492, guid: ffce397915db198489119f6a71e8b115,
+    type: 3}
+  spriteAnimTeamTwo: {fileID: -5222758817298471013, guid: 46723e357c6ad61489f87362c5dddf99,
+    type: 3}
+  animatorTeamOne: {fileID: 9100000, guid: d6f54149698050240b88f71e8378c5db, type: 2}
+  animatorTeamTwo: {fileID: 9100000, guid: 8110bcd8cc256704c8d03036da243bc8, type: 2}
   _name: Majutsu-shi
   _health: 12
   _attackDamage: 10

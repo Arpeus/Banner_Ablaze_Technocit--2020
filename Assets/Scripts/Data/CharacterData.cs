@@ -7,6 +7,10 @@ public class CharacterData : ScriptableObject
 {
     public Sprite spritePreviewTeamOne;
     public Sprite spritePreviewTeamTwo;
+    public Sprite spriteAnimTeamOne;
+    public Sprite spriteAnimTeamTwo;
+    public RuntimeAnimatorController animatorTeamOne;
+    public RuntimeAnimatorController animatorTeamTwo;
     public string _name;
     public int _health;
     public int _attackDamage;

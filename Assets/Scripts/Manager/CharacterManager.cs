@@ -50,7 +50,20 @@ public class CharacterManager : MonoBehaviour
 
     public void Start()
     {
-         _spritePreview = _playerNumberType == PlayerNumber.EType_PlayerOne ? _character.spritePreviewTeamOne : _character.spritePreviewTeamTwo;
+        if(_playerNumberType == PlayerNumber.EType_PlayerOne )
+        {
+            _spritePreview = _character.spritePreviewTeamOne;
+            animattack.spriteTeam = _character.spriteAnimTeamOne;
+            animattack.animatorTeam = _character.animatorTeamOne;
+            animDefense.animatorTeam = _character.animatorTeamOne;
+        }
+        else
+        {
+            _spritePreview = _character.spritePreviewTeamTwo;
+            animattack.spriteTeam = _character.spriteAnimTeamTwo;
+            animattack.animatorTeam = _character.animatorTeamTwo;
+            animDefense.animatorTeam = _character.animatorTeamTwo;
+        }
         _animator = GetComponent<Animator>();
         _anim = GetComponent<Animation>();
     }

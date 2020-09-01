@@ -8,23 +8,25 @@ public abstract class AnimationManager : MonoBehaviour
     protected GameObject terrain;
     protected GameObject placeMissFx;
     protected Animator animatorAttack;
-    protected SpriteRenderer sprite;
+    protected SpriteRenderer spriteEquip;
 
     public GameObject prefabMissFX;
     public int index;
-
-
-
+    public RuntimeAnimatorController animatorTeam;
+    public Sprite spriteTeam;
+    
+    
     protected virtual void Start()
     {
-        sprite = placeAttack.GetComponent<SpriteRenderer>();
+        spriteEquip = placeAttack.GetComponent<SpriteRenderer>();
         animatorAttack = placeAttack.GetComponent<Animator>();
     }
 
     public void SetActiveAttackGameObject(bool active, Sprite sprite)
     {
+        spriteEquip.sprite = spriteTeam;
+        animatorAttack.runtimeAnimatorController = animatorTeam;
         terrain.GetComponent<SpriteRenderer>().sprite = sprite;
-        
         placeAttack.SetActive(active);
         terrain.SetActive(active);
     }

@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f44607e8eb2c740bcb43fcbd33524f, type: 3}
   m_Name: Lancer
   m_EditorClassIdentifier: 
-  spritePreviewTeamOne: {fileID: 21300000, guid: 92dce8dac07334a46b667c5acd9b82d3,
+  spritePreviewTeamOne: {fileID: 21300000, guid: 91a66245d08e2ec46bfa933e6c9f76c2,
     type: 3}
-  spritePreviewTeamTwo: {fileID: 21300000, guid: 60c018a011df3224aa94e6db887612ef,
+  spritePreviewTeamTwo: {fileID: 21300000, guid: 4ae4de3beccfaf04383c4cf5301c322d,
     type: 3}
+  spriteAnimTeamOne: {fileID: -7100268632902562049, guid: 3291e8b0408c5464db017f91c95abfea,
+    type: 3}
+  spriteAnimTeamTwo: {fileID: -4739879293694622083, guid: 1aee639a4b4e009438ec6b23815e58fa,
+    type: 3}
+  animatorTeamOne: {fileID: 9100000, guid: 13919c1119c5c3840bcb71162f873d63, type: 2}
+  animatorTeamTwo: {fileID: 9100000, guid: 87cb5db6a85a97c43878b8c383ca8600, type: 2}
   _name: Ransa
   _health: 16
   _attackDamage: 6

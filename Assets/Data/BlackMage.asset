@@ -16,6 +16,12 @@ MonoBehaviour:
     type: 3}
   spritePreviewTeamTwo: {fileID: 21300000, guid: 09180b1ed595d0f478c6ca9cbf65ac5a,
     type: 3}
+  spriteAnimTeamOne: {fileID: 2452119085100192241, guid: 44ed8a2b7249672438b3ec8affaf373e,
+    type: 3}
+  spriteAnimTeamTwo: {fileID: 6399834677408486664, guid: d108b55a4e2f99a4d81f96cd30e9700c,
+    type: 3}
+  animatorTeamOne: {fileID: 9100000, guid: 494bc396c05624346b669b0aa6f85f05, type: 2}
+  animatorTeamTwo: {fileID: 9100000, guid: 617438e46cfda274d959975bdba9c79b, type: 2}
   _name: Mohotsukai
   _health: 12
   _attackDamage: 6

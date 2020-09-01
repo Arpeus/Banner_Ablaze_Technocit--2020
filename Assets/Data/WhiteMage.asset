@@ -16,6 +16,12 @@ MonoBehaviour:
     type: 3}
   spritePreviewTeamTwo: {fileID: 21300000, guid: 7e8463ebef248a84c99cac0d24ed0244,
     type: 3}
+  spriteAnimTeamOne: {fileID: 1936672765898259370, guid: 46b19a66146748a44b1a8c1edf559a8f,
+    type: 3}
+  spriteAnimTeamTwo: {fileID: -5785231491136180706, guid: 041beafe9325ad64c87c33df6b5784ca,
+    type: 3}
+  animatorTeamOne: {fileID: 9100000, guid: 96976db83aed5c242a602c8a87035648, type: 2}
+  animatorTeamTwo: {fileID: 9100000, guid: dbcb868f5311b5f468479f75fb2e067c, type: 2}
   _name: Bozu
   _health: 8
   _attackDamage: 6
