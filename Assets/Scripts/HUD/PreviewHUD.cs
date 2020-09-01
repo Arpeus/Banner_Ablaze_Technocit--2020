@@ -56,15 +56,15 @@ public class PreviewHUD : MonoBehaviour
         hitRateLeft.text = GetDodge(characterDefense, characterAttack);
         leftSliderHealthAfter.maxValue = leftSliderCurrentHealth.maxValue = characterAttack.m_lifeManager.MaxHealth;
         leftSliderCurrentHealth.value = characterAttack.m_lifeManager.Health;
-        leftSliderHealthAfter.value = GetDamage(characterAttack, characterDefense);
+        leftSliderHealthAfter.value = characterAttack.m_lifeManager.Health - GetDamage(characterAttack, characterDefense);
   
 
         spriteRight.sprite = characterDefense._character.spritePreview;
         nameUnitRight.text = characterDefense._character._name;
         hitRateRight.text = GetDodge(characterAttack, characterDefense);
-        rightSliderCurrentHealth.maxValue = characterDefense.m_lifeManager.MaxHealth;
+        rightSliderHealthAfter.maxValue = rightSliderCurrentHealth.maxValue = characterDefense.m_lifeManager.MaxHealth;
         rightSliderCurrentHealth.value = characterDefense.m_lifeManager.Health;
-        rightSliderHealthAfter.value = GetDamage(characterDefense, characterAttack);
+        rightSliderHealthAfter.value = characterDefense.m_lifeManager.Health - GetDamage(characterDefense, characterAttack);
         this.gameObject.SetActive(true);
     }
 
