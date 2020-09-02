@@ -341,7 +341,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1919685557}
   m_Father: {fileID: 591793833}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -369,10 +370,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LoreIpsum
+  m_text: '1468, Japan as you knew it, is no more.
+
+    
+
+    It is time for you
+    to take up arms and confront the Daimyos who trying to break down the order established
+    decades ago by your ancestors.
+
+    
+
+    Bring back the unity and splendor
+    of the golden age to your kingdom,  unless you see your clan dying out trying.
+
+    
+
+    Only
+    one thing is certain, war is coming and your ancestors are smiling at you as
+    the Age of Warlords begins.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1626b107a80ac2e4ca16489290dcfa5c, type: 2}
-  m_sharedMaterial: {fileID: -1913321953355772861, guid: 1626b107a80ac2e4ca16489290dcfa5c,
+  m_fontAsset: {fileID: 11400000, guid: 2210e9933df5f9444b6aaf10d1b037c0, type: 2}
+  m_sharedMaterial: {fileID: -1913321953355772861, guid: 2210e9933df5f9444b6aaf10d1b037c0,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -405,7 +423,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 272
+  m_textAlignment: 264
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -439,12 +457,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1141507594}
-    characterCount: 9
+    characterCount: 409
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 80
+    wordCount: 77
     linkCount: 0
-    lineCount: 1
+    lineCount: 10
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -453,7 +471,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1919685558}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -693,3 +711,76 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1919685556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919685557}
+  - component: {fileID: 1919685559}
+  - component: {fileID: 1919685558}
+  m_Layer: 5
+  m_Name: TMP SubMeshUI [Julee-Regular Atlas Material + LiberationSans SDF Atlas]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1919685557
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919685556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1141507593}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1919685558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919685556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_spriteAsset: {fileID: 0}
+  m_material: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
+  m_isDefaultMaterial: 0
+  m_padding: 1.25
+  m_canvasRenderer: {fileID: 1919685559}
+  m_TextComponent: {fileID: 1141507594}
+  m_materialReferenceIndex: 1
+--- !u!222 &1919685559
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919685556}
+  m_CullTransparentMesh: 0
