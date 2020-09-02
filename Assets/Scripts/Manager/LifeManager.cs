@@ -97,6 +97,7 @@ public class LifeManager : MonoBehaviour
         else
         {
             characterDefense.hasAttacked = true;
+            characterDefense.SetSpriteCounterAttack(false);
             characterAttack.TakeDamage(characterDefense, true);
         }
     }

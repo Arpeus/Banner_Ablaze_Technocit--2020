@@ -31,7 +31,7 @@ public class HexGameUI : MonoBehaviour
     {
         m_mainCamera = FindObjectOfType<HexMapCamera>();
         m_hudInGame = FindObjectOfType<HUDInGame>();
-        StartTurn(GameManager.Instance._players[0]);
+        
     }
 
     public void SetEditMode(bool toggle)
@@ -322,7 +322,6 @@ public class HexGameUI : MonoBehaviour
             character.SetHasAlreadyPlayed(false);
             character.SetHasAttacked(false);
             character.SetHasMoved(false);
-            character.HandleHighlight(Color.yellow);
         }
     }
 
@@ -330,7 +329,10 @@ public class HexGameUI : MonoBehaviour
     {
         foreach (CharacterManager character in player.m_characters)
         {
+            if (character.hasAttacked) character.SetSpriteCounterAttack(false);
+            else character.SetSpriteCounterAttack(true);
             character.SetHasAlreadyPlayed(true);
+            character.SetColorAlbedo(character.AlbedoColorTeam);
             character.DisableHighlight();
         }
     }

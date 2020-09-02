@@ -11,6 +11,9 @@ public class CharacterData : ScriptableObject
     public Sprite spriteAnimTeamTwo;
     public RuntimeAnimatorController animatorTeamOne;
     public RuntimeAnimatorController animatorTeamTwo;
+    public string albedoColorGreen = "#8DB5A5";
+    public string albedoColorRed = "#E0AA93";
+    public string albedoColorGray = "#525252";
     public string _name;
     public int _health;
     public int _attackDamage;

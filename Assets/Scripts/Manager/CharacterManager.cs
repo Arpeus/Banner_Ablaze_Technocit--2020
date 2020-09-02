@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
-    
     public CharacterData _character;
     public PlayerNumber _playerNumberType;
+
+
     public Sprite _spritePreview;
+    public SpriteRenderer _spriteCounterAttack;
+    private SpriteRenderer m_spriteOnMap;
+
+
     public bool hasAlreadyPlayed = false;
     public bool hasMoved = false;
     public bool hasAttacked = false;
@@ -25,6 +30,9 @@ public class CharacterManager : MonoBehaviour
 
     protected const float rotationSpeed = 0f;
     protected const float travelSpeed = 4f;
+
+    private string albedoColorTeam;
+    private string albedoColorHasPlayed;
 
     public static CharacterManager unitPrefab;
 
@@ -46,6 +54,7 @@ public class CharacterManager : MonoBehaviour
         m_lifeManager.SetArmor(_character._armor);
         m_lifeManager.SetArmorMargic(_character._resistanceMagic);
         m_lifeManager.SetDodge(_character._dodge);
+        m_spriteOnMap = GetComponent<SpriteRenderer>();
     }
 
     public void Start()
@@ -56,6 +65,7 @@ public class CharacterManager : MonoBehaviour
             animattack.spriteTeam = _character.spriteAnimTeamOne;
             animattack.animatorTeam = _character.animatorTeamOne;
             animDefense.animatorTeam = _character.animatorTeamOne;
+            AlbedoColorTeam = _character.albedoColorGreen;
         }
         else
         {
@@ -63,7 +73,10 @@ public class CharacterManager : MonoBehaviour
             animattack.spriteTeam = _character.spriteAnimTeamTwo;
             animattack.animatorTeam = _character.animatorTeamTwo;
             animDefense.animatorTeam = _character.animatorTeamTwo;
+            AlbedoColorTeam = _character.albedoColorRed;
         }
+        albedoColorHasPlayed = _character.albedoColorGray;
+        SetColorAlbedo(AlbedoColorTeam);
         _animator = GetComponent<Animator>();
         _anim = GetComponent<Animation>();
     }
@@ -120,6 +133,8 @@ public class CharacterManager : MonoBehaviour
             return 1;
         }
     }
+
+    public string AlbedoColorTeam { get => albedoColorTeam; set => albedoColorTeam = value; }
 
     protected float orientation;
 
@@ -255,6 +270,13 @@ public class CharacterManager : MonoBehaviour
         Location.DisableHighlight();
     }
 
+    public void SetColorAlbedo(string albedoColor)
+    {
+        Color myColor = new Color();
+        ColorUtility.TryParseHtmlString(albedoColor, out myColor);
+        m_spriteOnMap.color = myColor;
+    }
+
     public void Attack()
     { 
         for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
@@ -299,7 +321,8 @@ public class CharacterManager : MonoBehaviour
 
     private void OnMouseOver()
     {
-        _animator.SetBool("_isIdle", true);
+        if(!hasAlreadyPlayed)
+            _animator.SetBool("_isIdle", true);
     }
 
     private void OnMouseExit()
@@ -364,7 +387,8 @@ public class CharacterManager : MonoBehaviour
     public void SetHasAlreadyPlayed(bool hasAlreadyPlayed)
     {
         this.hasAlreadyPlayed = hasAlreadyPlayed;
-        HandleHighlight(Color.gray);
+        if(hasAlreadyPlayed) SetColorAlbedo(albedoColorHasPlayed);
+        else SetColorAlbedo(AlbedoColorTeam);
     }
 
     public void SetHasMoved(bool hasMoved)
@@ -375,6 +399,11 @@ public class CharacterManager : MonoBehaviour
     public void SetHasAttacked(bool hasAttacked)
     {
         this.hasAttacked = hasAttacked;
+    }
+
+    public void SetSpriteCounterAttack(bool active)
+    {
+        _spriteCounterAttack.enabled = active;
     }
 
     public int GetDodge(CharacterManager characterAttack)

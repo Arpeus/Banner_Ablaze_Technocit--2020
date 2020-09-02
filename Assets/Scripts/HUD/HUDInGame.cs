@@ -92,6 +92,7 @@ public class HUDInGame : MonoBehaviour
     public void ChangeStateTurnPhase()
     {
         m_PanelSpawnUI.SetActive(false);
+        GameManager.Instance._players[1].SetCounterAttack();
         GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
     }
 
@@ -178,7 +179,4 @@ public class HUDInGame : MonoBehaviour
         m_currentCharacterManager = null;
         //m_uniteMenu.SetActive(false);
     }
-
-    
-
 }

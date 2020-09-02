@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -96,5 +97,13 @@ public class Player : MonoBehaviour
             m_hudMenu.RemoveBtnRemove(index);
             fromZeroUnit = !fromZeroUnit;
         }
-    } 
+    }
+
+    internal void SetCounterAttack()
+    {
+        foreach(CharacterManager character in m_characters)
+        {
+            character.SetSpriteCounterAttack(true);
+        }
+    }
 }
