@@ -341,7 +341,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1188579975}
   m_Father: {fileID: 1780019696}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -369,10 +370,52 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: qghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqiqghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggqudgqi
+  m_text: "Important information :\r\n\nThe day lasts 3 turns for each player, same
+    thing for the night.\r\nYour character can't move more than what is indicated
+    on his ID card.\r\n\nGrounds legend :\r\n\nPlains : no effect\r\nForest : +2
+    defense / -1 move / +10% dodge chance\r\nSwamp : -2 move\r\nRiver : -1 move /
+    -5% chance of dodge\r\nCastle: day: +3 defense / +5 dodge chance\r\n\tnight :
+    +1 defense / +10 dodge chance\r\nMountains : impassable.\r\n\r\nGame Setup:\r\nThe
+    game requires 2 players.\r\n\nThe players choose a map, \nEach player has the
+    same amount of points to spend on units.\r\n\r\nPlayers choose the units with
+    which they would like to start from the selection menu:\r\ncavalry, lancer, swordsman
+    and black, white or red mages.\r\n\r\nEach unit has its own assigned \"cost\".
+    \r\nBecareful during a game it\u2019s impossible to call others units\r\n\r\nThe
+    first player is randomly selected to start the game once both players have selected\r\n\u201CReady\u201D\r\n\r\nSpawn
+    area :\r\nBefore the game begins, place your units on the ground on the spawning
+    areas.\r\n\nMoving units :\r\nAt the start of a game, all opposing units will
+    be out of attack range. You will therefore need\r to position your units in a
+    way that enables you to engage the enemy.\r\n\r\nTo do so, hover over one of
+    your units and select it with the left mouse click. Each unit type\r has its
+    own movement value, which determines how many tiles you can travel. \n\nOnce
+    a unit\r is selected, select a tile within your movement range. It\u2019s possible
+    to carry out a movement  with a range of zero.\r\n\r\nPlease note: you need two
+    movements to enter and cross a forest or a river.\r\n\nWait :\r\nYou are never
+    forced to take an action.\r\nYou can put the unit on hold. It won't move, but
+    it won't be able to attack an enemy unit\r\neither.\r\n\r\nAttack :\r\nIf an
+    enemy unit is within the range, you can attack it. Left click on the enemy unit
+    and select\r \"Attack\" to do so.\r\n\nA preview of the attack is available.
+    It will inform you about the possible damage inflicted on\r the opponent as well
+    as the percentage of chance to hit him.\r\n\r\nSo long as the attack is not confirmed
+    by the click, it is always possible to go back.\r\nYou can choose between a basic
+    attack or one of the unit's special attacks (see ID card).\r\n\r\nCounterattack
+    :\r\nUnless you have attacked in the previous turn, you can counter an opponent's
+    attack.\r\n\nNight :\r\nAfter three turns, time passes, it\u2019s night. This
+    means that your visibility of the terrain is\r\ndiminished, but not only that
+    your units are also seeing their abilities altered.\r\n\r\nYou will not have
+    the option to see the outcome of an action until it has been completed.\r\nMoving
+    and attacking will be more risky than during the day, so it will be necessary
+    to adapt\r your strategy. \r\nCertain characters will offer movement bonuses
+    at night (for example the\r\ncavalry or red mages). \n\nSurrender :\r\nIf the
+    situation becomes too dire, you can always concede defeat to your opponent by\r\nabandoning
+    the game.\r\n\r\nConditions of victory and defeat :\r\nThe game is over when
+    all the units of a team are beaten or if one of the players surrenders.\r\n\nEnd-of-game
+    bonus :\r\nWhen you have only 2 units left on the board, you benefit from certain
+    advantages with the\r Kamikaze Bonus. :\n+ 5 additional damage to any opponent.\r\n\nMay
+    luck be with you... "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1626b107a80ac2e4ca16489290dcfa5c, type: 2}
-  m_sharedMaterial: {fileID: -1913321953355772861, guid: 1626b107a80ac2e4ca16489290dcfa5c,
+  m_fontAsset: {fileID: 11400000, guid: 2210e9933df5f9444b6aaf10d1b037c0, type: 2}
+  m_sharedMaterial: {fileID: -1913321953355772861, guid: 2210e9933df5f9444b6aaf10d1b037c0,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -405,7 +448,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 272
+  m_textAlignment: 264
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -415,7 +458,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 1002
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -439,21 +482,21 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1141507594}
-    characterCount: 1890
+    characterCount: 3240
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 618
+    wordCount: 563
     linkCount: 0
-    lineCount: 31
+    lineCount: 101
     pageCount: 1
-    materialCount: 1
+    materialCount: 2
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1188579976}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -469,6 +512,79 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141507592}
+  m_CullTransparentMesh: 0
+--- !u!1 &1188579974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188579975}
+  - component: {fileID: 1188579977}
+  - component: {fileID: 1188579976}
+  m_Layer: 5
+  m_Name: TMP SubMeshUI [Julee-Regular SDF Material + LiberationSans SDF Atlas]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1188579975
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188579974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1141507593}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1188579976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188579974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_spriteAsset: {fileID: 0}
+  m_material: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
+  m_isDefaultMaterial: 0
+  m_padding: 1.25
+  m_canvasRenderer: {fileID: 1188579977}
+  m_TextComponent: {fileID: 1141507594}
+  m_materialReferenceIndex: 1
+--- !u!222 &1188579977
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188579974}
   m_CullTransparentMesh: 0
 --- !u!1 &1265221189
 GameObject:
