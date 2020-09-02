@@ -7,6 +7,7 @@ public class AnimationDefense : AnimationManager
     // Start is called before the first frame update
     protected override void Start()
     {
+        healthBar = HUDInGame.Instance.healthBarScriptDefense;
         healthBarUI = HUDInGame.Instance.healthBarUIDefense;
         terrain = HUDInGame.Instance._terrainDefense;
         placeMissFx = HUDInGame.Instance._missFXDefense;

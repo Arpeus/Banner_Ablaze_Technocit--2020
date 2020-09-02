@@ -12,6 +12,8 @@ public abstract class AnimationManager : MonoBehaviour
     protected SpriteRenderer spriteEquip;
     protected Image healthBarUI;
 
+    protected HealthBar healthBar;
+
     public GameObject prefabMissFX;
     public int index;
     public RuntimeAnimatorController animatorTeam;
