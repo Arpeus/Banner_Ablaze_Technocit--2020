@@ -574,6 +574,11 @@ public class HexCell : MonoBehaviour {
 			roads[i] = (roadFlags & (1 << i)) != 0;
 		}
 
+        if(PlantLevel > 0)
+        {
+            IsPlantLevel = true;
+        }
+
 		IsExplored = header >= 3 ? reader.ReadBoolean() : false;
 		ShaderData.RefreshVisibility(this);
 	}
