@@ -245,6 +245,16 @@ public class CharacterManager : MonoBehaviour
         return false;
     }
 
+    public void HighlightCombat()
+    {
+        Location.EnableHighlight(Color.red);
+    }
+
+    public void DisableHighlight()
+    {
+        Location.DisableHighlight();
+    }
+
     public void Attack()
     { 
         for (HexDirection d = HexDirection.NE; d <= HexDirection.NW; d++)
@@ -276,6 +286,14 @@ public class CharacterManager : MonoBehaviour
                     }
                 }
             }
+        }
+        foreach(CharacterManager character in m_enemyNeighbor)
+        {
+            character.HighlightCombat();
+        }
+        foreach (CharacterManager character in m_enemyNeighborRange)
+        {
+            character.HighlightCombat();
         }
     }
 
@@ -331,6 +349,7 @@ public class CharacterManager : MonoBehaviour
 
     public void ClearEnemy()
     {
+        
         m_enemyNeighbor.Clear();
         m_enemyNeighborRange.Clear();
     }
