@@ -19,7 +19,7 @@ public class HexGameUI : MonoBehaviour
     [SerializeField] CharacterManager enemyUnit;
     [SerializeField] CharacterManager allyUnit;
 
-    HexMapCamera m_mainCamera;
+    public HexMapCamera m_mainCamera;
 
     private HUDInGame m_hudInGame;
 
@@ -31,7 +31,7 @@ public class HexGameUI : MonoBehaviour
     {
         m_mainCamera = FindObjectOfType<HexMapCamera>();
         m_hudInGame = FindObjectOfType<HUDInGame>();
-        
+        grid = FindObjectOfType<HexGrid>();
     }
 
     public void SetEditMode(bool toggle)

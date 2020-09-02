@@ -42,6 +42,8 @@ public class HexGrid : MonoBehaviour {
 	HexCellShaderData cellShaderData;
 
 	void Awake () {
+        DontDestroyOnLoad(gameObject);
+
 		HexMetrics.noiseSource = noiseSource;
 		HexMetrics.InitializeHashGrid(seed);
         CharacterManager.unitPrefab = unitPrefab;

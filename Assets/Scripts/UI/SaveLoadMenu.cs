@@ -23,6 +23,11 @@ public class SaveLoadMenu : MonoBehaviour
 
     private const string filePath = "./Map/";
 
+    void Awake()
+    {
+        hexGrid = FindObjectOfType<HexGrid>();
+    }
+
     public void Open()
     {
         menuLabel.text = "Load Map";
