@@ -185,7 +185,7 @@ public class CharacterManager : MonoBehaviour
         }
         else
         {
-            moveCost = edgeType == HexEdgeType.Flat ? 0 : 0;
+            moveCost = edgeType == HexEdgeType.Flat ? 1 : 0;
             moveCost +=
                 toCell.UrbanLevel + toCell.FarmLevel + toCell.PlantLevel;
         }

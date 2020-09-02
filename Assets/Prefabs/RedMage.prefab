@@ -38,7 +38,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3655199423029045001}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -199,7 +199,7 @@ MonoBehaviour:
   _character: {fileID: 11400000, guid: fd26bf71f5adb9a48b182513a4e7b156, type: 2}
   _playerNumberType: 0
   _spritePreview: {fileID: 0}
-  _spriteOnMap: {fileID: 0}
+  _spriteCounterAttack: {fileID: 0}
   hasAlreadyPlayed: 0
   hasMoved: 0
   hasAttacked: 0

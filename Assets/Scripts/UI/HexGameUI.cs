@@ -319,6 +319,7 @@ public class HexGameUI : MonoBehaviour
     {
         foreach (CharacterManager character in player.m_characters)
         {
+            character.SetSpriteCounterAttack(false);
             character.SetHasAlreadyPlayed(false);
             character.SetHasAttacked(false);
             character.SetHasMoved(false);

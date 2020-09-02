@@ -95,13 +95,17 @@ public class HexCell : MonoBehaviour {
 		}
 	}
 
-    bool plant;
+    public bool plant;
 
     public bool IsPlantLevel
     {
         get
         {
             return plant;
+        }
+        set
+        {
+            plant = value;
         }
     }
 
@@ -294,7 +298,7 @@ public class HexCell : MonoBehaviour {
 	int elevation = int.MinValue;
 	int waterLevel;
 
-	int urbanLevel, farmLevel, plantLevel;
+	public int urbanLevel, farmLevel, plantLevel;
 
 	int specialIndex;
 
@@ -545,6 +549,7 @@ public class HexCell : MonoBehaviour {
 		plantLevel = reader.ReadByte();
 		specialIndex = reader.ReadByte();
 		walled = reader.ReadBoolean();
+        
 
 		byte riverData = reader.ReadByte();
 		if (riverData >= 128) {

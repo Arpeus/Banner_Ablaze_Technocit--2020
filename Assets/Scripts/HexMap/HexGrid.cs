@@ -42,6 +42,8 @@ public class HexGrid : MonoBehaviour {
 	HexCellShaderData cellShaderData;
 
 	void Awake () {
+        
+
 		HexMetrics.noiseSource = noiseSource;
 		HexMetrics.InitializeHashGrid(seed);
         CharacterManager.unitPrefab = unitPrefab;
@@ -49,8 +51,7 @@ public class HexGrid : MonoBehaviour {
 		CreateMap(cellCountX, cellCountZ);
 	    if (FindObjectOfType<GameManager>() != null && !String.IsNullOrEmpty(GameManager.Instance.filepathMap.ToString()))
         {
-            Load(GameManager.Instance.filepathMap);
-            
+            Load(GameManager.Instance.filepathMap);     
         }
         cellShaderData.Initialize(cellCountX, cellCountZ);
         foreach (HexCell hexCell in cells)
@@ -59,8 +60,6 @@ public class HexGrid : MonoBehaviour {
         }
 
     }
-
-   
 
     public void Initialise()
     {
