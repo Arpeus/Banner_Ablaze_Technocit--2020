@@ -33,6 +33,9 @@ public class HUDInGame : MonoBehaviour
     public Sprite[] _terrains;
     public Image healthBarUIAttack;
     public Image healthBarUIDefense;
+    public HealthBar healthBarScriptAttack;
+    public HealthBar healthBarScriptDefense;
+
 
     [Header("UI Spawn")]
     [SerializeField] private GameObject[] m_placeBtnSpawn;

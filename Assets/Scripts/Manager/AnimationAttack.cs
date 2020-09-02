@@ -6,6 +6,7 @@ public class AnimationAttack : AnimationManager
 {
     protected override void Start()
     {
+        healthBar = HUDInGame.Instance.healthBarScriptAttack;
         healthBarUI = HUDInGame.Instance.healthBarUIAttack;
         terrain = HUDInGame.Instance._terrainAttack;
         placeAttack = HUDInGame.Instance._placeAttackUnits[index];
