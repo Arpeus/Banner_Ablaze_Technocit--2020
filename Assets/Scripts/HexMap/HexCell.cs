@@ -579,12 +579,12 @@ public class HexCell : MonoBehaviour {
 	}
 
 	public void DisableHighlight () {
-		Image highlight = uiRect.GetChild(0).GetComponent<Image>();
+		SpriteRenderer highlight = uiRect.GetChild(0).GetComponent<SpriteRenderer>();
 		highlight.enabled = false;
 	}
 
 	public void EnableHighlight (Color color) {
-		Image highlight = uiRect.GetChild(0).GetComponent<Image>();
+        SpriteRenderer highlight = uiRect.GetChild(0).GetComponent<SpriteRenderer>();
 		highlight.color = color;
 		highlight.enabled = true;
 	}

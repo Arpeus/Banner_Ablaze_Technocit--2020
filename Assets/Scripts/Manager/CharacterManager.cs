@@ -245,9 +245,9 @@ public class CharacterManager : MonoBehaviour
         return false;
     }
 
-    public void HighlightCombat()
+    public void HandleHighlight(Color color)
     {
-        Location.EnableHighlight(Color.red);
+        Location.EnableHighlight(color);
     }
 
     public void DisableHighlight()
@@ -289,11 +289,11 @@ public class CharacterManager : MonoBehaviour
         }
         foreach(CharacterManager character in m_enemyNeighbor)
         {
-            character.HighlightCombat();
+            character.HandleHighlight(Color.red);
         }
         foreach (CharacterManager character in m_enemyNeighborRange)
         {
-            character.HighlightCombat();
+           character.HandleHighlight(Color.red);
         }
     }
 
@@ -349,7 +349,14 @@ public class CharacterManager : MonoBehaviour
 
     public void ClearEnemy()
     {
-        
+        foreach (CharacterManager character in m_enemyNeighbor)
+        {
+            character.DisableHighlight();
+        }
+        foreach (CharacterManager character in m_enemyNeighborRange)
+        {
+            character.DisableHighlight();
+        }
         m_enemyNeighbor.Clear();
         m_enemyNeighborRange.Clear();
     }
@@ -357,6 +364,7 @@ public class CharacterManager : MonoBehaviour
     public void SetHasAlreadyPlayed(bool hasAlreadyPlayed)
     {
         this.hasAlreadyPlayed = hasAlreadyPlayed;
+        HandleHighlight(Color.gray);
     }
 
     public void SetHasMoved(bool hasMoved)

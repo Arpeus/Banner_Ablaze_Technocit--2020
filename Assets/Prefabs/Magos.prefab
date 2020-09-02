@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6942619671904739110, guid: 1482c99eb2c4005448050fafc5a9ff59,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -101,11 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8477823b72f47d4fa538c662a2cb82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_maxHealth: 0
   m_health: 0
-  m_armor: 0
-  m_armorMagic: 0
-  m_dodge: 0
 --- !u!114 &-1774319832539941190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _character: {fileID: 11400000, guid: abfbdb994f16641449977ba25aa953a3, type: 2}
   _playerNumberType: 0
+  _spritePreview: {fileID: 0}
   hasAlreadyPlayed: 0
   hasMoved: 0
   hasAttacked: 0
@@ -182,7 +179,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.56, y: 5.12}
+    oldSize: {x: 8.533334, y: 17.066668}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -206,6 +203,8 @@ MonoBehaviour:
   prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
     type: 3}
   index: 5
+  animatorTeam: {fileID: 0}
+  spriteTeam: {fileID: 0}
   prefabFx: {fileID: 1547793412897849323, guid: fa6a8e698e0b06949a53423777ae2d88,
     type: 3}
 --- !u!114 &4421067578294687462
@@ -223,5 +222,7 @@ MonoBehaviour:
   prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
     type: 3}
   index: 5
+  animatorTeam: {fileID: 0}
+  spriteTeam: {fileID: 0}
   prefabFx: {fileID: 1547793412897849323, guid: fa6a8e698e0b06949a53423777ae2d88,
     type: 3}
