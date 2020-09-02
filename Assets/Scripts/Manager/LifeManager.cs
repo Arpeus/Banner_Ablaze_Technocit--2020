@@ -61,7 +61,14 @@ public class LifeManager : MonoBehaviour
             int damage = GetDamage(characterAttack, bonusDamage, tmpArmor);
             
             if (damage > 0)
+            {
+                if (!counterAttack)
+                    characterDefense.animDefense.DamageHealthBar(damage);
+                else
+                    characterDefense.animattack.DamageHealthBar(damage);
                 Health -= damage;
+            }
+
         }
         else
         {

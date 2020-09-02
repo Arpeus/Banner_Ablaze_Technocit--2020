@@ -1,14 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AnimationDefense : AnimationManager
 {
     // Start is called before the first frame update
     protected override void Start()
     {
-        healthBar = HUDInGame.Instance.healthBarScriptDefense;
-        healthBarUI = HUDInGame.Instance.healthBarUIDefense;
+        UIHealthBar = HUDInGame.Instance.healthBarUIDefense;
+        healthBar = UIHealthBar.GetComponent<HealthBar>();
+        healthBarUI = UIHealthBar.GetComponent<Image>();
         terrain = HUDInGame.Instance._terrainDefense;
         placeMissFx = HUDInGame.Instance._missFXDefense;
         placeAttack = HUDInGame.Instance._placeDefenseUnits[index];

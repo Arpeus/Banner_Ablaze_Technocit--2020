@@ -31,10 +31,8 @@ public class HUDInGame : MonoBehaviour
     public GameObject _terrainAttack;
     public GameObject _terrainDefense;
     public Sprite[] _terrains;
-    public Image healthBarUIAttack;
-    public Image healthBarUIDefense;
-    public HealthBar healthBarScriptAttack;
-    public HealthBar healthBarScriptDefense;
+    public GameObject healthBarUIAttack;
+    public GameObject healthBarUIDefense;
 
 
     [Header("UI Spawn")]

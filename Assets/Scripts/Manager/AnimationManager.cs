@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public abstract class AnimationManager : MonoBehaviour
 {
+    CharacterManager character;
+
     protected GameObject placeAttack;
     protected GameObject terrain;
     protected GameObject placeMissFx;
@@ -12,6 +14,7 @@ public abstract class AnimationManager : MonoBehaviour
     protected SpriteRenderer spriteEquip;
     protected Image healthBarUI;
 
+    protected GameObject UIHealthBar;
     protected HealthBar healthBar;
 
     public GameObject prefabMissFX;
@@ -22,12 +25,14 @@ public abstract class AnimationManager : MonoBehaviour
     
     protected virtual void Start()
     {
+        character = GetComponent<CharacterManager>();
         spriteEquip = placeAttack.GetComponent<SpriteRenderer>();
         animatorAttack = placeAttack.GetComponent<Animator>();
     }
 
     public void SetActiveAttackGameObject(bool active, Sprite sprite)
     {
+        healthBar.SetLifeBar(character.m_lifeManager.MaxHealth, character.m_lifeManager.Health);
         healthBarUI.sprite = spriteHealthBarUI;
         healthBarUI.enabled = active;
         spriteEquip.enabled = active;
@@ -36,6 +41,7 @@ public abstract class AnimationManager : MonoBehaviour
         terrain.GetComponent<SpriteRenderer>().sprite = sprite;
         placeAttack.SetActive(active);
         terrain.SetActive(active);
+        UIHealthBar.SetActive(active);
     }
 
     public void TriggerAnimAttack()
@@ -72,6 +78,12 @@ public abstract class AnimationManager : MonoBehaviour
         StartCoroutine(Die(second));
     }
 
+    public void DamageHealthBar(int damage)
+    {
+        Debug.Log(character.m_lifeManager.Health);
+        healthBar._value = character.m_lifeManager.Health - damage;       
+    }
+
     IEnumerator Die(float second)
     {
         
@@ -98,5 +110,7 @@ public abstract class AnimationManager : MonoBehaviour
         SetActiveAttackGameObject(false, null);
         GameManager.Instance.EType_StateAnim = AnimState.EType_IsNotPlaying;
     }
+
     
+
 }

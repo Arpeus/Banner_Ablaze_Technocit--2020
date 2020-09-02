@@ -280,8 +280,6 @@ public class HexGameUI : MonoBehaviour
         if (selectedUnit && selectedUnit._playerNumberType != PlayerNumber.EType_PlayerTwo)
         {
             m_mainCamera.transform.position = new Vector3(currentCell.Position.x, transform.position.y, currentCell.Position.z);
-
-            Debug.Log(selectedUnit);
         }
         if(!selectedUnit)
         {

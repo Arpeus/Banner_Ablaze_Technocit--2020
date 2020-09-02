@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AnimationAttack : AnimationManager
 {
     protected override void Start()
     {
-        healthBar = HUDInGame.Instance.healthBarScriptAttack;
-        healthBarUI = HUDInGame.Instance.healthBarUIAttack;
+        UIHealthBar = HUDInGame.Instance.healthBarUIAttack;
+        healthBar = UIHealthBar.GetComponent<HealthBar>();
+        healthBarUI = UIHealthBar.GetComponent<Image>();
         terrain = HUDInGame.Instance._terrainAttack;
         placeAttack = HUDInGame.Instance._placeAttackUnits[index];
         placeMissFx = HUDInGame.Instance._missFXAttack;
