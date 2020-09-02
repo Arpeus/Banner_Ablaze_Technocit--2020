@@ -301,6 +301,8 @@ public class HexGameUI : MonoBehaviour
 
     private void EndTurn(Player player)
     {
+        if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerOne) HUDInGame.Instance.SetActiveTurnPlayer(false);
+        else HUDInGame.Instance.SetActiveTurnPlayer(true);
         switch (GameManager.Instance.EType_Phase)
         {
             case PhaseType.EType_TurnPhasePlayerOne:

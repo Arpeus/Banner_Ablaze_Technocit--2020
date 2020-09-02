@@ -19,7 +19,18 @@ public class HUDMenu : MonoBehaviour
     public List<Button> _btnAddTroops;
     [SerializeField] private GameObject[] m_placeBtnRemoveSpawn;
     [SerializeField] private GameObject[] m_removeTroops;
-    [SerializeField] private GameObject[] m_panelInfoTroop;
+    
+    [Header("Show Info troops")]
+    public Image imageTroop;
+    public TextMeshProUGUI text_Name;
+    public TextMeshProUGUI text_Attack;
+    public TextMeshProUGUI text_AttackMagic;
+    public TextMeshProUGUI text_Defense;
+    public TextMeshProUGUI text_DefenseMagic;
+    public TextMeshProUGUI text_Movement;
+    public TextMeshProUGUI text_Dodge;
+    public TextMeshProUGUI text_Point;
+
     [Header("UI Show Map")]
     [SerializeField] private GameObject m_goShowCreateTeamUI;
     [SerializeField] private GameObject m_goHideCreateTeamUI;
@@ -36,7 +47,7 @@ public class HUDMenu : MonoBehaviour
     /// </summary>
     public void SetTextAvailablePoint()
     {
-        _pointAvailable.SetText(_player.GetAvailablePoint() + " / " + _player.GetMaxPoint());
+        _pointAvailable.SetText(_player.GetAvailablePoint().ToString());
         if (_player.GetAvailablePoint() == 0)
         {
             _btnReady.interactable = true;
@@ -102,11 +113,6 @@ public class HUDMenu : MonoBehaviour
                 btnRemove.Destroy();
             }
         }
-    }
-
-    public void DisplayInfoTroop(int index)
-    {
-        m_panelInfoTroop[index].SetActive(true);
     }
 
     public void GoToSceneSecondPlayerTeam()

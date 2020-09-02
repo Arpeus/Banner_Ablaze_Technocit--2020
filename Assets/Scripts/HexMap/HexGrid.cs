@@ -441,7 +441,7 @@ public class HexGrid : MonoBehaviour {
 			}
 		}
 		currentPathFrom.EnableHighlight(Color.blue);
-		currentPathTo.EnableHighlight(Color.red);
+		currentPathTo.EnableHighlight(Color.white);
 	}
 
 	public void FindPath (HexCell fromCell, HexCell toCell, CharacterManager unit) {
@@ -492,10 +492,10 @@ public class HexGrid : MonoBehaviour {
 				}
 
 				int distance = current.Distance + moveCost;
-				int turn = (distance - 1) / speed;
+				/*int turn = (distance - 1) / speed;
 				if (turn > currentTurn) {
 					distance = turn * speed + moveCost;
-				}
+				}*/
 
 				if (neighbor.SearchPhase < searchFrontierPhase) {
 					neighbor.SearchPhase = searchFrontierPhase;

@@ -66,6 +66,8 @@ public class CharacterManager : MonoBehaviour
             animattack.animatorTeam = _character.animatorTeamOne;
             animDefense.animatorTeam = _character.animatorTeamOne;
             AlbedoColorTeam = _character.albedoColorGreen;
+            animDefense.spriteHealthBarUI = _character.healthBarCombatTeamOne;
+            animattack.spriteHealthBarUI = _character.healthBarCombatTeamOne;
         }
         else
         {
@@ -74,6 +76,8 @@ public class CharacterManager : MonoBehaviour
             animattack.animatorTeam = _character.animatorTeamTwo;
             animDefense.animatorTeam = _character.animatorTeamTwo;
             AlbedoColorTeam = _character.albedoColorRed;
+            animDefense.spriteHealthBarUI = _character.healthBarCombatTeamTwo;
+            animattack.spriteHealthBarUI = _character.healthBarCombatTeamTwo;
         }
         albedoColorHasPlayed = _character.albedoColorGray;
         SetColorAlbedo(AlbedoColorTeam);
@@ -185,9 +189,18 @@ public class CharacterManager : MonoBehaviour
         }
         else
         {
-            moveCost = edgeType == HexEdgeType.Flat ? 1 : 0;
-            moveCost +=
-                toCell.UrbanLevel + toCell.FarmLevel + toCell.PlantLevel;
+            moveCost = edgeType == HexEdgeType.Flat ? 1 : 1;
+            if (toCell.IsPlantLevel)
+            {
+                moveCost -= GameManager.Instance.malusForestMove;
+            }
+            if (toCell.HasRiver)
+            {
+                moveCost -= GameManager.Instance.malusRiverMove;
+            }
+            
+            //moveCost +=
+              //  toCell.UrbanLevel + toCell.FarmLevel + toCell.PlantLevel;
         }
         return moveCost;
     }

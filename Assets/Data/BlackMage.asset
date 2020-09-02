@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f44607e8eb2c740bcb43fcbd33524f, type: 3}
   m_Name: BlackMage
   m_EditorClassIdentifier: 
+  spriteInfoTroop: {fileID: 2452119085100192241, guid: 44ed8a2b7249672438b3ec8affaf373e,
+    type: 3}
   spritePreviewTeamOne: {fileID: 21300000, guid: b482434b6d47d8442bc1a91691cc7d0f,
     type: 3}
   spritePreviewTeamTwo: {fileID: 21300000, guid: 09180b1ed595d0f478c6ca9cbf65ac5a,
@@ -20,8 +22,15 @@ MonoBehaviour:
     type: 3}
   spriteAnimTeamTwo: {fileID: 6399834677408486664, guid: d108b55a4e2f99a4d81f96cd30e9700c,
     type: 3}
+  healthBarCombatTeamOne: {fileID: 21300000, guid: 5d6454c6a4a242240b291c9f2b19fd24,
+    type: 3}
+  healthBarCombatTeamTwo: {fileID: 21300000, guid: c304042468aa2524f923b8ca494946c9,
+    type: 3}
   animatorTeamOne: {fileID: 9100000, guid: 494bc396c05624346b669b0aa6f85f05, type: 2}
   animatorTeamTwo: {fileID: 9100000, guid: 617438e46cfda274d959975bdba9c79b, type: 2}
+  albedoColorGreen: '#8DB5A5'
+  albedoColorRed: '#E0AA93'
+  albedoColorGray: '#525252'
   _name: Mohotsukai
   _health: 12
   _attackDamage: 6
@@ -35,4 +44,4 @@ MonoBehaviour:
   type: 5
   typeBonusDamage: 3
   typeDamage: 1
-  typeRange: 0
+  typeRange: 1

@@ -1,13 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class HUDInGame : MonoBehaviour
 {
 
     public static HUDInGame Instance;
+    [Header("UI Turn Player")]
+    public GameObject _turnPlayerOne;
+    public GameObject _turnPlayerTwo;
 
     [Header("UI GameObject")]
     [SerializeField] private GameObject m_PanelSpawnUI;
@@ -31,7 +31,8 @@ public class HUDInGame : MonoBehaviour
     public GameObject _terrainAttack;
     public GameObject _terrainDefense;
     public Sprite[] _terrains;
-
+    public Image healthBarUIAttack;
+    public Image healthBarUIDefense;
 
     [Header("UI Spawn")]
     [SerializeField] private GameObject[] m_placeBtnSpawn;
@@ -92,6 +93,7 @@ public class HUDInGame : MonoBehaviour
     public void ChangeStateTurnPhase()
     {
         m_PanelSpawnUI.SetActive(false);
+        SetActiveTurnPlayer(true);
         GameManager.Instance._players[1].SetCounterAttack();
         GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
     }
@@ -144,6 +146,12 @@ public class HUDInGame : MonoBehaviour
     {
         panel.SetActive(active);
         m_currentCharacterManager = character;
+    }
+
+    public void SetActiveTurnPlayer(bool active)
+    {
+        _turnPlayerOne.SetActive(active);
+        _turnPlayerTwo.SetActive(!active);
     }
 
     public void Attack()

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class AnimationManager : MonoBehaviour
 {
@@ -9,12 +10,13 @@ public abstract class AnimationManager : MonoBehaviour
     protected GameObject placeMissFx;
     protected Animator animatorAttack;
     protected SpriteRenderer spriteEquip;
+    protected Image healthBarUI;
 
     public GameObject prefabMissFX;
     public int index;
     public RuntimeAnimatorController animatorTeam;
     public Sprite spriteTeam;
-    
+    public Sprite spriteHealthBarUI;
     
     protected virtual void Start()
     {
@@ -24,6 +26,9 @@ public abstract class AnimationManager : MonoBehaviour
 
     public void SetActiveAttackGameObject(bool active, Sprite sprite)
     {
+        healthBarUI.sprite = spriteHealthBarUI;
+        healthBarUI.enabled = active;
+        spriteEquip.enabled = active;
         spriteEquip.sprite = spriteTeam;
         animatorAttack.runtimeAnimatorController = animatorTeam;
         terrain.GetComponent<SpriteRenderer>().sprite = sprite;

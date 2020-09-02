@@ -71,7 +71,7 @@ public class PreviewHUD : MonoBehaviour
 
     private string GetDodge(CharacterManager characterDefense, CharacterManager characterAttack)
     {
-        return (100 - (characterDefense.GetDodge(characterAttack) + characterAttack._character._dodge)).ToString();
+        return (100 - (characterDefense.GetDodge(characterAttack) + characterDefense._character._dodge)).ToString();
     }
 
     private int GetDamage(CharacterManager characterDefense, CharacterManager characterAttack)

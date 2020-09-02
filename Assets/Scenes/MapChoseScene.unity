@@ -293,9 +293,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Choose Map
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8dbdc265bd55d37479af041177b65723, type: 2}
-  m_sharedMaterial: {fileID: 946818003263480672, guid: 8dbdc265bd55d37479af041177b65723,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2237,8 +2236,8 @@ MonoBehaviour:
   EType_Phase: 0
   EType_StateAnim: 0
   bonusForestDefense: 2
-  bonusForestDodge: -1
-  malusForestDefense: 10
+  bonusForestDodge: 10
+  malusForestMove: -1
   malusSwampMove: -2
   malusRiverMove: -1
   malusRiverDodge: -5

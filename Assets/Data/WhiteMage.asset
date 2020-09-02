@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f44607e8eb2c740bcb43fcbd33524f, type: 3}
   m_Name: WhiteMage
   m_EditorClassIdentifier: 
+  spriteInfoTroop: {fileID: 21300000, guid: 62054a1ffe1db394fb1bc20e171c2674, type: 3}
   spritePreviewTeamOne: {fileID: 21300000, guid: 66c87456755977f47a66e3ef9443e74b,
     type: 3}
   spritePreviewTeamTwo: {fileID: 21300000, guid: 7e8463ebef248a84c99cac0d24ed0244,
@@ -20,8 +21,15 @@ MonoBehaviour:
     type: 3}
   spriteAnimTeamTwo: {fileID: -5785231491136180706, guid: 041beafe9325ad64c87c33df6b5784ca,
     type: 3}
+  healthBarCombatTeamOne: {fileID: 21300000, guid: fafd038b601a59f438cc2b9d7b174e52,
+    type: 3}
+  healthBarCombatTeamTwo: {fileID: 21300000, guid: 17f90cbd9ca86fc468e1598000dc353e,
+    type: 3}
   animatorTeamOne: {fileID: 9100000, guid: 96976db83aed5c242a602c8a87035648, type: 2}
   animatorTeamTwo: {fileID: 9100000, guid: dbcb868f5311b5f468479f75fb2e067c, type: 2}
+  albedoColorGreen: '#8DB5A5'
+  albedoColorRed: '#E0AA93'
+  albedoColorGray: '#525252'
   _name: Bozu
   _health: 8
   _attackDamage: 6
@@ -35,4 +43,4 @@ MonoBehaviour:
   type: 4
   typeBonusDamage: 5
   typeDamage: 1
-  typeRange: 0
+  typeRange: 1

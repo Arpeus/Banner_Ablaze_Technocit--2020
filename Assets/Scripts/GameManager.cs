@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
     public AnimState EType_StateAnim;
     [Header("Value Forest")]
     public int bonusForestDefense = 2;
-    public int bonusForestDodge = -1;
-    public int malusForestDefense = 10;
+    public int bonusForestDodge = 10;
+    public int malusForestMove = -1;
     [Header("Value Swamp")]
     public int malusSwampMove = -2;
     [Header("Value River")]

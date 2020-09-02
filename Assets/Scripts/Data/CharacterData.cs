@@ -5,10 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Character", menuName = "Custom/Character", order = 0)]
 public class CharacterData : ScriptableObject
 {
+    public Sprite spriteInfoTroop;
     public Sprite spritePreviewTeamOne;
     public Sprite spritePreviewTeamTwo;
     public Sprite spriteAnimTeamOne;
     public Sprite spriteAnimTeamTwo;
+    public Sprite healthBarCombatTeamOne;
+    public Sprite healthBarCombatTeamTwo;
     public RuntimeAnimatorController animatorTeamOne;
     public RuntimeAnimatorController animatorTeamTwo;
     public string albedoColorGreen = "#8DB5A5";
