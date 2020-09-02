@@ -1028,7 +1028,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 94
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8156d90b70826dc49906ded96f1c6227, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 946818003263480672, guid: 8156d90b70826dc49906ded96f1c6227,
     type: 2}
   m_fontSharedMaterials: []
@@ -1280,7 +1280,7 @@ SpriteRenderer:
   m_Size: {x: 9.6, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &299033938
@@ -3289,7 +3289,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Kenshi
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8156d90b70826dc49906ded96f1c6227, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 946818003263480672, guid: 8156d90b70826dc49906ded96f1c6227,
     type: 2}
   m_fontSharedMaterials: []
@@ -3676,7 +3676,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '%'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f3d44cca4fe45b445b40ef8f0db0e20f, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 8469367248512459854, guid: f3d44cca4fe45b445b40ef8f0db0e20f,
     type: 2}
   m_fontSharedMaterials: []
@@ -3975,7 +3975,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 94
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8156d90b70826dc49906ded96f1c6227, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 946818003263480672, guid: 8156d90b70826dc49906ded96f1c6227,
     type: 2}
   m_fontSharedMaterials: []
@@ -6085,7 +6085,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Majutsu-shi
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8156d90b70826dc49906ded96f1c6227, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 946818003263480672, guid: 8156d90b70826dc49906ded96f1c6227,
     type: 2}
   m_fontSharedMaterials: []
@@ -6431,7 +6431,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '%'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f3d44cca4fe45b445b40ef8f0db0e20f, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 8469367248512459854, guid: f3d44cca4fe45b445b40ef8f0db0e20f,
     type: 2}
   m_fontSharedMaterials: []
@@ -8241,7 +8241,7 @@ SpriteRenderer:
   m_Size: {x: 9.6, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1960415429
@@ -8708,6 +8708,36 @@ RectTransform:
   m_AnchoredPosition: {x: -300, y: 130}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2036343611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036343612}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2036343612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036343611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1237.7607, y: 310.88058, z: -27.064484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2060186291
 GameObject:
   m_ObjectHideFlags: 0
