@@ -7,6 +7,7 @@ public class AnimationAttack : AnimationManager
 {
     protected override void Start()
     {
+        placeHitFX = HUDInGame.Instance._hitFXAttack;
         UIHealthBar = HUDInGame.Instance.healthBarUIAttack;
         healthBar = UIHealthBar.GetComponent<HealthBar>();
         healthBarUI = UIHealthBar.GetComponent<Image>();

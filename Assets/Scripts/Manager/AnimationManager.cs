@@ -10,6 +10,7 @@ public abstract class AnimationManager : MonoBehaviour
     protected GameObject placeAttack;
     protected GameObject terrain;
     protected GameObject placeMissFx;
+    protected GameObject placeHitFX;
     public GameObject backGroundWar;
     protected Animator animatorAttack;
     protected SpriteRenderer spriteEquip;
@@ -19,6 +20,7 @@ public abstract class AnimationManager : MonoBehaviour
     protected HealthBar healthBar;
 
     public GameObject prefabMissFX;
+    public GameObject prefabHitFX;
     public int index;
     public RuntimeAnimatorController animatorTeam;
     public Sprite spriteTeam;
@@ -77,7 +79,14 @@ public abstract class AnimationManager : MonoBehaviour
 
     public void TriggerDodgeFX()
     {
+        SoundManager.PlaySound(Sound.Miss);
         Instantiate(prefabMissFX, placeMissFx.transform);
+    }
+
+    public void TriggerHitFX()
+    {
+        SoundManager.PlaySound(Sound.Hit);
+        Instantiate(prefabHitFX, placeHitFX.transform);
     }
 
     public void Blink(float second)
@@ -94,6 +103,8 @@ public abstract class AnimationManager : MonoBehaviour
     IEnumerator LifeBar(int currentHealth, int damage, int second)
     {
         yield return new WaitForSeconds(second);
+        TriggerHitFX();
+
         healthBar._value = currentHealth - damage;       
     }
 
