@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 287ab9541c37b48408e722eb916a80c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3484386872962783403
+    second: SpriteSheet_KenshiGreenDay_0
+  - first:
+      213: -1604935003137954841
+    second: SpriteSheet_KenshiGreenDay_1
+  - first:
+      213: 2098897735522469569
+    second: SpriteSheet_KenshiGreenDay_2
+  - first:
+      213: -8594007261062897371
+    second: SpriteSheet_KenshiGreenDay_3
+  - first:
+      213: 6357303206250359472
+    second: SpriteSheet_KenshiGreenDay_4
+  - first:
+      213: -7127388439363729735
+    second: SpriteSheet_KenshiGreenDay_5
+  - first:
+      213: 6712579865440001246
+    second: SpriteSheet_KenshiGreenDay_6
+  - first:
+      213: -5617706657727361327
+    second: SpriteSheet_KenshiGreenDay_7
+  - first:
+      213: -1541578684318716173
+    second: SpriteSheet_KenshiGreenDay_8
+  - first:
+      213: -3484978917294404370
+    second: SpriteSheet_KenshiGreenDay_9
+  - first:
+      213: -504615233195242345
+    second: SpriteSheet_KenshiGreenDay_10
+  - first:
+      213: -6461678794070356135
+    second: SpriteSheet_KenshiGreenDay_11
+  - first:
+      213: 323631802500103909
+    second: SpriteSheet_KenshiGreenDay_12
+  - first:
+      213: 6589462770521221997
+    second: SpriteSheet_KenshiGreenDay_13
+  - first:
+      213: -3252022797478244160
+    second: SpriteSheet_KenshiGreenDay_14
+  - first:
+      213: -5184749273048577857
+    second: SpriteSheet_KenshiGreenDay_15
+  - first:
+      213: 5122190659345659243
+    second: SpriteSheet_KenshiGreenDay_16
+  - first:
+      213: -6860800609002973825
+    second: SpriteSheet_KenshiGreenDay_17
+  - first:
+      213: 1151905289115633424
+    second: SpriteSheet_KenshiGreenDay_18
+  - first:
+      213: 5165082516173943847
+    second: SpriteSheet_KenshiGreenDay_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3328
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba81bfe56670b5030800000000000000
+      internalID: 3484386872962783403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_1
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3328
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb2f523e102ab9e0800000000000000
+      internalID: -1604935003137954841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_2
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3328
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c640b9be58c02d10800000000000000
+      internalID: 2098897735522469569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_3
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 3328
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521e737dde3fbb880800000000000000
+      internalID: -8594007261062897371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba210a659da93850800000000000000
+      internalID: 6357303206250359472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_5
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2560
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6cf771afd661d90800000000000000
+      internalID: -7127388439363729735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_6
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2560
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc9df5a2dfd72d50800000000000000
+      internalID: 6712579865440001246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_7
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 2560
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de40d50f85e902b0800000000000000
+      internalID: -5617706657727361327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe6edfaa563b9ae0800000000000000
+      internalID: -1541578684318716173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1792
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec01f0932ed2afc0800000000000000
+      internalID: -3484978917294404370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_10
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1792
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c85257e1f3ff8f0800000000000000
+      internalID: -504615233195242345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_11
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 1792
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f03ca4f518356a0800000000000000
+      internalID: -6461678794070356135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eeb902e865cd7400800000000000000
+      internalID: 323631802500103909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_13
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1024
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b24913a79727b50800000000000000
+      internalID: 6589462770521221997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_14
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1024
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c056d2ee7e7ed2d0800000000000000
+      internalID: -3252022797478244160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_15
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 1024
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8897291021c08b0800000000000000
+      internalID: -5184749273048577857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b653f12244da51740800000000000000
+      internalID: 5122190659345659243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_17
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f751899323a89c0a0800000000000000
+      internalID: -6860800609002973825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_18
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 256
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01781a4e1c36cff00800000000000000
+      internalID: 1151905289115633424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiGreenDay_19
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 256
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724f024ce2f0ea740800000000000000
+      internalID: 5165082516173943847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

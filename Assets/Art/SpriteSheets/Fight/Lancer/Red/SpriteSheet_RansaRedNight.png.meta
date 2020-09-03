@@ -1,0 +1,608 @@
+fileFormatVersion: 2
+guid: 32369d8b0125f2e4eb5e6f2652407e58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4366271169149943931
+    second: SpriteSheet_RansaRedNight_0
+  - first:
+      213: -3008973777223900050
+    second: SpriteSheet_RansaRedNight_1
+  - first:
+      213: -9003352569043584270
+    second: SpriteSheet_RansaRedNight_2
+  - first:
+      213: -8140306032490821510
+    second: SpriteSheet_RansaRedNight_3
+  - first:
+      213: 4327435038215565462
+    second: SpriteSheet_RansaRedNight_4
+  - first:
+      213: -1101534182369293086
+    second: SpriteSheet_RansaRedNight_5
+  - first:
+      213: 4567411030038273449
+    second: SpriteSheet_RansaRedNight_6
+  - first:
+      213: -5262904608761638623
+    second: SpriteSheet_RansaRedNight_7
+  - first:
+      213: -8532921294581658881
+    second: SpriteSheet_RansaRedNight_8
+  - first:
+      213: 6658716107203517624
+    second: SpriteSheet_RansaRedNight_9
+  - first:
+      213: -525606114606041780
+    second: SpriteSheet_RansaRedNight_10
+  - first:
+      213: -1812428607189017452
+    second: SpriteSheet_RansaRedNight_11
+  - first:
+      213: 7391212781404239980
+    second: SpriteSheet_RansaRedNight_12
+  - first:
+      213: -8508954532161407705
+    second: SpriteSheet_RansaRedNight_13
+  - first:
+      213: 4545264907344330665
+    second: SpriteSheet_RansaRedNight_14
+  - first:
+      213: -2960637850270407031
+    second: SpriteSheet_RansaRedNight_15
+  - first:
+      213: 1783442935432533622
+    second: SpriteSheet_RansaRedNight_16
+  - first:
+      213: -4604544408209737912
+    second: SpriteSheet_RansaRedNight_17
+  - first:
+      213: 3024321379607857487
+    second: SpriteSheet_RansaRedNight_18
+  - first:
+      213: -4714554507922837292
+    second: SpriteSheet_RansaRedNight_19
+  - first:
+      213: -9030187637158073594
+    second: SpriteSheet_RansaRedNight_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70463eae7c189c30800000000000000
+      internalID: 4366271169149943931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64aa16ba4afd36d0800000000000000
+      internalID: -3008973777223900050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_2
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa7e8e4a8aad0380800000000000000
+      internalID: -9003352569043584270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_3
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a784a6aeac2d70f80800000000000000
+      internalID: -8140306032490821510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_4
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690fa615d332e0c30800000000000000
+      internalID: 4327435038215565462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec8def4f7096b0f0800000000000000
+      internalID: -1101534182369293086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9add1a4f124b26f30800000000000000
+      internalID: 4567411030038273449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1211ff3742866f6b0800000000000000
+      internalID: -5262904608761638623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_8
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa081cba49f49980800000000000000
+      internalID: -8532921294581658881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_9
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc99062503886c50800000000000000
+      internalID: 6658716107203517624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c453227060ca4b8f0800000000000000
+      internalID: -525606114606041780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c1ebfc8c5f8d6e0800000000000000
+      internalID: -1812428607189017452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c683de64ddcd29660800000000000000
+      internalID: 7391212781404239980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_13
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725b1947fee1ae980800000000000000
+      internalID: -8508954532161407705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_14
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afbe44f956041f30800000000000000
+      internalID: 4545264907344330665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9866e02bf83b9e6d0800000000000000
+      internalID: -2960637850270407031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676d2a396ef00c810800000000000000
+      internalID: 1783442935432533622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_17
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847b524b14f5910c0800000000000000
+      internalID: -4604544408209737912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_18
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49452e654c88f920800000000000000
+      internalID: 3024321379607857487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_19
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0fa0167a9829eb0800000000000000
+      internalID: -4714554507922837292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedNight_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ba11020345ea280800000000000000
+      internalID: -9030187637158073594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bafc96907bab9bb4db54382449dec93b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,629 @@
+fileFormatVersion: 2
+guid: 132688fcd85219c44bb9a624723efa80
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6625405123015442599
+    second: SpriteSheet_KiheiGreenDay_0
+  - first:
+      213: -2366418127230822705
+    second: SpriteSheet_KiheiGreenDay_1
+  - first:
+      213: 152104223617178576
+    second: SpriteSheet_KiheiGreenDay_2
+  - first:
+      213: 4571813138344949714
+    second: SpriteSheet_KiheiGreenDay_3
+  - first:
+      213: -3717338680259548282
+    second: SpriteSheet_KiheiGreenDay_4
+  - first:
+      213: -2178541088621279943
+    second: SpriteSheet_KiheiGreenDay_5
+  - first:
+      213: 4065071082790873041
+    second: SpriteSheet_KiheiGreenDay_6
+  - first:
+      213: 1962069626126380747
+    second: SpriteSheet_KiheiGreenDay_7
+  - first:
+      213: -8840669648920726155
+    second: SpriteSheet_KiheiGreenDay_8
+  - first:
+      213: 7770337175584681849
+    second: SpriteSheet_KiheiGreenDay_9
+  - first:
+      213: -1150230707209219568
+    second: SpriteSheet_KiheiGreenDay_10
+  - first:
+      213: 8434149485522804629
+    second: SpriteSheet_KiheiGreenDay_11
+  - first:
+      213: -501643380822758134
+    second: SpriteSheet_KiheiGreenDay_12
+  - first:
+      213: -9028395449028987338
+    second: SpriteSheet_KiheiGreenDay_13
+  - first:
+      213: 4277852920276110122
+    second: SpriteSheet_KiheiGreenDay_14
+  - first:
+      213: 7753228984334040945
+    second: SpriteSheet_KiheiGreenDay_15
+  - first:
+      213: -7585883273246271344
+    second: SpriteSheet_KiheiGreenDay_16
+  - first:
+      213: -8294526302398131479
+    second: SpriteSheet_KiheiGreenDay_17
+  - first:
+      213: -4347214587474150614
+    second: SpriteSheet_KiheiGreenDay_18
+  - first:
+      213: -893315167073049909
+    second: SpriteSheet_KiheiGreenDay_19
+  - first:
+      213: -7085655652986609867
+    second: SpriteSheet_KiheiGreenDay_20
+  - first:
+      213: 6476763189653619616
+    second: SpriteSheet_KiheiGreenDay_21
+  - first:
+      213: -8003102193898588072
+    second: SpriteSheet_KiheiGreenDay_22
+  - first:
+      213: -2614358321179067572
+    second: SpriteSheet_KiheiGreenDay_0
+  - first:
+      213: -2867290313478798192
+    second: SpriteSheet_KiheiGreenDay_1
+  - first:
+      213: -3882667861675145221
+    second: SpriteSheet_KiheiGreenDay_2
+  - first:
+      213: 2926788907503207234
+    second: SpriteSheet_KiheiGreenDay_3
+  - first:
+      213: -2834917673137141190
+    second: SpriteSheet_KiheiGreenDay_4
+  - first:
+      213: -4737935543676675034
+    second: SpriteSheet_KiheiGreenDay_5
+  - first:
+      213: 7754917937919469612
+    second: SpriteSheet_KiheiGreenDay_6
+  - first:
+      213: 7575773204555005800
+    second: SpriteSheet_KiheiGreenDay_7
+  - first:
+      213: -6249778028731563741
+    second: SpriteSheet_KiheiGreenDay_8
+  - first:
+      213: -2868862058265804694
+    second: SpriteSheet_KiheiGreenDay_9
+  - first:
+      213: -1663200435027039687
+    second: SpriteSheet_KiheiGreenDay_10
+  - first:
+      213: -1074094295418548417
+    second: SpriteSheet_KiheiGreenDay_11
+  - first:
+      213: 6656853084630398447
+    second: SpriteSheet_KiheiGreenDay_12
+  - first:
+      213: 6893872924657428105
+    second: SpriteSheet_KiheiGreenDay_13
+  - first:
+      213: 1625884319596335367
+    second: SpriteSheet_KiheiGreenDay_14
+  - first:
+      213: -348736397500904634
+    second: SpriteSheet_KiheiGreenDay_15
+  - first:
+      213: -206280463844096360
+    second: SpriteSheet_KiheiGreenDay_16
+  - first:
+      213: -8829051486752137655
+    second: SpriteSheet_KiheiGreenDay_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bf88655fee7bbd0800000000000000
+      internalID: -2614358321179067572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3072
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0948d25c6a65538d0800000000000000
+      internalID: -2867290313478798192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_2
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7070ca62efd1ac0800000000000000
+      internalID: -3882667861675145221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_3
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3072
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243484c210b0e9820800000000000000
+      internalID: 2926788907503207234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_4
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 3072
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a0f25756958a8d0800000000000000
+      internalID: -2834917673137141190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c5476c9b87f3eb0800000000000000
+      internalID: -4737935543676675034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28aef7f6c00f9b60800000000000000
+      internalID: 7754917937919469612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f7c64679d822960800000000000000
+      internalID: 7575773204555005800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_8
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2048
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3210a60eef35449a0800000000000000
+      internalID: -6249778028731563741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_9
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2048
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60887b6821cf28d0800000000000000
+      internalID: -2868862058265804694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a20ff24002be8e0800000000000000
+      internalID: -1663200435027039687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fcd4addec0811f0800000000000000
+      internalID: -1074094295418548417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5bb576c94e16c50800000000000000
+      internalID: 6656853084630398447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_13
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1024
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986a3e056e4fbaf50800000000000000
+      internalID: 6893872924657428105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_14
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1024
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701da63ac2d409610800000000000000
+      internalID: 1625884319596335367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b85ba181a092bf0800000000000000
+      internalID: -348736397500904634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8964874d205232df0800000000000000
+      internalID: -206280463844096360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KiheiGreenDay_17
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e118c7378e87580800000000000000
+      internalID: -8829051486752137655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,656 @@
+fileFormatVersion: 2
+guid: ffce397915db198489119f6a71e8b115
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2628755595060180492
+    second: SpriteSheet_MajutsuShiGreenDay_0
+  - first:
+      213: 3237996916384581610
+    second: SpriteSheet_MajutsuShiGreenDay_1
+  - first:
+      213: 7731482687985905857
+    second: SpriteSheet_MajutsuShiGreenDay_2
+  - first:
+      213: 2537852517064460935
+    second: SpriteSheet_MajutsuShiGreenDay_3
+  - first:
+      213: 4286593623527383686
+    second: SpriteSheet_MajutsuShiGreenDay_4
+  - first:
+      213: 5380429090114641376
+    second: SpriteSheet_MajutsuShiGreenDay_5
+  - first:
+      213: -8436621728926591216
+    second: SpriteSheet_MajutsuShiGreenDay_6
+  - first:
+      213: 2734809116901718739
+    second: SpriteSheet_MajutsuShiGreenDay_7
+  - first:
+      213: 6840503121749348435
+    second: SpriteSheet_MajutsuShiGreenDay_8
+  - first:
+      213: -8318559733364495128
+    second: SpriteSheet_MajutsuShiGreenDay_9
+  - first:
+      213: -1959228539001999946
+    second: SpriteSheet_MajutsuShiGreenDay_10
+  - first:
+      213: 353000752982803470
+    second: SpriteSheet_MajutsuShiGreenDay_11
+  - first:
+      213: -181819830832967582
+    second: SpriteSheet_MajutsuShiGreenDay_12
+  - first:
+      213: 4228638874306006163
+    second: SpriteSheet_MajutsuShiGreenDay_13
+  - first:
+      213: -7094426389001081167
+    second: SpriteSheet_MajutsuShiGreenDay_14
+  - first:
+      213: -6359453945475186312
+    second: SpriteSheet_MajutsuShiGreenDay_15
+  - first:
+      213: 3862528927572757582
+    second: SpriteSheet_MajutsuShiGreenDay_16
+  - first:
+      213: 7353371078687262294
+    second: SpriteSheet_MajutsuShiGreenDay_17
+  - first:
+      213: -5846849445103504829
+    second: SpriteSheet_MajutsuShiGreenDay_18
+  - first:
+      213: 4498662187470289693
+    second: SpriteSheet_MajutsuShiGreenDay_19
+  - first:
+      213: -96169052223280246
+    second: SpriteSheet_MajutsuShiGreenDay_20
+  - first:
+      213: -6970943573311213479
+    second: SpriteSheet_MajutsuShiGreenDay_21
+  - first:
+      213: 3561913580039333647
+    second: SpriteSheet_MajutsuShiGreenDay_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06f1e439473b7420800000000000000
+      internalID: 2628755595060180492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7c9e03a0dafec20800000000000000
+      internalID: 3237996916384581610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_2
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c07b74aa8ebb4b60800000000000000
+      internalID: 7731482687985905857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_3
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a45fb0b63483320800000000000000
+      internalID: 2537852517064460935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_4
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682edc2703a0d7b30800000000000000
+      internalID: 4286593623527383686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed167f20cf1baa40800000000000000
+      internalID: 5380429090114641376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0171df69c391bea80800000000000000
+      internalID: -8436621728926591216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da3d65f66ef3f520800000000000000
+      internalID: 2734809116901718739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_8
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35012d0c8595eee50800000000000000
+      internalID: 6840503121749348435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_9
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ece0f10ff98e8c80800000000000000
+      internalID: -8318559733364495128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd6af2360c6fc4e0800000000000000
+      internalID: -1959228539001999946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e044cf6805c16e400800000000000000
+      internalID: 353000752982803470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2605412c3db0a7df0800000000000000
+      internalID: -181819830832967582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_13
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cca62e6a42faa30800000000000000
+      internalID: 4228638874306006163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_14
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1beee6e79c88b8d90800000000000000
+      internalID: -7094426389001081167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871ce76945eaeb7a0800000000000000
+      internalID: -6359453945475186312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c05a658957a9530800000000000000
+      internalID: 3862528927572757582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_17
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65609c6490c6c0660800000000000000
+      internalID: 7353371078687262294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_18
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3427a695861dbdea0800000000000000
+      internalID: -5846849445103504829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_19
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bf5a0bc657e6e30800000000000000
+      internalID: 4498662187470289693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b68dba1c65aaef0800000000000000
+      internalID: -96169052223280246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_21
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9503e73f0cb324f90800000000000000
+      internalID: -6970943573311213479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiGreenDay_22
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 256
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0762ea77857e6130800000000000000
+      internalID: 3561913580039333647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ff6a0ee007a97504cb2ca73347684ddd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

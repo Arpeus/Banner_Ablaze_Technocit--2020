@@ -1,0 +1,608 @@
+fileFormatVersion: 2
+guid: 1aee639a4b4e009438ec6b23815e58fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4739879293694622083
+    second: SpriteSheet_RansaRedDay_0
+  - first:
+      213: 5158074932138633921
+    second: SpriteSheet_RansaRedDay_1
+  - first:
+      213: -2529116188987968126
+    second: SpriteSheet_RansaRedDay_2
+  - first:
+      213: -5830647315304778411
+    second: SpriteSheet_RansaRedDay_3
+  - first:
+      213: -5047824682142037010
+    second: SpriteSheet_RansaRedDay_4
+  - first:
+      213: 7133040480904469800
+    second: SpriteSheet_RansaRedDay_5
+  - first:
+      213: -8101656123826117306
+    second: SpriteSheet_RansaRedDay_6
+  - first:
+      213: -2464342522423172932
+    second: SpriteSheet_RansaRedDay_7
+  - first:
+      213: -8411748664378507172
+    second: SpriteSheet_RansaRedDay_8
+  - first:
+      213: -6247197300814570521
+    second: SpriteSheet_RansaRedDay_9
+  - first:
+      213: 8526560631155971181
+    second: SpriteSheet_RansaRedDay_10
+  - first:
+      213: -8344750286417386846
+    second: SpriteSheet_RansaRedDay_11
+  - first:
+      213: -1123664627996776804
+    second: SpriteSheet_RansaRedDay_12
+  - first:
+      213: -2851026840058074273
+    second: SpriteSheet_RansaRedDay_13
+  - first:
+      213: 5442381219983496024
+    second: SpriteSheet_RansaRedDay_14
+  - first:
+      213: 3546196539318802598
+    second: SpriteSheet_RansaRedDay_15
+  - first:
+      213: -5993102415131404036
+    second: SpriteSheet_RansaRedDay_16
+  - first:
+      213: 1691339669958533955
+    second: SpriteSheet_RansaRedDay_17
+  - first:
+      213: 3847628391038020474
+    second: SpriteSheet_RansaRedDay_18
+  - first:
+      213: 3642293245234114210
+    second: SpriteSheet_RansaRedDay_19
+  - first:
+      213: -8218026333180688921
+    second: SpriteSheet_RansaRedDay_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d764a1535e0983eb0800000000000000
+      internalID: -4739879293694622083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca68f672d9259740800000000000000
+      internalID: 5158074932138633921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_2
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285bea7d936c6ecd0800000000000000
+      internalID: -2529116188987968126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_3
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5557ca8a821651fa0800000000000000
+      internalID: -5830647315304778411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_4
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb8974323682f9b0800000000000000
+      internalID: -5047824682142037010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ddac06686adf260800000000000000
+      internalID: 7133040480904469800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645e9f60ea2219f80800000000000000
+      internalID: -8101656123826117306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0a3125885eccdd0800000000000000
+      internalID: -2464342522423172932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_8
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c504ad73827734b80800000000000000
+      internalID: -8411748664378507172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_9
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb1b2b672f7d49a0800000000000000
+      internalID: -6247197300814570521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64d1e7e7bd645670800000000000000
+      internalID: 8526560631155971181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2a0cea3dd713c80800000000000000
+      internalID: -8344750286417386846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96a49969f0f760f0800000000000000
+      internalID: -1123664627996776804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_13
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5beb31c13e1f68d0800000000000000
+      internalID: -2851026840058074273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_14
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8539f5572e8378b40800000000000000
+      internalID: 5442381219983496024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a811d5c6fe963130800000000000000
+      internalID: 3546196539318802598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf89e833b1934dca0800000000000000
+      internalID: -5993102415131404036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_17
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343a76ef778d87710800000000000000
+      internalID: 1691339669958533955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_18
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b6783d2a5856530800000000000000
+      internalID: 3847628391038020474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_19
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aeebf9a8660c8230800000000000000
+      internalID: 3642293245234114210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_RansaRedDay_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e585f74794b3fd80800000000000000
+      internalID: -8218026333180688921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: af4539762ad653d4da9778fd8fa95745
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

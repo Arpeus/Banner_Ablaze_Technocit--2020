@@ -1,0 +1,656 @@
+fileFormatVersion: 2
+guid: 1724f8ba1471f344fa9f5f42847e9cf6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6267543642570991367
+    second: SpriteSheet_MajutsuShiRedNight_0
+  - first:
+      213: -525957780491145644
+    second: SpriteSheet_MajutsuShiRedNight_1
+  - first:
+      213: -1843342909188920452
+    second: SpriteSheet_MajutsuShiRedNight_2
+  - first:
+      213: 122864224341032509
+    second: SpriteSheet_MajutsuShiRedNight_3
+  - first:
+      213: 5383445986813691845
+    second: SpriteSheet_MajutsuShiRedNight_4
+  - first:
+      213: 6217570422688653782
+    second: SpriteSheet_MajutsuShiRedNight_5
+  - first:
+      213: 3927690400196488003
+    second: SpriteSheet_MajutsuShiRedNight_6
+  - first:
+      213: 730812815614210011
+    second: SpriteSheet_MajutsuShiRedNight_7
+  - first:
+      213: -4385699534899407940
+    second: SpriteSheet_MajutsuShiRedNight_8
+  - first:
+      213: -5445975555405220924
+    second: SpriteSheet_MajutsuShiRedNight_9
+  - first:
+      213: 278308998695530775
+    second: SpriteSheet_MajutsuShiRedNight_10
+  - first:
+      213: 4297476015967710156
+    second: SpriteSheet_MajutsuShiRedNight_11
+  - first:
+      213: -9052958319236546691
+    second: SpriteSheet_MajutsuShiRedNight_12
+  - first:
+      213: 9035214041028758616
+    second: SpriteSheet_MajutsuShiRedNight_13
+  - first:
+      213: -5774669649447218533
+    second: SpriteSheet_MajutsuShiRedNight_14
+  - first:
+      213: -4379907139019511902
+    second: SpriteSheet_MajutsuShiRedNight_15
+  - first:
+      213: 1090680198410970581
+    second: SpriteSheet_MajutsuShiRedNight_16
+  - first:
+      213: -3687089899836382758
+    second: SpriteSheet_MajutsuShiRedNight_17
+  - first:
+      213: -4559585136724920201
+    second: SpriteSheet_MajutsuShiRedNight_18
+  - first:
+      213: 5891381157561124923
+    second: SpriteSheet_MajutsuShiRedNight_19
+  - first:
+      213: 8605535138894617530
+    second: SpriteSheet_MajutsuShiRedNight_20
+  - first:
+      213: 3422143944942467711
+    second: SpriteSheet_MajutsuShiRedNight_21
+  - first:
+      213: -5343899176627522736
+    second: SpriteSheet_MajutsuShiRedNight_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707a3bd6cb9caf650800000000000000
+      internalID: 6267543642570991367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ee8fe6f2c63b8f0800000000000000
+      internalID: -525957780491145644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_2
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b2f8af3612b66e0800000000000000
+      internalID: -1843342909188920452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_3
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e737f6c5084b100800000000000000
+      internalID: 122864224341032509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_4
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7488f2a97d5ba40800000000000000
+      internalID: 5383445986813691845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1255a7b5f394650800000000000000
+      internalID: 6217570422688653782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b6c63fb95f18630800000000000000
+      internalID: 3927690400196488003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfecff326e542a00800000000000000
+      internalID: 730812815614210011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_8
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb399ba628dd223c0800000000000000
+      internalID: -4385699534899407940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_9
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c37c9c16120c64b0800000000000000
+      internalID: -5445975555405220924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711ba0d4f80ccd300800000000000000
+      internalID: 278308998695530775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb2482eaa3b3ab30800000000000000
+      internalID: 4297476015967710156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ffc7f8f5e6d5280800000000000000
+      internalID: -9052958319236546691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_13
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c0429bc47836d70800000000000000
+      internalID: 9035214041028758616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_14
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b921871ac804cdfa0800000000000000
+      internalID: -5774669649447218533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a76b8da9a17733c0800000000000000
+      internalID: -4379907139019511902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5a6dd9cdfd22f00800000000000000
+      internalID: 1090680198410970581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_17
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad162596543d4dcc0800000000000000
+      internalID: -3687089899836382758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_18
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7783c52d97919b0c0800000000000000
+      internalID: -4559585136724920201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_19
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b384cdce2f362c150800000000000000
+      internalID: 5891381157561124923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb94ff5d900d6770800000000000000
+      internalID: 8605535138894617530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_21
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7abc8069c5ed7f20800000000000000
+      internalID: 3422143944942467711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_MajutsuShiRedNight_22
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 256
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2864583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0533d951308a6d5b0800000000000000
+      internalID: -5343899176627522736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 61be8e8bfa9019045a18b51516c9d03c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

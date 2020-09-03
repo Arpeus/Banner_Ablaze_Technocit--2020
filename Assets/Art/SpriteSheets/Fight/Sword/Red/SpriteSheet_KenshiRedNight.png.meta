@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: a985480b1203feb4bb3e4301f230575f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2649228292713027468
+    second: SpriteSheet_KenshiRedNight_0
+  - first:
+      213: -1571649938851618274
+    second: SpriteSheet_KenshiRedNight_1
+  - first:
+      213: 8111416296644895046
+    second: SpriteSheet_KenshiRedNight_2
+  - first:
+      213: 5414243484205525297
+    second: SpriteSheet_KenshiRedNight_3
+  - first:
+      213: 1853016694069690624
+    second: SpriteSheet_KenshiRedNight_4
+  - first:
+      213: -3242640239316395801
+    second: SpriteSheet_KenshiRedNight_5
+  - first:
+      213: 2230366354051756093
+    second: SpriteSheet_KenshiRedNight_6
+  - first:
+      213: 8952760219451649396
+    second: SpriteSheet_KenshiRedNight_7
+  - first:
+      213: 3294783077809017874
+    second: SpriteSheet_KenshiRedNight_8
+  - first:
+      213: -1940018452137082382
+    second: SpriteSheet_KenshiRedNight_9
+  - first:
+      213: 6134316248563580609
+    second: SpriteSheet_KenshiRedNight_10
+  - first:
+      213: 7272438535762002656
+    second: SpriteSheet_KenshiRedNight_11
+  - first:
+      213: 4936944505363924749
+    second: SpriteSheet_KenshiRedNight_12
+  - first:
+      213: 4818500124598364671
+    second: SpriteSheet_KenshiRedNight_13
+  - first:
+      213: 1128792723746739637
+    second: SpriteSheet_KenshiRedNight_14
+  - first:
+      213: -5037198791311664996
+    second: SpriteSheet_KenshiRedNight_15
+  - first:
+      213: -5189284392720148654
+    second: SpriteSheet_KenshiRedNight_16
+  - first:
+      213: 8749122909810893048
+    second: SpriteSheet_KenshiRedNight_17
+  - first:
+      213: -6482820080200344394
+    second: SpriteSheet_KenshiRedNight_18
+  - first:
+      213: 689854158284909906
+    second: SpriteSheet_KenshiRedNight_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3328
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8713149813f3c420800000000000000
+      internalID: 2649228292713027468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_1
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3328
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e122c7325b0603ae0800000000000000
+      internalID: -1571649938851618274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_2
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3328
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64165da452a819070800000000000000
+      internalID: 8111416296644895046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_3
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 3328
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1392b8353c1432b40800000000000000
+      internalID: 5414243484205525297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00184e49ddc37b910800000000000000
+      internalID: 1853016694069690624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_5
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2560
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e89821f1e3dff2d0800000000000000
+      internalID: -3242640239316395801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_6
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2560
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30fc3cc16ad3fe10800000000000000
+      internalID: 2230366354051756093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_7
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 2560
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47de9af5cf79e3c70800000000000000
+      internalID: 8952760219451649396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21456c4b0cb69bd20800000000000000
+      internalID: 3294783077809017874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_9
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1792
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f18aa61f7ba315e0800000000000000
+      internalID: -1940018452137082382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_10
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1792
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cef9878028712550800000000000000
+      internalID: 6134316248563580609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_11
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 1792
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2c4f63154ece460800000000000000
+      internalID: 7272438535762002656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07880ededc838440800000000000000
+      internalID: 4936944505363924749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_13
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1024
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff96cd47550ced240800000000000000
+      internalID: 4818500124598364671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_14
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1024
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b558fb60074aaf00800000000000000
+      internalID: 1128792723746739637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_15
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 1024
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9857d43366481ab0800000000000000
+      internalID: -5037198791311664996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257df6db655fbf7b0800000000000000
+      internalID: -5189284392720148654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_17
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0a28f7ee02b6970800000000000000
+      internalID: 8749122909810893048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_18
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 256
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc93e80c756806a0800000000000000
+      internalID: -6482820080200344394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_KenshiRedNight_19
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 256
+        width: 1792
+        height: 768
+      alignment: 9
+      pivot: {x: 0.1919643, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25de563b3bad29900800000000000000
+      internalID: 689854158284909906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,557 @@
+fileFormatVersion: 2
+guid: cd337b529b7410942913333af2549401
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7817787966890372899
+    second: SpriteSheetFX_WhiteSpellNight_0
+  - first:
+      213: 4846152832757678900
+    second: SpriteSheetFX_WhiteSpellNight_1
+  - first:
+      213: -549196827253410940
+    second: SpriteSheetFX_WhiteSpellNight_2
+  - first:
+      213: -984089516176324211
+    second: SpriteSheetFX_WhiteSpellNight_3
+  - first:
+      213: 2809723801618207087
+    second: SpriteSheetFX_WhiteSpellNight_4
+  - first:
+      213: 3596406403306209232
+    second: SpriteSheetFX_WhiteSpellNight_5
+  - first:
+      213: 1134645329553473301
+    second: SpriteSheetFX_WhiteSpellNight_6
+  - first:
+      213: 5513799871787026202
+    second: SpriteSheetFX_WhiteSpellNight_7
+  - first:
+      213: -7571073372591335387
+    second: SpriteSheetFX_WhiteSpellNight_8
+  - first:
+      213: -4016804316720435803
+    second: SpriteSheetFX_WhiteSpellNight_9
+  - first:
+      213: -5831037343282522866
+    second: SpriteSheetFX_WhiteSpellNight_10
+  - first:
+      213: -3344197347322844981
+    second: SpriteSheetFX_WhiteSpellNight_11
+  - first:
+      213: -5831352365000430595
+    second: SpriteSheetFX_WhiteSpellNight_12
+  - first:
+      213: -4445426818954609595
+    second: SpriteSheetFX_WhiteSpellNight_13
+  - first:
+      213: -375910090459410926
+    second: SpriteSheetFX_WhiteSpellNight_14
+  - first:
+      213: -2231572996640815525
+    second: SpriteSheetFX_WhiteSpellNight_15
+  - first:
+      213: -8825889728700232745
+    second: SpriteSheetFX_WhiteSpellNight_16
+  - first:
+      213: -2683310333145846118
+    second: SpriteSheetFX_WhiteSpellNight_17
+  - first:
+      213: 7320881947183265426
+    second: SpriteSheetFX_WhiteSpellNight_18
+  - first:
+      213: -4559782267253855863
+    second: SpriteSheetFX_WhiteSpellNight_19
+  - first:
+      213: -2573141865493551033
+    second: SpriteSheetFX_WhiteSpellNight_20
+  - first:
+      213: 2633150390832915832
+    second: SpriteSheetFX_WhiteSpellNight_21
+  - first:
+      213: -4872486972361547443
+    second: SpriteSheetFX_WhiteSpellNight_22
+  - first:
+      213: 8447046502917825887
+    second: SpriteSheetFX_WhiteSpellNight_23
+  - first:
+      213: -6910815426423046951
+    second: SpriteSheetFX_WhiteSpellNight_24
+  - first:
+      213: -1853544922823175307
+    second: SpriteSheetFX_WhiteSpellNight_25
+  - first:
+      213: 4830245014427595688
+    second: SpriteSheetFX_WhiteSpellNight_26
+  - first:
+      213: 1620219231765971894
+    second: SpriteSheetFX_WhiteSpellNight_27
+  - first:
+      213: -6964269209611222986
+    second: SpriteSheetFX_WhiteSpellNight_28
+  - first:
+      213: 5438999891661761215
+    second: SpriteSheetFX_WhiteSpellNight_29
+  - first:
+      213: -4922248311195660225
+    second: SpriteSheetFX_WhiteSpellNight_30
+  - first:
+      213: 2870474676132445610
+    second: SpriteSheetFX_WhiteSpellNight_31
+  - first:
+      213: -8700888496550565164
+    second: SpriteSheetFX_WhiteSpellNight_32
+  - first:
+      213: 1755554097841015338
+    second: SpriteSheetFX_WhiteSpellNight_33
+  - first:
+      213: 830725687548522367
+    second: SpriteSheetFX_WhiteSpellNight_34
+  - first:
+      213: 2691008387938086675
+    second: SpriteSheetFX_WhiteSpellNight_35
+  - first:
+      213: -7222024676071654518
+    second: SpriteSheetFX_WhiteSpellNight_36
+  - first:
+      213: -8784344160339270367
+    second: SpriteSheetFX_WhiteSpellNight_37
+  - first:
+      213: -8594041405992484332
+    second: SpriteSheetFX_WhiteSpellNight_38
+  - first:
+      213: -7791615242748792166
+    second: SpriteSheetFX_WhiteSpellNight_39
+  - first:
+      213: 2660999414991218939
+    second: SpriteSheetFX_WhiteSpellNight_40
+  - first:
+      213: 7835197753522792629
+    second: SpriteSheetFX_WhiteSpellNight_41
+  - first:
+      213: -1679660122249918628
+    second: SpriteSheetFX_WhiteSpellNight_42
+  - first:
+      213: 8166296056349430004
+    second: SpriteSheetFX_WhiteSpellNight_43
+  - first:
+      213: 6855729991598245831
+    second: SpriteSheetFX_WhiteSpellNight_44
+  - first:
+      213: -3228068233790169746
+    second: SpriteSheetFX_WhiteSpellNight_45
+  - first:
+      213: 8373402132238667054
+    second: SpriteSheetFX_WhiteSpellNight_46
+  - first:
+      213: -8551734310568537089
+    second: SpriteSheetFX_WhiteSpellNight_47
+  - first:
+      213: 4279082110259947533
+    second: SpriteSheetFX_WhiteSpellNight_48
+  - first:
+      213: -978384251432671700
+    second: SpriteSheetFX_WhiteSpellNight_49
+  - first:
+      213: 6675086184091386926
+    second: SpriteSheetFX_WhiteSpellNight_50
+  - first:
+      213: -5427492203375039625
+    second: SpriteSheetFX_WhiteSpellNight_51
+  - first:
+      213: 4994882997806424330
+    second: SpriteSheetFX_WhiteSpellNight_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd01d28b343a18390800000000000000
+      internalID: -7817787966890372899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43346cb435ef04340800000000000000
+      internalID: 4846152832757678900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483f9c7356cd068f0800000000000000
+      internalID: -549196827253410940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_3
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89cf198ccfc752f0800000000000000
+      internalID: -984089516176324211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61d96839e42ef620800000000000000
+      internalID: 2809723801618207087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfb109b19009e130800000000000000
+      internalID: 3596406403306209232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_6
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f37166ae11fbf00800000000000000
+      internalID: 1134645329553473301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17c57025c3f48c40800000000000000
+      internalID: 5513799871787026202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528564281e42ee690800000000000000
+      internalID: -7571073372591335387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_9
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad6f9181c17148c0800000000000000
+      internalID: -4016804316720435803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_10
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e059b913e6ef31fa0800000000000000
+      internalID: -5831037343282522866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_11
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8a40e1b360791d0800000000000000
+      internalID: -3344197347322844981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbe30c7befd21fa0800000000000000
+      internalID: -5831352365000430595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_WhiteSpellNight_13
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c373d6cdbae42c0800000000000000
+      internalID: -4445426818954609595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 073000c3977daff4c9b9b2178255ef85
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

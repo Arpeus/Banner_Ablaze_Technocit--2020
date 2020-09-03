@@ -1,0 +1,608 @@
+fileFormatVersion: 2
+guid: adf6c1160f23f6f46863414c2d76f86a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7928043145152120468
+    second: SpriteSheetFX_RansaGreenNight_0
+  - first:
+      213: -3840718534493610065
+    second: SpriteSheetFX_RansaGreenNight_1
+  - first:
+      213: 2327994107883120926
+    second: SpriteSheetFX_RansaGreenNight_2
+  - first:
+      213: 7817872357238308033
+    second: SpriteSheetFX_RansaGreenNight_3
+  - first:
+      213: 4922781602358364466
+    second: SpriteSheetFX_RansaGreenNight_4
+  - first:
+      213: -4120317463741133981
+    second: SpriteSheetFX_RansaGreenNight_5
+  - first:
+      213: -7796678399649593876
+    second: SpriteSheetFX_RansaGreenNight_6
+  - first:
+      213: 5769825040486206805
+    second: SpriteSheetFX_RansaGreenNight_7
+  - first:
+      213: -5174784891178098170
+    second: SpriteSheetFX_RansaGreenNight_8
+  - first:
+      213: -1307062381750740458
+    second: SpriteSheetFX_RansaGreenNight_9
+  - first:
+      213: -3817120436926734923
+    second: SpriteSheetFX_RansaGreenNight_10
+  - first:
+      213: 2790298590869750300
+    second: SpriteSheetFX_RansaGreenNight_11
+  - first:
+      213: 1632526655964288322
+    second: SpriteSheetFX_RansaGreenNight_12
+  - first:
+      213: -4306925450195223843
+    second: SpriteSheetFX_RansaGreenNight_13
+  - first:
+      213: -8160232948302017304
+    second: SpriteSheetFX_RansaGreenNight_14
+  - first:
+      213: 4351279067976848209
+    second: SpriteSheetFX_RansaGreenNight_15
+  - first:
+      213: 1791685405340717565
+    second: SpriteSheetFX_RansaGreenNight_16
+  - first:
+      213: 8851833557247464941
+    second: SpriteSheetFX_RansaGreenNight_17
+  - first:
+      213: -7990911181037850098
+    second: SpriteSheetFX_RansaGreenNight_18
+  - first:
+      213: 3381946395327186103
+    second: SpriteSheetFX_RansaGreenNight_19
+  - first:
+      213: 2779054694369647500
+    second: SpriteSheetFX_RansaGreenNight_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69bc3993cee9f190800000000000000
+      internalID: -7928043145152120468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafdf3587d603bac0800000000000000
+      internalID: -3840718534493610065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_2
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19639f8e42be4020800000000000000
+      internalID: 2327994107883120926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_3
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccf880fc79ae7c60800000000000000
+      internalID: 7817872357238308033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_4
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 3328
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239066b09cb315440800000000000000
+      internalID: 4922781602358364466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b0fdbd811b1d6c0800000000000000
+      internalID: -4120317463741133981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5cce8dd42acc390800000000000000
+      internalID: -7796678399649593876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d8552fd49821050800000000000000
+      internalID: 5769825040486206805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_8
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60265440f887f28b0800000000000000
+      internalID: -5174784891178098170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_9
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2560
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a987c50b16cdde0800000000000000
+      internalID: -1307062381750740458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd1914cf2dd60bc0800000000000000
+      internalID: -3817120436926734923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c128016e8c129b620800000000000000
+      internalID: 2790298590869750300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2459b171856e7a610800000000000000
+      internalID: 1632526655964288322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_13
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda36034f1aba34c0800000000000000
+      internalID: -4306925450195223843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_14
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1792
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec05084e5701ce80800000000000000
+      internalID: -8160232948302017304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1535a5d1249d26c30800000000000000
+      internalID: 4351279067976848209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1d59622685dd810800000000000000
+      internalID: 1791685405340717565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_17
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de51e96a8b708da70800000000000000
+      internalID: 8851833557247464941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_18
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02ba865e949a1190800000000000000
+      internalID: -7990911181037850098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_19
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1024
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4c3e604561fee20800000000000000
+      internalID: 3381946395327186103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_RansaGreenNight_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 1536
+        height: 768
+      alignment: 9
+      pivot: {x: 0.2083333, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bd84d358f219620800000000000000
+      internalID: 2779054694369647500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d44634948f821a847b848537bca53d66
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
