@@ -12,10 +12,11 @@ public class HUDInGame : MonoBehaviour
     [Header("UI GameObject")]
     [SerializeField] private GameObject m_PanelSpawnUI;
     [SerializeField] private GameObject m_panelActionAttackUI;
-    [SerializeField] private GameObject m_panelActionNoAttackUI;
-    [SerializeField] private GameObject m_panelActionHealNoAttackUI;
-    [SerializeField] private GameObject m_panelActionHealAttackUI;
+    [SerializeField] private GameObject m_panelButtonActionAttackUI;
+    [SerializeField] private GameObject m_panelButtonActionWaitUI;
+    [SerializeField] private GameObject m_panelButtonActionHealUI;
     [SerializeField] private GameObject m_uniteMenu;
+    [SerializeField] private GameObject m_panelVictory;
 
     [Header("Preview Combat")]
     public PreviewHUD _panelPreview;
@@ -119,24 +120,13 @@ public class HUDInGame : MonoBehaviour
         }
     }
 
-    public void ShowActionAttackUi(CharacterManager character)
+    public void ShowActionAttackUi(CharacterManager character, bool attack, bool wait, bool heal)
     {
+        m_panelButtonActionAttackUI.SetActive(attack);
+        m_panelButtonActionWaitUI.SetActive(wait);
+        m_panelButtonActionHealUI.SetActive(heal);
+
         SetPanelActive(m_panelActionAttackUI, true, character);
-    }
-
-    public void ShowActionNoAttackUi(CharacterManager character)
-    {
-        SetPanelActive(m_panelActionNoAttackUI, true, character);
-    }
-
-    public void ShowActionHealNoAttackUI(CharacterManager character)
-    {
-        SetPanelActive(m_panelActionHealNoAttackUI, true, character);
-    }
-
-    public void ShowActionHealAttackUI(CharacterManager character)
-    {
-        SetPanelActive(m_panelActionHealAttackUI, true, character);
     }
 
     public void ShowUnitMenu(CharacterManager character)
@@ -174,7 +164,6 @@ public class HUDInGame : MonoBehaviour
 
     public void Wait()
     {
-        
         m_currentCharacterManager.SetHasAlreadyPlayed(true);
         m_currentCharacterManager.SetHasMoved(true);
         SetAllGameObjectInactive();
@@ -183,10 +172,15 @@ public class HUDInGame : MonoBehaviour
     public void SetAllGameObjectInactive()
     {
         m_panelActionAttackUI.SetActive(false);
-        m_panelActionNoAttackUI.SetActive(false);
-        m_panelActionHealNoAttackUI.SetActive(false);
-        m_panelActionHealAttackUI.SetActive(false);
         m_currentCharacterManager = null;
         //m_uniteMenu.SetActive(false);
+    }
+
+    public void ActivePanelVictory()
+    {
+        _turnPlayerOne.SetActive(false);
+        _turnPlayerTwo.SetActive(false);
+        SetAllGameObjectInactive();
+        m_panelVictory.SetActive(true);
     }
 }

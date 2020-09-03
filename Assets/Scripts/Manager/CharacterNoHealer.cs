@@ -58,11 +58,11 @@ public class CharacterNoHealer : CharacterManager
         ListPool<HexCell>.Add(pathToTravel);
         if (CheckEnemy())
         {
-            m_hudInGame.ShowActionAttackUi(this);
+            m_hudInGame.ShowActionAttackUi(this, true, true, false);
         }
         else
         {
-            m_hudInGame.ShowActionNoAttackUi(this);
+            m_hudInGame.ShowActionAttackUi(this, false, true, false);
         }
         pathToTravel = null;
         _animator.SetBool("_IsMoving", false);
