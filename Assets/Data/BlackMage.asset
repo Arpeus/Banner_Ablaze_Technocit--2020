@@ -33,7 +33,7 @@ MonoBehaviour:
   albedoColorGray: '#525252'
   _name: Mohotsukai
   _health: 12
-  _attackDamage: 6
+  _attackDamage: 8
   _armor: 3
   _resistanceMagic: 8
   _dodge: 5
