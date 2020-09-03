@@ -94,13 +94,13 @@ public abstract class AnimationManager : MonoBehaviour
         StartCoroutine(Die(second));
     }
 
-    public void DamageHealthBar(int currentHealth, int damage, int second)
+    public void DamageHealthBar(int currentHealth, int damage, float second)
     {
         Debug.Log(damage);
         StartCoroutine(LifeBar(currentHealth, damage, second));
     }
 
-    IEnumerator LifeBar(int currentHealth, int damage, int second)
+    IEnumerator LifeBar(int currentHealth, int damage, float second)
     {
         yield return new WaitForSeconds(second);
         TriggerHitFX();

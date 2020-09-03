@@ -40,6 +40,7 @@ MonoBehaviour:
   _range: 1
   _unitCost: 4
   _damageTriangle: 5
+  _timeBeforeHit: 0.42
   type: 0
   typeBonusDamage: 1
   typeDamage: 0

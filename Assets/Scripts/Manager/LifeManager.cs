@@ -65,7 +65,7 @@ public class LifeManager : MonoBehaviour
 
                 if (!counterAttack)
                 {
-                    characterDefense.animDefense.DamageHealthBar(Health, damage, 1);
+                    characterDefense.animDefense.DamageHealthBar(Health, damage, characterAttack._character._timeBeforeHit);
                     
                 }
                 else
