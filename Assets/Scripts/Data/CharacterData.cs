@@ -27,6 +27,8 @@ public class CharacterData : ScriptableObject
     public int _range;
     public int _unitCost;
     public int _damageTriangle;
+    public float _timeBeforeHit;
+    public float _timeBeforeSpell;
     public TypeCharacter type;
     public TypeCharacter typeBonusDamage;
     public TypeDamage typeDamage;

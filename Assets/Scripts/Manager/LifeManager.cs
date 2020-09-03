@@ -64,12 +64,9 @@ public class LifeManager : MonoBehaviour
             {
 
                 if (!counterAttack)
-                {
-                    characterDefense.animDefense.DamageHealthBar(Health, damage, 1);
-                    
-                }
+                    characterDefense.animDefense.DamageHealthBar(Health, damage, characterAttack._character._timeBeforeHit);
                 else
-                    characterDefense.animattack.DamageHealthBar(Health, damage, 4);
+                    characterDefense.animattack.DamageHealthBar(Health, damage, 3 + characterAttack._character._timeBeforeHit);
                 Health -= damage;
             }
 
@@ -77,9 +74,9 @@ public class LifeManager : MonoBehaviour
         else
         {
             if (!counterAttack)
-                characterDefense.animDefense.AnimationDodgeFX();
+                characterDefense.animDefense.AnimationDodgeFX(characterAttack._character._timeBeforeHit);
             else
-                characterDefense.animattack.AnimationDodgeFX();
+                characterDefense.animattack.AnimationDodgeFX(3 + characterAttack._character._timeBeforeHit);
         }
 
         if (Health <= 0)

@@ -24,31 +24,15 @@ public class AnimationDefense : AnimationManager
         StartCoroutine(AnimDefense());
     }
 
-    public override void AnimationDodgeFX()
+    public override void DamageHealthBar(int currentHealth, int damage, float second)
     {
-        StartCoroutine(AnimDodge());
+        base.DamageHealthBar(currentHealth, damage, second);
     }
 
     IEnumerator AnimDefense()
     {
-       int second = 0;
-       while (second < 3)
-       {
-           yield return new WaitForSeconds(1);
-           second++;
-       }
-       TriggerAnimAttack();
-       second = 0;    
-    }
+       yield return new WaitForSeconds(3);
 
-    IEnumerator AnimDodge()
-    {
-        int second = 0;
-        while (second < 1)
-        {
-            yield return new WaitForSeconds(1);
-            second++;
-        }
-        TriggerDodgeFX(); 
+       TriggerAnimAttack();
     }
 }

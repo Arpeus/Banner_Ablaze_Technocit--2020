@@ -73,8 +73,15 @@ public abstract class AnimationManager : MonoBehaviour
         sprite.sortingOrder = order;
     }
 
-    public virtual void AnimationDodgeFX()
+    public void AnimationDodgeFX(float second)
     {
+        StartCoroutine(AnimDodge(second));
+    }
+
+    IEnumerator AnimDodge(float second)
+    {
+        yield return new WaitForSeconds(second);
+        TriggerDodgeFX();
     }
 
     public void TriggerDodgeFX()
@@ -94,23 +101,21 @@ public abstract class AnimationManager : MonoBehaviour
         StartCoroutine(Die(second));
     }
 
-    public void DamageHealthBar(int currentHealth, int damage, int second)
+    public virtual void DamageHealthBar(int currentHealth, int damage, float second)
     {
         Debug.Log(damage);
         StartCoroutine(LifeBar(currentHealth, damage, second));
     }
 
-    IEnumerator LifeBar(int currentHealth, int damage, int second)
+    IEnumerator LifeBar(int currentHealth, int damage, float second)
     {
         yield return new WaitForSeconds(second);
         TriggerHitFX();
-
         healthBar._value = currentHealth - damage;       
     }
 
-        IEnumerator Die(float second)
+    IEnumerator Die(float second)
     {
-        
         yield return new WaitForSeconds(second);
         float endtime = Time.time + 1;
         while(Time.time < endtime)

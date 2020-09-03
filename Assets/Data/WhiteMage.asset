@@ -40,6 +40,8 @@ MonoBehaviour:
   _range: 2
   _unitCost: 3
   _damageTriangle: 5
+  _timeBeforeHit: 0.5
+  _timeBeforeSpell: 0.8333333
   type: 4
   typeBonusDamage: 5
   typeDamage: 1
