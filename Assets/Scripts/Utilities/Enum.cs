@@ -44,3 +44,22 @@ public enum AnimState
     EType_IsPlaying
 }
 
+public enum Sound
+{
+    None,
+    AttackCavalier,
+    AttackSwordMan,
+    AttackLancer,
+    AttackRedMage,
+    AttackWhiteMage,
+    AttackBlackMage,
+    RedSpell,
+    WhiteSpell,
+    BlackSpell,
+    Hit,
+    Miss,
+    Kabuki
+}
+
+
+

@@ -1028,7 +1028,7 @@ SpriteRenderer:
   m_Size: {x: 9.6, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &299033938
@@ -1040,7 +1040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 299033939}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: PlaceDamage
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -1077,7 +1077,7 @@ GameObject:
   - component: {fileID: 303752813}
   - component: {fileID: 303752815}
   - component: {fileID: 303752814}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Cavalier
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -1814,7 +1814,7 @@ GameObject:
   - component: {fileID: 478989221}
   - component: {fileID: 478989223}
   - component: {fileID: 478989222}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: RedMage
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -2007,7 +2007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 522398839}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MissAttack
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -2042,7 +2042,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 533750827}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MissDefense
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -2212,7 +2212,7 @@ GameObject:
   - component: {fileID: 608644197}
   - component: {fileID: 608644199}
   - component: {fileID: 608644198}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: WhiteMage
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -2393,7 +2393,7 @@ GameObject:
   - component: {fileID: 629505181}
   - component: {fileID: 629505183}
   - component: {fileID: 629505182}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BlackMage
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -2575,7 +2575,7 @@ GameObject:
   - component: {fileID: 644413330}
   - component: {fileID: 644413332}
   - component: {fileID: 644413331}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: SwordMan
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -2962,7 +2962,7 @@ GameObject:
   - component: {fileID: 703858526}
   - component: {fileID: 703858528}
   - component: {fileID: 703858527}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Lancer
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -3261,7 +3261,7 @@ GameObject:
   - component: {fileID: 781849313}
   - component: {fileID: 781849315}
   - component: {fileID: 781849314}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: WhiteMage
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -3962,7 +3962,7 @@ GameObject:
   - component: {fileID: 997614424}
   - component: {fileID: 997614426}
   - component: {fileID: 997614425}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BlackMage
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -4156,7 +4156,7 @@ GameObject:
   - component: {fileID: 1077695045}
   - component: {fileID: 1077695047}
   - component: {fileID: 1077695046}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: SwordMan
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -4857,7 +4857,7 @@ GameObject:
   - component: {fileID: 1308756150}
   - component: {fileID: 1308756152}
   - component: {fileID: 1308756151}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: RedMage
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -5685,7 +5685,7 @@ GameObject:
   - component: {fileID: 1506772275}
   - component: {fileID: 1506772274}
   - component: {fileID: 1506772273}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Lancer
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -7040,7 +7040,7 @@ SpriteRenderer:
   m_Size: {x: 9.6, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1960415429
@@ -7089,7 +7089,7 @@ GameObject:
   - component: {fileID: 1960496984}
   - component: {fileID: 1960496986}
   - component: {fileID: 1960496985}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Cavalier
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}
@@ -7519,7 +7519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2134328240}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: PlaceDamage
   m_TagString: CavalierAttack
   m_Icon: {fileID: 0}

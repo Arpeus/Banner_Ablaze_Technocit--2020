@@ -44,3 +44,5 @@ MonoBehaviour:
   typeBonusDamage: 0
   typeDamage: 0
   typeRange: 0
+  soundAttack: 3
+  soundAttackRange: 0

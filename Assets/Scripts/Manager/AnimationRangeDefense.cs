@@ -5,7 +5,6 @@ using UnityEngine;
 public class AnimationRangeDefense : AnimationDefense
 {
     protected GameObject m_placeDamageAttack;
-    
     public GameObject prefabFx;
 
     // Start is called before the first frame update
@@ -18,6 +17,7 @@ public class AnimationRangeDefense : AnimationDefense
 
     public void TriggerAnimDamage()
     {
+        SoundManager.PlaySound(character._character.soundAttackRange);
         Instantiate(prefabFx, m_placeDamageAttack.transform);
     }
 

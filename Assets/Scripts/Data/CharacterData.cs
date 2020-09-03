@@ -31,4 +31,6 @@ public class CharacterData : ScriptableObject
     public TypeCharacter typeBonusDamage;
     public TypeDamage typeDamage;
     public TypeRange typeRange;
+    public Sound soundAttack;
+    public Sound soundAttackRange;
 }

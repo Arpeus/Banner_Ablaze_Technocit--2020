@@ -198,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _character: {fileID: 11400000, guid: fd26bf71f5adb9a48b182513a4e7b156, type: 2}
   _playerNumberType: 0
+  soundAttack: 3
   _spritePreview: {fileID: 0}
   _spriteCounterAttack: {fileID: 3045334815250803215}
   hasAlreadyPlayed: 0

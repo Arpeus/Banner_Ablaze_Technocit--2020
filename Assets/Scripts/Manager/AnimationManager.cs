@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public abstract class AnimationManager : MonoBehaviour
 {
-    CharacterManager character;
+    protected CharacterManager character;
 
     protected GameObject placeAttack;
     protected GameObject terrain;
@@ -52,6 +52,7 @@ public abstract class AnimationManager : MonoBehaviour
 
     public void TriggerAnimAttack()
     {
+        SoundManager.PlaySound(character._character.soundAttack);
         animatorAttack.SetTrigger("_IsAttack");
     }
 

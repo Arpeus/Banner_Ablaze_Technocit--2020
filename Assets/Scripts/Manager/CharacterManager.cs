@@ -8,16 +8,14 @@ public class CharacterManager : MonoBehaviour
     public CharacterData _character;
     public PlayerNumber _playerNumberType;
 
-
     public Sprite _spritePreview;
     public SpriteRenderer _spriteCounterAttack;
     private SpriteRenderer m_spriteOnMap;
 
-
     public bool hasAlreadyPlayed = false;
     public bool hasMoved = false;
     public bool hasAttacked = false;
-
+    
     public List<CharacterManager> m_enemyNeighbor;
     public List<CharacterManager> m_enemyNeighborRange;
 

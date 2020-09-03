@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimationRangeAttack : AnimationAttack
 {
     protected GameObject m_placeDamageAttack;
+    
     public GameObject prefabFx;
 
     protected override void Start()
@@ -15,7 +16,8 @@ public class AnimationRangeAttack : AnimationAttack
 
     public void TriggerAnimDamage()
     {
-        Instantiate(prefabFx, m_placeDamageAttack.transform);        
+        Instantiate(prefabFx, m_placeDamageAttack.transform);
+        SoundManager.PlaySound(character._character.soundAttackRange);
     }
 
     public override void Animation()
