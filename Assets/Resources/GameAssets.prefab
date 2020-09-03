@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6015084515595854655}
-  - component: {fileID: 6015084515595854592}
+  - component: {fileID: -4028402727781239757}
   m_Layer: 0
   m_Name: GameAssets
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6015084515595854592
+--- !u!114 &-4028402727781239757
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,16 +46,14 @@ MonoBehaviour:
   soundAudioClipArray:
   - sound: 1
     audioClip: {fileID: 8300000, guid: eca7fbe8522915f4fa5258931f7d8f1b, type: 3}
-  - sound: 0
-    audioClip: {fileID: 0}
-  - sound: 3
-    audioClip: {fileID: 8300000, guid: 042f010e3045b704ab6198d27f6b40a7, type: 3}
   - sound: 2
     audioClip: {fileID: 8300000, guid: 788d234d3dbe34e44897258b7499d22e, type: 3}
+  - sound: 3
+    audioClip: {fileID: 8300000, guid: 042f010e3045b704ab6198d27f6b40a7, type: 3}
   - sound: 4
     audioClip: {fileID: 8300000, guid: 33ac3221d1c9cf94a9da0f25fef00a4a, type: 3}
   - sound: 5
-    audioClip: {fileID: 8300000, guid: 969ec174bdc0dc147878bb3697d6193c, type: 3}
+    audioClip: {fileID: 8300000, guid: 2cb21376575b443469505a08764256b8, type: 3}
   - sound: 6
     audioClip: {fileID: 8300000, guid: 227f4daf40fb4b74f8ed263c49545846, type: 3}
   - sound: 7
@@ -64,7 +62,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 2cb21376575b443469505a08764256b8, type: 3}
   - sound: 9
     audioClip: {fileID: 8300000, guid: 2d8eb823480daa741ad42a499183899e, type: 3}
-  - sound: 11
-    audioClip: {fileID: 8300000, guid: 55aad049cf924384d855f75d494e1eb3, type: 3}
   - sound: 10
     audioClip: {fileID: 8300000, guid: 9fd968ee8f45c7542a453915eafc82a0, type: 3}
+  - sound: 11
+    audioClip: {fileID: 8300000, guid: 55aad049cf924384d855f75d494e1eb3, type: 3}

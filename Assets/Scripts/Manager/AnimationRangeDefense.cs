@@ -29,14 +29,15 @@ public class AnimationRangeDefense : AnimationDefense
 
     IEnumerator AnimFx()
     {
-        int second = 0;
-        while (second < 4)
-        {
-            yield return new WaitForSeconds(1);
-            second++;
-        }
+
+        yield return new WaitForSeconds(3 + character._character._timeBeforeSpell);
+    
         TriggerAnimDamage();
     }
 
-
+    public override void DamageHealthBar(int currentHealth, int damage, float second)
+    {
+        second += character._character._timeBeforeSpell;
+        base.DamageHealthBar(currentHealth, damage, second);
+    }
 }
