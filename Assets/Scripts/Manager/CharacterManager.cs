@@ -27,6 +27,8 @@ public class CharacterManager : MonoBehaviour
     public Sprite spriteTerrain;
 
     public ParticleSystem _particuleLauncher;
+    public ParticleSystem _particuleHeal;
+    public ParticleSystem _particuleHealCircle;
 
     protected const float rotationSpeed = 0f;
     protected const float travelSpeed = 4f;
@@ -346,6 +348,8 @@ public class CharacterManager : MonoBehaviour
     public void ReceiveHeal(CharacterManager characterHealer)
     {
         m_lifeManager.ReceiveHeal(characterHealer);
+        _particuleHeal.Play();
+        _particuleHealCircle.Play();
         if (characterHealer._playerNumberType == PlayerNumber.EType_PlayerOne)
             GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
         else

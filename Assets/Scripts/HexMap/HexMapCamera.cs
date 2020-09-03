@@ -61,8 +61,8 @@ public class HexMapCamera : MonoBehaviour
 
     void Awake()
     {
-        if(FindObjectOfType<HexGameUI>()!= null) FindObjectOfType<HexGameUI>().m_mainCamera = this;
         grid = FindObjectOfType<HexGrid>();
+        if(FindObjectOfType<HexGameUI>()!= null) FindObjectOfType<HexGameUI>().m_mainCamera = this;
         instance = this;
         swivel = transform.GetChild(0);
         stick = swivel.GetChild(0);
