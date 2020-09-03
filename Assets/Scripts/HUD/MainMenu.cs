@@ -45,6 +45,12 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void SetResolution (int resolutionIndex)
+    {
+        Resolution resolution = m_resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
     public void QuitGame()
     {
         Debug.Log("QUIT!");
