@@ -33,7 +33,7 @@ MonoBehaviour:
   _name: Ransa
   _health: 16
   _attackDamage: 6
-  _armor: 8
+  _armor: 5
   _resistanceMagic: 0
   _dodge: 5
   _movement: 3
