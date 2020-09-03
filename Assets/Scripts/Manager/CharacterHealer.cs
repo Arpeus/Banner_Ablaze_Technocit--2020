@@ -63,19 +63,19 @@ public class CharacterHealer : CharacterManager
         isAllyAround = CheckAllies();
         if (isEnemyAround && isAllyAround)
         {
-            m_hudInGame.ShowActionHealAttackUI(this);
+            m_hudInGame.ShowActionAttackUi(this, true, true, true);
         }
         else if (isAllyAround)
         {
-            m_hudInGame.ShowActionHealNoAttackUI(this);
+            m_hudInGame.ShowActionAttackUi(this, false, true, true);
         }
         else if (isEnemyAround)
         {
-            m_hudInGame.ShowActionAttackUi(this);
+            m_hudInGame.ShowActionAttackUi(this, true, false, false);
         }
         else
         {
-            m_hudInGame.ShowActionNoAttackUi(this);
+            m_hudInGame.ShowActionAttackUi(this, false, true, false);
         }
         
         pathToTravel = null;

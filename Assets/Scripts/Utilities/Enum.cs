@@ -28,7 +28,8 @@ public enum PhaseType
     EType_TurnPhasePlayerOne,
     EType_TurnPhasePlayerTwo,
     EType_AttackPhase,
-    EType_HealPhase
+    EType_HealPhase,
+    EType_EndGamePhase
 }
 
 public enum PlayerNumber

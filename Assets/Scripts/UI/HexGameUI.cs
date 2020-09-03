@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
+using System;
 
 public class HexGameUI : MonoBehaviour
 {
@@ -61,6 +62,7 @@ public class HexGameUI : MonoBehaviour
         {
             if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerOne)
             {
+                CheckEndGame();
                 if(CheckUnitPlayed(GameManager.Instance._players[0]))
                 {
                     EndTurn(GameManager.Instance._players[0]);
@@ -94,6 +96,7 @@ public class HexGameUI : MonoBehaviour
             }
             if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerTwo)
             {
+                CheckEndGame();
                 if (CheckUnitPlayed(GameManager.Instance._players[1]))
                 {
                     EndTurn(GameManager.Instance._players[1]);
@@ -182,6 +185,22 @@ public class HexGameUI : MonoBehaviour
         }
 
         
+    }
+
+    private bool CheckEndGame()
+    {
+        foreach(Player player in GameManager.Instance._players)
+        {
+            if (player.m_characters.Count == 0)
+                EndGame(player);
+        }
+        return false;   
+    }
+
+    private void EndGame(Player player)
+    {
+        GameManager.Instance.EType_Phase = PhaseType.EType_EndGamePhase;
+        HUDInGame.Instance.ActivePanelVictory();
     }
 
     void DoSelection()
