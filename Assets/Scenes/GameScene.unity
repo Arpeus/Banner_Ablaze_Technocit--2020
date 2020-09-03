@@ -1560,7 +1560,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 8dbdc265bd55d37479af041177b65723, type: 2}
   m_sharedMaterial: {fileID: 946818003263480672, guid: 8156d90b70826dc49906ded96f1c6227,
     type: 2}
   m_fontSharedMaterials: []
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
