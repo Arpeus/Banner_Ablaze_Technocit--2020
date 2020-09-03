@@ -198,7 +198,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _character: {fileID: 11400000, guid: fd26bf71f5adb9a48b182513a4e7b156, type: 2}
   _playerNumberType: 0
-  soundAttack: 3
   _spritePreview: {fileID: 0}
   _spriteCounterAttack: {fileID: 3045334815250803215}
   hasAlreadyPlayed: 0
@@ -289,6 +288,8 @@ MonoBehaviour:
   backGroundWar: {fileID: 0}
   prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
     type: 3}
+  prefabHitFX: {fileID: 7184702477112568965, guid: 8ae85c4ed64a84643867a12b0da02710,
+    type: 3}
   index: 3
   animatorTeam: {fileID: 0}
   spriteTeam: {fileID: 0}
@@ -309,6 +310,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backGroundWar: {fileID: 0}
   prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
+    type: 3}
+  prefabHitFX: {fileID: 7184702477112568965, guid: 8ae85c4ed64a84643867a12b0da02710,
     type: 3}
   index: 3
   animatorTeam: {fileID: 0}

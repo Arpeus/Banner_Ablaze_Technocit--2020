@@ -8,6 +8,7 @@ public class AnimationDefense : AnimationManager
     // Start is called before the first frame update
     protected override void Start()
     {
+        placeHitFX = HUDInGame.Instance._hitFXDefense;
         UIHealthBar = HUDInGame.Instance.healthBarUIDefense;
         healthBar = UIHealthBar.GetComponent<HealthBar>();
         healthBarUI = UIHealthBar.GetComponent<Image>();

@@ -28,7 +28,9 @@ public class HUDInGame : MonoBehaviour
     public GameObject[] _placeDefenseUnits;
     public GameObject _placeDefenseRangeUnits;
     public GameObject _missFXAttack;
+    public GameObject _hitFXAttack;
     public GameObject _missFXDefense;
+    public GameObject _hitFXDefense;
     public GameObject _terrainAttack;
     public GameObject _terrainDefense;
     public Sprite[] _terrains;

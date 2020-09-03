@@ -64,7 +64,10 @@ public class LifeManager : MonoBehaviour
             {
 
                 if (!counterAttack)
+                {
                     characterDefense.animDefense.DamageHealthBar(Health, damage, 1);
+                    
+                }
                 else
                     characterDefense.animattack.DamageHealthBar(Health, damage, 4);
                 Health -= damage;
