@@ -23,6 +23,7 @@ public class HUDMenu : MonoBehaviour
     [Header("Show Info troops")]
     public Image imageTroop;
     public TextMeshProUGUI text_Name;
+    public TextMeshProUGUI text_Health;
     public TextMeshProUGUI text_Attack;
     public TextMeshProUGUI text_AttackMagic;
     public TextMeshProUGUI text_Defense;
@@ -30,7 +31,7 @@ public class HUDMenu : MonoBehaviour
     public TextMeshProUGUI text_Movement;
     public TextMeshProUGUI text_Dodge;
     public TextMeshProUGUI text_Point;
-
+    
     [Header("UI Show Map")]
     [SerializeField] private GameObject m_goShowCreateTeamUI;
     [SerializeField] private GameObject m_goHideCreateTeamUI;

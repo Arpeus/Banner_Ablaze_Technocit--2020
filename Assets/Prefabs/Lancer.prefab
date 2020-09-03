@@ -283,11 +283,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f76540d0116c164cbeb21fea443526a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backGroundWar: {fileID: 0}
   prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
     type: 3}
   index: 2
   animatorTeam: {fileID: 0}
   spriteTeam: {fileID: 0}
+  spriteHealthBarUI: {fileID: 0}
 --- !u!114 &7457222309632098082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,8 +302,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0887dacf1960f054aaae401e3beac7da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backGroundWar: {fileID: 0}
   prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
     type: 3}
   index: 2
   animatorTeam: {fileID: 0}
   spriteTeam: {fileID: 0}
+  spriteHealthBarUI: {fileID: 0}

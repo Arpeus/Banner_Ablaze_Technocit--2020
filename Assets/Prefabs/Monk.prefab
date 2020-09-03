@@ -284,11 +284,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e6c5b8c2e455a4fb9d576875b3addc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backGroundWar: {fileID: 0}
   prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
     type: 3}
   index: 4
   animatorTeam: {fileID: 0}
   spriteTeam: {fileID: 0}
+  spriteHealthBarUI: {fileID: 0}
   prefabFx: {fileID: 4956509707797668534, guid: 9dd4e29649eb2d54882e86f313c259bd,
     type: 3}
 --- !u!114 &-2501769751526767263
@@ -303,10 +305,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9381b9c0e435e794c8bf5627f0a62090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backGroundWar: {fileID: 0}
   prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
     type: 3}
   index: 4
   animatorTeam: {fileID: 0}
   spriteTeam: {fileID: 0}
+  spriteHealthBarUI: {fileID: 0}
   prefabFx: {fileID: 4956509707797668534, guid: 9dd4e29649eb2d54882e86f313c259bd,
     type: 3}

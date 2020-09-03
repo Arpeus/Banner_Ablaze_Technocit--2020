@@ -11,6 +11,7 @@ public class ButtonHover : MonoBehaviour
     {
         _hudMenu.text_Name.SetText(character._name);
         _hudMenu.imageTroop.sprite = character.spriteInfoTroop;
+        _hudMenu.text_Health.SetText(character._health.ToString());
         if (character.typeRange == TypeRange.Cac)
         {
             _hudMenu.text_Attack.SetText(character._attackDamage.ToString());

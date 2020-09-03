@@ -10,6 +10,7 @@ public abstract class AnimationManager : MonoBehaviour
     protected GameObject placeAttack;
     protected GameObject terrain;
     protected GameObject placeMissFx;
+    public GameObject backGroundWar;
     protected Animator animatorAttack;
     protected SpriteRenderer spriteEquip;
     protected Image healthBarUI;
@@ -25,6 +26,7 @@ public abstract class AnimationManager : MonoBehaviour
     
     protected virtual void Start()
     {
+        backGroundWar = HUDInGame.Instance._backgroundAnim;
         character = GetComponent<CharacterManager>();
         spriteEquip = placeAttack.GetComponent<SpriteRenderer>();
         animatorAttack = placeAttack.GetComponent<Animator>();
@@ -40,6 +42,7 @@ public abstract class AnimationManager : MonoBehaviour
             animatorAttack.runtimeAnimatorController = animatorTeam;
             terrain.GetComponent<SpriteRenderer>().sprite = sprite;
         }
+        backGroundWar.SetActive(active);
         healthBarUI.enabled = active;
         spriteEquip.enabled = active;
         placeAttack.SetActive(active);

@@ -199,7 +199,7 @@ MonoBehaviour:
   _character: {fileID: 11400000, guid: fd26bf71f5adb9a48b182513a4e7b156, type: 2}
   _playerNumberType: 0
   _spritePreview: {fileID: 0}
-  _spriteCounterAttack: {fileID: 0}
+  _spriteCounterAttack: {fileID: 3045334815250803215}
   hasAlreadyPlayed: 0
   hasMoved: 0
   hasAttacked: 0
@@ -283,11 +283,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e6c5b8c2e455a4fb9d576875b3addc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backGroundWar: {fileID: 0}
   prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
     type: 3}
   index: 3
   animatorTeam: {fileID: 0}
   spriteTeam: {fileID: 0}
+  spriteHealthBarUI: {fileID: 0}
   prefabFx: {fileID: 5624810288275889545, guid: 3025cb7ce6f73e14881d20840a13266a,
     type: 3}
 --- !u!114 &2631554054650965973
@@ -302,10 +304,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9381b9c0e435e794c8bf5627f0a62090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backGroundWar: {fileID: 0}
   prefabMissFX: {fileID: 4784075711815368179, guid: 50dbb6e0313d7354b86dbddf92219525,
     type: 3}
   index: 3
   animatorTeam: {fileID: 0}
   spriteTeam: {fileID: 0}
+  spriteHealthBarUI: {fileID: 0}
   prefabFx: {fileID: 5624810288275889545, guid: 3025cb7ce6f73e14881d20840a13266a,
     type: 3}

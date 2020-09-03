@@ -33,6 +33,7 @@ public class HUDInGame : MonoBehaviour
     public Sprite[] _terrains;
     public GameObject healthBarUIAttack;
     public GameObject healthBarUIDefense;
+    public GameObject _backgroundAnim;
 
 
     [Header("UI Spawn")]

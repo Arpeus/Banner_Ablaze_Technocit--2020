@@ -5853,6 +5853,7 @@ MonoBehaviour:
   - {fileID: 5994676895638119464, guid: afe7468266d51de41a2dc1c5bb6ac7ce, type: 3}
   imageTroop: {fileID: 1192084410}
   text_Name: {fileID: 1549848668}
+  text_Health: {fileID: 860150139}
   text_Attack: {fileID: 860150139}
   text_AttackMagic: {fileID: 1417159428}
   text_Defense: {fileID: 633212088}
