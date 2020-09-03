@@ -32,13 +32,16 @@ public abstract class AnimationManager : MonoBehaviour
 
     public void SetActiveAttackGameObject(bool active, Sprite sprite)
     {
-        healthBar.SetLifeBar(character.m_lifeManager.MaxHealth, character.m_lifeManager.Health);
-        healthBarUI.sprite = spriteHealthBarUI;
+        if(active)
+        {
+            healthBar.SetLifeBar(character.m_lifeManager.MaxHealth, character.m_lifeManager.Health);
+            healthBarUI.sprite = spriteHealthBarUI;
+            spriteEquip.sprite = spriteTeam;
+            animatorAttack.runtimeAnimatorController = animatorTeam;
+            terrain.GetComponent<SpriteRenderer>().sprite = sprite;
+        }
         healthBarUI.enabled = active;
         spriteEquip.enabled = active;
-        spriteEquip.sprite = spriteTeam;
-        animatorAttack.runtimeAnimatorController = animatorTeam;
-        terrain.GetComponent<SpriteRenderer>().sprite = sprite;
         placeAttack.SetActive(active);
         terrain.SetActive(active);
         UIHealthBar.SetActive(active);
@@ -78,13 +81,19 @@ public abstract class AnimationManager : MonoBehaviour
         StartCoroutine(Die(second));
     }
 
-    public void DamageHealthBar(int damage)
+    public void DamageHealthBar(int currentHealth, int damage, int second)
     {
-        Debug.Log(character.m_lifeManager.Health);
-        healthBar._value = character.m_lifeManager.Health - damage;       
+        Debug.Log(damage);
+        StartCoroutine(LifeBar(currentHealth, damage, second));
     }
 
-    IEnumerator Die(float second)
+    IEnumerator LifeBar(int currentHealth, int damage, int second)
+    {
+        yield return new WaitForSeconds(second);
+        healthBar._value = currentHealth - damage;       
+    }
+
+        IEnumerator Die(float second)
     {
         
         yield return new WaitForSeconds(second);

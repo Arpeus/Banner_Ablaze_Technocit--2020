@@ -26,19 +26,15 @@ public class HealthBar : MonoBehaviour
     {
         if (initialize)
         {
-            HandleBar();
-            Debug.Log("test");
+            HandleBar();            
         }
     }
 
     public void SetLifeBar(int maxValue, int value)
     {
-        content.fillAmount = Map(value, 0, _maxValue, 0, 1);
         _maxValue = maxValue;
-        fillAmount = Map(value, 0, _maxValue, 0, 1);
-        Debug.Log(value);
-        Debug.Log(_maxValue);
-
+        content.fillAmount = Map(value, 0, _maxValue, 0, 1);
+        _value = value;//Map(value, 0, _maxValue, 0, 1);
         initialize = true;
     }
 
