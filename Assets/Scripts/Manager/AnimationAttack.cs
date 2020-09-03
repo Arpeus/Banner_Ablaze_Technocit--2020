@@ -23,8 +23,4 @@ public class AnimationAttack : AnimationManager
         TriggerAnimAttack();
     }
 
-    public override void DamageHealthBar(int currentHealth, int damage, float second)
-    {
-        base.DamageHealthBar(currentHealth, damage, second);
-    }
 }

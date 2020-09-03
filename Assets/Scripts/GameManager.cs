@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
     public string filepathMap = "";
     public PhaseType EType_Phase;
     public AnimState EType_StateAnim;
+    public CyclePhase cycle;
     [Header("Value Forest")]
     public int bonusForestDefense = 2;
     public int bonusForestDodge = 10;
@@ -45,7 +47,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    internal void SetNight()
+    {
+        foreach(Player player in _players)
+        {
+            foreach(CharacterManager character in player.m_characters)
+            {
+                character.SetNight();
+            }
+        }
+    }
 
-
-
+    internal void SetDay()
+    {
+        foreach (Player player in _players)
+        {
+            foreach (CharacterManager character in player.m_characters)
+            {
+                character.SetDay();
+            }
+        }
+    }
 }

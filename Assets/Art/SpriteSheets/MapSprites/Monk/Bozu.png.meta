@@ -26,6 +26,30 @@ TextureImporter:
   - first:
       213: 6788036501459376620
     second: Bozu_7
+  - first:
+      213: -8040801496663002378
+    second: Bozu_0
+  - first:
+      213: 2528563592002666683
+    second: Bozu_1
+  - first:
+      213: 7642704630021240895
+    second: Bozu_2
+  - first:
+      213: -1512418915682396275
+    second: Bozu_3
+  - first:
+      213: -8017083778878430118
+    second: Bozu_4
+  - first:
+      213: 8484400466708088816
+    second: Bozu_5
+  - first:
+      213: 5797834470547924314
+    second: Bozu_6
+  - first:
+      213: 4506214215003836853
+    second: Bozu_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -69,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,7 +109,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,7 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -114,10 +138,10 @@ TextureImporter:
       name: Bozu_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 512
+        x: 80
+        y: 520
+        width: 129
+        height: 246
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,8 +149,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a0ed67f7503ec050800000000000000
-      internalID: 5822644522608091303
+      spriteID: 6f2f8f904a5596090800000000000000
+      internalID: -8040801496663002378
       vertices: []
       indices: 
       edges: []
@@ -135,10 +159,10 @@ TextureImporter:
       name: Bozu_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 512
+        x: 279
+        y: 520
+        width: 211
+        height: 312
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,8 +170,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fe1d72a607a58d50800000000000000
-      internalID: 6738976064367566583
+      spriteID: bb00e45a033471320800000000000000
+      internalID: 2528563592002666683
       vertices: []
       indices: 
       edges: []
@@ -156,10 +180,10 @@ TextureImporter:
       name: Bozu_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 512
+        x: 536
+        y: 531
+        width: 198
+        height: 257
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48b03fedc4f54b450800000000000000
-      internalID: 6103608178756488068
+      spriteID: f3836a34e57501a60800000000000000
+      internalID: 7642704630021240895
       vertices: []
       indices: 
       edges: []
@@ -177,10 +201,10 @@ TextureImporter:
       name: Bozu_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 512
+        x: 791
+        y: 520
+        width: 198
+        height: 248
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,8 +212,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9b79e2ef1815d580800000000000000
-      internalID: -8803103371395761251
+      spriteID: d875b23620fc20be0800000000000000
+      internalID: -1512418915682396275
       vertices: []
       indices: 
       edges: []
@@ -198,10 +222,10 @@ TextureImporter:
       name: Bozu_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 512
+        x: 80
+        y: 8
+        width: 129
+        height: 246
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,8 +233,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11185d8fa3c2712d0800000000000000
-      internalID: -3308126769485872879
+      spriteID: a54a76987c89db090800000000000000
+      internalID: -8017083778878430118
       vertices: []
       indices: 
       edges: []
@@ -219,10 +243,10 @@ TextureImporter:
       name: Bozu_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 512
+        x: 279
+        y: 8
+        width: 211
+        height: 312
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,8 +254,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 177da676b32ba3e80800000000000000
-      internalID: -8198044203466696847
+      spriteID: 0f74b4ea545aeb570800000000000000
+      internalID: 8484400466708088816
       vertices: []
       indices: 
       edges: []
@@ -240,10 +264,10 @@ TextureImporter:
       name: Bozu_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 512
+        x: 536
+        y: 19
+        width: 198
+        height: 257
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,8 +275,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fba6ac162c09c690800000000000000
-      internalID: -7581515139872543760
+      spriteID: a5526839bbb067050800000000000000
+      internalID: 5797834470547924314
       vertices: []
       indices: 
       edges: []
@@ -261,10 +285,10 @@ TextureImporter:
       name: Bozu_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 512
+        x: 791
+        y: 8
+        width: 198
+        height: 248
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,8 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce91fd7cb33f33e50800000000000000
-      internalID: 6788036501459376620
+      spriteID: 5b19e1f14f9498e30800000000000000
+      internalID: 4506214215003836853
       vertices: []
       indices: 
       edges: []
@@ -281,7 +305,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 98e819ff04a53b74aa5435cf0c74e39e
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

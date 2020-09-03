@@ -26,6 +26,33 @@ TextureImporter:
   - first:
       213: 1059913826542389504
     second: Mahotsukai_7
+  - first:
+      213: 2907742290533782366
+    second: Mahotsukai_8
+  - first:
+      213: 7872780673425344296
+    second: Mahotsukai_0
+  - first:
+      213: 2600098238235020995
+    second: Mahotsukai_1
+  - first:
+      213: 6849214984542381600
+    second: Mahotsukai_2
+  - first:
+      213: -6143973404301384896
+    second: Mahotsukai_3
+  - first:
+      213: 3890108708866863433
+    second: Mahotsukai_4
+  - first:
+      213: 8066022091740569399
+    second: Mahotsukai_5
+  - first:
+      213: 3310129100592189351
+    second: Mahotsukai_6
+  - first:
+      213: 3875318918427687061
+    second: Mahotsukai_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -69,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,7 +112,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,7 +124,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -114,10 +141,10 @@ TextureImporter:
       name: Mahotsukai_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 512
+        x: 26
+        y: 520
+        width: 190
+        height: 238
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62f558adec3295060800000000000000
-      internalID: 6942619671904739110
+      spriteID: 827041a8f4cb14d60800000000000000
+      internalID: 7872780673425344296
       vertices: []
       indices: 
       edges: []
@@ -135,10 +162,10 @@ TextureImporter:
       name: Mahotsukai_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 512
+        x: 261
+        y: 521
+        width: 204
+        height: 297
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e6cc920101666100800000000000000
-      internalID: 100874698629105377
+      spriteID: 3ce0e1f5297651420800000000000000
+      internalID: 2600098238235020995
       vertices: []
       indices: 
       edges: []
@@ -156,10 +183,10 @@ TextureImporter:
       name: Mahotsukai_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 512
+        x: 547
+        y: 520
+        width: 189
+        height: 211
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6282ec4a221502dc0800000000000000
-      internalID: -3665840887443871706
+      spriteID: 0266eef5dbc4d0f50800000000000000
+      internalID: 6849214984542381600
       vertices: []
       indices: 
       edges: []
@@ -177,10 +204,10 @@ TextureImporter:
       name: Mahotsukai_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 512
+        x: 801
+        y: 537
+        width: 189
+        height: 211
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 668f1f68d4c7aacb0800000000000000
-      internalID: -4851928976119957402
+      spriteID: 0432b2fadb83cbaa0800000000000000
+      internalID: -6143973404301384896
       vertices: []
       indices: 
       edges: []
@@ -198,10 +225,10 @@ TextureImporter:
       name: Mahotsukai_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 512
+        x: 28
+        y: 8
+        width: 190
+        height: 238
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37203c139ccfe3c60800000000000000
-      internalID: 7799949545705767539
+      spriteID: 941b9a192417cf530800000000000000
+      internalID: 3890108708866863433
       vertices: []
       indices: 
       edges: []
@@ -219,10 +246,10 @@ TextureImporter:
       name: Mahotsukai_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 512
+        x: 261
+        y: 9
+        width: 204
+        height: 297
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a7c5b667479ac710800000000000000
-      internalID: 1714348941089556386
+      spriteID: 73f56a85b5440ff60800000000000000
+      internalID: 8066022091740569399
       vertices: []
       indices: 
       edges: []
@@ -240,10 +267,10 @@ TextureImporter:
       name: Mahotsukai_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 512
+        x: 545
+        y: 25
+        width: 189
+        height: 211
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94976ffd7107d6b00800000000000000
-      internalID: 823437554722699593
+      spriteID: 7af0b7111e0ffed20800000000000000
+      internalID: 3310129100592189351
       vertices: []
       indices: 
       edges: []
@@ -261,10 +288,10 @@ TextureImporter:
       name: Mahotsukai_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 512
+        x: 803
+        y: 8
+        width: 189
+        height: 211
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,8 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0098593720295be00800000000000000
-      internalID: 1059913826542389504
+      spriteID: 598bb342606e7c530800000000000000
+      internalID: 3875318918427687061
       vertices: []
       indices: 
       edges: []
@@ -281,7 +308,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 85d00b7db4a67b044974a4267b8c76ad
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

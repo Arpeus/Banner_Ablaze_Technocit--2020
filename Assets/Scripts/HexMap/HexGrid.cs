@@ -69,6 +69,15 @@ public class HexGrid : MonoBehaviour {
         }
     }
 
+
+    public void Increase()
+    {
+        foreach (HexCell hexCell in cells)
+        {
+            hexCell.IncreaseVisibility();
+        }
+    }
+
     void Update()
     {
         switch (GameManager.Instance.EType_Phase)

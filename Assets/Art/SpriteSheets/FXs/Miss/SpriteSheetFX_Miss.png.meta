@@ -44,6 +44,45 @@ TextureImporter:
   - first:
       213: 4027647964035001500
     second: SpriteSheetFX_Miss_13
+  - first:
+      213: -2404266462089917866
+    second: SpriteSheetFX_Miss_14
+  - first:
+      213: -8299726921336893832
+    second: SpriteSheetFX_Miss_15
+  - first:
+      213: -1968085039054469921
+    second: SpriteSheetFX_Miss_16
+  - first:
+      213: -4970022334933712013
+    second: SpriteSheetFX_Miss_17
+  - first:
+      213: 1831549733058212153
+    second: SpriteSheetFX_Miss_18
+  - first:
+      213: -4559619078401762986
+    second: SpriteSheetFX_Miss_19
+  - first:
+      213: -254214616240281882
+    second: SpriteSheetFX_Miss_20
+  - first:
+      213: 3355683852496431089
+    second: SpriteSheetFX_Miss_21
+  - first:
+      213: -5446072670540485401
+    second: SpriteSheetFX_Miss_22
+  - first:
+      213: 4954132438022710201
+    second: SpriteSheetFX_Miss_23
+  - first:
+      213: 2573132216154287566
+    second: SpriteSheetFX_Miss_24
+  - first:
+      213: 3773256626741626266
+    second: SpriteSheetFX_Miss_25
+  - first:
+      213: -554208241207869002
+    second: SpriteSheetFX_Miss_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -132,12 +171,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 512
-        height: 512
+        x: 1639
+        y: 1921
+        width: 70
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,12 +192,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
+        x: 1874
+        y: 1918
+        width: 70
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,12 +213,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 512
-        height: 512
+        x: 1142
+        y: 1886
+        width: 70
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -195,12 +234,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_3
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
+        x: 1347
+        y: 1883
+        width: 70
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,12 +255,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
+        x: 672
+        y: 1836
+        width: 70
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,12 +276,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_5
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 512
-        height: 512
+        x: 793
+        y: 1833
+        width: 70
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -258,12 +297,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_6
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 512
-        height: 512
+        x: 221
+        y: 1783
+        width: 70
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -279,12 +318,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_7
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1024
-        width: 512
-        height: 512
+        x: 107
+        y: 1423
+        width: 70
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,12 +339,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 512
-        height: 512
+        x: 334
+        y: 1420
+        width: 70
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -321,12 +360,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_9
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 512
-        height: 512
+        x: 648
+        y: 1425
+        width: 70
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -342,12 +381,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_10
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 512
-        width: 512
-        height: 512
+        x: 816
+        y: 1422
+        width: 70
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -363,12 +402,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_11
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 512
-        width: 512
-        height: 512
+        x: 1245
+        y: 1422
+        width: 70
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -384,12 +423,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 1757
+        y: 1422
+        width: 70
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -405,12 +444,12 @@ TextureImporter:
       name: SpriteSheetFX_Miss_13
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 512
-        height: 512
+        x: 733
+        y: 905
+        width: 98
+        height: 74
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -422,10 +461,283 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_14
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 965
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65acebd146452aed0800000000000000
+      internalID: -2404266462089917866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_15
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 974
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ec7f0c65271dc80800000000000000
+      internalID: -8299726921336893832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_16
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 962
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4c5679515ffa4e0800000000000000
+      internalID: -1968085039054469921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_17
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 910
+        width: 70
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373c488c40fe60bb0800000000000000
+      internalID: -4970022334933712013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_18
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 940
+        width: 35
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931756b37c8fa6910800000000000000
+      internalID: 1831549733058212153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_19
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 940
+        width: 35
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659d4c82b9af8b0c0800000000000000
+      internalID: -4559619078401762986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_20
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 940
+        width: 48
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e629464729d87cf0800000000000000
+      internalID: -254214616240281882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_21
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 940
+        width: 48
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f760964fa8c19e20800000000000000
+      internalID: 3355683852496431089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_22
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 870
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eca87bb2c9ab64b0800000000000000
+      internalID: -5446072670540485401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_23
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 910
+        width: 70
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3659a443d90c440800000000000000
+      internalID: 4954132438022710201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_24
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 842
+        width: 7
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd6df71e1a95b320800000000000000
+      internalID: 2573132216154287566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_25
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 398
+        width: 70
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95c25319ec4d5430800000000000000
+      internalID: 3773256626741626266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetFX_Miss_26
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 398
+        width: 70
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1063b7a8e0f48f0800000000000000
+      internalID: -554208241207869002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d122c26f6ac87d2409b1109fa15f2acf
+    spriteID: bd79cebda67336e42b4c11385e589655
     internalID: 0
     vertices: []
     indices: 

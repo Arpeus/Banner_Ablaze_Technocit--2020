@@ -18,16 +18,30 @@ MonoBehaviour:
     type: 3}
   spritePreviewTeamTwo: {fileID: 21300000, guid: 09180b1ed595d0f478c6ca9cbf65ac5a,
     type: 3}
-  spriteAnimTeamOne: {fileID: 2452119085100192241, guid: 44ed8a2b7249672438b3ec8affaf373e,
+  spriteMapDay: {fileID: 6942619671904739110, guid: 1482c99eb2c4005448050fafc5a9ff59,
     type: 3}
-  spriteAnimTeamTwo: {fileID: 6399834677408486664, guid: d108b55a4e2f99a4d81f96cd30e9700c,
+  spriteMapNight: {fileID: 7799949545705767539, guid: 1482c99eb2c4005448050fafc5a9ff59,
+    type: 3}
+  spriteAnimDayTeamOne: {fileID: 2452119085100192241, guid: 44ed8a2b7249672438b3ec8affaf373e,
+    type: 3}
+  spriteAnimDayTeamTwo: {fileID: 6399834677408486664, guid: d108b55a4e2f99a4d81f96cd30e9700c,
+    type: 3}
+  spriteAnimNightTeamOne: {fileID: 7561509005624335818, guid: 59a93d67e5fe21848bd97da8d3373221,
+    type: 3}
+  spriteAnimNightTeamTwo: {fileID: -8445703349496704751, guid: 4dba3ebd345d66941923dddef896f109,
     type: 3}
   healthBarCombatTeamOne: {fileID: 21300000, guid: 5d6454c6a4a242240b291c9f2b19fd24,
     type: 3}
   healthBarCombatTeamTwo: {fileID: 21300000, guid: c304042468aa2524f923b8ca494946c9,
     type: 3}
-  animatorTeamOne: {fileID: 9100000, guid: 494bc396c05624346b669b0aa6f85f05, type: 2}
-  animatorTeamTwo: {fileID: 9100000, guid: 617438e46cfda274d959975bdba9c79b, type: 2}
+  animatorMapDay: {fileID: 9100000, guid: 513a52c0d2294914e8e2aafe60f4f9ff, type: 2}
+  animatorMapNight: {fileID: 9100000, guid: e63d56f047fe12646a37ddc53d5de651, type: 2}
+  animatorDayTeamOne: {fileID: 9100000, guid: 494bc396c05624346b669b0aa6f85f05, type: 2}
+  animatorDayTeamTwo: {fileID: 9100000, guid: 617438e46cfda274d959975bdba9c79b, type: 2}
+  animatorNightTeamOne: {fileID: 9100000, guid: 34b1ef3aa9387094ba9bccd133be7601,
+    type: 2}
+  animatorNightTeamTwo: {fileID: 9100000, guid: a6dc9c5e0cb9ecb4688baaaccd986687,
+    type: 2}
   albedoColorGreen: '#8DB5A5'
   albedoColorRed: '#E0AA93'
   albedoColorGray: '#525252'

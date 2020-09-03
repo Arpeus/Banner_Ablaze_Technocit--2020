@@ -61,5 +61,11 @@ public enum Sound
     Kabuki
 }
 
+public enum CyclePhase
+{
+    PhaseDay,
+    PhaseNight
+}
+
 
 

@@ -24,11 +24,6 @@ public class AnimationDefense : AnimationManager
         StartCoroutine(AnimDefense());
     }
 
-    public override void DamageHealthBar(int currentHealth, int damage, float second)
-    {
-        base.DamageHealthBar(currentHealth, damage, second);
-    }
-
     IEnumerator AnimDefense()
     {
        yield return new WaitForSeconds(3);

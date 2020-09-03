@@ -26,6 +26,30 @@ TextureImporter:
   - first:
       213: 4696284299855596499
     second: Kenshi_7
+  - first:
+      213: -5111588118411031469
+    second: Kenshi_0
+  - first:
+      213: 4568196722881736826
+    second: Kenshi_1
+  - first:
+      213: -4846557027989327563
+    second: Kenshi_2
+  - first:
+      213: 8504444018826720649
+    second: Kenshi_3
+  - first:
+      213: -8067702751395785461
+    second: Kenshi_4
+  - first:
+      213: -501093483504818515
+    second: Kenshi_5
+  - first:
+      213: -5981969182906407873
+    second: Kenshi_6
+  - first:
+      213: 596534424782065146
+    second: Kenshi_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -69,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,7 +109,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,7 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -114,19 +138,19 @@ TextureImporter:
       name: Kenshi_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 512
-      alignment: 9
-      pivot: {x: 0.6, y: 0}
+        x: 7
+        y: 520
+        width: 215
+        height: 239
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfd8bb93861c9b080800000000000000
-      internalID: -9171086512773952005
+      spriteID: 35cc00c40bdff09b0800000000000000
+      internalID: -5111588118411031469
       vertices: []
       indices: 
       edges: []
@@ -135,19 +159,19 @@ TextureImporter:
       name: Kenshi_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 512
-      alignment: 9
-      pivot: {x: 0.6, y: 0}
+        x: 311
+        y: 518
+        width: 178
+        height: 349
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0b2bbcaf9b646bf0800000000000000
-      internalID: -332022138976654577
+      spriteID: a70387357be756f30800000000000000
+      internalID: 4568196722881736826
       vertices: []
       indices: 
       edges: []
@@ -156,19 +180,19 @@ TextureImporter:
       name: Kenshi_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 512
-      alignment: 9
-      pivot: {x: 0.6, y: 0}
+        x: 517
+        y: 523
+        width: 243
+        height: 236
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4b955581e0632c10800000000000000
-      internalID: 2027570778967743309
+      spriteID: 531f50baf029dbcb0800000000000000
+      internalID: -4846557027989327563
       vertices: []
       indices: 
       edges: []
@@ -177,19 +201,19 @@ TextureImporter:
       name: Kenshi_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 512
-      alignment: 9
-      pivot: {x: 0.6, y: 0}
+        x: 795
+        y: 513
+        width: 218
+        height: 242
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71d6ecb1ba882d1d0800000000000000
-      internalID: -3327446906186076905
+      spriteID: 985bc52d6cad50670800000000000000
+      internalID: 8504444018826720649
       vertices: []
       indices: 
       edges: []
@@ -198,19 +222,19 @@ TextureImporter:
       name: Kenshi_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 512
-      alignment: 9
-      pivot: {x: 0.6, y: 0}
+        x: 7
+        y: 8
+        width: 215
+        height: 239
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53b8284951bd57150800000000000000
-      internalID: 5869838575079689013
+      spriteID: b05dc959713c90090800000000000000
+      internalID: -8067702751395785461
       vertices: []
       indices: 
       edges: []
@@ -219,19 +243,19 @@ TextureImporter:
       name: Kenshi_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 512
-      alignment: 9
-      pivot: {x: 0.6, y: 0}
+        x: 311
+        y: 8
+        width: 178
+        height: 349
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6611543e737dc09e0800000000000000
-      internalID: -1653710328115687066
+      spriteID: da6ae64b122cb09f0800000000000000
+      internalID: -501093483504818515
       vertices: []
       indices: 
       edges: []
@@ -240,19 +264,19 @@ TextureImporter:
       name: Kenshi_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 512
-      alignment: 9
-      pivot: {x: 0.6, y: 0}
+        x: 517
+        y: 11
+        width: 243
+        height: 236
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed27f507e475be5d0800000000000000
-      internalID: -3032233929699527970
+      spriteID: f34a783d8b6cbfca0800000000000000
+      internalID: -5981969182906407873
       vertices: []
       indices: 
       edges: []
@@ -261,19 +285,19 @@ TextureImporter:
       name: Kenshi_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 512
-      alignment: 9
-      pivot: {x: 0.6, y: 0}
+        x: 795
+        y: 1
+        width: 218
+        height: 242
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3db032150bd8c2140800000000000000
-      internalID: 4696284299855596499
+      spriteID: afd4d6516e0574800800000000000000
+      internalID: 596534424782065146
       vertices: []
       indices: 
       edges: []
@@ -281,7 +305,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e6753da9d3150264d82d074ebe746f68
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

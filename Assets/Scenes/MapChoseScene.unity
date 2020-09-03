@@ -2235,6 +2235,7 @@ MonoBehaviour:
   filepathMap: 
   EType_Phase: 0
   EType_StateAnim: 0
+  cycle: 0
   bonusForestDefense: 2
   bonusForestDodge: 10
   malusForestMove: -1

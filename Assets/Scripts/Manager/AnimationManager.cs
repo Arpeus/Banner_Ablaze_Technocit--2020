@@ -73,7 +73,7 @@ public abstract class AnimationManager : MonoBehaviour
         sprite.sortingOrder = order;
     }
 
-    public void AnimationDodgeFX(float second)
+    public virtual void AnimationDodgeFX(float second)
     {
         StartCoroutine(AnimDodge(second));
     }

@@ -1,12 +1,46 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 22ca7f33f485c434a851278b9d4ecc4f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Sprite Heal_0
+  - first:
+      213: 21300002
+    second: Sprite Heal_1
+  - first:
+      213: 21300004
+    second: Sprite Heal_2
+  - first:
+      213: 21300006
+    second: Sprite Heal_3
+  - first:
+      213: 21300008
+    second: Sprite Heal_4
+  - first:
+      213: 21300010
+    second: Sprite Heal_5
+  - first:
+      213: 21300012
+    second: Sprite Heal_6
+  - first:
+      213: 21300014
+    second: Sprite Heal_7
+=======
 guid: 2ca74d95ee4a00944b1f83fe9ae79aa5
 TextureImporter:
   internalIDToNameTable: []
+>>>>>>> b66032353a9fde9162e969272eddff665f18e032
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD
+    enableMipMap: 0
+=======
     enableMipMap: 1
+>>>>>>> b66032353a9fde9162e969272eddff665f18e032
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,6 +68,15 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
+<<<<<<< HEAD
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+=======
     wrapU: -1
     wrapV: -1
     wrapW: -1
@@ -41,10 +84,20 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 0
+>>>>>>> b66032353a9fde9162e969272eddff665f18e032
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+=======
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -52,12 +105,17 @@ TextureImporter:
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 0
+>>>>>>> b66032353a9fde9162e969272eddff665f18e032
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+<<<<<<< HEAD
+  applyGammaDecoding: 1
+=======
   applyGammaDecoding: 0
+>>>>>>> b66032353a9fde9162e969272eddff665f18e032
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -71,6 +129,114 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite Heal_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 164
+        height: 920
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1debc566ee54920419b636eb76f47a43
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Heal_1
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 0
+        width: 145
+        height: 1004
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32df570762ec9a7428973faed293f032
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Heal_2
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 0
+        width: 166
+        height: 748
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6073fffee279cd14cb6561464620c4bf
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 84cb9065655fe074ba039aac25442f79
+=======
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -78,6 +244,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 
+>>>>>>> b66032353a9fde9162e969272eddff665f18e032
     internalID: 0
     vertices: []
     indices: 
@@ -86,7 +253,11 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
+<<<<<<< HEAD
+  pSDShowRemoveMatteOption: 1
+=======
   pSDShowRemoveMatteOption: 0
+>>>>>>> b66032353a9fde9162e969272eddff665f18e032
   userData: 
   assetBundleName: 
   assetBundleVariant: 

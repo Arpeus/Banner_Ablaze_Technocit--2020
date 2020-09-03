@@ -14,7 +14,6 @@ public class AnimationRangeDefense : AnimationDefense
         base.Start();
     }
 
-
     public void TriggerAnimDamage()
     {
         SoundManager.PlaySound(character._character.soundAttackRange);
@@ -35,9 +34,4 @@ public class AnimationRangeDefense : AnimationDefense
         TriggerAnimDamage();
     }
 
-    public override void DamageHealthBar(int currentHealth, int damage, float second)
-    {
-        second += character._character._timeBeforeSpell;
-        base.DamageHealthBar(currentHealth, damage, second);
-    }
 }

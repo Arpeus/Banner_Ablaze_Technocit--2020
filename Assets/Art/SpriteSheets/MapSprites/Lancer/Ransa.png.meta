@@ -26,6 +26,30 @@ TextureImporter:
   - first:
       213: 2182151665742257786
     second: Ransa_7
+  - first:
+      213: 6732787328013979352
+    second: Ransa_0
+  - first:
+      213: 952400682895116925
+    second: Ransa_1
+  - first:
+      213: -671529959635924189
+    second: Ransa_2
+  - first:
+      213: 7492555311492586613
+    second: Ransa_3
+  - first:
+      213: -1846920196328031292
+    second: Ransa_4
+  - first:
+      213: -2411764458035145230
+    second: Ransa_5
+  - first:
+      213: 4672462036385210106
+    second: Ransa_6
+  - first:
+      213: 1180443304251625497
+    second: Ransa_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -69,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,7 +109,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,7 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -114,10 +138,10 @@ TextureImporter:
       name: Ransa_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 512
+        x: 5
+        y: 519
+        width: 250
+        height: 251
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,8 +149,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 293e8e1985306c190800000000000000
-      internalID: -7942657213881326702
+      spriteID: 8de468a276aaf6d50800000000000000
+      internalID: 6732787328013979352
       vertices: []
       indices: 
       edges: []
@@ -135,10 +159,10 @@ TextureImporter:
       name: Ransa_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 512
+        x: 261
+        y: 519
+        width: 201
+        height: 404
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,8 +170,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc62c4c642926bd0800000000000000
-      internalID: -2638385599039247183
+      spriteID: d7a8dc3006b973d00800000000000000
+      internalID: 952400682895116925
       vertices: []
       indices: 
       edges: []
@@ -156,10 +180,10 @@ TextureImporter:
       name: Ransa_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 512
+        x: 546
+        y: 537
+        width: 202
+        height: 387
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a25f6d43d18610e0800000000000000
-      internalID: -2299507815188835680
+      spriteID: 32b4ed34f0f3ea6f0800000000000000
+      internalID: -671529959635924189
       vertices: []
       indices: 
       edges: []
@@ -177,10 +201,10 @@ TextureImporter:
       name: Ransa_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 512
+        x: 813
+        y: 520
+        width: 191
+        height: 392
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,8 +212,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c6011b967381a440800000000000000
-      internalID: 4945378411260479172
+      spriteID: 57c5b79cb57eaf760800000000000000
+      internalID: 7492555311492586613
       vertices: []
       indices: 
       edges: []
@@ -198,10 +222,10 @@ TextureImporter:
       name: Ransa_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 512
+        x: 5
+        y: 7
+        width: 250
+        height: 251
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,8 +233,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66b138f8766fa7d90800000000000000
-      internalID: -7099090937946367130
+      spriteID: 4cb7f59eddb6e56e0800000000000000
+      internalID: -1846920196328031292
       vertices: []
       indices: 
       edges: []
@@ -219,10 +243,10 @@ TextureImporter:
       name: Ransa_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 512
+        x: 261
+        y: 7
+        width: 201
+        height: 404
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,8 +254,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f574ed7f3883616b0800000000000000
-      internalID: -5326007369868621985
+      spriteID: 2f517e4e001b78ed0800000000000000
+      internalID: -2411764458035145230
       vertices: []
       indices: 
       edges: []
@@ -240,10 +264,10 @@ TextureImporter:
       name: Ransa_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 512
+        x: 546
+        y: 25
+        width: 202
+        height: 387
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,8 +275,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d5f114550f1249e0800000000000000
-      internalID: -1638713206663678511
+      spriteID: afe1d31677be7d040800000000000000
+      internalID: 4672462036385210106
       vertices: []
       indices: 
       edges: []
@@ -261,10 +285,10 @@ TextureImporter:
       name: Ransa_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 512
+        x: 813
+        y: 8
+        width: 191
+        height: 392
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,8 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7e1892e06f884e10800000000000000
-      internalID: 2182151665742257786
+      spriteID: 91018635ee6c16010800000000000000
+      internalID: 1180443304251625497
       vertices: []
       indices: 
       edges: []
@@ -281,7 +305,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f4787061b26f10f40955fb1370fb9b6c
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

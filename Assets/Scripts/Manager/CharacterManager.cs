@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -19,8 +20,7 @@ public class CharacterManager : MonoBehaviour
     public List<CharacterManager> m_enemyNeighbor;
     public List<CharacterManager> m_enemyNeighborRange;
 
-    public Animator _animator;
-    public Animation _anim;
+    public Animator _animator;   
 
     public Sprite spriteTerrain;
 
@@ -56,14 +56,55 @@ public class CharacterManager : MonoBehaviour
         m_spriteOnMap = GetComponent<SpriteRenderer>();
     }
 
+    internal void SetNight()
+    {
+        if (_playerNumberType == PlayerNumber.EType_PlayerOne)
+        {        
+            animattack.spriteTeam = _character.spriteAnimNightTeamOne;
+            animattack.animatorTeam = _character.animatorNightTeamOne;
+            animDefense.spriteTeam = _character.spriteAnimNightTeamOne;
+            animDefense.animatorTeam = _character.animatorNightTeamOne;
+            
+        }
+        else
+        {
+            animattack.spriteTeam = _character.spriteAnimNightTeamTwo;
+            animattack.animatorTeam = _character.animatorNightTeamTwo;
+            animDefense.spriteTeam = _character.spriteAnimNightTeamTwo;
+            animDefense.animatorTeam = _character.animatorNightTeamTwo;
+        }
+        _animator.runtimeAnimatorController = _character.animatorMapDay;
+        m_spriteOnMap.sprite = _character.spriteMapNight;
+    }
+
+    internal void SetDay()
+    {
+        if (_playerNumberType == PlayerNumber.EType_PlayerOne)
+        {
+            animattack.spriteTeam = _character.spriteAnimDayTeamOne;
+            animattack.animatorTeam = _character.animatorDayTeamOne;
+            animDefense.animatorTeam = _character.animatorDayTeamOne;
+            animDefense.spriteTeam = _character.spriteAnimDayTeamOne;
+        }
+        else
+        {
+            animattack.spriteTeam = _character.spriteAnimDayTeamTwo;
+            animattack.animatorTeam = _character.animatorDayTeamTwo;
+            animDefense.animatorTeam = _character.animatorDayTeamTwo;
+            animDefense.spriteTeam = _character.spriteAnimDayTeamTwo;
+        }
+        _animator.runtimeAnimatorController = _character.animatorMapDay;
+        m_spriteOnMap.sprite = _character.spriteMapNight;
+    }
+
     public void Start()
     {
         if(_playerNumberType == PlayerNumber.EType_PlayerOne )
         {
             _spritePreview = _character.spritePreviewTeamOne;
-            animattack.spriteTeam = _character.spriteAnimTeamOne;
-            animattack.animatorTeam = _character.animatorTeamOne;
-            animDefense.animatorTeam = _character.animatorTeamOne;
+            animattack.spriteTeam = _character.spriteAnimDayTeamOne;
+            animattack.animatorTeam = _character.animatorDayTeamOne;
+            animDefense.animatorTeam = _character.animatorDayTeamOne;
             AlbedoColorTeam = _character.albedoColorGreen;
             animDefense.spriteHealthBarUI = _character.healthBarCombatTeamOne;
             animattack.spriteHealthBarUI = _character.healthBarCombatTeamOne;
@@ -71,17 +112,17 @@ public class CharacterManager : MonoBehaviour
         else
         {
             _spritePreview = _character.spritePreviewTeamTwo;
-            animattack.spriteTeam = _character.spriteAnimTeamTwo;
-            animattack.animatorTeam = _character.animatorTeamTwo;
-            animDefense.animatorTeam = _character.animatorTeamTwo;
+            animattack.spriteTeam = _character.spriteAnimDayTeamTwo;
+            animattack.animatorTeam = _character.animatorDayTeamTwo;
+            animDefense.animatorTeam = _character.animatorDayTeamTwo;
             AlbedoColorTeam = _character.albedoColorRed;
             animDefense.spriteHealthBarUI = _character.healthBarCombatTeamTwo;
             animattack.spriteHealthBarUI = _character.healthBarCombatTeamTwo;
         }
         albedoColorHasPlayed = _character.albedoColorGray;
+        m_spriteOnMap.sprite = _character.spriteMapDay;
         SetColorAlbedo(AlbedoColorTeam);
-        _animator = GetComponent<Animator>();
-        _anim = GetComponent<Animation>();
+        _animator = GetComponent<Animator>();       
     }
 
     public HexCell Location
@@ -463,13 +504,25 @@ public class CharacterManager : MonoBehaviour
 
     public Sprite GetSpriteTerrain()
     {
-        if (Location.IsPlantLevel)
-        {
-            return HUDInGame.Instance._terrains[1];
-        }
-        if (Location.HasRiver)
+        if (Location.IsPlantLevel && GameManager.Instance.cycle == CyclePhase.PhaseDay)
         {
             return HUDInGame.Instance._terrains[2];
+        }
+        if (Location.IsPlantLevel && GameManager.Instance.cycle == CyclePhase.PhaseNight)
+        {
+            return HUDInGame.Instance._terrains[3];
+        }
+        if (Location.HasRiver && GameManager.Instance.cycle == CyclePhase.PhaseDay)
+        {
+            return HUDInGame.Instance._terrains[4];
+        }
+        if (Location.HasRiver && GameManager.Instance.cycle == CyclePhase.PhaseNight)
+        {
+            return HUDInGame.Instance._terrains[5];
+        }
+        if(GameManager.Instance.cycle == CyclePhase.PhaseDay)
+        {
+            return HUDInGame.Instance._terrains[1];
         }
         return HUDInGame.Instance._terrains[0];
     }

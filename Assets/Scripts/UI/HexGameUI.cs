@@ -52,11 +52,20 @@ public class HexGameUI : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance.nbTour % 2 == 0 && !enter)
+        if (GameManager.Instance.nbTour != 0 && GameManager.Instance.nbTour % 2 == 0 && !enter)
         {
             enter = true;
-            grid.Initialise();
-           
+            if(GameManager.Instance.cycle == CyclePhase.PhaseDay)
+            {
+                GameManager.Instance.SetNight();
+                grid.Initialise();
+            }
+            else
+            {
+                GameManager.Instance.SetDay();
+                grid.Increase();
+            }
+
         }
         if(GameManager.Instance.EType_StateAnim == AnimState.EType_IsNotPlaying)
         {

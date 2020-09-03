@@ -13,7 +13,6 @@ public class AnimationRangeAttack : AnimationAttack
         m_placeDamageAttack = HUDInGame.Instance._placeAttackRangeUnits;
         base.Start();
     }
-
     public void TriggerAnimDamage()
     {
         Instantiate(prefabFx, m_placeDamageAttack.transform);
@@ -33,9 +32,4 @@ public class AnimationRangeAttack : AnimationAttack
         TriggerAnimDamage();
     }
 
-    public override void DamageHealthBar(int currentHealth, int damage, float second)
-    {
-        second += character._character._timeBeforeSpell;
-        base.DamageHealthBar(currentHealth, damage, second);
-    }
 }

@@ -17,16 +17,30 @@ MonoBehaviour:
     type: 3}
   spritePreviewTeamTwo: {fileID: 21300000, guid: 6da0fca9eb2396f4f98923f89f6be9a1,
     type: 3}
-  spriteAnimTeamOne: {fileID: -6625405123015442599, guid: 132688fcd85219c44bb9a624723efa80,
+  spriteMapDay: {fileID: -663715602737872453, guid: d81c3b2bdea299c48b952e254bcd1d56,
     type: 3}
-  spriteAnimTeamTwo: {fileID: 3896138866856262918, guid: 76824b7a40da1494d97ab00b0fb1b0a2,
+  spriteMapNight: {fileID: 7086065710015901431, guid: d81c3b2bdea299c48b952e254bcd1d56,
+    type: 3}
+  spriteAnimDayTeamOne: {fileID: -6625405123015442599, guid: 132688fcd85219c44bb9a624723efa80,
+    type: 3}
+  spriteAnimDayTeamTwo: {fileID: 3896138866856262918, guid: 76824b7a40da1494d97ab00b0fb1b0a2,
+    type: 3}
+  spriteAnimNightTeamOne: {fileID: -4037258960288741457, guid: 8af07fdbda43e8848a5e5dd5e1291fb9,
+    type: 3}
+  spriteAnimNightTeamTwo: {fileID: 3667142996604963365, guid: af96c10259d735f44b718603cc747f3f,
     type: 3}
   healthBarCombatTeamOne: {fileID: 21300000, guid: c243e24b882bc2f45954d662bc62d3cc,
     type: 3}
   healthBarCombatTeamTwo: {fileID: 21300000, guid: 41369a0c70603a045a2280a34776ccae,
     type: 3}
-  animatorTeamOne: {fileID: 9100000, guid: 8312004ecf7827d42b2913f76be53346, type: 2}
-  animatorTeamTwo: {fileID: 9100000, guid: 4495dd9d00d1f59459e9b765d1f233a4, type: 2}
+  animatorMapDay: {fileID: 9100000, guid: b719f4285a6a52a43b8b19e3b95aa065, type: 2}
+  animatorMapNight: {fileID: 9100000, guid: 7258121b9a9641b4c8fddd2f884e740f, type: 2}
+  animatorDayTeamOne: {fileID: 9100000, guid: 8312004ecf7827d42b2913f76be53346, type: 2}
+  animatorDayTeamTwo: {fileID: 9100000, guid: 4495dd9d00d1f59459e9b765d1f233a4, type: 2}
+  animatorNightTeamOne: {fileID: 9100000, guid: d0f8cd9ad1ee77e4497f88e829e730cc,
+    type: 2}
+  animatorNightTeamTwo: {fileID: 9100000, guid: 83eb301c85c408e4092ac8c27b728302,
+    type: 2}
   albedoColorGreen: '#8DB5A5'
   albedoColorRed: '#E0AA93'
   albedoColorGray: '#525252'
@@ -41,6 +55,7 @@ MonoBehaviour:
   _unitCost: 4
   _damageTriangle: 5
   _timeBeforeHit: 0.42
+  _timeBeforeSpell: 0
   type: 0
   typeBonusDamage: 1
   typeDamage: 0

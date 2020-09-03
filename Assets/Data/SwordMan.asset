@@ -17,16 +17,30 @@ MonoBehaviour:
     type: 3}
   spritePreviewTeamTwo: {fileID: 21300000, guid: 60c018a011df3224aa94e6db887612ef,
     type: 3}
-  spriteAnimTeamOne: {fileID: 3484386872962783403, guid: 287ab9541c37b48408e722eb916a80c0,
+  spriteMapDay: {fileID: -9171086512773952005, guid: c30d8e87113851f42bd43d8d58f1eb3c,
     type: 3}
-  spriteAnimTeamTwo: {fileID: -595456255949740307, guid: 4031ed08edb9ed7478177fe2b076b495,
+  spriteMapNight: {fileID: 5869838575079689013, guid: c30d8e87113851f42bd43d8d58f1eb3c,
+    type: 3}
+  spriteAnimDayTeamOne: {fileID: 3484386872962783403, guid: 287ab9541c37b48408e722eb916a80c0,
+    type: 3}
+  spriteAnimDayTeamTwo: {fileID: -595456255949740307, guid: 4031ed08edb9ed7478177fe2b076b495,
+    type: 3}
+  spriteAnimNightTeamOne: {fileID: -3642348899653799863, guid: f8c780f6895813a42872457d153561e5,
+    type: 3}
+  spriteAnimNightTeamTwo: {fileID: 2649228292713027468, guid: a985480b1203feb4bb3e4301f230575f,
     type: 3}
   healthBarCombatTeamOne: {fileID: 21300000, guid: 7a9bf30a5203af24991bffa44c10f3e1,
     type: 3}
   healthBarCombatTeamTwo: {fileID: 21300000, guid: d4b16708b74de0543967cd28cd19c7fb,
     type: 3}
-  animatorTeamOne: {fileID: 9100000, guid: 8234b8765a42f1f4797e828a5bed287b, type: 2}
-  animatorTeamTwo: {fileID: 9100000, guid: 57013addbbadf32419d61dde2c48090d, type: 2}
+  animatorMapDay: {fileID: 9100000, guid: f344eaebd0638cb448533e5267a50e99, type: 2}
+  animatorMapNight: {fileID: 9100000, guid: e19efd20ffd8de04fb182dfe901b2803, type: 2}
+  animatorDayTeamOne: {fileID: 9100000, guid: 8234b8765a42f1f4797e828a5bed287b, type: 2}
+  animatorDayTeamTwo: {fileID: 9100000, guid: 57013addbbadf32419d61dde2c48090d, type: 2}
+  animatorNightTeamOne: {fileID: 9100000, guid: 3081ffa88d19b244594dd09dd3e0ba5f,
+    type: 2}
+  animatorNightTeamTwo: {fileID: 9100000, guid: e1d880fb3f09e54489614cb62fc43c0f,
+    type: 2}
   albedoColorGreen: '#8DB5A5'
   albedoColorRed: '#E0AA93'
   albedoColorGray: '#525252'
@@ -41,6 +55,7 @@ MonoBehaviour:
   _unitCost: 2
   _damageTriangle: 5
   _timeBeforeHit: 0.5833333
+  _timeBeforeSpell: 0
   type: 1
   typeBonusDamage: 2
   typeDamage: 0
