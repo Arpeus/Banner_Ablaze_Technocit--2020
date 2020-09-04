@@ -13,7 +13,8 @@ public class BillboardScript : MonoBehaviour
 
     void Update()
     {
-        transform.LookAt(transform.position + m_myCamera.transform.rotation * Vector3.forward,
+        if(GameManager.Instance.EType_Phase != PhaseType.EType_EndGamePhase)
+            transform.LookAt(transform.position + m_myCamera.transform.rotation * Vector3.forward,
             m_myCamera.transform.rotation * Vector3.up);
     }
 

@@ -6,6 +6,10 @@ public class DestoryOnLoad : MonoBehaviour
 {
     private void Awake()
     {
-        Destroy(GameObject.Find("DontDestroyOnLoad"));
+
+        Destroy(GameObject.Find("GameManager"));        
+        Destroy(GameObject.Find("AudioSource"));
+        Destroy(GameObject.Find("PlayerOne"));
+        Destroy(GameObject.Find("PlayerTwo"));
     }
 }

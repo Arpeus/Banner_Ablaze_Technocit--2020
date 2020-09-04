@@ -55,7 +55,6 @@ public class HUDInGame : MonoBehaviour
     {
         if (Instance == null)
         {
-            DontDestroyOnLoad(gameObject);
             Instance = this;
         }
         else

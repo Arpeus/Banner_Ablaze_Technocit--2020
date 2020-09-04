@@ -222,7 +222,8 @@ public class HexGameUI : MonoBehaviour
     private IEnumerator WaitForSceneLoad()
     {
         yield return new WaitForSeconds(3);
-     SceneManager.LoadScene(0);
+        Destroy(GameObject.Find("HexGrid"));
+        SceneManager.LoadScene(0);
 
     }
 
