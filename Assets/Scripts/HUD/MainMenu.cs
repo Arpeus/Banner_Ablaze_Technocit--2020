@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
 
+    public AudioMixer audioMixer;
 
     public TMP_Dropdown _resolutionDropdown;
 
@@ -65,5 +67,10 @@ public class MainMenu : MonoBehaviour
     public void SetFullScreen (bool isFullScreen)
     {
         Screen.fullScreen = isFullScreen;
+    }
+
+    public void SetVolume (float volume)
+    {
+        audioMixer.SetFloat("MasterVolume", volume);
     }
 }
