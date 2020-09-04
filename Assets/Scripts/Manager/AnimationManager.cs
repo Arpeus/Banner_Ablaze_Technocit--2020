@@ -34,7 +34,7 @@ public abstract class AnimationManager : MonoBehaviour
         animatorAttack = placeAttack.GetComponent<Animator>();
     }
 
-    public void SetActiveAttackGameObject(bool active, Sprite sprite)
+    public virtual void SetActiveAttackGameObject(bool active, Sprite sprite)
     {
         if(active)
         {
@@ -55,7 +55,7 @@ public abstract class AnimationManager : MonoBehaviour
     public void TriggerAnimAttack()
     {
         SoundManager.PlaySound(character._character.soundAttack);
-        animatorAttack.SetTrigger("_IsAttack");
+        animatorAttack.SetTrigger("_IsAttack");        
     }
 
     public virtual void Animation()
@@ -68,14 +68,15 @@ public abstract class AnimationManager : MonoBehaviour
         StartCoroutine(TimerHideUI(6));
     }
     
-    public void SetLayingOrder(SpriteRenderer sprite, int order)
-    {
-        sprite.sortingOrder = order;
-    }
 
     public virtual void AnimationDodgeFX(float second)
     {
         StartCoroutine(AnimDodge(second));
+    }
+
+    protected void SpriteOrder(int order)
+    {
+        spriteEquip.sortingOrder = order;
     }
 
     IEnumerator AnimDodge(float second)

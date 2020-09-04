@@ -58,7 +58,10 @@ public enum Sound
     BlackSpell,
     Hit,
     Miss,
-    Kabuki
+    KabukiVoice,
+    KabukiStick,
+    ChooseUnit,
+    Move
 }
 
 public enum CyclePhase

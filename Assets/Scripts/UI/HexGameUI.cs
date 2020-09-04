@@ -57,11 +57,13 @@ public class HexGameUI : MonoBehaviour
             enter = true;
             if(GameManager.Instance.cycle == CyclePhase.PhaseDay)
             {
+                GameManager.Instance.cycle = CyclePhase.PhaseNight;
                 GameManager.Instance.SetNight();
                 grid.Initialise();
             }
             else
             {
+                GameManager.Instance.cycle = CyclePhase.PhaseDay;
                 GameManager.Instance.SetDay();
                 grid.Increase();
             }
@@ -87,11 +89,14 @@ public class HexGameUI : MonoBehaviour
                             selectedUnit != null && selectedUnit.hasMoved == true && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerOne
                             )
                             selectedUnit = null;
+                        else
+                            SoundManager.PlaySound(Sound.ChooseUnit);
                     }
                     else if (selectedUnit  != null && selectedUnit.hasMoved != true)
                     {
                         if (Input.GetMouseButtonDown(1))
                         {
+                            SoundManager.PlaySound(Sound.Move);
                             DoMove();
                             selectedUnit.SetHasMoved(true);
                             grid.ClearPath();
@@ -121,11 +126,14 @@ public class HexGameUI : MonoBehaviour
                             selectedUnit != null && selectedUnit.hasAlreadyPlayed == true && selectedUnit._playerNumberType == PlayerNumber.EType_PlayerTwo
                             )
                             selectedUnit = null;
+                        else
+                            SoundManager.PlaySound(Sound.ChooseUnit);
                     }
                     else if (selectedUnit != null && selectedUnit.hasMoved != true)
                     {
                         if (Input.GetMouseButtonDown(1))
                         {
+                            SoundManager.PlaySound(Sound.Move);
                             DoMove();
                             selectedUnit.SetHasMoved(true);
                             grid.ClearPath();
@@ -148,6 +156,7 @@ public class HexGameUI : MonoBehaviour
                         {
                             if (enemyUnit != null && enemyUnit == character)
                             {
+                                SoundManager.PlaySound(Sound.KabukiStick);
                                 selectedUnit.SetHasMoved(true);
                                 HUDInGame.Instance._panelPreview.SetHUDPreview(selectedUnit, enemyUnit, false);
                                 break;
@@ -157,6 +166,7 @@ public class HexGameUI : MonoBehaviour
                         {
                             if (enemyUnit != null && enemyUnit == character)
                             {
+                                SoundManager.PlaySound(Sound.KabukiStick);
                                 selectedUnit.SetHasMoved(true);
                                 HUDInGame.Instance._panelPreview.SetHUDPreview(selectedUnit, enemyUnit, true);
                                 break;
@@ -305,9 +315,11 @@ public class HexGameUI : MonoBehaviour
 
     void CheckAllyUnit()
     {
-        if (selectedUnit && selectedUnit._playerNumberType != PlayerNumber.EType_PlayerTwo)
+        if (selectedUnit)
         {
-            m_mainCamera.transform.position = new Vector3(currentCell.Position.x, transform.position.y, currentCell.Position.z);
+            //SoundManager.PlaySound(Sound.ChooseUnit);
+
+            //m_mainCamera.transform.position = new Vector3(currentCell.Position.x, transform.position.y, currentCell.Position.z);
         }
         if(!selectedUnit)
         {
@@ -336,6 +348,7 @@ public class HexGameUI : MonoBehaviour
                 break;
             case PhaseType.EType_TurnPhasePlayerTwo:
                 GameManager.Instance.EType_Phase = PhaseType.EType_TurnPhasePlayerOne;
+                enter = false;
                 GameManager.Instance.nbTour++;
                 break;
         }

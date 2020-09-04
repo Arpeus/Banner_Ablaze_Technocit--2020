@@ -78,7 +78,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7763169316064022567
@@ -212,6 +212,8 @@ MonoBehaviour:
   _playerNumberType: 0
   _spritePreview: {fileID: 0}
   _spriteCounterAttack: {fileID: 9151779575062135982}
+  m_spriteOnMap: {fileID: 0}
+  spriteMap: {fileID: 0}
   hasAlreadyPlayed: 0
   hasMoved: 0
   hasAttacked: 0
@@ -243,7 +245,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 2.56}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 8.133333, y: 8.2}
     newSize: {x: 8.133333, y: 8.2}
     adaptiveTilingThreshold: 0.5

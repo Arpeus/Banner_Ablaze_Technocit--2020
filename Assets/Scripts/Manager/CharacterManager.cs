@@ -11,7 +11,8 @@ public class CharacterManager : MonoBehaviour
 
     public Sprite _spritePreview;
     public SpriteRenderer _spriteCounterAttack;
-    private SpriteRenderer m_spriteOnMap;
+    public SpriteRenderer m_spriteOnMap;
+    public Sprite spriteMap;
 
     public bool hasAlreadyPlayed = false;
     public bool hasMoved = false;
@@ -54,6 +55,7 @@ public class CharacterManager : MonoBehaviour
         m_lifeManager.SetArmorMargic(_character._resistanceMagic);
         m_lifeManager.SetDodge(_character._dodge);
         m_spriteOnMap = GetComponent<SpriteRenderer>();
+        spriteMap = m_spriteOnMap.sprite;
     }
 
     internal void SetNight()
@@ -73,8 +75,9 @@ public class CharacterManager : MonoBehaviour
             animDefense.spriteTeam = _character.spriteAnimNightTeamTwo;
             animDefense.animatorTeam = _character.animatorNightTeamTwo;
         }
-        _animator.runtimeAnimatorController = _character.animatorMapDay;
-        m_spriteOnMap.sprite = _character.spriteMapNight;
+        _animator.runtimeAnimatorController = _character.animatorMapNight;
+        spriteMap = _character.spriteMapNight;
+        m_spriteOnMap.sprite = spriteMap;
     }
 
     internal void SetDay()
@@ -94,7 +97,8 @@ public class CharacterManager : MonoBehaviour
             animDefense.spriteTeam = _character.spriteAnimDayTeamTwo;
         }
         _animator.runtimeAnimatorController = _character.animatorMapDay;
-        m_spriteOnMap.sprite = _character.spriteMapNight;
+        spriteMap = _character.spriteMapDay;
+        m_spriteOnMap.sprite = spriteMap;
     }
 
     public void Start()
@@ -520,7 +524,7 @@ public class CharacterManager : MonoBehaviour
         {
             return HUDInGame.Instance._terrains[5];
         }
-        if(GameManager.Instance.cycle == CyclePhase.PhaseDay)
+        if(GameManager.Instance.cycle == CyclePhase.PhaseNight)
         {
             return HUDInGame.Instance._terrains[1];
         }

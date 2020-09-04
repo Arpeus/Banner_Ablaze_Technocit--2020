@@ -18,16 +18,24 @@ public class AnimationDefense : AnimationManager
         base.Start();
     }
 
+    public override void SetActiveAttackGameObject(bool active, Sprite sprite)
+    {
+        SpriteOrder(4);
+        base.SetActiveAttackGameObject(active, sprite);
+    }
+
+
     public override void Animation()
     {
         base.Animation();
+        
         StartCoroutine(AnimDefense());
     }
 
     IEnumerator AnimDefense()
     {
        yield return new WaitForSeconds(3);
-
-       TriggerAnimAttack();
+        SpriteOrder(5);
+        TriggerAnimAttack();
     }
 }
