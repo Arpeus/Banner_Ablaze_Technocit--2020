@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 using System;
+using UnityEngine.SceneManagement;
 
 public class HexGameUI : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class HexGameUI : MonoBehaviour
     public GameObject _unitsMenu;
 
     public CharacterManager _characterAnimator;
+
+    int _victoryDelay = 3;
 
     private void Awake()
     {
@@ -216,10 +219,19 @@ public class HexGameUI : MonoBehaviour
         return false;   
     }
 
+    private IEnumerator WaitForSceneLoad()
+    {
+        yield return new WaitForSeconds(3);
+     SceneManager.LoadScene(0);
+
+    }
+
     private void EndGame(Player player)
     {
         GameManager.Instance.EType_Phase = PhaseType.EType_EndGamePhase;
         HUDInGame.Instance.ActivePanelVictory();
+
+        StartCoroutine(WaitForSceneLoad());
     }
 
     void DoSelection()
