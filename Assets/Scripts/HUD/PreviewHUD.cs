@@ -27,23 +27,29 @@ public class PreviewHUD : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            if(rangeAttack)
-            {
-                characterDefense.TakeDamageRange(characterAttack);
-            }
-            else
-            {
-                characterDefense.TakeDamage(characterAttack);
-            }
-            characterAttack.SetHasAlreadyPlayed(true);
-            characterAttack.ClearEnemy();
-            characterAttack.SetStateTurn();
-            CancelAttack();
+            SoundManager.PlaySound(Sound.KabukiVoice);
+            StartCoroutine(SoundEffect());
         }
         if(Input.GetMouseButtonDown(1))
         {
             CancelAttack();
         }
+    }
+    IEnumerator SoundEffect()
+    {
+        yield return new WaitForSeconds(1.042f);
+        if (rangeAttack)
+        {
+            characterDefense.TakeDamageRange(characterAttack);
+        }
+        else
+        {
+            characterDefense.TakeDamage(characterAttack);
+        }
+        characterAttack.SetHasAlreadyPlayed(true);
+        characterAttack.ClearEnemy();
+        characterAttack.SetStateTurn();
+        CancelAttack();
     }
 
     public void SetHUDPreview(CharacterManager characterAttack, CharacterManager characterDefense, bool range)

@@ -212,13 +212,14 @@ MonoBehaviour:
   _playerNumberType: 0
   _spritePreview: {fileID: 0}
   _spriteCounterAttack: {fileID: 6112947703290682003}
+  m_spriteOnMap: {fileID: 0}
+  spriteMap: {fileID: 0}
   hasAlreadyPlayed: 0
   hasMoved: 0
   hasAttacked: 0
   m_enemyNeighbor: []
   m_enemyNeighborRange: []
   _animator: {fileID: 0}
-  _anim: {fileID: 0}
   spriteTerrain: {fileID: 0}
   _particuleLauncher: {fileID: 2632042310760877775, guid: ebed2bdbacecd414ea16efd3b7577382,
     type: 3}
@@ -264,7 +265,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 8.533334, y: 17.066668}
+    oldSize: {x: 8.333333, y: 8.366667}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

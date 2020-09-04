@@ -15,12 +15,28 @@ public class AnimationAttack : AnimationManager
         placeAttack = HUDInGame.Instance._placeAttackUnits[index];
         placeMissFx = HUDInGame.Instance._missFXAttack;
         base.Start();
+        
+    }
+
+    public override void SetActiveAttackGameObject(bool active, Sprite sprite)
+    {
+        base.SetActiveAttackGameObject(active, sprite);
+        SpriteOrder(5);
     }
 
     public override void Animation()
     {
         base.Animation();
+       
         TriggerAnimAttack();
+        StartCoroutine(Order());
     }
+
+    IEnumerator Order()
+    {
+        yield return new WaitForSeconds(3);
+        SpriteOrder(4);
+    }
+   
 
 }
