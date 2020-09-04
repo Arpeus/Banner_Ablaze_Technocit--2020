@@ -2,10 +2,23 @@
 
 public class MusicClass : MonoBehaviour
 {
+    public static MusicClass Instance;
+
     private AudioSource _audioSource;
     private void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else
+        {
+            if (Instance != this)
+            {
+                Destroy(gameObject);
+            }
+        }
         _audioSource = GetComponent<AudioSource>();
     }
 
