@@ -2820,49 +2820,48 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'CREDITS
 
-    
+
 
     BASED ON A CONCEPT BY
 
-    
+
 
     Julien Coppenolle
 
-    
+
 
     DEVELOPMENT
 
-    
+
 
     Mederic
     Allard
 
     Selim Grote
 
-    
+
 
     ART
 
-    
 
-    Julien Coppenolle (Art
-    direction)
 
-    Arnaux Thibeaux (3D)
+    Julien Coppenolle (Art direction)
 
-    Axel Demeulemeester (Concept UI &
-    Particle FX)
+    Arnaux
+    Thibeaux (3D)
 
-    
+    Axel Demeulemeester (Concept UI & Particle FX)
 
-    GAME DESIGN
 
-    
+
+    GAME
+    DESIGN
+
+
 
     Morgane Reuter
 
-    Matthieu
-    Blairon'
+    Mathieu Blairon'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b43398b100310e4b8ce710cf48b18ef, type: 2}
   m_sharedMaterial: {fileID: 8997993463618955261, guid: 9b43398b100310e4b8ce710cf48b18ef,
@@ -2891,8 +2890,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2932,12 +2931,12 @@ MonoBehaviour:
   m_margin: {x: -563.0191, y: 0, z: -466.95917, w: 0}
   m_textInfo:
     textComponent: {fileID: 683376423}
-    characterCount: 258
+    characterCount: 252
     spriteCount: 0
-    spaceCount: 41
+    spaceCount: 49
     wordCount: 33
     linkCount: 0
-    lineCount: 21
+    lineCount: 29
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
