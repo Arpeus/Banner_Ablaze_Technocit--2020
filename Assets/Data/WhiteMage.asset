@@ -39,7 +39,7 @@ MonoBehaviour:
   animatorDayTeamTwo: {fileID: 9100000, guid: dbcb868f5311b5f468479f75fb2e067c, type: 2}
   animatorNightTeamOne: {fileID: 9100000, guid: 902e907d513483c4288c400f7c5f2657,
     type: 2}
-  animatorNightTeamTwo: {fileID: 9100000, guid: e1d880fb3f09e54489614cb62fc43c0f,
+  animatorNightTeamTwo: {fileID: 9100000, guid: 3c97b5972dfb8134399c08fa9ca7062b,
     type: 2}
   albedoColorGreen: '#8DB5A5'
   albedoColorRed: '#E0AA93'
