@@ -10,7 +10,6 @@ public class HUDMenu : MonoBehaviour
 
     public TextMeshProUGUI _pointAvailable;
 
-    public Button _btnReady;
     // RESPECT ORDER
     // 0 --> Cavalier
     // 1 --> SwordMan
@@ -51,15 +50,11 @@ public class HUDMenu : MonoBehaviour
         _pointAvailable.SetText(_player.GetAvailablePoint().ToString());
         if (_player.GetAvailablePoint() == 0)
         {
-            _btnReady.interactable = true;
+            
             foreach (Button btnAdd in _btnAddTroops)
             {
                 btnAdd.interactable = false;
             }
-        }
-        else
-        {
-            _btnReady.interactable = false;
         }
     }
 
