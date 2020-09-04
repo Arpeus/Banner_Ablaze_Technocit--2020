@@ -5680,7 +5680,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 1122564603}
   _pointAvailable: {fileID: 128273628}
-  _btnReady: {fileID: 1780052645}
   _btnAddTroops:
   - {fileID: 1698223950}
   - {fileID: 1103169846}
@@ -5705,7 +5704,7 @@ MonoBehaviour:
   imageTroop: {fileID: 1192084410}
   text_Name: {fileID: 1549848668}
   text_Health: {fileID: 860150139}
-  text_Attack: {fileID: 860150139}
+  text_Attack: {fileID: 885960155}
   text_AttackMagic: {fileID: 1417159428}
   text_Defense: {fileID: 633212088}
   text_DefenseMagic: {fileID: 336106942}
