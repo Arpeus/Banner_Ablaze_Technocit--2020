@@ -873,7 +873,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 250, y: 0}
-  m_SizeDelta: {x: 200, y: -279.99997}
+  m_SizeDelta: {x: 200, y: -244.99997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &153826372
 MonoBehaviour:
@@ -1527,7 +1527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Heal
+  m_text: Cancel
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8dbdc265bd55d37479af041177b65723, type: 2}
   m_sharedMaterial: {fileID: 946818003263480672, guid: 8dbdc265bd55d37479af041177b65723,
@@ -1597,7 +1597,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 301111287}
-    characterCount: 4
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -4464,12 +4464,12 @@ GameObject:
   - component: {fileID: 920272446}
   - component: {fileID: 920272445}
   m_Layer: 5
-  m_Name: BTN_Heal
+  m_Name: BTN_Cancel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &920272444
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4534,7 +4534,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 582324738}
-        m_MethodName: Heal
+        m_MethodName: Cancel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

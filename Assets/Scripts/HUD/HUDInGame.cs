@@ -194,4 +194,9 @@ public class HUDInGame : MonoBehaviour
         hexgrid.EndTurn();
         UniteMenu.SetActive(false);
     }
+
+    public void Cancel()
+    {
+        UniteMenu.SetActive(false);
+    }
 }
