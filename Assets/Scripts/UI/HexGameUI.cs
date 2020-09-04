@@ -335,7 +335,7 @@ public class HexGameUI : MonoBehaviour
         }
         if(!selectedUnit)
         {
-            _unitsMenu.SetActive(true);
+           HUDInGame.Instance.UniteMenu.SetActive(true);
         }
     }
 
@@ -347,6 +347,21 @@ public class HexGameUI : MonoBehaviour
                 return false;
         }
         return true;
+    }
+
+    public void EndTurn()
+    {
+        if (GameManager.Instance.EType_Phase == PhaseType.EType_TurnPhasePlayerOne)
+        {
+            EndTurn(GameManager.Instance._players[0]);
+            StartTurn(GameManager.Instance._players[1]);
+        }
+        else
+        {
+            EndTurn(GameManager.Instance._players[1]);
+            StartTurn(GameManager.Instance._players[0]);
+        }
+           
     }
 
     private void EndTurn(Player player)

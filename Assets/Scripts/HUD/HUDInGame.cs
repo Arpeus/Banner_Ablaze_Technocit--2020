@@ -47,6 +47,9 @@ public class HUDInGame : MonoBehaviour
 
     [SerializeField]private CharacterManager m_currentCharacterManager;
 
+    private HexGameUI hexgrid;
+
+    public GameObject UniteMenu { get => m_uniteMenu; set => m_uniteMenu = value; }
 
     void Awake()
     {
@@ -62,6 +65,7 @@ public class HUDInGame : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        hexgrid = FindObjectOfType<HexGameUI>();
     }
 
     // Start is called before the first frame update
@@ -133,7 +137,7 @@ public class HUDInGame : MonoBehaviour
 
     public void ShowUnitMenu(CharacterManager character)
     {
-        SetPanelActive(m_uniteMenu, true, character);
+        SetPanelActive(UniteMenu, true, character);
     }
 
     public void SetPanelActive(GameObject panel, bool active, CharacterManager character)
@@ -184,5 +188,11 @@ public class HUDInGame : MonoBehaviour
         _turnPlayerTwo.SetActive(false);
         SetAllGameObjectInactive();
         m_panelVictory.SetActive(true);
+    }
+
+    public void EndTurn()
+    {
+        hexgrid.EndTurn();
+        UniteMenu.SetActive(false);
     }
 }
