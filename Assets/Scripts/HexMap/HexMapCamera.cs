@@ -14,6 +14,8 @@ public class HexMapCamera : MonoBehaviour
 
     public float _followSpeed;
 
+    Vector3 m_startCameraPosition = new Vector3 (154, 58, 45);
+
     Vector3 m_targetPosition;
 
     public Vector3 _targetPosition
@@ -66,6 +68,8 @@ public class HexMapCamera : MonoBehaviour
         instance = this;
         swivel = transform.GetChild(0);
         stick = swivel.GetChild(0);
+
+        transform.position = m_startCameraPosition;
     }
 
     /*
